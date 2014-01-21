@@ -3,7 +3,7 @@ set nocompatible
 
 " Check if git is available and if vundle is already installed  {{{
 if executable("git") != 1 && !filereadable($HOME."/.vim/bundle/vundle/README.md")
-    echo "GIT is required to configure flvim"
+    echo "GIT is required to configure flvim:"
 
 else    
     " vim plugin floder {{{
@@ -12,21 +12,21 @@ else
 
     " needed .vimrc.* files {{{
     let files = [
-                \ ".vimrc.bundles",
-                \ ".vimrc.fist",
-                \ ".vimrc.last"]
+                \ ".vimrc.vundles",
+                \ ".vimrc.before",
+                \ ".vimrc.after"]
 
     for file in files
         if !filereadable($HOME . "/" . file) | call system("touch " . $HOME . "/" . file) | endif
     endfor
     """ }}}
-    let shouldInstallBundles = 0
+    let shouldInstallvundles = 0
     "vundle setup {{{
     if !filereadable($HOME."/.vim/bundle/vundle/README.md")
         echo "~≥ Installing Vundle \n"
         silent !mkdir -p $HOME/.vim/bundle
         silent !git clone https://github.com/gmarik/vundle $HOME/.vim/bundle/vundle
-        let shouldInstallBundles = 1
+        let shouldInstallvundles = 1
     endif
     " }}}
 
@@ -36,24 +36,24 @@ else
 
     Bundle 'gmarik/vundle'
 
-    if filereadable($HOME."/.vimrc.bundles")
-        source $HOME/.vimrc.bundles
+    if filereadable($HOME."/.vimrc.vundles")
+        source $HOME/.vimrc.vundles
     endif 
 
-    "Default bundles {{{
+    "Default vundles {{{
     Bundle 'molokai'
     " }}}
 
-    "Check if bundles should be installed {{{
-    if shouldInstallBundles == 1
-        echo "~> Installing bundles"
+    "Check if vundle bundles should be installed {{{
+    if shouldInstallvundles == 1
+        echo "~> Installing vundle bundles"
         :BundleInstall
     endif
     " }}}
 
-    " .vimrc.first is used for  prerequisites so it will be overwritten by anything below {{{
-    if filereadable($HOME."/.vimrc.first")
-        source $HOME/.vimrc.first
+    " .vimrc.before is used for  prerequisites so it will be overwritten by anything below {{{
+    if filereadable($HOME."/.vimrc.before")
+        source $HOME/.vimrc.before
     endif
     " }}}
 
@@ -82,9 +82,9 @@ else
     let g:rehash256 = 1
     " }}}
 
-    " .vimrc.last will overwrite anything above {{{
-    if filereadable($HOME."/.vimrc.last")
-        source $HOME/.vimrc.last
+    " .vimrc.after will overwrite anything above {{{
+    if filereadable($HOME."/.vimrc.after")
+        source $HOME/.vimrc.after
     endif
     " }}}
 
