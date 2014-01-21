@@ -61,17 +61,18 @@ else
     
     filetype plugin indent on
     syntax on
-    set smartindent                             "Smart autoindentation when starting a new line
-    set shiftwidth=4                            "Number of spaces to use fo auto-indent 
-    set tabstop=4                               "4 spaces for tab
-    set expandtab                               "Spaces instead of tabs
-    
-    "Motion keys for tabs ctrl+t <direction>
+    set smartindent                             " Smart autoindentation when starting a new line
+    set shiftwidth=4                            " Number of spaces to use fo auto-indent 
+    set tabstop=4                               " 4 spaces for tab
+    set expandtab                               " Spaces instead of tabs
+    set nu                                      " Show line numbers
+
+    "Motion keys for tabs ctrl+t <direction> {{{
     map <C-t><up> :tabr<cr>
     map <C-t><down> :tabl<cr>
     map <C-t><left> :tabp<cr>
     map <C-t><right> :tabn<cr>
-    
+    " }}}
     
     " }}}
 
