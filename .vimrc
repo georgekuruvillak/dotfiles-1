@@ -20,13 +20,13 @@ else
         if !filereadable($HOME . "/" . file) | call system("touch " . $HOME . "/" . file) | endif
     endfor
     """ }}}
-    let shouldInstallvundles = 0
+    let shouldInstallBundles = 0
     "vundle setup {{{
     if !filereadable($HOME."/.vim/bundle/vundle/README.md")
         echo "~≥ Installing Vundle \n"
         silent !mkdir -p $HOME/.vim/bundle
         silent !git clone https://github.com/gmarik/vundle $HOME/.vim/bundle/vundle
-        let shouldInstallvundles = 1
+        let shouldInstallBundles = 1
     endif
     " }}}
 
@@ -41,11 +41,16 @@ else
     endif 
 
     "Default vundles {{{
+
+    " molokai color scheme
     Bundle 'molokai'
+
+    " NerdTree (explore your filesystem and to open files and directories.)
+    Bundle  "scrooloose/nerdtree"
     " }}}
 
     "Check if vundle bundles should be installed {{{
-    if shouldInstallvundles == 1
+    if shouldInstallBundles == 1
         echo "~> Installing vundle bundles"
         :BundleInstall
     endif
@@ -66,6 +71,9 @@ else
     set tabstop=4                               " 4 spaces for tab
     set expandtab                               " Spaces instead of tabs
     set nu                                      " Show line numbers
+    set splitbelow                              " Split panels to bottom
+    set splitright                              " Split panels to right
+    let NERDTreeQuitOnOpen=1                    " Automatically close NERDTree on file open
 
     "Motion keys for tabs ctrl+t <direction> {{{
     map <C-t><up> :tabr<cr>
