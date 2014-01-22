@@ -6,10 +6,6 @@ if executable("git") != 1 && !filereadable($HOME."/.vim/bundle/vundle/README.md"
     echo "GIT is required to configure flvim:"
 
 else    
-    " vim plugin floder {{{
-    call system("mkdir -p $HOME/.vim/plugin")
-    " }}}
-
     " needed .vimrc.* files {{{
     let files = [
                 \ ".vimrc.vundles",
