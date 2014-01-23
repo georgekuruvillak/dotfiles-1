@@ -17,7 +17,7 @@ else
     endfor
     """ }}}
     let shouldInstallBundles = 0
-    "vundle setup {{{
+    " vundle setup {{{
     if !filereadable($HOME."/.vim/bundle/vundle/README.md")
         echo "~≥ Installing Vundle \n"
         silent !mkdir -p $HOME/.vim/bundle
@@ -36,16 +36,20 @@ else
         source $HOME/.vimrc.vundles
     endif 
 
-    "Default vundles {{{
+    " Default vundles {{{
 
     " molokai color scheme
     Bundle 'molokai'
 
     " NerdTree (explore your filesystem and to open files and directories.)
-    Bundle  "scrooloose/nerdtree"
+    Bundle  'scrooloose/nerdtree'
+    " }}}
+    
+    " Syntax checking plugin for Vim {{{
+    Bundle  'scrooloose/syntastic'
     " }}}
 
-    "Check if vundle bundles should be installed {{{
+    " Check if vundle bundles should be installed {{{
     if shouldInstallBundles == 1
         echo "~> Installing vundle bundles"
         :BundleInstall
@@ -58,7 +62,7 @@ else
     endif
     " }}}
 
-    "Default Configuration {{{
+    " Default Configuration {{{
     
     filetype plugin indent on
     syntax on
@@ -69,9 +73,15 @@ else
     set nu                                      " Show line numbers
     set splitbelow                              " Split panels to bottom
     set splitright                              " Split panels to right
-    let NERDTreeQuitOnOpen=1                    " Automatically close NERDTree on file open
 
-    "Motion keys for tabs ctrl+t <direction> {{{
+    " NERDTree Configuration{{{
+    let NERDTreeQuitOnOpen=1                    " Automatically close NERDTree on file open
+    " }}}
+    
+    let g:syntastic_php_phpcs_args="--report=csv --standard=PSR2"
+    let g:syntastic_php_checkers=['php', 'phpcs', 'phpmd']
+
+    " Motion keys for tabs ctrl+t <direction> {{{
     map <C-t><up> :tabr<cr>
     map <C-t><down> :tabl<cr>
     map <C-t><left> :tabp<cr>
