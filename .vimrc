@@ -63,7 +63,7 @@ else
     " }}}
 
     " Default Configuration {{{
-    
+
     filetype plugin indent on
     syntax on
     set smartindent                             " Smart autoindentation when starting a new line
@@ -77,7 +77,7 @@ else
     " NERDTree Configuration{{{
     let NERDTreeQuitOnOpen=1                    " Automatically close NERDTree on file open
     " }}}
-    
+
     " Synstastic Configuration {{{    
     let g:syntastic_always_populate_loc_list=1
     let g:syntastic_php_phpcs_args="--report=csv --standard=PSR2"
@@ -91,7 +91,11 @@ else
     map <C-t><left> :tabp<cr>
     map <C-t><right> :tabn<cr>
     " }}}
-    
+
+    " Simplified Go To Definition {{{
+    map <C-+> <C-]>
+    " }}}
+   
     " }}}
 
     " Color Scheme {{{
