@@ -9,12 +9,12 @@ To work completely, flvim needs the followings available in your path:
 
 ### Optional
 
-*Php*
+**Php**
 - PHP 5.3+
 - [PHP Codesniffer](https://github.com/squizlabs/PHP_CodeSniffer)
 - [PHPMD](https://github.com/phpmd/phpmd)
 
-*Javascript*
+**Javascript**
 - Node
 - [JSHint](http://www.jshint.com/install/)
 
