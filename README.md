@@ -1,6 +1,23 @@
 # FLVim
 This is a super easy *vim* configuration. 
 
+
+##Requirements
+To work completely, flvim needs the followings available in your path:
+### Required
+- GIT
+
+### Optional
+
+*Php*
+- PHP 5.3+
+- [PHP Codesniffer](https://github.com/squizlabs/PHP_CodeSniffer)
+- [PHPMD](https://github.com/phpmd/phpmd)
+
+*Javascript*
+- Node
+- [JSHint](http://www.jshint.com/install/)
+
 ## Installation
 ```bash
 git clone https://github.com/fontanalorenzo/flvim

@@ -91,17 +91,13 @@ else
     map <C-t><left> :tabp<cr>
     map <C-t><right> :tabn<cr>
     " }}}
-
-    " Simplified Go To Definition {{{
-    map <C-+> <C-]>
-    " }}}
-   
-    " }}}
-
+    
     " Color Scheme {{{
     colors molokai
     set background=dark
     let g:rehash256 = 1
+    " }}}
+    
     " }}}
 
     " .vimrc.after will overwrite anything above {{{
