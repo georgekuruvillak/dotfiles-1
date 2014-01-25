@@ -26,6 +26,7 @@ ln -s flvim/.vimrc $HOME/.vimrc
 ## Keys
 ### Motion Keys
 **Switch between tabs**
+
 ```<C-t><direction>``` - Move to the tab at the specified direction
 ### Emmet
 ```<C-y>,``` - Expand Abbreviation action
