@@ -23,6 +23,18 @@ To work completely, flvim needs the followings available in your path:
 git clone https://github.com/fontanalorenzo/flvim
 ln -s flvim/.vimrc $HOME/.vimrc
 ```
+## Keys
+### Motion Keys
+**Switch between tabs**
+```<C-t><direction>``` - Move to the tab at the specified direction
+### Emmet
+```<C-y>,``` - Expand Abbreviation action
+
+## Included Bundles
+- Molokai
+- [NerdTree](https://github.com/scrooloose/nerdtree)
+- [Synstastic](https://github.com/scrooloose/syntastic)
+- [Emmet](https://github.com/mattn/emmet-vim)
 
 ## Customization
 FLVim provides 3 files to put into your own configuration.

@@ -48,6 +48,9 @@ else
     " Syntax checking plugin for Vim {{{
     Bundle  'scrooloose/syntastic'
     " }}}
+    
+    " Emmet (Zen Coding)
+    Bundle('mattn/emmet-vim')
 
     " Check if vundle bundles should be installed {{{
     if shouldInstallBundles == 1
