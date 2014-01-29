@@ -52,6 +52,10 @@ else
     " Emmet (Zen Coding)
     Bundle('mattn/emmet-vim')
 
+    " Vim Related Test - Switch from source to tests {{{
+    Bundle 'wdalmut/vim-relatedtest'
+    " }}}
+
     " Check if vundle bundles should be installed {{{
     if shouldInstallBundles == 1
         echo "~> Installing vundle bundles"
@@ -100,13 +104,17 @@ else
     set background=dark
     let g:rehash256 = 1
     " }}}
-    
-    " }}}
+ 
 
     " .vimrc.after will overwrite anything above {{{
     if filereadable($HOME."/.vimrc.after")
         source $HOME/.vimrc.after
     endif
+    " }}}
+    
+    " Specific settings per Project {{{
+    set exrc
+    set secure
     " }}}
 
 endif
