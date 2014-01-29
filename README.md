@@ -39,6 +39,7 @@ ln -s flvim/.vimrc $HOME/.vimrc
 - [Synstastic](https://github.com/scrooloose/syntastic)
 - [Emmet](https://github.com/mattn/emmet-vim)
 - [vim-relatedtest](https://github.com/wdalmut/vim-relatedtest)
+
 ## Customization
 FLVim provides 3 files to put into your own configuration.
 - ```$HOME/.vimrc.after```    => Any configuration that will be overwritten by defaults and .vimrc.before
