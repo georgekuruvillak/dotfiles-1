@@ -47,6 +47,7 @@ FLVim provides 3 files to put into your own configuration.
 - ```$HOME/.vimrc.vundles```  => Additiona Vundle Bundles to install 
 
 ## Per project vim settings
-flvim enables exrc so if you place an ```.exrc``` or ```.vimrc```  file in your project folder to override vim settings
+flvim enables exrc so if you place an ```.exrc``` or ```.vimrc```  file in your project folder you override vim settings
 for that folder.
+
 **Warning**: exrc is enabled in secure mode, this will disable system calls and write operations in all project specific configurations.     
