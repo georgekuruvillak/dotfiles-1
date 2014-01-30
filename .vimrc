@@ -55,6 +55,10 @@ else
     " Vim Related Test - Switch from source to tests {{{
     Bundle 'wdalmut/vim-relatedtest'
     " }}}
+    
+    " Vim Fugitive - Git Wrapper {{{
+    Bundle 'tpope/vim-fugitive'
+    " }}}
 
     " Check if vundle bundles should be installed {{{
     if shouldInstallBundles == 1
@@ -81,8 +85,12 @@ else
     set splitbelow                              " Split panels to bottom
     set splitright                              " Split panels to right
 
-    " NERDTree Configuration{{{
+    " NERDTree Configuration {{{
     let NERDTreeQuitOnOpen=1                    " Automatically close NERDTree on file open
+    autocmd VimEnter * nmap <F3> :NERDTreeToggle<cr>
+    autocmd VimEnter * imap <F3><F3> <Esc>:NERDTreeToggle<CR>a
+    let NERDTreeQuitOnOpen=1
+    let NERDTreeWinSize=35
     " }}}
 
     " Synstastic Configuration {{{    
@@ -104,8 +112,7 @@ else
     set background=dark
     let g:rehash256 = 1
     " }}}
- 
-
+    
     " .vimrc.after will overwrite anything above {{{
     if filereadable($HOME."/.vimrc.after")
         source $HOME/.vimrc.after
@@ -113,8 +120,8 @@ else
     " }}}
     
     " Specific settings per Project {{{
-    set exrc
-    set secure
+    set exrc                                " Enable project specific .vimrc
+    set secure                              " Enable secure mode
     " }}}
 
 endif
