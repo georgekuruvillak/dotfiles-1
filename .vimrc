@@ -59,6 +59,10 @@ else
     " Vim Fugitive - Git Wrapper {{{
     Bundle 'tpope/vim-fugitive'
     " }}}
+    
+    " Vim Golang - Go Language Support {{{
+    Bundle 'jnwhiteh/vim-golang'
+    " }}}
 
     " Check if vundle bundles should be installed {{{
     if shouldInstallBundles == 1
