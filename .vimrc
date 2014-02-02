@@ -64,6 +64,10 @@ else
     Bundle 'jnwhiteh/vim-golang'
     " }}}
 
+    " AutoClose - Auto Brackets closing {{{
+    Bundle 'vim-scripts/AutoClose'
+    " }}}
+
     " Check if vundle bundles should be installed {{{
     if shouldInstallBundles == 1
         echo "~> Installing vundle bundles"
