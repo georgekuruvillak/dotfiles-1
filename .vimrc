@@ -67,6 +67,10 @@ else
     " AutoClose - Auto Brackets closing {{{
     Bundle 'vim-scripts/AutoClose'
     " }}}
+    
+    " Vim Json - Vim Json Support {{{
+    Bundle 'elzr/vim-json' 
+    " }}}
 
     " Check if vundle bundles should be installed {{{
     if shouldInstallBundles == 1
