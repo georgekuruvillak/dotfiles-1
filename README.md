@@ -31,7 +31,7 @@ ln -s flvim/.vimrc $HOME/.vimrc
 ```<C-y>,``` - Expand Abbreviation action
 
 ### Vim Related Test
-```tt``` - Open the related test (right now it only works with PHP and Golang files)
+```tt``` - Open the related test (right now it only works with PHP, Java and Golang projects)
 
 ## Included Bundles
 - Molokai
