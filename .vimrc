@@ -71,6 +71,10 @@ else
     " Vim Json - Vim Json Support {{{
     Bundle 'elzr/vim-json' 
     " }}}
+    
+    " neocomplcache -neo-completion With Cache {{{
+    Bundle 'Shougo/neocomplcache.vim'
+    " }}}
 
     " Check if vundle bundles should be installed {{{
     if shouldInstallBundles == 1
@@ -112,13 +116,17 @@ else
     let g:syntastic_javascript_checkers = ['jshint']
     " }}}
 
+    " neo-complcache Configuration {{{
+    let g:neocomplcache_enable_at_startup = 1
+    " }}}
+
     " Motion keys for tabs ctrl+t <direction> {{{
     map <C-t><up> :tabr<cr>
     map <C-t><down> :tabl<cr>
     map <C-t><left> :tabp<cr>
     map <C-t><right> :tabn<cr>
     " }}}
-    
+
     " Color Scheme {{{
     colors molokai
     set background=dark
