@@ -40,10 +40,6 @@ else
 
     " molokai color scheme
     Bundle 'molokai'
-
-    " NerdTree (explore your filesystem and to open files and directories.)
-    Bundle  'scrooloose/nerdtree'
-    " }}}
     
     " Syntax checking plugin for Vim {{{
     Bundle  'scrooloose/syntastic'
@@ -56,6 +52,10 @@ else
     Bundle 'wdalmut/vim-relatedtest'
     " }}}
     
+    " Finder for Vim {{{
+    Bundle 'kien/ctrlp.vim'
+    " }}}
+    
     " Vim Fugitive - Git Wrapper {{{
     Bundle 'tpope/vim-fugitive'
     " }}}
@@ -63,17 +63,9 @@ else
     " Vim Golang - Go Language Support {{{
     Bundle 'jnwhiteh/vim-golang'
     " }}}
-
-    " AutoClose - Auto Brackets closing {{{
-    Bundle 'vim-scripts/AutoClose'
-    " }}}
     
     " Vim Json - Vim Json Support {{{
     Bundle 'elzr/vim-json' 
-    " }}}
-    
-    " neocomplcache -neo-completion With Cache {{{
-    Bundle 'Shougo/neocomplcache.vim'
     " }}}
 
     " Check if vundle bundles should be installed {{{
@@ -101,25 +93,13 @@ else
     set splitbelow                              " Split panels to bottom
     set splitright                              " Split panels to right
 
-    " NERDTree Configuration {{{
-    let NERDTreeQuitOnOpen=1                    " Automatically close NERDTree on file open
-    autocmd VimEnter * nmap <F3> :NERDTreeToggle<cr>
-    autocmd VimEnter * imap <F3><F3> <Esc>:NERDTreeToggle<CR>a
-    let NERDTreeQuitOnOpen=1
-    let NERDTreeWinSize=35
-    " }}}
-
     " Synstastic Configuration {{{    
     let g:syntastic_always_populate_loc_list=1
     let g:syntastic_php_phpcs_args="--report=csv --standard=PSR2"
     let g:syntastic_php_checkers=['php', 'phpcs', 'phpmd']
     let g:syntastic_javascript_checkers = ['jshint']
     " }}}
-
-    " neo-complcache Configuration {{{
-    let g:neocomplcache_enable_at_startup = 1
-    " }}}
-
+    
     " Motion keys for tabs ctrl+t <direction> {{{
     map <C-t><up> :tabr<cr>
     map <C-t><down> :tabl<cr>

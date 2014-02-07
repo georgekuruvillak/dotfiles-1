@@ -33,13 +33,16 @@ ln -s flvim/.vimrc $HOME/.vimrc
 ### Vim Related Test
 ```tt``` - Open the related test (right now it only works with PHP, Java and Golang projects)
 
+### ctrl-p
+See [documentation](https://github.com/kien/ctrlp.vim/blob/master/readme.md)
+
 ## Included Bundles
 - Molokai
-- [NerdTree](https://github.com/scrooloose/nerdtree)
 - [Synstastic](https://github.com/scrooloose/syntastic)
 - [Emmet](https://github.com/mattn/emmet-vim)
 - [vim-relatedtest](https://github.com/wdalmut/vim-relatedtest)
 - [vim-golang](https://github.com/jnwhiteh/vim-golang)
+- [ctrlp.vim](https://github.com/kien/ctrlp.vim)
 
 ## Customization
 FLVim provides 3 files to put into your own configuration.
