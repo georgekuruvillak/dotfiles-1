@@ -18,7 +18,7 @@ else
     """ }}}
     let shouldInstallBundles = 0
     " vundle setup {{{
-    if !filereadable($HOME."/.vim/bundle/vundle/README.md")
+    if !filereadable($HOME . "/.vim/bundle/vundle/README.md")
         echo "~≥ Installing Vundle \n"
         silent !mkdir -p $HOME/.vim/bundle
         silent !git clone https://github.com/gmarik/vundle $HOME/.vim/bundle/vundle
@@ -67,6 +67,7 @@ else
     " Vim Json - Vim Json Support {{{
     Bundle 'elzr/vim-json' 
     " }}}
+    
 
     " Check if vundle bundles should be installed {{{
     if shouldInstallBundles == 1
@@ -76,7 +77,7 @@ else
     " }}}
 
     " .vimrc.before is used for  prerequisites so it will be overwritten by anything below {{{
-    if filereadable($HOME."/.vimrc.before")
+    if filereadable($HOME . "/.vimrc.before")
         source $HOME/.vimrc.before
     endif
     " }}}
@@ -89,7 +90,7 @@ else
     set shiftwidth=4                            " Number of spaces to use fo auto-indent 
     set tabstop=4                               " 4 spaces for tab
     set expandtab                               " Spaces instead of tabs
-    set nu                                      " Show line numbers
+    set rnu                                     " Show relative line numbers
     set splitbelow                              " Split panels to bottom
     set splitright                              " Split panels to right
 
@@ -112,7 +113,11 @@ else
     set background=dark
     let g:rehash256 = 1
     " }}}
-    
+
+    " Backspace Options {{{
+    set backspace+=start,eol,indent
+    " }}}
+
     " .vimrc.after will overwrite anything above {{{
     if filereadable($HOME."/.vimrc.after")
         source $HOME/.vimrc.after
