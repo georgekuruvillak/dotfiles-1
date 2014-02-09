@@ -44,6 +44,11 @@ else
     " Syntax checking plugin for Vim {{{
     Bundle  'scrooloose/syntastic'
     " }}}
+    
+    " Tagbar {{{
+    Bundle 'majutsushi/tagbar'
+    Bundle 'vim-php/tagbar-phpctags.vim'
+    " }}}
 
     " Emmet (Zen Coding)
     Bundle('mattn/emmet-vim')
@@ -154,6 +159,10 @@ else
 
     " Exit insert mode {{{
     :inoremap jk <esc> 
+    " }}}
+
+    " Toggle Tagbar {{{
+    nmap <Leader>x :TagbarToggle<CR> 
     " }}}
 
     " Color Scheme {{{

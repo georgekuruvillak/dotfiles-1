@@ -13,6 +13,7 @@ To work completely, flvim needs the followings available in your path:
 - PHP 5.3+
 - [PHP Codesniffer](https://github.com/squizlabs/PHP_CodeSniffer)
 - [PHPMD](https://github.com/phpmd/phpmd)
+- [phpctags](https://github.com/vim-php/phpctags)
 
 **Javascript**
 - Node
@@ -22,7 +23,7 @@ To work completely, flvim needs the followings available in your path:
 - Go
 - [gofmt](http://golang.org/cmd/gofmt/)
 - [golint](https://github.com/golang/lint)
-- [gocode](https://github.com/nfs/gocode)
+- [gocode](https://github.com/nsf/gocode)
 
 ## Installation
 ```bash
@@ -39,6 +40,7 @@ To trigger autocompletion just hold down `tab`
 
 ### Motion Keys
 ```hjkl``` - Arrows are disabled
+```jk``` - Exit insert mode
 
 ### Emmet
 ```<C-y>,``` - Expand Abbreviation action
@@ -49,6 +51,8 @@ To trigger autocompletion just hold down `tab`
 ### ctrl-p
 See [documentation](https://github.com/kien/ctrlp.vim/blob/master/readme.md)
 
+### Tagbar
+```,x``` - Open tagbar
 
 ### Other keys
 ```<C-y>,``` - Expand Abbreviation action
@@ -58,8 +62,13 @@ See [documentation](https://github.com/kien/ctrlp.vim/blob/master/readme.md)
 - [Synstastic](https://github.com/scrooloose/syntastic)
 - [Emmet](https://github.com/mattn/emmet-vim)
 - [vim-relatedtest](https://github.com/wdalmut/vim-relatedtest)
-- [vim-golang](https://github.com/jnwhiteh/vim-golang)
+- [vim-gocode](https://github.com/Blackrush/vim-gocode)
 - [ctrlp.vim](https://github.com/kien/ctrlp.vim)
+- [tagbar](https://github.com/majutsushi/tagbar)
+- [tagbar-phpctags](https://github.com/vim-php/tagbar-phpctags.vim)
+- [vim-json](https://github.com/elzr/vim-json)
+- [supertab](https://github.com/ervandew/supertab)
+- [phpcomplete.vim](https://github.com/shawncplus/phpcomplete.vim)
 
 ## Customization
 FLVim provides 3 files to put into your own configuration.
