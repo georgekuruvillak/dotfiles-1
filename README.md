@@ -26,7 +26,7 @@ ln -s flvim/.vimrc $HOME/.vimrc
 ## Keys
 
 ### <leader>
-```,```
+The <leader> key is remapped to `,` 
 
 ### Motion Keys
 ```hjkl``` - Arrows are disabled
