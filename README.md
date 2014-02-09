@@ -28,6 +28,9 @@ ln -s flvim/.vimrc $HOME/.vimrc
 ### <leader>
 The <leader> key is remapped to `,` 
 
+### Autocompletion
+To trigger autocompletion just hold down `tab`
+
 ### Motion Keys
 ```hjkl``` - Arrows are disabled
 

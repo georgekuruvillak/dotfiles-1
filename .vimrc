@@ -67,6 +67,10 @@ else
     " Vim Json - Vim Json Support {{{
     Bundle 'elzr/vim-json' 
     " }}}
+    
+    " SuperTab - Completions with Tab {{{
+    Bundle 'ervandew/supertab'
+    " }}}
 
 
     " Check if vundle bundles should be installed {{{
@@ -107,6 +111,15 @@ else
       \ }  
     " }}}
 
+    " Enable OmniComplete {{{
+    filetype plugin on
+    set omnifunc=syntaxcomplete#Complete
+    " }}}
+
+
+    " SuperTab Configuration {{{
+    let g:SuperTabDefaultCompletionType = "<C-X><C-O>" 
+    " }}}
 
     " Motion keys for tabs ctrl+t <direction> {{{
     map <C-t><up> :tabr<cr>
