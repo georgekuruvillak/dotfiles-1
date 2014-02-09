@@ -102,6 +102,10 @@ else
     set splitbelow                              " Split panels to bottom
     set splitright                              " Split panels to right
 
+    " Map Leader {{{
+    let mapleader = "," 
+    " }}} 
+
     " Synstastic Configuration {{{    
     let g:syntastic_always_populate_loc_list=1
     let g:syntastic_php_phpcs_args="--report=csv --standard=PSR2"
@@ -151,10 +155,6 @@ else
     " Exit insert mode {{{
     :inoremap jk <esc> 
     " }}}
-
-    " Map Leader {{{
-    let mapleader = "," 
-    " }}} 
 
     " Color Scheme {{{
     colors molokai
