@@ -40,34 +40,34 @@ else
 
     " molokai color scheme
     Bundle 'molokai'
-    
+
     " Syntax checking plugin for Vim {{{
     Bundle  'scrooloose/syntastic'
     " }}}
-    
+
     " Emmet (Zen Coding)
     Bundle('mattn/emmet-vim')
 
     " Vim Related Test - Switch from source to tests {{{
     Bundle 'wdalmut/vim-relatedtest'
     " }}}
-    
+
     " Finder for Vim {{{
     Bundle 'kien/ctrlp.vim'
     " }}}
-    
+
     " Vim Fugitive - Git Wrapper {{{
     Bundle 'tpope/vim-fugitive'
     " }}}
-    
+
     " Vim Golang - Go Language Support {{{
     Bundle 'jnwhiteh/vim-golang'
     " }}}
-    
+
     " Vim Json - Vim Json Support {{{
     Bundle 'elzr/vim-json' 
     " }}}
-    
+
 
     " Check if vundle bundles should be installed {{{
     if shouldInstallBundles == 1
@@ -100,13 +100,43 @@ else
     let g:syntastic_php_checkers=['php', 'phpcs', 'phpmd']
     let g:syntastic_javascript_checkers = ['jshint']
     " }}}
-    
+
+    " ctrl-p Configuration {{{
+    let g:ctrlp_custom_ignore = {
+      \ 'dir': '\v[\/](report|bin|cache|vendor|docs)$',
+      \ }  
+    " }}}
+
+
     " Motion keys for tabs ctrl+t <direction> {{{
     map <C-t><up> :tabr<cr>
     map <C-t><down> :tabl<cr>
     map <C-t><left> :tabp<cr>
     map <C-t><right> :tabn<cr>
     " }}}
+
+    " Unmap Arrow Keys {{{
+    no <down> <Nop>
+    no <left> <Nop>
+    no <right> <Nop>
+    no <up> <Nop>
+    ino <down> <Nop>
+    ino <left> <Nop>
+    ino <right> <Nop>
+    ino <up> <Nop>
+    vno <down> <Nop>
+    vno <left> <Nop>
+    vno <right> <Nop>
+    vno <up> <Nop>
+    " }}}
+
+    " Exit insert mode {{{
+    :inoremap jk <esc> 
+    " }}}
+
+    " Map Leader {{{
+    let mapleader = "," 
+    " }}} 
 
     " Color Scheme {{{
     colors molokai
@@ -123,7 +153,7 @@ else
         source $HOME/.vimrc.after
     endif
     " }}}
-    
+
     " Specific settings per Project {{{
     set exrc                                " Enable project specific .vimrc
     set secure                              " Enable secure mode

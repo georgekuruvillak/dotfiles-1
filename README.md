@@ -24,8 +24,12 @@ git clone https://github.com/fontanalorenzo/flvim
 ln -s flvim/.vimrc $HOME/.vimrc
 ```
 ## Keys
+
+### <leader>
+```,```
+
 ### Motion Keys
-```<C-t><direction>``` - Move to the tab at the specified direction
+```hjkl``` - Arrows are disabled
 
 ### Emmet
 ```<C-y>,``` - Expand Abbreviation action
@@ -35,6 +39,10 @@ ln -s flvim/.vimrc $HOME/.vimrc
 
 ### ctrl-p
 See [documentation](https://github.com/kien/ctrlp.vim/blob/master/readme.md)
+
+
+### Other keys
+```<C-y>,``` - Expand Abbreviation action
 
 ## Included Bundles
 - Molokai
