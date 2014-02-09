@@ -60,14 +60,14 @@ else
     Bundle 'tpope/vim-fugitive'
     " }}}
 
-    " Vim Golang - Go Language Support {{{
-    Bundle 'jnwhiteh/vim-golang'
+    " Vim Gocode - Go Language Support {{{
+    Bundle 'Blackrush/vim-gocode'
     " }}}
 
     " Vim Json - Vim Json Support {{{
     Bundle 'elzr/vim-json' 
     " }}}
-    
+
     " SuperTab - Completions with Tab {{{
     Bundle 'ervandew/supertab'
     " }}}
@@ -75,6 +75,9 @@ else
 
     " Check if vundle bundles should be installed {{{
     if shouldInstallBundles == 1
+        echo "~> Installing go autocompletion daemon" 
+        call system("go get -u github.com/nfs/gocode")  
+
         echo "~> Installing vundle bundles"
         :BundleInstall
     endif
@@ -107,8 +110,8 @@ else
 
     " ctrl-p Configuration {{{
     let g:ctrlp_custom_ignore = {
-      \ 'dir': '\v[\/](report|bin|cache|vendor|docs)$',
-      \ }  
+                \ 'dir': '\v[\/](report|bin|cache|vendor|docs)$',
+                \ }  
     " }}}
 
     " Enable OmniComplete {{{
