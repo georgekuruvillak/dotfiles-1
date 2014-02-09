@@ -52,6 +52,10 @@ else
     Bundle 'wdalmut/vim-relatedtest'
     " }}}
 
+    " phpcomplete.vim - PHP Autocompletion {{{
+    Bundle 'shawncplus/phpcomplete.vim'
+    " }}}
+
     " Finder for Vim {{{
     Bundle 'kien/ctrlp.vim'
     " }}}
@@ -75,9 +79,6 @@ else
 
     " Check if vundle bundles should be installed {{{
     if shouldInstallBundles == 1
-        echo "~> Installing go autocompletion daemon" 
-        call system("go get -u github.com/nfs/gocode")  
-
         echo "~> Installing vundle bundles"
         :BundleInstall
     endif
@@ -106,6 +107,7 @@ else
     let g:syntastic_php_phpcs_args="--report=csv --standard=PSR2"
     let g:syntastic_php_checkers=['php', 'phpcs', 'phpmd']
     let g:syntastic_javascript_checkers = ['jshint']
+    let g:syntastic_go_checkers = ['go', 'gofmt', 'golint'] 
     " }}}
 
     " ctrl-p Configuration {{{

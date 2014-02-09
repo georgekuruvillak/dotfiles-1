@@ -18,6 +18,12 @@ To work completely, flvim needs the followings available in your path:
 - Node
 - [JSHint](http://www.jshint.com/install/)
 
+**Go**
+- Go
+- [gofmt](http://golang.org/cmd/gofmt/)
+- [golint](https://github.com/golang/lint)
+- [gocode](https://github.com/nfs/gocode)
+
 ## Installation
 ```bash
 git clone https://github.com/fontanalorenzo/flvim
@@ -65,4 +71,4 @@ FLVim provides 3 files to put into your own configuration.
 flvim enables exrc so if you place an ```.exrc``` or ```.vimrc```  file in your project folder you override vim settings
 for that folder.
 
-**Warning**: exrc is enabled in secure mode, this will disable system calls and write operations in all project specific configurations.     
+**Warning**: exrc is enabled in secure mode, this will disable - system calls and write operations in all project specific configurations.     
