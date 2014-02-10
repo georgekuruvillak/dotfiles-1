@@ -57,6 +57,10 @@ else
     Bundle 'wdalmut/vim-relatedtest'
     " }}}
 
+    " Clang Complete - C/C++ Autocompletion {{{
+    Bundle 'Rip-Rip/clang_complete'
+    " }}}
+
     " phpcomplete.vim - PHP Autocompletion {{{
     Bundle 'shawncplus/phpcomplete.vim'
     " }}}
@@ -125,9 +129,10 @@ else
                 \ }  
     " }}}
 
-    " Enable OmniComplete {{{
+    " OmniComplete {{{
     filetype plugin on
     set omnifunc=syntaxcomplete#Complete
+    let g:clang_library_path = '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib'
     " }}}
 
 
