@@ -114,6 +114,10 @@ else
     " Map Leader {{{
     let mapleader = "," 
     " }}} 
+    
+    " 256 Colors {{{ 
+    set t_Co=256
+    " }}}
 
     " Synstastic Configuration {{{    
     let g:syntastic_always_populate_loc_list=1
@@ -132,7 +136,6 @@ else
     " OmniComplete {{{
     filetype plugin on
     set omnifunc=syntaxcomplete#Complete
-    let g:clang_library_path = '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib'
     " }}}
 
 

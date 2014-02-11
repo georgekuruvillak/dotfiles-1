@@ -69,6 +69,7 @@ See [documentation](https://github.com/kien/ctrlp.vim/blob/master/readme.md)
 - [vim-json](https://github.com/elzr/vim-json)
 - [supertab](https://github.com/ervandew/supertab)
 - [phpcomplete.vim](https://github.com/shawncplus/phpcomplete.vim)
+- [clang_complete](https://github.com/Rip-Rip/clang_complete)
 
 ## Customization
 FLVim provides 3 files to put into your own configuration.
@@ -79,5 +80,13 @@ FLVim provides 3 files to put into your own configuration.
 ## Per project vim settings
 flvim enables exrc so if you place an ```.exrc``` or ```.vimrc```  file in your project folder you override vim settings
 for that folder.
+
+## .vimrc.after
+Your `.vimrc.after` should configure the clang_library_path in order to work with clang_complete plugin
+
+```
+let g:clang_library_path='path/to/clang/library'
+```
+
 
 **Warning**: exrc is enabled in secure mode, this will disable - system calls and write operations in all project specific configurations.     
