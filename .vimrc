@@ -56,6 +56,10 @@ else
     " Vim Related Test - Switch from source to tests {{{
     Bundle 'wdalmut/vim-relatedtest'
     " }}}
+    
+    " NERDTree {{{
+    Bundle 'scrooloose/nerdtree'
+    " }}}
 
     " Clang Complete - C/C++ Autocompletion {{{
     Bundle 'Rip-Rip/clang_complete'
@@ -173,6 +177,16 @@ else
     nmap <Leader>x :TagbarToggle<CR> 
     " }}}
 
+
+    " NERDTree Configuration {{{
+    let NERDTreeQuitOnOpen=1                    " Automatically close NERDTree on file open
+    autocmd VimEnter * nmap <F3> :NERDTreeToggle<CR>
+    autocmd VimEnter * imap <F3><F3> <Esc>:NERDTreeToggle<CR>a
+    let NERDTreeQuitOnOpen=1
+    let NERDTreeWinSize=35
+    " }}}
+    
+    
     " Color Scheme {{{
     colors molokai
     set background=dark
