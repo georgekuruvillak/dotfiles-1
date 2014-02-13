@@ -52,7 +52,10 @@ To trigger autocompletion just hold down `tab`
 See [documentation](https://github.com/kien/ctrlp.vim/blob/master/readme.md)
 
 ### Tagbar
-```,x``` - Open tagbar
+```<Leader>x``` - Open tagbar
+
+### NERDTree
+```F3``` - Toggle NERDTree
 
 ### Other keys
 ```<C-y>,``` - Expand Abbreviation action
@@ -70,6 +73,7 @@ See [documentation](https://github.com/kien/ctrlp.vim/blob/master/readme.md)
 - [supertab](https://github.com/ervandew/supertab)
 - [phpcomplete.vim](https://github.com/shawncplus/phpcomplete.vim)
 - [clang_complete](https://github.com/Rip-Rip/clang_complete)
+- [NERDTree](https://github.com/scrooloose/nerdtree)
 
 ## Customization
 FLVim provides 3 files to put into your own configuration.
