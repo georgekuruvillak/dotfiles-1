@@ -110,11 +110,16 @@ else
     set smartindent                             " Smart autoindentation when starting a new line
     set shiftwidth=4                            " Number of spaces to use fo auto-indent 
     set tabstop=4                               " 4 spaces for tab
-    set expandtab                               " Spaces instead of tabs
     set rnu                                     " Show relative line numbers
     set splitbelow                              " Split panels to bottom
     set splitright                              " Split panels to right
 
+    " Expandtab {{{
+    if bufname("%") !~ '\.go$'
+        set expandtab
+    endif
+    " }}}
+  
     " Map Leader {{{
     let mapleader = "," 
     " }}} 
@@ -167,10 +172,6 @@ else
     vno <left> <Nop>
     vno <right> <Nop>
     vno <up> <Nop>
-    " }}}
-
-    " Exit insert mode {{{
-    :inoremap jk <esc> 
     " }}}
 
     " Toggle Tagbar {{{
