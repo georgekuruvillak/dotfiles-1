@@ -42,6 +42,10 @@ To trigger autocompletion just hold down `tab`
 ```hjkl``` - Arrows are disabled
 ```jk``` - Exit insert mode
 
+### Tabs
+```tn``` - Open a new empty tab
+```ctrl-t <direction>``` - Move between tabs
+
 ### Emmet
 ```<C-y>,``` - Expand Abbreviation action
 

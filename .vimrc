@@ -152,6 +152,10 @@ else
     let g:SuperTabDefaultCompletionType = "<C-X><C-O>" 
     " }}}
 
+    " Open a new tab {{{
+    nmap  tn :tabnew<cr>
+    " }}}
+
     " Motion keys for tabs ctrl+t <direction> {{{
     map <C-t><up> :tabr<cr>
     map <C-t><down> :tabl<cr>
