@@ -44,7 +44,7 @@ else
     " Syntax checking plugin for Vim {{{
     Bundle  'scrooloose/syntastic'
     " }}}
-    
+
     " Tagbar {{{
     Bundle 'majutsushi/tagbar'
     Bundle 'vim-php/tagbar-phpctags.vim'
@@ -56,7 +56,7 @@ else
     " Vim Related Test - Switch from source to tests {{{
     Bundle 'wdalmut/vim-relatedtest'
     " }}}
-    
+
     " NERDTree {{{
     Bundle 'scrooloose/nerdtree'
     " }}}
@@ -119,11 +119,11 @@ else
         set expandtab
     endif
     " }}}
-  
+
     " Map Leader {{{
     let mapleader = "," 
     " }}} 
-    
+
     " 256 Colors {{{ 
     set t_Co=256
     " }}}
@@ -152,15 +152,25 @@ else
     let g:SuperTabDefaultCompletionType = "<C-X><C-O>" 
     " }}}
 
-    " Open a new tab {{{
-    nmap  tn :tabnew<cr>
-    " }}}
-
     " Motion keys for tabs ctrl+t <direction> {{{
     map <C-t><up> :tabr<cr>
     map <C-t><down> :tabl<cr>
     map <C-t><left> :tabp<cr>
     map <C-t><right> :tabn<cr>
+    " }}}
+
+
+    " Splits movements ctrl+<direction>{{{ 
+    nnoremap <C-down> <C-W><C-J>
+    nnoremap <C-up> <C-W><C-K>
+    nnoremap <C-right> <C-W><C-L>
+    nnoremap <C-left> <C-W><C-H>
+    nnoremap <C-J> <C-W><C-J>
+    nnoremap <C-K> <C-W><C-K>
+    nnoremap <C-L> <C-W><C-L>
+    nnoremap <C-H> <C-W><C-H>
+    set splitbelow
+    set splitright
     " }}}
 
     " Unmap Arrow Keys {{{
@@ -190,8 +200,8 @@ else
     let NERDTreeQuitOnOpen=1
     let NERDTreeWinSize=35
     " }}}
-    
-    
+
+
     " Color Scheme {{{
     colors molokai
     set background=dark

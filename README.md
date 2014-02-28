@@ -42,8 +42,10 @@ To trigger autocompletion just hold down `tab`
 ```hjkl``` - Arrows are disabled
 
 ### Tabs
-```tn``` - Open a new empty tab
 ```ctrl-t <direction>``` - Move between tabs
+
+### Splits
+```ctrl-<direction>``` - Move between splits
 
 ### Emmet
 ```<C-y>,``` - Expand Abbreviation action
