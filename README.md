@@ -40,7 +40,6 @@ To trigger autocompletion just hold down `tab`
 
 ### Motion Keys
 ```hjkl``` - Arrows are disabled
-```jk``` - Exit insert mode
 
 ### Tabs
 ```tn``` - Open a new empty tab
