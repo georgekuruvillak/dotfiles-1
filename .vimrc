@@ -208,6 +208,10 @@ else
     let g:rehash256 = 1
     " }}}
 
+    " Enable cursor line {{{
+    set cursorline 
+    " }}}
+    
     " Backspace Options {{{
     set backspace+=start,eol,indent
     " }}}
