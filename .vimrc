@@ -89,6 +89,9 @@ else
     Bundle 'ervandew/supertab'
     " }}}
 
+    " Airline  {{{
+    Bundle 'bling/vim-airline'
+    " }}}
 
     " Check if vundle bundles should be installed {{{
     if shouldInstallBundles == 1
@@ -208,6 +211,11 @@ else
     let g:rehash256 = 1
     " }}}
 
+    " Airline  {{{
+    set laststatus=2
+    set ttimeoutlen=50
+    " }}}
+    
     " Enable cursor line {{{
     set cursorline 
     " }}}
