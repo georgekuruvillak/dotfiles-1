@@ -38,8 +38,8 @@ else
 
     " Default vundles {{{
 
-    " molokai color scheme
-    Bundle 'molokai'
+    " Tomorrow Theme
+    Bundle 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
 
     " Syntax checking plugin for Vim {{{
     Bundle  'scrooloose/syntastic'
@@ -206,7 +206,7 @@ else
 
 
     " Color Scheme {{{
-    colors molokai
+    color Tomorrow-Night
     set background=dark
     let g:rehash256 = 1
     " }}}

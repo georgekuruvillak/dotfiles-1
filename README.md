@@ -66,7 +66,7 @@ See [documentation](https://github.com/kien/ctrlp.vim/blob/master/readme.md)
 ```<C-y>,``` - Expand Abbreviation action
 
 ## Included Bundles
-- Molokai
+- [Tomorrow Theme](https://github.com/chriskempson/tomorrow-theme)
 - [Synstastic](https://github.com/scrooloose/syntastic)
 - [Emmet](https://github.com/mattn/emmet-vim)
 - [vim-relatedtest](https://github.com/wdalmut/vim-relatedtest)
