@@ -32,38 +32,38 @@ ln -s flvim/.vimrc $HOME/.vimrc
 ```
 ## Keys
 
-### <leader>
-The <leader> key is remapped to `,` 
+### leader
+The `<leader>` key is remapped to `,` 
 
 ### Autocompletion
 To trigger autocompletion just hold down `tab`
 
 ### Motion Keys
-```hjkl``` - Arrows are disabled
+`hjkl` - Arrows are disabled
 
 ### Tabs
-```ctrl-t <direction>``` - Move between tabs
+`ctrl-t <direction>` - Move between tabs
 
 ### Splits
-```ctrl-<direction>``` - Move between splits
+`ctrl-<direction>` - Move between splits
 
 ### Emmet
-```<C-y>,``` - Expand Abbreviation action
+`<C-y>,` - Expand Abbreviation action
 
 ### Vim Related Test
-```tt``` - Open the related test (right now it only works with PHP, Java and Golang projects)
+`tt` - Open the related test (right now it only works with PHP, Java and Golang projects)
 
 ### ctrl-p
 See [documentation](https://github.com/kien/ctrlp.vim/blob/master/readme.md)
 
 ### Tagbar
-```<Leader>x``` - Open tagbar
+`<Leader>x` - Open tagbar
 
 ### NERDTree
-```F3``` - Toggle NERDTree
+`F3` - Toggle NERDTree
 
 ### Other keys
-```<C-y>,``` - Expand Abbreviation action
+`<C-y>,` - Expand Abbreviation action
 
 ## Included Bundles
 - [Tomorrow Theme](https://github.com/chriskempson/tomorrow-theme)
@@ -82,12 +82,12 @@ See [documentation](https://github.com/kien/ctrlp.vim/blob/master/readme.md)
 
 ## Customization
 FLVim provides 3 files to put into your own configuration.
-- ```$HOME/.vimrc.after```    => Any configuration that will be overwritten by defaults and .vimrc.before
-- ```$HOME/.vimrc.before```   => Configurations that will overwrite default configurations and .vimrc.after
-- ```$HOME/.vimrc.vundles```  => Additiona Vundle Bundles to install 
+- `$HOME/.vimrc.after`    => Any configuration that will be overwritten by defaults and .vimrc.before
+- `$HOME/.vimrc.before`   => Configurations that will overwrite default configurations and .vimrc.after
+- `$HOME/.vimrc.vundles`  => Additiona Vundle Bundles to install 
 
 ## Per project vim settings
-flvim enables exrc so if you place an ```.exrc``` or ```.vimrc```  file in your project folder you override vim settings
+flvim enables exrc so if you place an `.exrc` or `.vimrc`  file in your project folder you override vim settings
 for that folder.
 
 ## .vimrc.after
