@@ -27,8 +27,8 @@ To work completely, flvim needs the followings available in your path:
 
 ## Installation
 ```bash
-git clone https://github.com/fontanalorenzo/flvim
-ln -s flvim/.vimrc $HOME/.vimrc
+git clone https://github.com/fontanalorenzo/flvim $HOME/.flvim && ln -s $HOME/.flvim/.vimrc $HOME/.vimrc
+
 ```
 ## Keys
 
