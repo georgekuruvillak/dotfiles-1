@@ -38,8 +38,9 @@ else
 
     " Default vundles {{{
 
-    " Tomorrow Theme
+    " Tomorrow Theme {{{
     Bundle 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
+    " }}}
 
     " Syntax checking plugin for Vim {{{
     Bundle  'scrooloose/syntastic'
@@ -47,7 +48,6 @@ else
 
     " Tagbar {{{
     Bundle 'majutsushi/tagbar'
-    Bundle 'vim-php/tagbar-phpctags.vim'
     " }}}
 
     " Emmet (Zen Coding)
@@ -73,20 +73,16 @@ else
     Bundle 'kien/ctrlp.vim'
     " }}}
 
-    " Vim Fugitive - Git Wrapper {{{
-    Bundle 'tpope/vim-fugitive'
+    " Vim Dispatch {{{
+    Bundle 'tpope/vim-dispatch'
     " }}}
-
+    
     " Vim Gocode - Go Language Support {{{
     Bundle 'Blackrush/vim-gocode'
     " }}}
 
     " Vim Json - Vim Json Support {{{
     Bundle 'elzr/vim-json' 
-    " }}}
-
-    " SuperTab - Completions with Tab {{{
-    Bundle 'ervandew/supertab'
     " }}}
 
     " Airline  {{{
@@ -202,6 +198,23 @@ else
     nmap <Leader>x :TagbarToggle<CR> 
     " }}}
 
+    " Autocomplete ctrl-space {{{
+    inoremap <expr> <C-Space> pumvisible() \|\| &omnifunc == '' ?
+                \ "\<lt>C-n>" :
+                \ "\<lt>C-x>\<lt>C-o><c-r>=pumvisible() ?" .
+                \ "\"\\<lt>c-n>\\<lt>c-p>\\<lt>c-n>\" :" .
+                \ "\" \\<lt>bs>\\<lt>C-n>\"\<CR>"
+    imap <C-@> <C-Space>
+    " }}}
+
+    " Generate PHPCTags {{{
+    function! GeneratePhpCTags()
+         silent call system('ctags -R --languages=PHP')
+         set tags=./tags
+    endfunction
+
+    map <C-o> :call GeneratePhpCTags()
+    " }}}
 
     " NERDTree Configuration {{{
     let NERDTreeQuitOnOpen=1                    " Automatically close NERDTree on file open
