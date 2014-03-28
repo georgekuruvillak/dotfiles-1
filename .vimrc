@@ -162,6 +162,13 @@ else
     map <C-t><right> :tabn<cr>
     " }}}
 
+    " Select all {{{
+    map <C-a> ggVG
+    " }}}
+
+    " Open tab {{{
+    map <C-t> :tabnew<cr> 
+    " }}}
 
     " Splits movements ctrl+<direction>{{{ 
     nnoremap <C-down> <C-W><C-J>
