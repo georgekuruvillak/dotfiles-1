@@ -206,14 +206,15 @@ else
                 \ "\" \\<lt>bs>\\<lt>C-n>\"\<CR>"
     imap <C-@> <C-Space>
     " }}}
+    
 
     " Generate PHPCTags {{{
     function! GeneratePhpCTags()
-         silent call system('ctags -R --languages=PHP')
+         Dispatch ctags -R --languages=PHP
          set tags=./tags
     endfunction
 
-    map <C-o> :call GeneratePhpCTags()
+    map <C-o> :call GeneratePhpCTags()<cr>
     " }}}
 
     " NERDTree Configuration {{{
