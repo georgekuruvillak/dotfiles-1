@@ -15,8 +15,10 @@ else
     for file in files
         if !filereadable($HOME . "/" . file) | call system("touch " . $HOME . "/" . file) | endif
     endfor
-    """ }}}
+    " }}}
+
     let shouldInstallBundles = 0
+
     " vundle setup {{{
     if !filereadable($HOME . "/.vim/bundle/vundle/README.md")
         echo "~≥ Installing Vundle \n"
