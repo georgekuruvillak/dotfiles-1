@@ -76,7 +76,7 @@ else
     " Vim Dispatch {{{
     Bundle 'tpope/vim-dispatch'
     " }}}
-    
+
     " Vim Gocode - Go Language Support {{{
     Bundle 'Blackrush/vim-gocode'
     " }}}
@@ -206,16 +206,38 @@ else
                 \ "\" \\<lt>bs>\\<lt>C-n>\"\<CR>"
     imap <C-@> <C-Space>
     " }}}
-    
+
+
+    " Go to definition {{{
+    map <Leader>d :tab split<CR>:exec("tag ".expand("<cword>"))<CR> " -> in a tab
+    map <Leader>ds :vsp <CR>:exec("tag ".expand("<cword>"))<CR> " -> in a vertical split 
+
+    " }}}
+
+
+    " Read an existing tags file {{{
+    if filereadable("tags")
+        set tags=tags
+    endif
+    " }}} 
 
     " Generate PHPCTags {{{
     function! GeneratePhpCTags()
-         Dispatch ctags -R --languages=PHP
-         set tags=./tags
+        Dispatch ctags -R --languages=PHP --append=yes
+        set tags=tags
     endfunction
 
-    map <C-o> :call GeneratePhpCTags()<cr>
+    map <Leader>c :call GeneratePhpCTags()<cr>
     " }}}
+
+    " PhpUnit {{{
+    function! PhpUnit()
+        Dispatch ./vendor/bin/phpunit
+    endfunction
+
+    map <Leader>t :cal PhpUnit()<cr>
+    " }}}
+
 
     " NERDTree Configuration {{{
     let NERDTreeQuitOnOpen=1                    " Automatically close NERDTree on file open
@@ -236,7 +258,7 @@ else
     set laststatus=2
     set ttimeoutlen=50
     " }}}
-    
+
     " Enable cursor line {{{
     set cursorline 
     " }}}
