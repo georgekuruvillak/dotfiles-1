@@ -148,11 +148,6 @@ else
     set omnifunc=syntaxcomplete#Complete
     " }}}
 
-
-    " SuperTab Configuration {{{
-    let g:SuperTabDefaultCompletionType = "<C-X><C-O>" 
-    " }}}
-
     " Motion keys for tabs ctrl+t <direction> {{{
     map <C-t><up> :tabr<cr>
     map <C-t><down> :tabl<cr>
