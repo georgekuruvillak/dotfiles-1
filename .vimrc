@@ -63,10 +63,6 @@ else
     Bundle 'scrooloose/nerdtree'
     " }}}
 
-    " Clang Complete - C/C++ Autocompletion {{{
-    Bundle 'Rip-Rip/clang_complete'
-    " }}}
-
     " phpcomplete.vim - PHP Autocompletion {{{
     Bundle 'shawncplus/phpcomplete.vim'
     " }}}
