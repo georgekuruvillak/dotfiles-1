@@ -192,7 +192,15 @@ else
     " }}}
 
     " Toggle Tagbar {{{
-    nmap <Leader>x :TagbarToggle<CR> 
+    nmap <Leader>b :TagbarToggle<cr> 
+    " }}}
+
+    " CtrlPTag {{{
+    nnoremap <Leader>. :CtrlPTag<cr>
+    " }}}
+
+    " Generate ctags {{{
+    nmap <Leader>c :Start! ctags -R .<cr>
     " }}}
 
     " Autocomplete ctrl-space {{{
@@ -218,23 +226,9 @@ else
     endif
     " }}} 
 
-    " Generate PHPCTags {{{
-    function! GeneratePhpCTags()
-        Dispatch ctags -R --languages=PHP --append=yes
-        set tags=tags
-    endfunction
-
-    map <Leader>c :call GeneratePhpCTags()<cr>
+    " Generate Ctags {{{
+    au BufWritePost *.c,*.cpp,*.h,*.php silent! !ctags -R &
     " }}}
-
-    " PhpUnit {{{
-    function! PhpUnit()
-        Dispatch ./vendor/bin/phpunit
-    endfunction
-
-    map <Leader>t :cal PhpUnit()<cr>
-    " }}}
-
 
     " NERDTree Configuration {{{
     let NERDTreeQuitOnOpen=1                    " Automatically close NERDTree on file open
