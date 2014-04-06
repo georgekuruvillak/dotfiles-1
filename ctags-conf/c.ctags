@@ -3,4 +3,4 @@
 --exclude=.git
 --c++-kinds=+p 
 --fields=+iaS 
---extra=+q /usr/include
+--extra=+q

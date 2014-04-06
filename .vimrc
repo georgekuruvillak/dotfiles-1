@@ -199,6 +199,18 @@ else
     nmap <Leader>c :Start! ctags -R .<cr>
     " }}}
 
+    " add /usr/include tags if is a c/cpp file {{{ 
+    autocmd BufNewFile,BufRead *.c,*.cpp,*.h set tags+=/usr/include/tags
+    " }}}
+
+    " Generate ctags while editing {{{
+    autocmd BufWritePost * if filereadable('tags') | call system('ctags -a '.expand('%')) | endif 
+    " }}}
+
+    " Open file under cursor in a new tab {{{
+    nmap gf <c-w>f
+    " }}}
+
     " Autocomplete ctrl-space {{{
     inoremap <expr> <C-Space> pumvisible() \|\| &omnifunc == '' ?
                 \ "\<lt>C-n>" :
@@ -221,10 +233,6 @@ else
         set tags=tags
     endif
     " }}} 
-
-    " Generate Ctags {{{
-    au BufWritePost *.c,*.cpp,*.h,*.php silent! !ctags -R &
-    " }}}
 
     " NERDTree Configuration {{{
     let NERDTreeQuitOnOpen=1                    " Automatically close NERDTree on file open
