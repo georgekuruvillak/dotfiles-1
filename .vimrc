@@ -195,6 +195,10 @@ else
     nnoremap <Leader>. :CtrlPTag<cr>
     " }}}
 
+    " Open file under cursor {{{
+    nmap <Leader>f <C-w>gf
+    " }}}
+
     " Generate ctags {{{
     nmap <Leader>c :Start! ctags -R .<cr>
     " }}}
