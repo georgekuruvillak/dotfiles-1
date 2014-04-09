@@ -48,6 +48,10 @@ else
     Bundle  'scrooloose/syntastic'
     " }}}
 
+    " NERDCommenter {{{
+    Bundle 'scrooloose/nerdcommenter' 
+    " }}}
+
     " Tagbar {{{
     Bundle 'majutsushi/tagbar'
     " }}}
@@ -111,7 +115,7 @@ else
     set splitbelow                              " Split panels to bottom
     set splitright                              " Split panels to right
 
-    " Expandtab {{{
+    " Expandtab in go {{{
     if bufname("%") !~ '\.go$'
         set expandtab
     endif
@@ -145,29 +149,26 @@ else
     " }}}
 
     " Motion keys for tabs ctrl+t <direction> {{{
-    map <C-t><up> :tabr<cr>
-    map <C-t><down> :tabl<cr>
-    map <C-t><left> :tabp<cr>
-    map <C-t><right> :tabn<cr>
+    map <C-up> :tabr<cr>
+    map <C-down> :tabl<cr>
+    map <C-right> :tabp<cr>
+    map <C-left> :tabn<cr>
     " }}}
+
+    " Open tab {{{
+    map <C-t>t :tabnew<cr> 
+    " }}}
+
 
     " Select all {{{
     map <C-a> ggVG
     " }}}
 
-    " Open tab {{{
-    map <C-t> :tabnew<cr> 
-    " }}}
-
-    " Splits movements ctrl+<direction>{{{ 
-    nnoremap <C-down> <C-W><C-J>
-    nnoremap <C-up> <C-W><C-K>
-    nnoremap <C-right> <C-W><C-L>
-    nnoremap <C-left> <C-W><C-H>
-    nnoremap <C-J> <C-W><C-J>
-    nnoremap <C-K> <C-W><C-K>
-    nnoremap <C-L> <C-W><C-L>
-    nnoremap <C-H> <C-W><C-H>
+    " Splits movements ctrl+s <direction>{{{ 
+    nmap <silent> <c-k> :wincmd k<CR>                                                                                                                       
+    nmap <silent> <c-j> :wincmd j<CR>                                                                                                                       
+    nmap <silent> <c-h> :wincmd h<CR>                                                                                                                       
+    nmap <silent> <c-l> :wincmd l<CR> 
     set splitbelow
     set splitright
     " }}}
@@ -177,7 +178,6 @@ else
     no <left> <Nop>
     no <right> <Nop>
     no <up> <Nop>
-    ino <down> <Nop>
     ino <left> <Nop>
     ino <right> <Nop>
     ino <up> <Nop>
@@ -200,7 +200,7 @@ else
     " }}}
 
     " Generate ctags {{{
-    nmap <Leader>c :Start! ctags -R .<cr>
+    nmap <Leader>t :Start! ctags -R .<cr>
     " }}}
 
     " add /usr/include tags if is a c/cpp file {{{ 
@@ -244,6 +244,7 @@ else
     autocmd VimEnter * imap <F3><F3> <Esc>:NERDTreeToggle<CR>a
     let NERDTreeQuitOnOpen=1
     let NERDTreeWinSize=35
+    let NERDTreeShowHidden=1
     " }}}
 
 
@@ -260,6 +261,10 @@ else
 
     " Enable cursor line {{{
     set cursorline 
+    " }}}
+
+    " Enable modeline {{{
+    set modeline
     " }}}
 
     " Backspace Options {{{
