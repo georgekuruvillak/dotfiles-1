@@ -112,8 +112,6 @@ else
     set shiftwidth=4                            " Number of spaces to use fo auto-indent 
     set tabstop=4                               " 4 spaces for tab
     set rnu                                     " Show relative line numbers
-    set splitbelow                              " Split panels to bottom
-    set splitright                              " Split panels to right
 
     " Expandtab in go {{{
     if bufname("%") !~ '\.go$'
@@ -149,10 +147,10 @@ else
     " }}}
 
     " Motion keys for tabs ctrl+t <direction> {{{
-    map <C-up> :tabr<cr>
-    map <C-down> :tabl<cr>
-    map <C-right> :tabp<cr>
-    map <C-left> :tabn<cr>
+    nmap <C-t><up> :tabr<cr>
+    nmap <C-t><down> :tabl<cr>
+    nmap <C-t><right> :tabp<cr>
+    nmap <C-t><left> :tabn<cr>
     " }}}
 
     " Open tab {{{
@@ -234,15 +232,14 @@ else
 
     " Read an existing tags file {{{
     if filereadable("tags")
-        set tags=tags
+        set tags+=tags
     endif
     " }}} 
 
     " NERDTree Configuration {{{
-    let NERDTreeQuitOnOpen=1                    " Automatically close NERDTree on file open
+    "let NERDTreeQuitOnOpen=1                    " Automatically close NERDTree on file open
     autocmd VimEnter * nmap <F3> :NERDTreeToggle<CR>
     autocmd VimEnter * imap <F3><F3> <Esc>:NERDTreeToggle<CR>a
-    let NERDTreeQuitOnOpen=1
     let NERDTreeWinSize=35
     let NERDTreeShowHidden=1
     " }}}
