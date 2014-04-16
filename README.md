@@ -57,13 +57,19 @@ To trigger autocompletion just hold down `tab`
 See [documentation](https://github.com/kien/ctrlp.vim/blob/master/readme.md)
 
 ### Tagbar
-`<Leader>x` - Open tagbar
+`<Leader>b` - Open tagbar
 
 ### NERDTree
 `F3` - Toggle NERDTree
 
+### NERDCommenter
+See [documentation](https://github.com/scrooloose/nerdcommenter/blob/master/README.md)
+
 ### Other keys
 `<C-y>,` - Expand Abbreviation action
+`F4` - Highlight searched term
+`F5` - Go to the next occurence
+`<Leader>t` - Generate ctags
 
 ## Included Bundles
 - [Tomorrow Theme](https://github.com/chriskempson/tomorrow-theme)
@@ -73,12 +79,10 @@ See [documentation](https://github.com/kien/ctrlp.vim/blob/master/readme.md)
 - [vim-gocode](https://github.com/Blackrush/vim-gocode)
 - [ctrlp.vim](https://github.com/kien/ctrlp.vim)
 - [tagbar](https://github.com/majutsushi/tagbar)
-- [tagbar-phpctags](https://github.com/vim-php/tagbar-phpctags.vim)
 - [vim-json](https://github.com/elzr/vim-json)
-- [supertab](https://github.com/ervandew/supertab)
-- [phpcomplete.vim](https://github.com/shawncplus/phpcomplete.vim)
-- [clang_complete](https://github.com/Rip-Rip/clang_complete)
 - [NERDTree](https://github.com/scrooloose/nerdtree)
+- [NERDCommenter](https://github.com/scrooloose/nerdcommenter)
+- [Airline](https://github.com/bling/vim-airline)
 
 ## Customization
 FLVim provides 3 files to put into your own configuration.
@@ -89,13 +93,5 @@ FLVim provides 3 files to put into your own configuration.
 ## Per project vim settings
 flvim enables exrc so if you place an `.exrc` or `.vimrc`  file in your project folder you override vim settings
 for that folder.
-
-## .vimrc.after
-Your `.vimrc.after` should configure the clang_library_path in order to work with clang_complete plugin
-
-```
-let g:clang_library_path='path/to/clang/library'
-```
-
 
 **Warning**: exrc is enabled in secure mode, this will disable - system calls and write operations in all project specific configurations.     

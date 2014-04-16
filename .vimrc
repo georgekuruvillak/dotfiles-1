@@ -245,6 +245,14 @@ else
     " }}}
 
 
+    " hlsearch {{{
+    nmap <F4> :set hls!<CR>:set hls?<CR>  
+    " }}}
+
+    " Go to next occurence {{{
+    nmap <F5> ]<tab>
+    " }}}
+
     " Color Scheme {{{
     color Tomorrow-Night
     set background=dark
