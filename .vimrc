@@ -157,11 +157,6 @@ else
     map <C-t>t :tabnew<cr> 
     " }}}
 
-
-    " Select all {{{
-    map <C-a> ggVG
-    " }}}
-
     " Splits movements ctrl+s <direction>{{{ 
     nmap <silent> <c-k> :wincmd k<CR>                                                                                                                       
     nmap <silent> <c-j> :wincmd j<CR>                                                                                                                       
