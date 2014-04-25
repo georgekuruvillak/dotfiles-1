@@ -248,6 +248,20 @@ else
     nmap <F5> ]<tab>
     " }}}
 
+
+    " Buffers {{{
+
+    " Autocomplete buffer name
+    set wildchar=<Tab> wildmenu wildmode=full
+
+    map <Leader>1 :bprev<Return>
+    map <Leader>2 :bnext<Return>
+
+    " Buffer name in status line 
+    set laststatus=2 statusline=%02n:%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
+    " }}}
+
+
     " Color Scheme {{{
     color Tomorrow-Night
     set background=dark
