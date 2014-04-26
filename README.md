@@ -62,6 +62,10 @@ See [documentation](https://github.com/kien/ctrlp.vim/blob/master/readme.md)
 ### NERDTree
 `F3` - Toggle NERDTree
 
+### Buffers
+`<Leader>1` - Previous buffer
+`<Leader>2` - Next buffer
+
 ### NERDCommenter
 See [documentation](https://github.com/scrooloose/nerdcommenter/blob/master/README.md)
 
