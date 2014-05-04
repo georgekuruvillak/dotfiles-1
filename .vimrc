@@ -99,7 +99,7 @@ else
     Bundle 'SirVer/ultisnips'
     Bundle 'honza/vim-snippets'
     " }}}
-
+   
     " Check if vundle bundles should be installed {{{
     if shouldInstallBundles == 1
         echo "~> Installing vundle bundles"
@@ -171,6 +171,12 @@ else
     nmap <silent> <c-l> :wincmd l<CR> 
     set splitbelow
     set splitright
+    " }}}
+
+    " Split Resizing {{{
+    map + :vertical resize +5<cr>
+    map - :vertical resize -5<cr>
+    map = <c-w>=
     " }}}
 
     " Unmap Arrow Keys {{{
@@ -283,7 +289,7 @@ else
     let g:UltiSnipsExpandTrigger="<c-j>" 
     let g:snips_author="Lorenzo Fontana <fontanalorenzo@me.com>"
     " }}}
-
+    
     " Color Scheme {{{
     color Tomorrow-Night
     set background=dark
