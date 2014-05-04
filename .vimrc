@@ -146,15 +146,13 @@ else
     set omnifunc=syntaxcomplete#Complete
     " }}}
 
-    " Motion keys for tabs ctrl+t <direction> {{{
-    nmap <C-t><up> :tabr<cr>
-    nmap <C-t><down> :tabl<cr>
-    nmap <C-t><right> :tabp<cr>
-    nmap <C-t><left> :tabn<cr>
+    " Motion keys for tabs Leader+t <direction> {{{
+    nmap <Leader>t1 :tabp<cr>
+    nmap <Leader>t2 :tabn<cr>
     " }}}
 
     " Open tab {{{
-    map <C-t>t :tabnew<cr> 
+    map <Leader>tt :tabnew<cr> 
     " }}}
 
     " Splits movements ctrl+s <direction>{{{ 
@@ -193,7 +191,7 @@ else
     " }}}
 
     " Generate ctags {{{
-    nmap <Leader>t :Start! ctags -R .<cr>
+    nmap <C-t> :Start! ctags -R .<cr>
     " }}}
 
     " add /usr/include tags if is a c/cpp file {{{ 
