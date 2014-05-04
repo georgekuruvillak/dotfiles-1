@@ -94,6 +94,11 @@ else
     " Airline  {{{
     Bundle 'bling/vim-airline'
     " }}}
+    
+    " UltiSnips {{{
+    Bundle 'SirVer/ultisnips'
+    Bundle 'honza/vim-snippets'
+    " }}}
 
     " Check if vundle bundles should be installed {{{
     if shouldInstallBundles == 1
@@ -266,8 +271,17 @@ else
     " YCM Options {{{
     let g:ycm_collect_identifiers_from_tags_files = 1
     let g:ycm_seed_identifiers_with_syntax = 1
+    let g:ycm_always_populate_location_list = 1
+    let g:ycm_autoclose_preview_window_after_completion = 1
     let g:ycm_auto_trigger = 1
     let g:ycm_collect_identifiers_from_comments_and_strings = 1
+    let g:ycm_complete_in_comments = 1
+    let g:ycm_complete_in_strings = 1
+    " }}}
+
+    " UltiSnips {{{
+    let g:UltiSnipsExpandTrigger="<c-j>" 
+    let g:snips_author="Lorenzo Fontana <fontanalorenzo@me.com>"
     " }}}
 
     " Color Scheme {{{
