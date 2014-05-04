@@ -99,6 +99,10 @@ else
     Bundle 'SirVer/ultisnips'
     Bundle 'honza/vim-snippets'
     " }}}
+
+    " Vdebug {{{
+    Bundle 'joonty/vdebug.git'
+    " }}}
    
     " Check if vundle bundles should be installed {{{
     if shouldInstallBundles == 1
