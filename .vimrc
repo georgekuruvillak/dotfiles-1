@@ -67,6 +67,10 @@ else
     Bundle 'scrooloose/nerdtree'
     " }}}
 
+    " YCM {{{
+    Bundle 'Valloric/YouCompleteMe'
+    " }}}
+
     " phpcomplete.vim - PHP Autocompletion {{{
     Bundle 'shawncplus/phpcomplete.vim'
     " }}}
@@ -259,6 +263,12 @@ else
     set laststatus=2 statusline=%02n:%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
     " }}}
 
+    " YCM Options {{{
+    let g:ycm_collect_identifiers_from_tags_files = 1
+    let g:ycm_seed_identifiers_with_syntax = 1
+    let g:ycm_auto_trigger = 1
+    let g:ycm_collect_identifiers_from_comments_and_strings = 1
+    " }}}
 
     " Color Scheme {{{
     color Tomorrow-Night
