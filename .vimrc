@@ -65,6 +65,7 @@ else
 
     " NERDTree {{{
     Bundle 'scrooloose/nerdtree'
+    Bundle 'jistr/vim-nerdtree-tabs'
     " }}}
 
     " YCM {{{
@@ -159,13 +160,9 @@ else
     set omnifunc=syntaxcomplete#Complete
     " }}}
 
-    " Motion keys for tabs Leader+t <direction> {{{
-    nmap <Leader>t1 :tabp<cr>
-    nmap <Leader>t2 :tabn<cr>
-    " }}}
-
-    " Open tab {{{
-    map <Leader>tt :tabnew<cr> 
+    " Motion keys for tabs {{{
+    nmap <Leader>1 :tabp<cr>
+    nmap <Leader>2 :tabn<cr>
     " }}}
 
     " Splits movements ctrl+s <direction>{{{ 
@@ -250,7 +247,7 @@ else
 
     " NERDTree Configuration {{{
     "let NERDTreeQuitOnOpen=1                    " Automatically close NERDTree on file open
-    autocmd VimEnter * nmap <F3> :NERDTreeToggle<CR>
+    autocmd VimEnter * nmap <F3> :NERDTreeTabsToggle<CR>
     autocmd VimEnter * imap <F3><F3> <Esc>:NERDTreeToggle<CR>a
     let NERDTreeWinSize=35
     let NERDTreeShowHidden=1
@@ -271,8 +268,8 @@ else
     " Autocomplete buffer name
     set wildchar=<Tab> wildmenu wildmode=full
 
-    map <Leader>1 :bprev<Return>
-    map <Leader>2 :bnext<Return>
+    map <Leader>b1 :bprev<Return>
+    map <Leader>b2 :bnext<Return>
 
     " Buffer name in status line 
     set laststatus=2 statusline=%02n:%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
