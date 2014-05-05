@@ -314,6 +314,12 @@ else
     " Backspace Options {{{
     set backspace+=start,eol,indent
     " }}}
+    
+    " Autocomplete improvements
+    " from: http://vim.wikia.com/wiki/Make_Vim_completion_popup_menu_work_just_like_in_an_IDE {{{
+    set completeopt=longest,menuone
+    inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>" 
+    " }}}
 
     " .vimrc.after will overwrite anything above {{{
     if filereadable($HOME."/.vimrc.after")
