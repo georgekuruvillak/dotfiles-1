@@ -104,6 +104,11 @@ else
     " Vdebug {{{
     Bundle 'joonty/vdebug.git'
     " }}}
+ 
+
+    " Gundo {{{
+    Bundle 'sjl/gundo.vim'
+    " }}}
    
     " Check if vundle bundles should be installed {{{
     if shouldInstallBundles == 1
@@ -218,10 +223,6 @@ else
     autocmd BufWritePost * if filereadable('tags') | call system('ctags -a '.expand('%')) | endif 
     " }}}
 
-    " Open file under cursor in a new tab {{{
-    nmap gf <c-w>f
-    " }}}
-
     " Autocomplete ctrl-space {{{
     inoremap <expr> <C-Space> pumvisible() \|\| &omnifunc == '' ?
                 \ "\<lt>C-n>" :
@@ -258,13 +259,8 @@ else
     nmap <F4> :set hls!<CR>:set hls?<CR>  
     " }}}
 
-    " Go to next occurence {{{
-    nmap <F5> ]<tab>
-    " }}}
-
 
     " Buffers {{{
-
     " Autocomplete buffer name
     set wildchar=<Tab> wildmenu wildmode=full
 
@@ -273,6 +269,7 @@ else
 
     " Buffer name in status line 
     set laststatus=2 statusline=%02n:%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
+    " }}}
     " }}}
 
     " YCM Options {{{
@@ -290,7 +287,11 @@ else
     let g:UltiSnipsExpandTrigger="<c-j>" 
     let g:snips_author="Lorenzo Fontana <fontanalorenzo@me.com>"
     " }}}
-    
+
+    " Gundo {{{
+    nnoremap <Leader>g :GundoToggle<CR>
+    " }}}
+
     " Color Scheme {{{
     color Tomorrow-Night
     set background=dark
