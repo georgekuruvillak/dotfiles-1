@@ -76,6 +76,10 @@ else
     Bundle 'shawncplus/phpcomplete.vim'
     " }}}
 
+    " php namespaces {{{
+    Bundle 'arnaud-lb/vim-php-namespace'
+    " }}}
+
     " Finder for Vim {{{
     Bundle 'kien/ctrlp.vim'
     " }}}
@@ -321,6 +325,11 @@ else
 
     " Gundo {{{
     nnoremap <Leader>g :GundoToggle<CR>
+    " }}}
+
+    " Autocomplete use PHP {{{
+    inoremap <Leader>u <C-O>:call PhpInsertUse()<CR>
+    noremap <Leader>u :call PhpInsertUse()<CR>
     " }}}
 
     " Color Scheme {{{
