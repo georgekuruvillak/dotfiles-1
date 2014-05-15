@@ -334,7 +334,7 @@ else
 
     " Color Scheme {{{
     " color Tomorrow-Night
-    color Tomorrow
+    color Tomorrow-Night
     " set background=dark
     let g:rehash256 = 1
     " }}}
