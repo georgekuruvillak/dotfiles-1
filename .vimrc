@@ -91,6 +91,10 @@ else
     " Vim Gocode - Go Language Support {{{
     Bundle 'Blackrush/vim-gocode'
     " }}}
+    
+    " Godef {{{
+    Bundle 'dgryski/vim-godef'
+    " }}}
 
     " Vim Json - Vim Json Support {{{
     Bundle 'elzr/vim-json' 
