@@ -338,10 +338,16 @@ else
 
     " Color Scheme {{{
     " color Tomorrow-Night
-    color Tomorrow-Night
+    color Tomorrow
     " set background=dark
     let g:rehash256 = 1
     " }}}
+
+    if has("gui_running")
+        if has("gui_gnome") 
+            set guifont=Consolas\ 12
+        endif
+    endif 
 
     " Airline  {{{
     set laststatus=2
