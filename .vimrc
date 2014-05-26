@@ -167,7 +167,12 @@ else
         \ }
     " }}}
 
-
+    " Natural copy and paste {{{
+    vmap <C-c> "+yi
+    vmap <C-x> "+c
+    vmap <C-v> c<ESC>"+p
+    imap <C-v> <C-r><C-o>+
+    " }}}
     " hlsearch {{{
     nmap <F4> :set hls!<CR>:set hls?<CR>  
     " }}}
@@ -212,9 +217,9 @@ else
     " }}}
 
     " Color Scheme {{{
-    " color Tomorrow-Night
-    color Tomorrow
-    " set background=dark
+    color Tomorrow-Night
+    "color Tomorrow
+    set background=dark
     let g:rehash256 = 1
     " }}}
 
