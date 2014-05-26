@@ -1,9 +1,9 @@
 # FLVim
-This is a super easy *vim* configuration. 
+This is my own *vim* configuration. 
 
 
 ##Requirements
-To work completely, flvim needs the followings available in your path:
+To work, flvim needs the followings available in your path:
 ### Required
 - GIT
 
@@ -72,7 +72,7 @@ See [documentation](https://github.com/scrooloose/nerdcommenter/blob/master/READ
 `<C-y>,` - Expand Abbreviation action
 `F4` - Highlight searched term
 `F5` - Go to the next occurence
-`<Leader>t` - Generate ctags
+`<C-t>` - Generate ctags
 
 ## Included Bundles
 - [Tomorrow Theme](https://github.com/chriskempson/tomorrow-theme)
@@ -86,12 +86,6 @@ See [documentation](https://github.com/scrooloose/nerdcommenter/blob/master/READ
 - [NERDTree](https://github.com/scrooloose/nerdtree)
 - [NERDCommenter](https://github.com/scrooloose/nerdcommenter)
 - [Airline](https://github.com/bling/vim-airline)
-
-## Customization
-FLVim provides 3 files to put into your own configuration.
-- `$HOME/.vimrc.after`    => Any configuration that will be overwritten by defaults and .vimrc.before
-- `$HOME/.vimrc.before`   => Configurations that will overwrite default configurations and .vimrc.after
-- `$HOME/.vimrc.vundles`  => Additiona Vundle Bundles to install 
 
 ## Per project vim settings
 flvim enables exrc so if you place an `.exrc` or `.vimrc`  file in your project folder you override vim settings
