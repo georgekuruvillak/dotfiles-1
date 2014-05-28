@@ -11,22 +11,21 @@ else
     " Configuration
     filetype plugin indent on
     syntax on
+    set autoindent                              " Enable autoindent
     set smartindent                             " Smart autoindentation when starting a new line
     set shiftwidth=4                            " Number of spaces to use fo auto-indent 
     set tabstop=4                               " 4 spaces for tab
     set rnu                                     " Show relative line numbers
+    set cursorline                              " Enable Cursor line
+    set modeline                                " Enable Modeline
+    set backspace+=start,eol,indent             " Fix backspace
+    set t_Co=256                                " 256 Colors
+    let mapleader = ","                         " Remap leader
 
     " Expandtab in go {{{
     if bufname("%") !~ '\.go$'
         set expandtab
     endif
-    " }}}
-
-    " Map Leader {{{
-    let mapleader = "," 
-    " }}} 
-    " 256 Colors {{{ 
-    set t_Co=256
     " }}}
 
     " Synstastic Configuration {{{    
@@ -234,18 +233,6 @@ else
     set ttimeoutlen=50
     " }}}
 
-    " Enable cursor line {{{
-    set cursorline 
-    " }}}
-
-    " Enable modeline {{{
-    set modeline
-    " }}}
-
-    " Backspace Options {{{
-    set backspace+=start,eol,indent
-    " }}}
-    
     " Autocomplete improvements
     " from: http://vim.wikia.com/wiki/Make_Vim_completion_popup_menu_work_just_like_in_an_IDE {{{
     set completeopt=longest,menuone
