@@ -64,6 +64,9 @@ See [documentation](https://github.com/kien/ctrlp.vim/blob/master/readme.md)
 ### Gundo
 `<Leader>g` - Show undo states
 
+### Indentation guides
+`<Leader>ig` - Toggle indentation guides
+
 ### Buffers
 `<Leader>1` - Previous tab
 `<Leader>2` - Next tab

@@ -92,6 +92,10 @@ Bundle 'joonty/vdebug.git'
 Bundle 'sjl/gundo.vim'
 " }}}
 
+" Indentation Guides {{{
+Bundle 'nathanaelkane/vim-indent-guides'
+" }}}
+
 " Check if vundle bundles should be installed {{{
 if shouldInstallBundles == 1
     echo "~> Installing vundle bundles"
