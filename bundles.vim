@@ -96,6 +96,10 @@ Bundle 'sjl/gundo.vim'
 Bundle 'nathanaelkane/vim-indent-guides'
 " }}}
 
+" Hacklang support {{{
+Bundle 'hhvm/vim-hack'
+" }}}
+
 " Check if vundle bundles should be installed {{{
 if shouldInstallBundles == 1
     echo "~> Installing vundle bundles"
