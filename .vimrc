@@ -52,19 +52,13 @@ else
     nmap <Leader>2 :tabn<cr>
     " }}}
 
-    " Splits movements ctrl+s <direction>{{{ 
+    " Splits movements ctrl+<direction>{{{ 
     nmap <silent> <c-k> :wincmd k<CR>                                                                                                                       
     nmap <silent> <c-j> :wincmd j<CR>                                                                                                                       
     nmap <silent> <c-h> :wincmd h<CR>                                                                                                                       
     nmap <silent> <c-l> :wincmd l<CR> 
     set splitbelow
     set splitright
-    " }}}
-
-    " Split Resizing {{{
-    map + :vertical resize +5<cr>
-    map - :vertical resize -5<cr>
-    map = <c-w>=
     " }}}
 
     " Unmap Arrow Keys {{{
@@ -81,6 +75,11 @@ else
     vno <up> <Nop>
     " }}}
 
+    " Tab Indent and Shift Tab Reverse indent {{{
+    vmap <Tab> >gv
+    vmap <S-Tab> <gv
+    " }}}
+
     " Toggle Tagbar {{{
     nmap <Leader>b :TagbarToggle<cr> 
     " }}}
@@ -95,6 +94,10 @@ else
 
     " Generate ctags {{{
     nmap <C-t> :Start! ctags -R .<cr>
+    " }}}
+
+    " Delete current file {{{
+    nmap <leader>rm call delete(expand('%')) | bdelete!
     " }}}
 
     " add /usr/include tags if is a c/cpp file {{{ 
@@ -231,13 +234,6 @@ else
     " Airline  {{{
     set laststatus=2
     set ttimeoutlen=50
-    " }}}
-
-    " Xdebug Trigger {{{
-    func! Xdebug()
-    call system('export XDEBUG_CONFIG="idekey=xdebug"')
-    call system('/usr/local/bin/php -dxdebug.remote_enable=1 -dxdebug.remote_mode=req -dxdebug.remote_port=9000 -dxdebug.remote_host=127.0.0.1 test.php')
-    endfun
     " }}}
 
     " Autocomplete improvements
