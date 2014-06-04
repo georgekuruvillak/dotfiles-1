@@ -96,9 +96,6 @@ else
     nmap <C-t> :Start! ctags -R .<cr>
     " }}}
 
-    " Delete current file {{{
-    nmap <leader>rm call delete(expand('%')) | bdelete!
-    " }}}
 
     " add /usr/include tags if is a c/cpp file {{{ 
     autocmd BufNewFile,BufRead *.c,*.cpp,*.h set tags+=/usr/include/tags
