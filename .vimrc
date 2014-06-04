@@ -233,6 +233,13 @@ else
     set ttimeoutlen=50
     " }}}
 
+    " Xdebug Trigger {{{
+    func! Xdebug()
+    call system('export XDEBUG_CONFIG="idekey=xdebug"')
+    call system('/usr/local/bin/php -dxdebug.remote_enable=1 -dxdebug.remote_mode=req -dxdebug.remote_port=9000 -dxdebug.remote_host=127.0.0.1 test.php')
+    endfun
+    " }}}
+
     " Autocomplete improvements
     " from: http://vim.wikia.com/wiki/Make_Vim_completion_popup_menu_work_just_like_in_an_IDE {{{
     set completeopt=longest,menuone
