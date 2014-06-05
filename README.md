@@ -1,6 +1,11 @@
-# Dotfiles
+## Dotfiles
 
-## Installation
+### Installation
 
-`bash <(curl -fsSL http://goo.gl/LR00HJ)`
+```
+bash <(curl -fsSL https://goo.gl/LR00HJ)
+```
 
+### Related README's
+
+- [.vimrc README](/vim/README.md)

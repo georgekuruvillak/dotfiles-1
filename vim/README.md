@@ -1,9 +1,9 @@
-# FLVim
+# .vimrc
 This is my own *vim* configuration. 
 
 
 ##Requirements
-To work, flvim needs the followings available in your path:
+To work, this needs the followings available in your path:
 ### Required
 - GIT
 
@@ -24,11 +24,6 @@ To work, flvim needs the followings available in your path:
 - [golint](https://github.com/golang/lint)
 - [gocode](https://github.com/nsf/gocode)
 
-## Installation
-```bash
-git clone https://github.com/majinbuu/flvim $HOME/.flvim && ln -s $HOME/.flvim/.vimrc $HOME/.vimrc
-
-```
 ## Keys
 
 ### leader
@@ -99,7 +94,7 @@ See [documentation](https://github.com/scrooloose/nerdcommenter/blob/master/READ
 - [UltiSnips](https://github.com/SirVer/ultisnips) 
 
 ## Project vim settings
-flvim enables exrc so if you place an `.exrc` or `.vimrc`  file in your project folder you override vim settings
+This configuretion enables exrc so if you place an `.exrc` or `.vimrc`  file in your project folder you override vim settings
 for that folder.
 
 **Warning**: exrc is enabled in secure mode, this will disable - system calls and write operations in all project specific configurations.     
