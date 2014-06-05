@@ -43,6 +43,10 @@ else
                 \ }  
     " }}}
 
+    " Copy and paste to/from system clipboard {{{
+    map <leader>y "+y
+    map <leader>p "+p
+    " }}}
 
     " Motion keys for tabs {{{
     nmap <Leader>1 :tabp<cr>
