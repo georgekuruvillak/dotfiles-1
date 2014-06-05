@@ -2,11 +2,11 @@ set nocompatible " be iMproved
 
 " Check if git is available and if vundle is already installed  {{{
 if executable("git") != 1 && !filereadable($HOME."/.vim/bundle/vundle/README.md")
-    echo "GIT is required to configure flvim:"
+    echo "GIT is required to install bundles:"
 
 else    
     " Bundles
-    source $HOME/.flvim/bundles.vim
+    source $HOME/.dotfiles/vim/bundles.vim
 
     " Configuration
     filetype plugin indent on
@@ -42,10 +42,6 @@ else
                 \ }  
     " }}}
 
-    " OmniComplete {{{
-    filetype plugin on
-    set omnifunc=syntaxcomplete#Complete
-    " }}}
 
     " Motion keys for tabs {{{
     nmap <Leader>1 :tabp<cr>
@@ -198,7 +194,7 @@ else
     let g:ycm_collect_identifiers_from_comments_and_strings = 1
     let g:ycm_complete_in_comments = 1
     let g:ycm_complete_in_strings = 1
-    let g:ycm_global_ycm_extra_conf = '~/.flvim/.ycm_extra_conf.py'
+    let g:ycm_global_ycm_extra_conf = '~/.dotfiles/vim/.ycm_extra_conf.py'
     " }}}
 
     " UltiSnips {{{
