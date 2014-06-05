@@ -21,6 +21,7 @@ else
     set backspace+=start,eol,indent             " Fix backspace
     set t_Co=256                                " 256 Colors
     let mapleader = ","                         " Remap leader
+    set mouse=a
 
     " Expandtab in go {{{
     if bufname("%") !~ '\.go$'
@@ -228,7 +229,7 @@ else
     set laststatus=2
     set ttimeoutlen=50
     " }}}
-
+    
     " Autocomplete improvements
     " from: http://vim.wikia.com/wiki/Make_Vim_completion_popup_menu_work_just_like_in_an_IDE {{{
     set completeopt=longest,menuone

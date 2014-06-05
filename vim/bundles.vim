@@ -100,6 +100,14 @@ Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'hhvm/vim-hack'
 " }}}
 
+" Node {{{
+Bundle 'moll/vim-node'
+" }}}
+
+" TernJS {{{
+Bundle 'marijnh/tern_for_vim'
+" }}}
+
 " Check if vundle bundles should be installed {{{
 if shouldInstallBundles == 1
     echo "~> Installing vundle bundles"
