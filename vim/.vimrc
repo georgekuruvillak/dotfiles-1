@@ -219,9 +219,10 @@ else
     " }}}
 
     " Color Scheme {{{
-    color Tomorrow-Night
-    "color Tomorrow
-    set background=dark
+    color Tomorrow
+    highlight Normal ctermfg=black ctermbg=white
+    "color Tomorrow-Night
+    set background=light
     let g:rehash256 = 1
     " }}}
 
