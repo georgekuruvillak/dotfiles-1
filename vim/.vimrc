@@ -3,7 +3,6 @@ set nocompatible " be iMproved
 " Check if git is available and if vundle is already installed  {{{
 if executable("git") != 1 && !filereadable($HOME."/.vim/bundle/vundle/README.md")
     echo "GIT is required to install bundles:"
-
 else    
     " Bundles
     source $HOME/.dotfiles/vim/bundles.vim
@@ -20,8 +19,10 @@ else
     set modeline                                " Enable Modeline
     set backspace+=start,eol,indent             " Fix backspace
     set t_Co=256                                " 256 Colors
+    set colorcolumn=80                          " Column on line 80
     let mapleader = ","                         " Remap leader
-    set mouse=a
+    set mouse=a                                 " Enable mouse
+    imap jj <esc>                               " Esc with jj 
 
     " Expandtab in go {{{
     if bufname("%") !~ '\.go$'
@@ -44,10 +45,7 @@ else
     " }}}
 
     " Copy and paste to/from system clipboard {{{
-    map <leader>y "+y
-    map <leader>p "+p
-    " }}}
-
+    map <leader>y "+y map <leader>p "+p " }}} 
     " Motion keys for tabs {{{
     nmap <Leader>1 :tabp<cr>
     nmap <Leader>2 :tabn<cr>
@@ -220,11 +218,16 @@ else
 
     " Color Scheme {{{
     color Tomorrow
-    highlight Normal ctermfg=black ctermbg=white
-    "color Tomorrow-Night
     set background=light
     let g:rehash256 = 1
     " }}}
+    
+
+    " Smooth mouse scrolling {{{
+    map <ScrollWheelUp> <C-Y>
+    map <ScrollWheelDown> <C-E>
+    " }}}
+
 
     if has("gui_running")
         if has("gui_gnome") 
@@ -236,7 +239,8 @@ else
     set laststatus=2
     set ttimeoutlen=50
     " }}}
-    
+   
+
     " Autocomplete improvements
     " from: http://vim.wikia.com/wiki/Make_Vim_completion_popup_menu_work_just_like_in_an_IDE {{{
     set completeopt=longest,menuone
