@@ -22,7 +22,7 @@ else
     set colorcolumn=80                          " Column on line 80
     let mapleader = ","                         " Remap leader
     set mouse=a                                 " Enable mouse
-    imap jj <esc>                               " Esc with jj 
+    imap jk <esc>                               " Esc with jk
 
     " Expandtab in go {{{
     if bufname("%") !~ '\.go$'
@@ -128,7 +128,6 @@ else
     " }}} 
 
     " NERDTree Configuration {{{
-    "let NERDTreeQuitOnOpen=1                    " Automatically close NERDTree on file open
     autocmd VimEnter * nmap <F3> :NERDTreeTabsToggle<CR>
     autocmd VimEnter * imap <F3><F3> <Esc>:NERDTreeToggle<CR>a
     let NERDTreeWinSize=35
@@ -193,7 +192,7 @@ else
     let g:ycm_seed_identifiers_with_syntax = 1
     let g:ycm_always_populate_location_list = 1
     let g:ycm_autoclose_preview_window_after_completion = 1
-    let g:ycm_auto_trigger = 0
+    let g:ycm_auto_trigger = 1
     let g:ycm_add_preview_to_completeopt = 1
     let g:ycm_confirm_extra_conf = 0
     let g:ycm_collect_identifiers_from_comments_and_strings = 1
@@ -217,8 +216,8 @@ else
     " }}}
 
     " Color Scheme {{{
-    color Tomorrow
-    set background=light
+    set background=dark
+    colors Tomorrow-Night
     let g:rehash256 = 1
     " }}}
     
