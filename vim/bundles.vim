@@ -108,6 +108,10 @@ Bundle 'moll/vim-node'
 Bundle 'marijnh/tern_for_vim'
 " }}}
 
+" Vim javascript {{{
+Bundle 'pangloss/vim-javascript'
+" }}}
+
 " Check if vundle bundles should be installed {{{
 if shouldInstallBundles == 1
     echo "~> Installing vundle bundles"
