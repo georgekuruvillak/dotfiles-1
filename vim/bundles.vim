@@ -100,16 +100,11 @@ Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'hhvm/vim-hack'
 " }}}
 
-" Node {{{
+" Javascript {{{
 Bundle 'moll/vim-node'
-" }}}
-
-" TernJS {{{
 Bundle 'marijnh/tern_for_vim'
-" }}}
-
-" Vim javascript {{{
 Bundle 'pangloss/vim-javascript'
+Bundle 'burnettk/vim-angular'
 " }}}
 
 " Check if vundle bundles should be installed {{{
