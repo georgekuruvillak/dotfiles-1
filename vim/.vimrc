@@ -46,10 +46,6 @@ else
 
     " Copy and paste to/from system clipboard {{{
     map <leader>y "+y map <leader>p "+p " }}} 
-    " Motion keys for tabs {{{
-    nmap <Leader>1 :tabp<cr>
-    nmap <Leader>2 :tabn<cr>
-    " }}}
 
     " Splits movements ctrl+<direction>{{{ 
     nmap <silent> <c-k> :wincmd k<CR>                                                                                                                       
