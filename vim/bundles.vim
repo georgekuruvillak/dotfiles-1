@@ -40,7 +40,6 @@ Bundle 'wdalmut/vim-relatedtest'
 
 " NERDTree {{{
 Bundle 'scrooloose/nerdtree'
-Bundle 'jistr/vim-nerdtree-tabs'
 " }}}
 
 " YCM {{{

@@ -128,7 +128,7 @@ else
     " }}} 
 
     " NERDTree Configuration {{{
-    autocmd VimEnter * nmap <F3> :NERDTreeTabsToggle<CR>
+    autocmd VimEnter * nmap <F3> :NERDTreeToggle<CR>
     autocmd VimEnter * imap <F3><F3> <Esc>:NERDTreeToggle<CR>a
     let NERDTreeWinSize=35
     let NERDTreeShowHidden=1
