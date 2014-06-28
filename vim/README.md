@@ -35,9 +35,6 @@ To trigger autocompletion just hold down `tab`
 ### Motion Keys
 `hjkl` - Arrows are disabled
 
-### Tabs
-`ctrl-t <direction>` - Move between tabs
-
 ### Splits
 `ctrl-<direction>` - Move between splits
 
@@ -76,6 +73,7 @@ See [documentation](https://github.com/scrooloose/nerdcommenter/blob/master/READ
 `F4` - Highlight searched term
 `F5` - Go to the next search occurence
 `<C-t>` - Generate ctags
+`gq` - Format selected text
 
 ## Included Bundles
 - [Tomorrow Theme](https://github.com/chriskempson/tomorrow-theme)
@@ -92,6 +90,7 @@ See [documentation](https://github.com/scrooloose/nerdcommenter/blob/master/READ
 - [Gundo](https://github.com/sjl/gundo.vim)
 - [vdebug](https://github.com/joonty/vdebug)
 - [UltiSnips](https://github.com/SirVer/ultisnips) 
+- [vim-autoformat](https://github.com/Chiel92/vim-autoformat)
 
 ## Project vim settings
 This configuretion enables exrc so if you place an `.exrc` or `.vimrc`  file in your project folder you override vim settings

@@ -15,10 +15,6 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 
-" Tomorrow Theme {{{
-Bundle 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
-" }}}
-
 " Syntax checking plugin for Vim {{{
 Bundle  'scrooloose/syntastic'
 " }}}
@@ -32,8 +28,11 @@ Bundle 'majutsushi/tagbar'
 " }}}
 
 " Emmet (Zen Coding)
-Bundle('mattn/emmet-vim')
+Bundle 'mattn/emmet-vim'
 
+" Auto formatter {
+Bundle 'Chiel92/vim-autoformat'
+" }
 " Vim Related Test - Switch from source to tests {{{
 Bundle 'wdalmut/vim-relatedtest'
 " }}}
@@ -104,6 +103,10 @@ Bundle 'moll/vim-node'
 Bundle 'marijnh/tern_for_vim'
 Bundle 'pangloss/vim-javascript'
 Bundle 'burnettk/vim-angular'
+" }}}
+
+" Easy Grep {{{
+Bundle 'dkprice/vim-easygrep'
 " }}}
 
 " Check if vundle bundles should be installed {{{
