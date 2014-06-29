@@ -33,9 +33,6 @@ Bundle 'mattn/emmet-vim'
 " Auto formatter {
 Bundle 'Chiel92/vim-autoformat'
 " }
-" Vim Related Test - Switch from source to tests {{{
-Bundle 'wdalmut/vim-relatedtest'
-" }}}
 
 " NERDTree {{{
 Bundle 'scrooloose/nerdtree'

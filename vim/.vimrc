@@ -30,6 +30,14 @@ else
     endif
     " }}}
 
+    " Dealing with binary files and uglified JSON in Vim
+    " thanks to: http://0value.com/Dealing-with-binary-files-and-uglified-json-in-Vim {{{
+    nnoremap <leader>j :%!jq .<CR>
+    nnoremap <leader>J :%!jq . -c<CR>
+    nnoremap <leader>h :%!xxd<CR>
+    nnoremap <leader>H :%!xxd -r<CR>
+    " }}}
+    
     " Synstastic Configuration {{{    
     let g:syntastic_always_populate_loc_list=1
     let g:syntastic_php_phpcs_args="--report=csv --standard=PSR2"

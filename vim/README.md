@@ -24,25 +24,25 @@ To work, this needs the followings available in your path:
 - [golint](https://github.com/golang/lint)
 - [gocode](https://github.com/nsf/gocode)
 
+**Others**
+- [jq](http://stedolan.github.io/jq/) - pretty print json
+- [xxd](http://linuxcommand.org/man_pages/xxd1.html) - hexdump or reverse
 ## Keys
 
 ### leader
 The `<leader>` key is remapped to `,` 
 
 ### Autocompletion
-To trigger autocompletion just hold down `tab`
+`ctrl+space` - trigger the completion
 
 ### Motion Keys
 `hjkl` - Arrows are disabled
 
 ### Splits
-`ctrl-<direction>` - Move between splits
+`ctrl+<direction>` - Move between splits
 
 ### Emmet
-`<C-y>,` - Expand Abbreviation action
-
-### Vim Related Test
-`tt` - Open the related test (right now it only works with PHP, Java and Golang projects)
+`ctrl+y+,` - Expand Abbreviation action
 
 ### ctrl-p
 See [documentation](https://github.com/kien/ctrlp.vim/blob/master/readme.md)
@@ -59,10 +59,6 @@ See [documentation](https://github.com/kien/ctrlp.vim/blob/master/readme.md)
 ### Indentation guides
 `<Leader>ig` - Toggle indentation guides
 
-### Buffers
-`<Leader>1` - Previous tab
-`<Leader>2` - Next tab
-
 ### NERDCommenter
 `<Leader>cc` - comment selected text
 `<Leader>cu` -  un-comment selected text
@@ -74,6 +70,8 @@ See [documentation](https://github.com/scrooloose/nerdcommenter/blob/master/READ
 `F5` - Go to the next search occurence
 `<C-t>` - Generate ctags
 `gq` - Format selected text
+`<Leader>j`- Pretty print JSON (uppercase to revert)
+`<Leader>h` - Pretty print binary file (uppercase to revert)
 
 ## Included Bundles
 - [Tomorrow Theme](https://github.com/chriskempson/tomorrow-theme)
