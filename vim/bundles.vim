@@ -19,6 +19,10 @@ Bundle 'gmarik/vundle'
 Bundle  'scrooloose/syntastic'
 " }}}
 
+" Tomorrow Theme {{{
+Bundle 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
+" }}}
+
 " NERDCommenter {{{
 Bundle 'scrooloose/nerdcommenter' 
 " }}}

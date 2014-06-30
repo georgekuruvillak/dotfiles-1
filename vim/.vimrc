@@ -221,6 +221,7 @@ else
 
     " Color Scheme {{{
     set background=light
+    colorscheme Tomorrow
     let g:rehash256 = 1
     " }}}
     
