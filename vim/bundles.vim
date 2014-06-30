@@ -31,12 +31,13 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'majutsushi/tagbar'
 " }}}
 
-" Emmet (Zen Coding)
+" Emmet (Zen Coding) {{{
 Bundle 'mattn/emmet-vim'
+" }}}
 
-" Auto formatter {
+" Auto formatter {{{
 Bundle 'Chiel92/vim-autoformat'
-" }
+" }}}
 
 " NERDTree {{{
 Bundle 'scrooloose/nerdtree'
@@ -62,16 +63,9 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-dispatch'
 " }}}
 
-" Vim Gocode - Go Language Support {{{
+" Golang {{{
 Bundle 'Blackrush/vim-gocode'
-" }}}
-
-" Godef {{{
 Bundle 'dgryski/vim-godef'
-" }}}
-
-" Vim Json - Vim Json Support {{{
-Bundle 'elzr/vim-json' 
 " }}}
 
 " Airline  {{{
@@ -97,13 +91,6 @@ Bundle 'nathanaelkane/vim-indent-guides'
 
 " Hacklang support {{{
 Bundle 'hhvm/vim-hack'
-" }}}
-
-" Javascript {{{
-Bundle 'moll/vim-node'
-Bundle 'marijnh/tern_for_vim'
-Bundle 'pangloss/vim-javascript'
-Bundle 'burnettk/vim-angular'
 " }}}
 
 " Easy Grep {{{
