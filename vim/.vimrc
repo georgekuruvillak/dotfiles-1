@@ -37,7 +37,7 @@ else
     nnoremap <leader>h :%!xxd<CR>
     nnoremap <leader>H :%!xxd -r<CR>
     " }}}
-    
+
     " Synstastic Configuration {{{    
     let g:syntastic_always_populate_loc_list=1
     let g:syntastic_php_phpcs_args="--report=csv --standard=PSR2"
@@ -135,32 +135,32 @@ else
 
     " Tagbar Go {{{
     let g:tagbar_type_go = {
-        \ 'ctagstype' : 'go',
-        \ 'kinds'     : [
-            \ 'p:package',
-            \ 'i:imports:1',
-            \ 'c:constants',
-            \ 'v:variables',
-            \ 't:types',
-            \ 'n:interfaces',
-            \ 'w:fields',
-            \ 'e:embedded',
-            \ 'm:methods',
-            \ 'r:constructor',
-            \ 'f:functions'
-        \ ],
-        \ 'sro' : '.',
-        \ 'kind2scope' : {
-            \ 't' : 'ctype',
-            \ 'n' : 'ntype'
-        \ },
-        \ 'scope2kind' : {
-            \ 'ctype' : 't',
-            \ 'ntype' : 'n'
-        \ },
-        \ 'ctagsbin'  : 'gotags',
-        \ 'ctagsargs' : '-sort -silent'
-        \ }
+                \ 'ctagstype' : 'go',
+                \ 'kinds'     : [
+                \ 'p:package',
+                \ 'i:imports:1',
+                \ 'c:constants',
+                \ 'v:variables',
+                \ 't:types',
+                \ 'n:interfaces',
+                \ 'w:fields',
+                \ 'e:embedded',
+                \ 'm:methods',
+                \ 'r:constructor',
+                \ 'f:functions'
+                \ ],
+                \ 'sro' : '.',
+                \ 'kind2scope' : {
+                \ 't' : 'ctype',
+                \ 'n' : 'ntype'
+                \ },
+                \ 'scope2kind' : {
+                \ 'ctype' : 't',
+                \ 'ntype' : 'n'
+                \ },
+                \ 'ctagsbin'  : 'gotags',
+                \ 'ctagsargs' : '-sort -silent'
+                \ }
     " }}}
 
     " Natural copy and paste {{{
@@ -186,7 +186,7 @@ else
     " }}}
     " }}}
 
-    " YCM Options {{{
+    " Autocomplete Options {{{
     let g:ycm_collect_identifiers_from_tags_files = 1
     let g:ycm_seed_identifiers_with_syntax = 1
     let g:ycm_always_populate_location_list = 1
@@ -198,6 +198,15 @@ else
     let g:ycm_complete_in_comments = 1
     let g:ycm_complete_in_strings = 1
     let g:ycm_global_ycm_extra_conf = '~/.dotfiles/vim/.ycm_extra_conf.py'
+
+    " Autocomplete improvements from: http://vim.wikia.com/wiki/Make_Vim_completion_popup_menu_work_just_like_in_an_IDE
+    set completeopt=longest,menuone
+    inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>" 
+
+    " Autocomplete use PHP
+    inoremap <Leader>u <C-O>:call PhpInsertUse()<CR>
+    noremap <Leader>u :call PhpInsertUse()<CR>
+
     " }}}
 
     " UltiSnips {{{
@@ -209,17 +218,12 @@ else
     nnoremap <Leader>g :GundoToggle<CR>
     " }}}
 
-    " Autocomplete use PHP {{{
-    inoremap <Leader>u <C-O>:call PhpInsertUse()<CR>
-    noremap <Leader>u :call PhpInsertUse()<CR>
-    " }}}
-
     " Color Scheme {{{
     set background=light
     colorscheme Tomorrow
     let g:rehash256 = 1
     " }}}
-    
+
 
     " Smooth mouse scrolling {{{
     map <ScrollWheelUp> <C-Y>
@@ -237,13 +241,7 @@ else
     set laststatus=2
     set ttimeoutlen=50
     " }}}
-   
 
-    " Autocomplete improvements
-    " from: http://vim.wikia.com/wiki/Make_Vim_completion_popup_menu_work_just_like_in_an_IDE {{{
-    set completeopt=longest,menuone
-    inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>" 
-    " }}}
 
     " Specific settings per Project {{{
     set exrc                                " Enable project specific .vimrc
