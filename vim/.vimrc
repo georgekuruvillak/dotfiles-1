@@ -233,7 +233,7 @@ else
 
     if has("gui_running")
         if has("gui_gnome") 
-            set guifont=Consolas\ 12
+            set guifont=Consolas\ 10
         endif
     endif 
 
