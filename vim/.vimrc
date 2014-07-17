@@ -95,6 +95,10 @@ else
     nmap <Leader>f <C-w>gf
     " }}}
 
+    " ctrl click jump to definition in tab {{{
+    nnoremap <C-LeftMouse> <C-w><C-]><C-w>T
+    " }}}
+
     " Generate ctags {{{
     nmap <C-t> :Start! ctags -R .<cr>
     " }}}
