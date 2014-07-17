@@ -1,5 +1,11 @@
 --recurse=yes
 --tag-relative=yes
 --exclude=.git
+--exclude="*.js"
+--exclude=".svn"
 --languages=PHP
---PHP-kinds=+cf
+--PHP-kinds=cfiv
+--totals=yes
+--tag-relative=yes
+--regex-PHP='/(abstract)?\s+class\s+([^ ]+)/\2/c/'
+--regex-PHP='/interface\s+([^ ]+)/\1/i/'

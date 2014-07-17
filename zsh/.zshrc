@@ -25,7 +25,7 @@ export SVN_EDITOR=vim
 export EDITOR=vim
 
 # User configuration
-export PATH="$GOPATH/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+export PATH="$PATH:$HOME/.composer/vendor/bin:$GOPATH/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 
 # Tmux alias 256 colors
 alias tmux="tmux -2"

@@ -203,6 +203,9 @@ else
     set completeopt=longest,menuone
     inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>" 
 
+    " phpcomplete options 
+    
+
     " Autocomplete use PHP
     inoremap <Leader>u <C-O>:call PhpInsertUse()<CR>
     noremap <Leader>u :call PhpInsertUse()<CR>
