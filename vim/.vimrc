@@ -64,6 +64,12 @@ else
     set splitright
     " }}}
 
+    " Make views automatic {{{
+    autocmd BufWinLeave *.* mkview
+    autocmd BufWinEnter *.* silent loadview 
+    " }}}
+
+
     " Unmap Arrow Keys {{{
     no <down> <Nop>
     no <left> <Nop>
@@ -83,21 +89,26 @@ else
     vmap <S-Tab> <gv
     " }}}
 
+
     " Toggle Tagbar {{{
     nmap <Leader>b :TagbarToggle<cr> 
     " }}}
+
 
     " CtrlPTag {{{
     nnoremap <Leader>. :CtrlPTag<cr>
     " }}}
 
+
     " Open file under cursor {{{
     nmap <Leader>f <C-w>gf
     " }}}
 
+
     " ctrl click jump to definition in tab {{{
     nnoremap <C-LeftMouse> <C-w><C-]><C-w>T
     " }}}
+
 
     " Generate ctags {{{
     nmap <C-t> :Start! ctags -R .<cr>
@@ -108,9 +119,11 @@ else
     autocmd BufNewFile,BufRead *.c,*.cpp,*.h set tags+=/usr/include/tags
     " }}}
 
+
     " Generate ctags while editing {{{
     autocmd BufWritePost * if filereadable('tags') | call system('ctags -a '.expand('%')) | endif 
     " }}}
+
 
     " Autocomplete ctrl-space {{{
     imap <C-Space> <C-x><C-o>
@@ -122,7 +135,6 @@ else
     map <Leader>ds :vsp <CR>:exec("tag ".expand("<cword>"))<CR> " -> in a vertical split 
 
     " }}}
-
 
     " Read an existing tags file {{{
     if filereadable("tags")
@@ -173,6 +185,7 @@ else
     vmap <C-v> c<ESC>"+p
     imap <C-v> <C-r><C-o>+
     " }}}
+    
     " hlsearch {{{
     nmap <F4> :set hls!<CR>:set hls?<CR>  
     " }}}
@@ -187,7 +200,7 @@ else
 
     " Buffer name in status line 
     set laststatus=2 statusline=%02n:%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
-    " }}}
+
     " }}}
 
     " Autocomplete Options {{{
@@ -206,9 +219,6 @@ else
     " Autocomplete improvements from: http://vim.wikia.com/wiki/Make_Vim_completion_popup_menu_work_just_like_in_an_IDE
     set completeopt=longest,menuone
     inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>" 
-
-    " phpcomplete options 
-    
 
     " Autocomplete use PHP
     inoremap <Leader>u <C-O>:call PhpInsertUse()<CR>
@@ -238,17 +248,18 @@ else
     " }}}
 
 
+    " GUI Options {{{
     if has("gui_running")
         if has("gui_gnome") 
             set guifont=Consolas\ 10
         endif
     endif 
+    " }}}
 
     " Airline  {{{
     set laststatus=2
     set ttimeoutlen=50
     " }}}
-
 
     " Specific settings per Project {{{
     set exrc                                " Enable project specific .vimrc
