@@ -247,6 +247,10 @@ else
     map <ScrollWheelDown> <C-E>
     " }}}
 
+    " Search and replace word under cursor {{{
+    nnoremap sr :%s/<c-r><c-w>/<c-r><c-w>/gc<c-f>$F/i 
+    " }}}
+
 
     " GUI Options {{{
     if has("gui_running")
