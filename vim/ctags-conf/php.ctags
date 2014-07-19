@@ -9,3 +9,4 @@
 --tag-relative=yes
 --regex-PHP='/(abstract)?\s+class\s+([^ ]+)/\2/c/'
 --regex-PHP='/interface\s+([^ ]+)/\1/i/'
+--regex-php=/^[ \t]*trait[ \t]+([a-z0_9_]+)/\1/t,traits/i

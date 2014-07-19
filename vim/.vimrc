@@ -253,6 +253,7 @@ else
 
 
     " GUI Options {{{
+    set guitablabel=\[%N\]\ %t\ %M  
     if has("gui_running")
         if has("gui_gnome") 
             set guifont=Consolas\ 10
