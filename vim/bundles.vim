@@ -93,6 +93,10 @@ Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'hhvm/vim-hack'
 " }}}
 
+" Vim fugitive  {{{
+Bundle 'tpope/vim-fugitive'
+" }}}
+
 " Easy Grep {{{
 Bundle 'dkprice/vim-easygrep'
 " }}}

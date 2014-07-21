@@ -253,17 +253,30 @@ else
 
 
     " GUI Options {{{
-    set guitablabel=\[%N\]\ %t\ %M  
     if has("gui_running")
-        if has("gui_gnome") 
-            set guifont=Consolas\ 10
-        endif
+        set guifont=Consolas\ 10
+        set guitablabel=\[%N\]\ %t\ %M  
+        nnoremap <silent> <A-Left> :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
+        nnoremap <silent> <A-Right> :execute 'silent! tabmove ' . tabpagenr()<CR>
     endif 
     " }}}
 
     " Airline  {{{
     set laststatus=2
     set ttimeoutlen=50
+    " }}}
+
+    " Automatic folding {{{
+    set foldmethod=syntax
+    set foldlevelstart=1
+    let javaScript_fold=1         " JavaScript
+    let perl_fold=1               " Perl
+    let php_folding=1             " PHP
+    let r_syntax_folding=1        " R
+    let ruby_fold=1               " Ruby
+    let sh_fold_enabled=1         " sh
+    let vimsyn_folding='af'       " Vim script
+    let xml_syntax_folding=1      " XML
     " }}}
 
     " Specific settings per Project {{{
