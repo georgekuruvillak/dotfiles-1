@@ -23,7 +23,7 @@ else
     let mapleader = ","                         " Remap leader
     set mouse=a                                 " Enable mouse
     imap jk <esc>                               " Esc with jk
-
+    map <Leader>w :w                            " Fast save
     " Expandtab in go {{{
     if bufname("%") !~ '\.go$'
         set expandtab
@@ -32,10 +32,10 @@ else
 
     " Dealing with binary files and uglified JSON in Vim
     " thanks to: http://0value.com/Dealing-with-binary-files-and-uglified-json-in-Vim {{{
-    nnoremap <leader>j :%!jq .<CR>
-    nnoremap <leader>J :%!jq . -c<CR>
-    nnoremap <leader>h :%!xxd<CR>
-    nnoremap <leader>H :%!xxd -r<CR>
+    nnoremap <leader>jq :%!jq .<CR>
+    nnoremap <leader>JQ :%!jq . -c<CR>
+    nnoremap <leader>xxd :%!xxd<CR>
+    nnoremap <leader>XXD :%!xxd -r<CR>
     " }}}
 
     " Synstastic Configuration {{{    
@@ -195,13 +195,43 @@ else
     " Autocomplete buffer name
     set wildchar=<Tab> wildmenu wildmode=full
 
-    map <Leader>b1 :bprev<Return>
-    map <Leader>b2 :bnext<Return>
+
+    " Easier buffer switching 
+    " Source http://vim.wikia.com/wiki/Easier_buffer_switching
+    function! BufSel(pattern)
+        let bufcount = bufnr("$")
+        let currbufnr = 1
+        let nummatches = 0
+        let firstmatchingbufnr = 0
+        while currbufnr <= bufcount
+            if(bufexists(currbufnr))
+                let currbufname = bufname(currbufnr)
+                if(match(currbufname, a:pattern) > -1)
+                    echo currbufnr . ": ". bufname(currbufnr)
+                    let nummatches += 1
+                    let firstmatchingbufnr = currbufnr
+                endif
+            endif
+            let currbufnr = currbufnr + 1
+        endwhile
+        if(nummatches == 1)
+            execute ":buffer ". firstmatchingbufnr
+        elseif(nummatches > 1)
+            let desiredbufnr = input("Enter buffer number: ")
+            if(strlen(desiredbufnr) != 0)
+                execute ":buffer ". desiredbufnr
+            endif
+        else
+            echo "No matching buffers"
+        endif
+    endfunction
+    command! -nargs=1 Bs :call BufSel("<args>")
+
+    nnoremap bs :buffers<CR>:buffer<Space>
+    nnoremap bq :bp <BAR> bd #<CR>
 
     " Buffer name in status line 
     set laststatus=2 statusline=%02n:%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
-
-    " }}}
 
     " Autocomplete Options {{{
     let g:ycm_collect_identifiers_from_tags_files = 1
@@ -258,7 +288,7 @@ else
         set guitablabel=\[%N\]\ %t\ %M  
         nnoremap <silent> <A-Left> :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
         nnoremap <silent> <A-Right> :execute 'silent! tabmove ' . tabpagenr()<CR>
-    endif 
+    endif
     " }}}
 
     " Airline  {{{
