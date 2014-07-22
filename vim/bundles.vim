@@ -1,3 +1,5 @@
+" BUNDLES
+
 let shouldInstallBundles = 0
 
 " vundle setup {{{
