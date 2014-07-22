@@ -10,7 +10,7 @@ if [ "$1" != "--force" ]
 fi
 
 rm -Rf $HOME/.dotfiles
-git clone https://github.com/majinbuu/dotfiles $HOME/.dotfiles
+git clone https://github.com/fntlnz/dotfiles $HOME/.dotfiles
 ln -s $HOME/.dotfiles/tmux/.tmux.conf $HOME/.tmux.conf
 ln -s $HOME/.dotfiles/vim/.vimrc $HOME/.vimrc
 ln -s $HOME/.dotfiles/zsh/.zshrc $HOME/.zshrc
