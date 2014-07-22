@@ -1,5 +1,8 @@
 " SETTINGS
 
+let g:user_name = system("git config user.name | head -n 1")
+let g:user_email = system("git config user.email | head -n 1")
+
 filetype plugin indent on
 syntax on
 set autoindent                              " Enable autoindent
@@ -14,7 +17,6 @@ set t_Co=256                                " 256 Colors
 set colorcolumn=80                          " Column on line 80
 let mapleader = ","                         " Remap leader
 set mouse=a                                 " Enable mouse
-imap jk <esc>                               " Esc with jk
 map <Leader>w :w                            " Fast save
 
 " Dealing with binary files and uglified JSON in Vim
@@ -23,7 +25,6 @@ nnoremap <leader>jq :%!jq .<CR>
 nnoremap <leader>JQ :%!jq . -c<CR>
 nnoremap <leader>xxd :%!xxd<CR>
 nnoremap <leader>XXD :%!xxd -r<CR>
-
 
 " Synstastic Configuration    
 let g:syntastic_always_populate_loc_list=1

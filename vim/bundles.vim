@@ -16,92 +16,29 @@ filetype off
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
-
-" Syntax checking plugin for Vim {{{
 Bundle  'scrooloose/syntastic'
-" }}}
-
-" Tomorrow Theme {{{
 Bundle 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
-" }}}
-
-" NERDCommenter {{{
 Bundle 'scrooloose/nerdcommenter' 
-" }}}
-
-" Tagbar {{{
 Bundle 'majutsushi/tagbar'
-" }}}
-
-" Emmet (Zen Coding) {{{
 Bundle 'mattn/emmet-vim'
-" }}}
-
-" Auto formatter {{{
 Bundle 'Chiel92/vim-autoformat'
-" }}}
-
-" NERDTree {{{
 Bundle 'scrooloose/nerdtree'
-" }}}
-
-" YCM {{{
 Bundle 'Valloric/YouCompleteMe'
-" }}}
-
-" phpcomplete.vim - PHP Autocompletion {{{
 Bundle 'shawncplus/phpcomplete.vim'
-" }}}
-
-" php namespaces {{{
 Bundle 'arnaud-lb/vim-php-namespace'
-" }}}
-
-" Finder for Vim {{{
 Bundle 'kien/ctrlp.vim'
-" }}}
-
-" Vim Dispatch {{{
 Bundle 'tpope/vim-dispatch'
-" }}}
-
-" Golang {{{
 Bundle 'Blackrush/vim-gocode'
 Bundle 'dgryski/vim-godef'
-" }}}
-
-" Airline  {{{
 Bundle 'bling/vim-airline'
-" }}}
-
-" UltiSnips {{{
 Bundle 'SirVer/ultisnips'
 Bundle 'honza/vim-snippets'
-" }}}
-
-" Vdebug {{{
 Bundle 'joonty/vdebug.git'
-" }}}
-
-" Gundo {{{
 Bundle 'sjl/gundo.vim'
-" }}}
-
-" Indentation Guides {{{
 Bundle 'nathanaelkane/vim-indent-guides'
-" }}}
-
-" Hacklang support {{{
 Bundle 'hhvm/vim-hack'
-" }}}
-
-" Vim fugitive  {{{
 Bundle 'tpope/vim-fugitive'
-" }}}
-
-" Easy Grep {{{
 Bundle 'dkprice/vim-easygrep'
-" }}}
 
 " Check if vundle bundles should be installed {{{
 if shouldInstallBundles == 1

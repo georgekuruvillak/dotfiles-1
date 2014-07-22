@@ -34,6 +34,6 @@ set completeopt=longest,menuone
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>" 
 
 " UltiSnips
-let g:UltiSnipsExpandTrigger="<c-j>" 
-let g:snips_author="Lorenzo Fontana <fontanalorenzo@me.com>"
+let g:UltiSnipsExpandTrigger = "<c-j>"
+let g:snips_author = g:user_name . " <" . g:user_email . ">"
 
