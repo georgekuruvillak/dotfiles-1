@@ -228,7 +228,7 @@ else
     command! -nargs=1 Bs :call BufSel("<args>")
 
     nnoremap bs :buffers<CR>:buffer<Space>
-    nnoremap bq :bp <BAR> bd #<CR>
+    nnoremap bq :bd<CR>
 
     " Buffer name in status line 
     set laststatus=2 statusline=%02n:%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
