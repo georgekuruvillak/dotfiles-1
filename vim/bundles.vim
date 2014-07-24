@@ -39,6 +39,7 @@ Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'hhvm/vim-hack'
 Bundle 'tpope/vim-fugitive'
 Bundle 'dkprice/vim-easygrep'
+Bundle 'terryma/vim-multiple-cursors'
 
 " Check if vundle bundles should be installed {{{
 if shouldInstallBundles == 1
