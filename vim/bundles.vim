@@ -40,6 +40,7 @@ Bundle 'hhvm/vim-hack'
 Bundle 'tpope/vim-fugitive'
 Bundle 'dkprice/vim-easygrep'
 Bundle 'terryma/vim-multiple-cursors'
+Bundle 'groenewege/vim-less'
 
 " Check if vundle bundles should be installed {{{
 if shouldInstallBundles == 1

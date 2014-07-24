@@ -108,6 +108,10 @@ map <ScrollWheelDown> <C-E>
 " Search and replace word under cursor
 nnoremap sr :%s/<c-r><c-w>/<c-r><c-w>/gc<c-f>$F/i 
 
+" Less: Workaround to make set filetype works
+" https://github.com/groenewege/vim-less/issues/43
+autocmd BufRead,BufNewFile *.less set filetype=less
+
 " Airline 
 set laststatus=2
 set ttimeoutlen=50
