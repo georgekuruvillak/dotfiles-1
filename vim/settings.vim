@@ -17,7 +17,8 @@ set t_Co=256                                " 256 Colors
 set colorcolumn=80                          " Column on line 80
 let mapleader = ","                         " Remap leader
 set mouse=a                                 " Enable mouse
-map <Leader>w :w                            " Fast save
+map <Leader>w :w<cr>                        " Fast save
+map <Leader>1 :pclose<cr>                   " Close autocomplete preview
 
 " Dealing with binary files and uglified JSON in Vim
 " thanks to: http://0value.com/Dealing-with-binary-files-and-uglified-json-in-Vim
@@ -46,10 +47,6 @@ nmap <silent> <c-h> :wincmd h<CR>
 nmap <silent> <c-l> :wincmd l<CR> 
 set splitbelow
 set splitright
-
-" Make views automatic
-autocmd BufWinLeave *.* mkview
-autocmd BufWinEnter *.* silent loadview 
 
 " Unmap Arrow Keys
 no <down> <Nop>
@@ -83,6 +80,7 @@ autocmd VimEnter * nmap <F3> :NERDTreeToggle<CR>
 autocmd VimEnter * imap <F3><F3> <Esc>:NERDTreeToggle<CR>a
 let NERDTreeWinSize=35
 let NERDTreeShowHidden=1
+"let g:NERDTreeDirArrows=0
 
 " Natural copy and paste
 vmap <C-c> "+yi
@@ -97,8 +95,8 @@ nmap <F4> :set hls!<CR>:set hls?<CR>
 nnoremap <Leader>g :GundoToggle<CR>
 
 " Color Scheme
-set background=light
-colorscheme Tomorrow-Night-Eighties
+set background=dark
+colorscheme Tomorrow-Night
 let g:rehash256 = 1
 
 " Smooth mouse scrolling

@@ -39,4 +39,8 @@ if bufname("%") !~ '\.php$'
 
 endif
 
+" PHP EXTENSION DEVELOPMENT RELATED SETTINGS
 
+" PHP Syntax highlighting in phpt files (wondering if it can be done with a
+" regex like /--EXPECT(F)?--/
+autocmd BufNewFile,BufRead *.phpt call SyntaxRange#Include('--FILE--', '--EXPECT--', 'php')

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [ -z "$1" ]; then
+    echo "Usage: docker-name CONTAINER"
+    echo ""
+    echo "Gets the name of the specified docker container"
+else
+
+docker inspect --format '{{ .Name }}' $1
+
+fi

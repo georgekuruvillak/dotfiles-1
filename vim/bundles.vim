@@ -41,6 +41,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'dkprice/vim-easygrep'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'groenewege/vim-less'
+Bundle 'vim-scripts/SyntaxRange'
 
 " Check if vundle bundles should be installed {{{
 if shouldInstallBundles == 1

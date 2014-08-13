@@ -24,14 +24,14 @@ export SVN_EDITOR=vim
 # Editor
 export EDITOR=vim
 
-# User configuration
-export PATH="$PATH:$HOME/.composer/vendor/bin:$GOPATH/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+# Locale
+export LC_ALL=en_US.UTF-8  
+export LANG=en_US.UTF-8
 
+# User configuration
+export PATH="$PATH:$HOME/.composer/vendor/bin:$GOPATH/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/sbin:/usr/local/bin"
 # Tmux alias 256 colors
 alias tmux="tmux -2"
-if [[ ! $TERM =~ screen ]]; then
-    exec tmux -2
-fi
 
-# Hide gvim warnings
-alias gvim="gvim 2>/dev/null"
+# Docker host
+export DOCKER_HOST=tcp://172.16.42.43:4243
