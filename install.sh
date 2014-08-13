@@ -13,3 +13,4 @@ ln -s $HOME/.dotfiles/tmux/.tmux.conf $HOME/.tmux.conf
 ln -s $HOME/.dotfiles/vim/.vimrc $HOME/.vimrc
 ln -s $HOME/.dotfiles/zsh/.zshrc $HOME/.zshrc
 ln -s $HOME/.dotfiles/scripts/* /usr/local/bin
+touch $HOME/.zshrc_local

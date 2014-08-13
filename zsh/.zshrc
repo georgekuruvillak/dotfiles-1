@@ -6,9 +6,6 @@ plugins=(git svn)
 
 source $ZSH/oh-my-zsh.sh
 
-# Xclip
-alias xclip="xclip -selection clipboard"
-
 # GOPATH
 export GOPATH=$HOME/go
 
@@ -35,3 +32,6 @@ alias tmux="tmux -2"
 
 # Docker host
 export DOCKER_HOST=tcp://172.16.42.43:4243
+
+# .zshrc_local
+source $HOME/.zshrc_local
