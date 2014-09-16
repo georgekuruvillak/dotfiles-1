@@ -30,8 +30,9 @@ export PATH="$PATH:$HOME/.composer/vendor/bin:$GOPATH/bin:/usr/sbin:/usr/bin:/sb
 # Tmux alias 256 colors
 alias tmux="tmux -2"
 
-# Docker host
-export DOCKER_HOST=tcp://172.16.42.43:4243
+if [[ ! $TERM =~ screen ]]; then
+    exec tmux -2
+fi
 
 # .zshrc_local
 source $HOME/.zshrc_local
