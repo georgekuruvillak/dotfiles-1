@@ -1,0 +1,5 @@
+export XDEBUG_CONFIG="remote_enable=1 idekey=LOCALDEBUGGER remote_host=localhost remote_port=9000"
+
+echo "~> php-debug \n"
+echo "   XDEBUG_CONFIG ${XDEBUG_CONFIG} \n"
+php "$@"
