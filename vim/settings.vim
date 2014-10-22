@@ -30,6 +30,11 @@ nnoremap <leader>XXD :%!xxd -r<CR>
 " Synstastic Configuration    
 let g:syntastic_always_populate_loc_list=1
 let g:syntastic_javascript_checkers = ['jshint']
+let g:syntastic_enable_signs=1
+
+" lopen & lclose mappingA
+nnoremap <leader>lo :lopen <CR>
+nnoremap <leader>lc :lclose <CR>
 
 " ctrl-p Configuration
 let g:ctrlp_custom_ignore = {
