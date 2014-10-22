@@ -104,10 +104,6 @@ set background=dark
 colorscheme Tomorrow-Night
 let g:rehash256 = 1
 
-" Smooth mouse scrolling
-map <ScrollWheelUp> <C-Y>
-map <ScrollWheelDown> <C-E>
-
 " Search and replace word under cursor
 nnoremap sr :%s/<c-r><c-w>/<c-r><c-w>/gc<c-f>$F/i 
 

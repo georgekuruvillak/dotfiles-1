@@ -42,6 +42,8 @@ Bundle 'dkprice/vim-easygrep'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'groenewege/vim-less'
 Bundle 'vim-scripts/SyntaxRange'
+Bundle "pangloss/vim-javascript"
+Bundle 'marijnh/tern_for_vim'
 
 " Check if vundle bundles should be installed {{{
 if shouldInstallBundles == 1
