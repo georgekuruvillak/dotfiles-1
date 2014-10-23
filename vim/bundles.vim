@@ -35,7 +35,6 @@ Bundle 'SirVer/ultisnips'
 Bundle 'honza/vim-snippets'
 Bundle 'joonty/vdebug.git'
 Bundle 'sjl/gundo.vim'
-Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'hhvm/vim-hack'
 Bundle 'tpope/vim-fugitive'
 Bundle 'dkprice/vim-easygrep'
@@ -44,6 +43,9 @@ Bundle 'groenewege/vim-less'
 Bundle 'vim-scripts/SyntaxRange'
 Bundle "pangloss/vim-javascript"
 Bundle 'marijnh/tern_for_vim'
+Bundle 'flazz/vim-colorschemes'
+Bundle 'airblade/vim-gitgutter'
+Bundle '2072/PHP-Indenting-for-VIm'
 
 " Check if vundle bundles should be installed {{{
 if shouldInstallBundles == 1

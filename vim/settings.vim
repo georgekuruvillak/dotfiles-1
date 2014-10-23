@@ -9,7 +9,7 @@ set autoindent                              " Enable autoindent
 set smartindent                             " Smart autoindentation when starting a new line
 set shiftwidth=4                            " Number of spaces to use fo auto-indent 
 set tabstop=4                               " 4 spaces for tab
-set rnu                                     " Show relative line numbers
+set nu                                      " Show line numbers
 set cursorline                              " Enable Cursor line
 set modeline                                " Enable Modeline
 set backspace+=start,eol,indent             " Fix backspace
@@ -19,6 +19,7 @@ let mapleader = ","                         " Remap leader
 set mouse=a                                 " Enable mouse
 map <Leader>w :w<cr>                        " Fast save
 map <Leader>1 :pclose<cr>                   " Close autocomplete preview
+set pastetoggle=<F12>                       " paste toggle
 
 " Dealing with binary files and uglified JSON in Vim
 " thanks to: http://0value.com/Dealing-with-binary-files-and-uglified-json-in-Vim
@@ -41,9 +42,6 @@ let g:ctrlp_custom_ignore = {
             \ 'dir': '\v[\/](report|bin|cache|vendor|docs)$',
             \ }  
 nnoremap <Leader>. :CtrlPTag<cr>
-
-" Copy and paste to/from system clipboard
-map <leader>y "+y map <leader>p "+p  
 
 " Splits movements ctrl+<direction>{{{ 
 nmap <silent> <c-k> :wincmd k<CR>                                                                                                                       
@@ -76,10 +74,6 @@ nmap <Leader>b :TagbarToggle<cr>
 " Open file under cursor
 nmap <Leader>f <C-w>gf
 
-" Go to definition
-map <Leader>d :tab split<CR>:exec("tag ".expand("<cword>"))<CR> " -> in a tab
-map <Leader>ds :vsp <CR>:exec("tag ".expand("<cword>"))<CR> " -> in a vertical split 
-
 " NERDTree Configuration
 autocmd VimEnter * nmap <F3> :NERDTreeToggle<CR>
 autocmd VimEnter * imap <F3><F3> <Esc>:NERDTreeToggle<CR>a
@@ -100,8 +94,7 @@ nmap <F4> :set hls!<CR>:set hls?<CR>
 nnoremap <Leader>g :GundoToggle<CR>
 
 " Color Scheme
-set background=dark
-colorscheme Tomorrow-Night
+colorscheme molokai
 let g:rehash256 = 1
 
 " Search and replace word under cursor
@@ -110,6 +103,11 @@ nnoremap sr :%s/<c-r><c-w>/<c-r><c-w>/gc<c-f>$F/i
 " Less: Workaround to make set filetype works
 " https://github.com/groenewege/vim-less/issues/43
 autocmd BufRead,BufNewFile *.less set filetype=less
+
+" ConqueGdb
+nnoremap <silent> <Leader>gy :ConqueGdbCommand y<CR>
+nnoremap <silent> <Leader>gn :ConqueGdbCommand n<CR>
+
 
 " Airline 
 set laststatus=2
