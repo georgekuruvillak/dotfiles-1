@@ -7,18 +7,11 @@ if [ "$1" != "--force" ]; then
     fi
 fi
 
-echo "Type your full name followed by enter:"
-read name
-
-echo "Type your email address followed by enter:"
-read email
-
-# Configuring git
-git config --global user.name $name
-git config --global user.email $email
+# GIT
 git config --global core.excludesfile ~/.gitignore_global
 git config --global branch.autosetuprebase always
 
+# Dotfiles
 rm -Rf $HOME/.dotfiles
 git clone https://github.com/fntlnz/dotfiles $HOME/.dotfiles
 ln -s $HOME/.dotfiles/tmux/.tmux.conf $HOME/.tmux.conf
@@ -27,4 +20,9 @@ ln -s $HOME/.dotfiles/zsh/.zshrc $HOME/.zshrc
 ln -s $HOME/.dotfiles/scripts/* /usr/local/bin
 ln -s $HOME/.dotfiles/git/.gitignore_global $HOME/.gitignore_global
 
+# Gnome Terminal Colorscheme
+git clone git://github.com/pricco/gnome-terminal-colors-monokai.git /tmp/gnome-terminal-colors-monokai 
+cd /tmp/gnome-terminal-colors-monokai && ./install.sh
+
+# ZSH
 touch $HOME/.zshrc_local
