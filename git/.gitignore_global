@@ -43,4 +43,4 @@ profile
 # Vim
 tags
 *.swp
-.ctags
+.ycm_extra_conf.pyc
