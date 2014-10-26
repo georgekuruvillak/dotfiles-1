@@ -10,6 +10,7 @@ else
     source $HOME/.dotfiles/vim/buffers.vim
     source $HOME/.dotfiles/vim/golang.vim
     source $HOME/.dotfiles/vim/php.vim
+    source $HOME/.dotfiles/vim/c.vim
     source $HOME/.dotfiles/vim/gui.vim 
 endif
 " }}}
