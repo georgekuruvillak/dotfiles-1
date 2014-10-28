@@ -113,6 +113,9 @@ nnoremap <silent> <Leader>gn :ConqueGdbCommand n<CR>
 set laststatus=2
 set ttimeoutlen=50
 
+" AutoSave
+let g:auto_save = 1
+
 " Specific settings per Project
 set exrc                                " Enable project specific .vimrc
 set secure                              " Enable secure mode

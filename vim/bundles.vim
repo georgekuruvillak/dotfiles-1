@@ -46,6 +46,7 @@ Bundle 'marijnh/tern_for_vim'
 Bundle 'flazz/vim-colorschemes'
 Bundle 'airblade/vim-gitgutter'
 Bundle '2072/PHP-Indenting-for-VIm'
+Bundle 'vim-scripts/vim-auto-save'
 
 " Check if vundle bundles should be installed {{{
 if shouldInstallBundles == 1
