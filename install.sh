@@ -19,6 +19,8 @@ ln -s $HOME/.dotfiles/vim/.vimrc $HOME/.vimrc
 ln -s $HOME/.dotfiles/zsh/.zshrc $HOME/.zshrc
 ln -s $HOME/.dotfiles/scripts/* /usr/local/bin
 ln -s $HOME/.dotfiles/git/.gitignore_global $HOME/.gitignore_global
+ln -s $HOME/.dotfiles/gdb/.gdbinit $HOME/.gdbinit
+
 
 # Gnome Terminal Colorscheme
 git clone git://github.com/pricco/gnome-terminal-colors-monokai.git /tmp/gnome-terminal-colors-monokai 

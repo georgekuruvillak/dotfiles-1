@@ -44,4 +44,5 @@ function! ExpandCMacro()
   "highlight origin line
   let @/ = getline('.')
 endfunction
-
+autocmd FileType cpp nnoremap <leader>m :call ExpandCMacro()<CR>
+autocmd FileType c nnoremap <leader>m :call ExpandCMacro()<CR>
