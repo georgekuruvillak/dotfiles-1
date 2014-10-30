@@ -28,6 +28,14 @@ nnoremap <leader>JQ :%!jq . -c<CR>
 nnoremap <leader>xxd :%!xxd<CR>
 nnoremap <leader>XXD :%!xxd -r<CR>
 
+" Map è + to square brackets
+nmap è [
+nmap + ]
+omap é [
+omap + ]
+xmap è [
+xmap + ]
+
 " Synstastic Configuration    
 let g:syntastic_always_populate_loc_list=1
 let g:syntastic_javascript_checkers = ['jshint']

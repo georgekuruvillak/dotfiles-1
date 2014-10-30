@@ -39,6 +39,9 @@ if bufname("%") !~ '\.php$'
 
 endif
 
+au BufNewFile,BufRead *.phtml set filetype=html.php
+
 " PHP EXTENSION DEVELOPMENT RELATED SETTINGS
 
 autocmd BufNewFile,BufRead *.phpt call SyntaxRange#Include('<?php', '?>', 'php')
+
