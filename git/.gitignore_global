@@ -41,6 +41,9 @@ profile
 *.xcodeproj
  
 # Vim
+.vimrc
+.ctags
 tags
 *.swp
+.ycm_extra_conf.py
 .ycm_extra_conf.pyc
