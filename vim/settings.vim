@@ -84,7 +84,6 @@ nmap <Leader>f <C-w>gf
 
 " NERDTree Configuration
 autocmd VimEnter * nmap <F3> :NERDTreeToggle<CR>
-autocmd VimEnter * imap <F3><F3> <Esc>:NERDTreeToggle<CR>a
 let NERDTreeWinSize=35
 let NERDTreeShowHidden=1
 "let g:NERDTreeDirArrows=0
@@ -123,6 +122,9 @@ set ttimeoutlen=50
 
 " AutoSave
 let g:auto_save = 1
+
+" Match Maker
+ let g:matchmaker_enable_startup = 1
 
 " Specific settings per Project
 set exrc                                " Enable project specific .vimrc

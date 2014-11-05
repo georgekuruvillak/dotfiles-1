@@ -48,6 +48,8 @@ Bundle 'airblade/vim-gitgutter'
 Bundle '2072/PHP-Indenting-for-VIm'
 Bundle 'vim-scripts/vim-auto-save'
 Bundle 'tpope/vim-unimpaired'
+Bundle 'qstrahl/vim-matchmaker'
+Bundle 'mileszs/ack.vim'
 
 " Check if vundle bundles should be installed {{{
 if shouldInstallBundles == 1
