@@ -2,6 +2,10 @@
 
 " Macro Expansion (see: http://vim.wikia.com/wiki/Macro_expansion_C/C%2B%2B)
 function! ExpandCMacro()
+  " Set C_INCLUDE_PATH
+"  let l:c_include_path = &path
+  "let $C_INCLUDE_PATH = substitute(l:c_include_path, ",", ":", "g")
+ 
   "get current info
   let l:macro_file_name = "__macroexpand__" . tabpagenr()
   let l:file_row = line(".")

@@ -17,7 +17,6 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 Bundle  'scrooloose/syntastic'
-Bundle 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
 Bundle 'scrooloose/nerdcommenter' 
 Bundle 'majutsushi/tagbar'
 Bundle 'mattn/emmet-vim'
@@ -35,7 +34,6 @@ Bundle 'SirVer/ultisnips'
 Bundle 'honza/vim-snippets'
 Bundle 'joonty/vdebug.git'
 Bundle 'sjl/gundo.vim'
-Bundle 'hhvm/vim-hack'
 Bundle 'tpope/vim-fugitive'
 Bundle 'dkprice/vim-easygrep'
 Bundle 'terryma/vim-multiple-cursors'
@@ -48,7 +46,6 @@ Bundle 'airblade/vim-gitgutter'
 Bundle '2072/PHP-Indenting-for-VIm'
 Bundle 'vim-scripts/vim-auto-save'
 Bundle 'tpope/vim-unimpaired'
-Bundle 'qstrahl/vim-matchmaker'
 Bundle 'mileszs/ack.vim'
 
 " Check if vundle bundles should be installed {{{
