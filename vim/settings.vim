@@ -1,8 +1,5 @@
 " SETTINGS
 
-let g:user_name = system("git config user.name | head -n 1")
-let g:user_email = system("git config user.email | head -n 1")
-
 filetype plugin indent on
 syntax on
 set autoindent                              " Enable autoindent
@@ -17,7 +14,6 @@ set t_Co=256                                " 256 Colors
 set colorcolumn=80                          " Column on line 80
 let mapleader = ","                         " Remap leader
 set mouse=a                                 " Enable mouse
-map <Leader>w :w<cr>                        " Fast save
 map <Leader>1 :pclose<cr>                   " Close autocomplete preview
 set pastetoggle=<F12>                       " paste toggle
 
@@ -79,20 +75,10 @@ vmap <S-Tab> <gv
 " Toggle Tagbar
 nmap <Leader>b :TagbarToggle<cr> 
 
-" Open file under cursor
-nmap <Leader>f <C-w>gf
-
 " NERDTree Configuration
 autocmd VimEnter * nmap <F3> :NERDTreeToggle<CR>
 let NERDTreeWinSize=35
 let NERDTreeShowHidden=1
-"let g:NERDTreeDirArrows=0
-
-" Natural copy and paste
-vmap <C-c> "+yi
-vmap <C-x> "+c
-vmap <C-v> c<ESC>"+p
-imap <C-v> <C-r><C-o>+
 
 " hlsearch
 nmap <F4> :set hls!<CR>:set hls?<CR>  
@@ -101,7 +87,7 @@ nmap <F4> :set hls!<CR>:set hls?<CR>
 nnoremap <Leader>g :GundoToggle<CR>
 
 " Color Scheme
-colorscheme Tomorrow
+colorscheme clear_colors_dark
 let g:rehash256 = 1
 
 " Search and replace word under cursor

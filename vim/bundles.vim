@@ -16,8 +16,7 @@ filetype off
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
-Bundle  'scrooloose/syntastic'
-Bundle 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
+Bundle 'scrooloose/syntastic'
 Bundle 'scrooloose/nerdcommenter' 
 Bundle 'majutsushi/tagbar'
 Bundle 'mattn/emmet-vim'
@@ -42,11 +41,13 @@ Bundle 'groenewege/vim-less'
 Bundle 'vim-scripts/SyntaxRange'
 Bundle "pangloss/vim-javascript"
 Bundle 'marijnh/tern_for_vim'
-Bundle 'airblade/vim-gitgutter'
 Bundle '2072/PHP-Indenting-for-VIm'
 Bundle 'vim-scripts/vim-auto-save'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'mileszs/ack.vim'
+Bundle 'AlxHnr/clear_colors'
+Bundle 'airblade/vim-gitgutter'
+
 
 " Check if vundle bundles should be installed {{{
 if shouldInstallBundles == 1
