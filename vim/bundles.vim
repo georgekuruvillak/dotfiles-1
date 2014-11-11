@@ -17,6 +17,7 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 Bundle  'scrooloose/syntastic'
+Bundle 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
 Bundle 'scrooloose/nerdcommenter' 
 Bundle 'majutsushi/tagbar'
 Bundle 'mattn/emmet-vim'
@@ -41,7 +42,6 @@ Bundle 'groenewege/vim-less'
 Bundle 'vim-scripts/SyntaxRange'
 Bundle "pangloss/vim-javascript"
 Bundle 'marijnh/tern_for_vim'
-Bundle 'flazz/vim-colorschemes'
 Bundle 'airblade/vim-gitgutter'
 Bundle '2072/PHP-Indenting-for-VIm'
 Bundle 'vim-scripts/vim-auto-save'

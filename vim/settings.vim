@@ -101,7 +101,7 @@ nmap <F4> :set hls!<CR>:set hls?<CR>
 nnoremap <Leader>g :GundoToggle<CR>
 
 " Color Scheme
-colorscheme molokai
+colorscheme Tomorrow
 let g:rehash256 = 1
 
 " Search and replace word under cursor
