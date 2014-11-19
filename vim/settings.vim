@@ -16,6 +16,7 @@ let mapleader = ","                         " Remap leader
 set mouse=a                                 " Enable mouse
 map <Leader>1 :pclose<cr>                   " Close autocomplete preview
 set pastetoggle=<F12>                       " paste toggle
+colorscheme molokai
 
 " Dealing with binary files and uglified JSON in Vim
 " thanks to: http://0value.com/Dealing-with-binary-files-and-uglified-json-in-Vim
@@ -31,15 +32,6 @@ omap é [
 omap + ]
 xmap è [
 xmap + ]
-
-" Synstastic Configuration    
-let g:syntastic_always_populate_loc_list=1
-let g:syntastic_javascript_checkers = ['jshint']
-let g:syntastic_enable_signs=1
-
-" lopen & lclose mappingA
-nnoremap <leader>lo :lopen <CR>
-nnoremap <leader>lc :lclose <CR>
 
 " ctrl-p Configuration
 let g:ctrlp_custom_ignore = {
@@ -72,9 +64,6 @@ vno <up> <Nop>
 vmap <Tab> >gv
 vmap <S-Tab> <gv
 
-" Toggle Tagbar
-nmap <Leader>b :TagbarToggle<cr> 
-
 " NERDTree Configuration
 autocmd VimEnter * nmap <F3> :NERDTreeToggle<CR>
 let NERDTreeWinSize=35
@@ -83,34 +72,21 @@ let NERDTreeShowHidden=1
 " hlsearch
 nmap <F4> :set hls!<CR>:set hls?<CR>  
 
-" Gundo
-nnoremap <Leader>g :GundoToggle<CR>
-
-" Color Scheme
-colorscheme clear_colors_dark
-let g:rehash256 = 1
 
 " Search and replace word under cursor
 nnoremap sr :%s/<c-r><c-w>/<c-r><c-w>/gc<c-f>$F/i 
-
-" Less: Workaround to make set filetype works
-" https://github.com/groenewege/vim-less/issues/43
-autocmd BufRead,BufNewFile *.less set filetype=less
-
-" ConqueGdb
-nnoremap <silent> <Leader>gy :ConqueGdbCommand y<CR>
-nnoremap <silent> <Leader>gn :ConqueGdbCommand n<CR>
-
 
 " Airline 
 set laststatus=2
 set ttimeoutlen=50
 
-" AutoSave
-let g:auto_save = 1
+" UltiSnips
+let g:UltiSnipsExpandTrigger = "<c-j>"
+let g:snips_author = "Lorenzo Fontana  <fontanalorenzo@me.com>"
 
-" Match Maker
- let g:matchmaker_enable_startup = 1
+" Additional PHP Files
+au BufNewFile,BufRead *.phtml set filetype=html.php
+autocmd BufNewFile,BufRead *.phpt call SyntaxRange#Include('<?php', '?>', 'php')
 
 " Specific settings per Project
 set exrc                                " Enable project specific .vimrc

@@ -6,10 +6,7 @@ if executable("git") != 1 && !filereadable($HOME."/.vim/bundle/vundle/README.md"
 else   
     source $HOME/.dotfiles/vim/bundles.vim
     source $HOME/.dotfiles/vim/settings.vim
-    source $HOME/.dotfiles/vim/autocomplete.vim
     source $HOME/.dotfiles/vim/buffers.vim
-    source $HOME/.dotfiles/vim/golang.vim
-    source $HOME/.dotfiles/vim/php.vim
     source $HOME/.dotfiles/vim/c.vim
 endif
 " }}}
