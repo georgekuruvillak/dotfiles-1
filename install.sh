@@ -13,15 +13,16 @@ git config --global branch.autosetuprebase always
 
 # Dotfiles
 rm -Rf $HOME/.dotfiles
-git clone https://github.com/fntlnz/dotfiles $HOME/.dotfiles
+#git clone https://github.com/fntlnz/dotfiles $HOME/.dotfiles
 ln -s $HOME/.dotfiles/tmux/.tmux.conf $HOME/.tmux.conf
 ln -s $HOME/.dotfiles/vim/.vimrc $HOME/.vimrc
-ln -s $HOME/.dotfiles/vim/.vimrc $HOME/.gvimrc
 ln -s $HOME/.dotfiles/zsh/.zshrc $HOME/.zshrc
 ln -s $HOME/.dotfiles/scripts/* /usr/local/bin
 ln -s $HOME/.dotfiles/git/.gitignore_global $HOME/.gitignore_global
-ln -s $HOME/.dotfiles/gdb/.gdbinit $HOME/.gdbinitA
+ln -s $HOME/.dotfiles/gdb/.gdbinit $HOME/.gdbinit
 
+ln -s $GOROOT/misc/vim/syntax/go.vim $HOME/.vim/syntax/
+ln -s $HOME/.dotfiles/vim/ftdetect/ $HOME/.vim/ftdetect
 
 # Gnome Terminal Colorscheme
 git clone git://github.com/pricco/gnome-terminal-colors-monokai.git /tmp/gnome-terminal-colors-monokai 

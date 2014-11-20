@@ -84,10 +84,6 @@ set ttimeoutlen=50
 let g:UltiSnipsExpandTrigger = "<c-j>"
 let g:snips_author = "Lorenzo Fontana  <fontanalorenzo@me.com>"
 
-" Additional PHP Files
-au BufNewFile,BufRead *.phtml set filetype=html.php
-autocmd BufNewFile,BufRead *.phpt call SyntaxRange#Include('<?php', '?>', 'php')
-
 " Specific settings per Project
 set exrc                                " Enable project specific .vimrc
 set secure                              " Enable secure mode
