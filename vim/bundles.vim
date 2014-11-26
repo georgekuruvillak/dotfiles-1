@@ -30,8 +30,9 @@ Bundle 'tpope/vim-unimpaired'
 Bundle 'mileszs/ack.vim'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'tomasr/molokai'
-Bundle 'vim-scripts/SyntaxRange'
+Bundle 'SyntaxRange'
 Bundle 'hhvm/vim-hack'
+Bundle 'ekalinin/Dockerfile.vim'
 
 " Check if vundle bundles should be installed {{{
 if shouldInstallBundles == 1

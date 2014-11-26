@@ -6,6 +6,7 @@ set autoindent                              " Enable autoindent
 set smartindent                             " Smart autoindentation when starting a new line
 set shiftwidth=4                            " Number of spaces to use fo auto-indent 
 set tabstop=4                               " 4 spaces for tab
+set expandtab								" Expand tab
 set nu                                      " Show line numbers
 set cursorline                              " Enable Cursor line
 set modeline                                " Enable Modeline
@@ -18,6 +19,8 @@ map <Leader>1 :pclose<cr>                   " Close autocomplete preview
 set pastetoggle=<F12>                       " paste toggle
 colorscheme molokai
 
+" Map esc key
+inoremap jk <Esc>
 " Dealing with binary files and uglified JSON in Vim
 " thanks to: http://0value.com/Dealing-with-binary-files-and-uglified-json-in-Vim
 nnoremap <leader>jq :%!jq .<CR>
@@ -64,11 +67,6 @@ vno <up> <Nop>
 vmap <Tab> >gv
 vmap <S-Tab> <gv
 
-" NERDTree Configuration
-autocmd VimEnter * nmap <F3> :NERDTreeToggle<CR>
-let NERDTreeWinSize=35
-let NERDTreeShowHidden=1
-
 " hlsearch
 nmap <F4> :set hls!<CR>:set hls?<CR>  
 
@@ -83,6 +81,9 @@ set ttimeoutlen=50
 " UltiSnips
 let g:UltiSnipsExpandTrigger = "<c-j>"
 let g:snips_author = "Lorenzo Fontana  <fontanalorenzo@me.com>"
+
+" NERDTree
+map jn :NERDTreeToggle<CR>
 
 " Specific settings per Project
 set exrc                                " Enable project specific .vimrc
