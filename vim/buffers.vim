@@ -1,4 +1,7 @@
 " BUFFERS OPTIONS
+"
+map ]b :bn<cr>
+map [b  :bp<cr>
 
 " Autocomplete buffer name
 set wildchar=<Tab> wildmenu wildmode=full
