@@ -12,7 +12,7 @@ set cursorline                              " Enable Cursor line
 set modeline                                " Enable Modeline
 set backspace+=start,eol,indent             " Fix backspace
 set t_Co=256                                " 256 Colors
-set colorcolumn=80                          " Column on line 80
+call matchadd('ColorColumn', '\%81v', 100)
 let mapleader = ","                         " Remap leader
 set mouse=a                                 " Enable mouse
 map <Leader>1 :pclose<cr>                   " Close autocomplete preview
@@ -83,7 +83,7 @@ let g:UltiSnipsExpandTrigger = "<c-j>"
 let g:snips_author = "Lorenzo Fontana  <fontanalorenzo@me.com>"
 
 " NERDTree
-map jn :NERDTreeToggle<CR>
+map <Leader>n :NERDTreeToggle<CR>
 
 " Specific settings per Project
 set exrc                                " Enable project specific .vimrc
