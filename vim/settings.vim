@@ -6,7 +6,7 @@ set autoindent                              " Enable autoindent
 set smartindent                             " Smart autoindentation when starting a new line
 set shiftwidth=4                            " Number of spaces to use fo auto-indent 
 set tabstop=4                               " 4 spaces for tab
-set expandtab								" Expand tab
+set expandtab                               " Expand tab
 set nu                                      " Show line numbers
 set cursorline                              " Enable Cursor line
 set modeline                                " Enable Modeline
@@ -39,14 +39,14 @@ xmap + ]
 " ctrl-p Configuration
 let g:ctrlp_custom_ignore = {
             \ 'dir': '\v[\/](report|bin|cache|vendor|docs)$',
-            \ }  
-nnoremap <Leader>. :CtrlPTag<cr>
+            \ }
+nnoremap <Leader> :CtrlPTag<cr>
 
 " Splits movements ctrl+<direction>{{{ 
-nmap <silent> <c-k> :wincmd k<CR>                                                                                                                       
-nmap <silent> <c-j> :wincmd j<CR>                                                                                                                       
-nmap <silent> <c-h> :wincmd h<CR>                                                                                                                       
-nmap <silent> <c-l> :wincmd l<CR> 
+nmap <silent> <c-k> :wincmd k<CR>
+nmap <silent> <c-j> :wincmd j<CR>
+nmap <silent> <c-h> :wincmd h<CR>
+nmap <silent> <c-l> :wincmd l<CR>
 set splitbelow
 set splitright
 
@@ -84,6 +84,10 @@ let g:snips_author = "Lorenzo Fontana  <fontanalorenzo@me.com>"
 
 " NERDTree
 map <Leader>n :NERDTreeToggle<CR>
+
+" Visualize tabs and trailing spaces
+exec "set listchars=tab:\uBB\uBB,trail:\uB7,nbsp:~"
+set list
 
 " Specific settings per Project
 set exrc                                " Enable project specific .vimrc
