@@ -21,6 +21,12 @@ colorscheme molokai
 
 " Map esc key
 inoremap jk <Esc>
+
+" Save with ctrl+k
+nmap <C-k> :w<CR>
+imap <C-k> <Esc>:w<CR>
+vmap <C-k> <Esc>:w<CR>
+
 " Dealing with binary files and uglified JSON in Vim
 " thanks to: http://0value.com/Dealing-with-binary-files-and-uglified-json-in-Vim
 nnoremap <leader>jq :%!jq .<CR>
@@ -40,13 +46,9 @@ xmap + ]
 let g:ctrlp_custom_ignore = {
             \ 'dir': '\v[\/](report|bin|cache|vendor|docs)$',
             \ }
+
 nnoremap <Leader> :CtrlPTag<cr>
 
-" Splits movements ctrl+<direction>{{{ 
-nmap <silent> <c-k> :wincmd k<CR>
-nmap <silent> <c-j> :wincmd j<CR>
-nmap <silent> <c-h> :wincmd h<CR>
-nmap <silent> <c-l> :wincmd l<CR>
 set splitbelow
 set splitright
 
