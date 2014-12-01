@@ -33,6 +33,10 @@ Bundle 'tomasr/molokai'
 Bundle 'SyntaxRange'
 Bundle 'hhvm/vim-hack'
 Bundle 'ekalinin/Dockerfile.vim'
+Bundle 'Valloric/YouCompleteMe'
+Bundle 'scrooloose/syntastic'
+Bundle 'mattn/webapi-vim'
+Bundle 'mattn/gist-vim'
 
 " Check if vundle bundles should be installed {{{
 if shouldInstallBundles == 1

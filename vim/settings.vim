@@ -34,6 +34,9 @@ nnoremap <leader>JQ :%!jq . -c<CR>
 nnoremap <leader>xxd :%!xxd<CR>
 nnoremap <leader>XXD :%!xxd -r<CR>
 
+" transform a json object into a php array
+noremap <silent> <Leader>J /{\_[^}{]*}<CR>mo%mpv`o:s/"\s*:\s*"/" => "/g<CR>`o%mpr]`or[`ov`p:s/",[^\n$]/",\r/g<CR>mp`o:s/"/\r"/<CR>`ov`p=:nohl<CR>
+
 " Map è + to square brackets
 nmap è [
 nmap + ]
@@ -87,9 +90,20 @@ let g:snips_author = "Lorenzo Fontana  <fontanalorenzo@me.com>"
 " NERDTree
 map <Leader>n :NERDTreeToggle<CR>
 
+"YCM
+let g:ycm_confirm_extra_conf = 0
+let g:ycm_error_symbol = "✗"
+let g:ycm_warning_symbol = "⚠"
+nnoremap <Leader>jd :YcmCompleter GoTo <cr>
+
 " Visualize tabs and trailing spaces
 exec "set listchars=tab:\uBB\uBB,trail:\uB7,nbsp:~"
 set list
+
+" Syntastic
+let g:syntastic_error_symbol = "✗"
+let g:syntastic_warning_symbol = "⚠"
+let g:syntastic_cursor_column = 0
 
 " Specific settings per Project
 set exrc                                " Enable project specific .vimrc
