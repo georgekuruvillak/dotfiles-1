@@ -90,20 +90,54 @@ let g:snips_author = "Lorenzo Fontana  <fontanalorenzo@me.com>"
 " NERDTree
 map <Leader>n :NERDTreeToggle<CR>
 
-"YCM
+" {{{ YCM
 let g:ycm_confirm_extra_conf = 0
 let g:ycm_error_symbol = "✗"
-let g:ycm_warning_symbol = "⚠"
+let g:ycm_warning_symbol = "∆"
 nnoremap <Leader>jd :YcmCompleter GoTo <cr>
+function! g:UltiSnips_Complete()
+    call UltiSnips#ExpandSnippet()
+    if g:ulti_expand_res == 0
+        if pumvisible()
+            return "\<C-n>"
+        else
+            call UltiSnips#JumpForwards()
+            if g:ulti_jump_forwards_res == 0
+               return "\<TAB>"
+            endif
+        endif
+    endif
+    return ""
+endfunction
+
+au BufEnter * exec "inoremap <silent> " . g:UltiSnipsExpandTrigger . " <C-R>=g:UltiSnips_Complete()<cr>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsListSnippets="<c-e>"
+" this mapping Enter key to <C-y> to chose the current highlight item 
+" and close the selection list, same as other IDEs.
+" CONFLICT with some plugins like tpope/Endwise
+inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+" }}}
 
 " Visualize tabs and trailing spaces
 exec "set listchars=tab:\uBB\uBB,trail:\uB7,nbsp:~"
 set list
 
 " Syntastic
-let g:syntastic_error_symbol = "✗"
-let g:syntastic_warning_symbol = "⚠"
+let g:syntastic_error_symbol = '✗'
+let g:syntastic_style_error_symbol = '✠'
+let g:syntastic_warning_symbol = '∆'
+let g:syntastic_style_warning_symbol = '≈'
 let g:syntastic_cursor_column = 0
+
+" Vim php namespace
+inoremap <Leader>u <C-O>:call PhpInsertUse()<CR>
+noremap <Leader>u :call PhpInsertUse()<CR>
+inoremap <Leader>e <C-O>:call PhpExpandClass()<CR>
+noremap <Leader>e :call PhpExpandClass()<CR>
+
+" Automatic Ctags Generation
+au BufWritePost *.c,*.cpp,*.h,*.php silent! !ctags -R --append &
 
 " Specific settings per Project
 set exrc                                " Enable project specific .vimrc

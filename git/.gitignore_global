@@ -45,3 +45,4 @@ profile
 tags
 *.swp
 *.ycm_extra_conf.py*
+.ctags

@@ -37,6 +37,8 @@ Bundle 'Valloric/YouCompleteMe'
 Bundle 'scrooloose/syntastic'
 Bundle 'mattn/webapi-vim'
 Bundle 'mattn/gist-vim'
+Bundle 'shawncplus/phpcomplete.vim'
+Bundle 'arnaud-lb/vim-php-namespace'
 
 " Check if vundle bundles should be installed {{{
 if shouldInstallBundles == 1
