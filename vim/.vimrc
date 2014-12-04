@@ -7,7 +7,5 @@ else
     source $HOME/.dotfiles/vim/bundles.vim
     source $HOME/.dotfiles/vim/settings.vim
     source $HOME/.dotfiles/vim/buffers.vim
-    source $HOME/.dotfiles/vim/c.vim
 endif
 " }}}
-
