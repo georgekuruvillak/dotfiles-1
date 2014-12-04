@@ -1,1 +1,8 @@
+--tag-relative=yes
+--recurse=yes
+--php-kinds=+cf
+--regex-php=/abstract class ([^ ]*)/\1/c/
+--regex-php=/interface ([^ ]*)/\1/c/
+--regex-php=/(public |static |abstract |protected |private )+function ([^ (]*)/\2/f/
 --regex-php=/^[ \t]*trait[ \t]+([a-z0_9_]+)/\1/t,traits/i
+

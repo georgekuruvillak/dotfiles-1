@@ -18,6 +18,8 @@ set mouse=a                                 " Enable mouse
 map <Leader>1 :pclose<cr>                   " Close autocomplete preview
 set pastetoggle=<F12>                       " paste toggle
 colorscheme molokai
+set shortmess=a
+set cmdheight=2
 
 " Map esc key
 inoremap jk <Esc>
@@ -124,6 +126,7 @@ exec "set listchars=tab:\uBB\uBB,trail:\uB7,nbsp:~"
 set list
 
 " Syntastic
+let g:syntastic_php_checkers = ["php", "phpcs", "phpmd"]
 let g:syntastic_error_symbol = '✗'
 let g:syntastic_style_error_symbol = '✠'
 let g:syntastic_warning_symbol = '∆'
@@ -137,7 +140,8 @@ inoremap <Leader>e <C-O>:call PhpExpandClass()<CR>
 noremap <Leader>e :call PhpExpandClass()<CR>
 
 " Automatic Ctags Generation
-au BufWritePost *.c,*.cpp,*.h,*.php silent! !ctags -R --append &
+au BufWritePost *.c,*.cpp,*.h,*.php silent! !ctags -R & 
+au BufWritePost *.c,*.cpp,*.h,*.php echom v:shell_error  ? "An error occurred generating tags" : "Tags generated successfully"
 
 " Specific settings per Project
 set exrc                                " Enable project specific .vimrc
