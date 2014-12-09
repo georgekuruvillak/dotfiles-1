@@ -50,8 +50,6 @@ let g:ctrlp_custom_ignore = {
             \ 'dir': '\v[\/](report|bin|cache|vendor|docs)$',
             \ }
 
-nnoremap <Leader> :CtrlPTag<cr>
-
 set splitbelow
 set splitright
 
@@ -139,6 +137,14 @@ noremap <Leader>e :call PhpExpandClass()<CR>
 
 " Automatic Ctags Generation
 au BufWritePost *.c,*.cpp,*.h,*.php silent! !ctags -R & 
+
+" EasyMotion
+nmap s <Plug>(easymotion-s2)
+nmap t <Plug>(easymotion-t2)
+map  / <Plug>(easymotion-sn)
+omap / <Plug>(easymotion-tn)
+map  n <Plug>(easymotion-next)
+map  N <Plug>(easymotion-prev)
 
 " Specific settings per Project
 set exrc                                " Enable project specific .vimrc

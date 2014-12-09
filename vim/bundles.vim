@@ -40,6 +40,8 @@ Bundle 'mattn/gist-vim'
 Bundle 'shawncplus/phpcomplete.vim'
 Bundle 'arnaud-lb/vim-php-namespace'
 Bundle 'fatih/vim-go'
+Bundle 'Lokaltog/vim-easymotion'
+
 " Check if vundle bundles should be installed {{{
 if shouldInstallBundles == 1
     echo "~> Installing vundle bundles"
