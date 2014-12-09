@@ -18,8 +18,6 @@ set mouse=a                                 " Enable mouse
 map <Leader>1 :pclose<cr>                   " Close autocomplete preview
 set pastetoggle=<F12>                       " paste toggle
 colorscheme molokai
-set shortmess=a
-set cmdheight=2
 
 " Map esc key
 inoremap jk <Esc>
@@ -141,7 +139,6 @@ noremap <Leader>e :call PhpExpandClass()<CR>
 
 " Automatic Ctags Generation
 au BufWritePost *.c,*.cpp,*.h,*.php silent! !ctags -R & 
-au BufWritePost *.c,*.cpp,*.h,*.php echom v:shell_error  ? "An error occurred generating tags" : "Tags generated successfully"
 
 " Specific settings per Project
 set exrc                                " Enable project specific .vimrc

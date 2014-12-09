@@ -1,1 +1,1 @@
-au BufNewFile,BufRead *.phtml set filetype=html.php
+au BufNewFile,BufRead *.phtml set filetype=php
