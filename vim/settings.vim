@@ -92,6 +92,7 @@ map <Leader>n :NERDTreeToggle<CR>
 let g:ycm_confirm_extra_conf = 0
 let g:ycm_error_symbol = "✗"
 let g:ycm_warning_symbol = "∆"
+let g:ycm_collect_identifiers_from_tags_files = 1
 nnoremap <Leader>jd :YcmCompleter GoTo <cr>
 function! g:UltiSnips_Complete()
     call UltiSnips#ExpandSnippet()
