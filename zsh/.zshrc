@@ -26,7 +26,7 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 # User configuration
-export PATH="$PATH:$HOME/.composer/vendor/bin:$GOPATH/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/sbin:/usr/local/bin"
+export PATH="$PATH:$HOME/.composer/vendor/bin:$GOPATH/bin:$GOROOT/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/sbin:/usr/local/bin"
 
 # .zshrc_local
 source $HOME/.zshrc_local
