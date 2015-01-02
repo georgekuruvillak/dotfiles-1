@@ -41,6 +41,8 @@ Bundle 'shawncplus/phpcomplete.vim'
 Bundle 'arnaud-lb/vim-php-namespace'
 Bundle 'fatih/vim-go'
 Bundle 'Lokaltog/vim-easymotion'
+Bundle 'tpope/vim-dispatch'
+Bundle 'fntlnz/notify.vim'
 
 " Check if vundle bundles should be installed {{{
 if shouldInstallBundles == 1

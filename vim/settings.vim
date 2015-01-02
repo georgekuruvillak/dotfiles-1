@@ -137,7 +137,10 @@ inoremap <Leader>e <C-O>:call PhpExpandClass()<CR>
 noremap <Leader>e :call PhpExpandClass()<CR>
 
 " Automatic Ctags Generation
-au BufWritePost *.c,*.cpp,*.h,*.php silent! !ctags -R & 
+function! GenerateCtags()
+   Dispatch! ctags -R && vim +Notify\ "Horray"\ "Ctags\ updated" +qall
+endfunction
+au BufWritePost *.c,*.cpp,*.h,*.php call GenerateCtags()
 
 " EasyMotion
 nmap s <Plug>(easymotion-s2)
