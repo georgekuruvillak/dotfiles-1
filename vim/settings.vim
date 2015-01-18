@@ -124,6 +124,7 @@ set list
 
 " Syntastic
 let g:syntastic_php_checkers = ["php", "phpcs", "phpmd"]
+let g:syntastic_javascript_checkers = ["jshint", "flow"]
 let g:syntastic_error_symbol = '✗'
 let g:syntastic_style_error_symbol = '✠'
 let g:syntastic_warning_symbol = '∆'
