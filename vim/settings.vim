@@ -151,6 +151,9 @@ omap / <Plug>(easymotion-tn)
 map  n <Plug>(easymotion-next)
 map  N <Plug>(easymotion-prev)
 
+" Do not indent c++ ns
+set cino=N-s
+
 " Specific settings per Project
 set exrc                                " Enable project specific .vimrc
 set secure                              " Enable secure mode
