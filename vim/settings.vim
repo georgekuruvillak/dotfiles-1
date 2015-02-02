@@ -17,7 +17,7 @@ let mapleader = ","                         " Remap leader
 set mouse=a                                 " Enable mouse
 map <Leader>1 :pclose<cr>                   " Close autocomplete preview
 set pastetoggle=<F12>                       " paste toggle
-colorscheme Tomorrow
+colorscheme Tomorrow-Night
 
 " Map esc key
 inoremap jk <Esc>
