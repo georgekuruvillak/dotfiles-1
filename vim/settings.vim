@@ -18,6 +18,8 @@ set mouse=a                                 " Enable mouse
 map <Leader>1 :pclose<cr>                   " Close autocomplete preview
 set pastetoggle=<F12>                       " paste toggle
 colorscheme Tomorrow-Night
+set ttyfast
+set lazyredraw
 
 " Map esc key
 inoremap jk <Esc>
