@@ -142,7 +142,11 @@ noremap <Leader>e :call PhpExpandClass()<CR>
 
 " Automatic Ctags Generation
 function! GenerateCtags()
-   Dispatch! ctags -R && vim +Notify\ "Horray"\ "Ctags\ updated" +qall
+    if exists("g:automatic_tags") && g:automatic_tags == 1
+        Dispatch! ctags -R && vim +Notify\ "Horray"\ "Ctags\ updated" +qall
+    else
+        echom "ctags not generated, please set g:automatic_tags = 1 to do so"
+    endif
 endfunction
 au BufWritePost *.c,*.cpp,*.h,*.php call GenerateCtags()
 
