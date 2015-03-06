@@ -12,9 +12,8 @@ set cursorline                              " Enable Cursor line
 set modeline                                " Enable Modeline
 set backspace+=start,eol,indent             " Fix backspace
 set t_Co=256                                " 256 Colors
-call matchadd('ColorColumn', '\%81v', 100)
+call matchadd('ColorColumn', '\%81v', 100)  " Color the 81th column
 let mapleader = ","                         " Remap leader
-set mouse=a                                 " Enable mouse
 map <Leader>1 :pclose<cr>                   " Close autocomplete preview
 set pastetoggle=<F12>                       " paste toggle
 colorscheme hybrid
