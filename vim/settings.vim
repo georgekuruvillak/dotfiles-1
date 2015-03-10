@@ -142,12 +142,25 @@ noremap <Leader>e :call PhpExpandClass()<CR>
 " Automatic Ctags Generation
 function! GenerateCtags()
     if exists("g:automatic_tags") && g:automatic_tags == 1
-        Dispatch! ctags -R && vim +Notify\ "Horray"\ "Ctags\ updated" +qall
+        Dispatch! ctags -R && find . -regex ".*\.\(php\|c\|js\|cpp\|h\)" > ./cscope.files && cscope -ub -i cscope.files && vim +Notify\ "Horray"\ "Ctags\ updated" +qall
     else
         echom "ctags not generated, please set g:automatic_tags = 1 to do so"
     endif
 endfunction
 au BufWritePost *.c,*.cpp,*.h,*.php call GenerateCtags()
+
+
+" Cscope
+if has("cscope")
+    set csprg=/usr/bin/cscope
+    set csto=0
+    set cst
+    set nocsverb
+    " add any database in current directory
+    if filereadable("cscope.out")
+        cs add cscope.out
+    endif
+endif
 
 " EasyMotion
 nmap s <Plug>(easymotion-s2)

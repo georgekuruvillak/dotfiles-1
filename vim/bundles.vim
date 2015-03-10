@@ -44,7 +44,6 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'tpope/vim-dispatch'
 Bundle 'fntlnz/notify.vim'
 Bundle 'davidhalter/jedi'
-Bundle 'brookhong/cscope.vim'
 
 " Check if vundle bundles should be installed {{{
 if shouldInstallBundles == 1
