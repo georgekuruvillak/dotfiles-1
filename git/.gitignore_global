@@ -4,6 +4,7 @@ tags
 *.swp
 *.ycm_extra_conf.py*
 .ctags
+ncscope.out
 cscope.out
 cscope.files
 

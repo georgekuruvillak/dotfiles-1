@@ -7,5 +7,6 @@ else
     source $HOME/.dotfiles/vim/bundles.vim
     source $HOME/.dotfiles/vim/settings.vim
     source $HOME/.dotfiles/vim/buffers.vim
+    source $HOME/.dotfiles/vim/cscope_maps.vim
 endif
 " }}}
