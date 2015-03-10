@@ -23,7 +23,12 @@ set lazyredraw
 " Map esc key
 inoremap jk <Esc>
 
-" Save with ctrl+k
+" Save with and generate ctags with shift+k
+nmap <S-k> :call GenerateCtags()<CR>:w<CR>
+imap <S-k> :call GenerateCtags()<CR><Esc>:w<CR>
+vmap <S-k> :call GenerateCtags()<CR><Esc>:w<CR>
+
+" Just save with ctrl+k
 nmap <C-k> :w<CR>
 imap <C-k> <Esc>:w<CR>
 vmap <C-k> <Esc>:w<CR>
@@ -147,8 +152,6 @@ function! GenerateCtags()
         echom "ctags not generated, please set g:automatic_tags = 1 to do so"
     endif
 endfunction
-au BufWritePost *.c,*.cpp,*.h,*.php call GenerateCtags()
-
 
 " Cscope
 if has("cscope")
