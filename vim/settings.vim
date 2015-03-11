@@ -130,7 +130,7 @@ exec "set listchars=tab:\uBB\uBB,trail:\uB7,nbsp:~"
 set list
 
 " Syntastic
-let g:syntastic_php_checkers = ["php", "phpcs", "phpmd"]
+let g:syntastic_php_checkers = ["php", "phpcs"]
 let g:syntastic_javascript_checkers = ["jshint", "flow"]
 let g:syntastic_error_symbol = '✗'
 let g:syntastic_style_error_symbol = '✠'
@@ -146,11 +146,7 @@ noremap <Leader>e :call PhpExpandClass()<CR>
 
 " Automatic Ctags Generation
 function! GenerateCtags()
-    if exists("g:automatic_tags") && g:automatic_tags == 1
         Dispatch! ctags -R && find . -regex ".*\.\(php\|c\|js\|cpp\|h\)" > ./cscope.files && cscope -ub -i cscope.files && vim +Notify\ "Horray"\ "Ctags\ updated" +qall
-    else
-        echom "ctags not generated, please set g:automatic_tags = 1 to do so"
-    endif
 endfunction
 
 " Cscope
