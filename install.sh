@@ -22,6 +22,7 @@ ln -s $HOME/.dotfiles/git/.gitignore_global $HOME/.gitignore_global
 ln -s $HOME/.dotfiles/ack/.ackrc $HOME/.ackrc
 ln -s $HOME/.dotfiles/gdb/.gdbinit $HOME/.gdbinit
 ln -s $HOME/.dotfiles/ctags/.ctags $HOME/.ctags
+mkdir -p $HOME/.vim/ftdetect
 ln -s $HOME/.dotfiles/vim/ftdetect/* $HOME/.vim/ftdetect
 
 # Gnome Terminal Colorscheme
