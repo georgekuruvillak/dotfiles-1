@@ -146,7 +146,7 @@ noremap <Leader>e :call PhpExpandClass()<CR>
 
 " Automatic Ctags Generation
 function! GenerateCtags()
-        Dispatch! ctags -R && find . -regex ".*\.\(php\|c\|js\|cpp\|h\)" > ./cscope.files && cscope -ub -i cscope.files && vim +Notify\ "Horray"\ "Ctags\ updated" +qall
+        Dispatch! ctags -R -f tags.tmp && awk 'length($0) < 400' tags.tmp > tags && find . -regex ".*\.\(php\|c\|js\|cpp\|h\)" > ./cscope.files && cscope -ub -i cscope.files && vim +Notify\ "Horray"\ "Ctags\ updated" +qall
 endfunction
 
 " Cscope
