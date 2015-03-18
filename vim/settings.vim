@@ -23,10 +23,10 @@ set lazyredraw
 " Map esc key
 inoremap jk <Esc>
 
-" Save with and generate ctags with shift+k
-nmap <S-k> :call GenerateCtags()<CR>:w<CR>
-imap <S-k> :call GenerateCtags()<CR><Esc>:w<CR>
-vmap <S-k> :call GenerateCtags()<CR><Esc>:w<CR>
+" Save with and generate ctags with ]gt
+nmap ]gt :call GenerateCtags()<CR>:w<CR>
+imap ]gt :call GenerateCtags()<CR><Esc>:w<CR>
+vmap ]gt :call GenerateCtags()<CR><Esc>:w<CR>
 
 " Just save with ctrl+k
 nmap <C-k> :w<CR>
