@@ -169,6 +169,9 @@ omap / <Plug>(easymotion-tn)
 map  n <Plug>(easymotion-next)
 map  N <Plug>(easymotion-prev)
 
+" Tagbar
+nmap ]tb :TagbarToggle<CR>
+
 " Do not indent c++ ns
 set cino=N-s
 
