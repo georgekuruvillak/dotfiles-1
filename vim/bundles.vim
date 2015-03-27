@@ -45,6 +45,7 @@ Bundle 'tpope/vim-dispatch'
 Bundle 'fntlnz/notify.vim'
 Bundle 'davidhalter/jedi'
 Bundle 'majutsushi/tagbar'
+Bundle 'groenewege/vim-less'
 
 " Check if vundle bundles should be installed {{{
 if shouldInstallBundles == 1
