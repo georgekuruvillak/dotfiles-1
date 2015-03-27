@@ -14,7 +14,6 @@ set backspace+=start,eol,indent             " Fix backspace
 set t_Co=256                                " 256 Colors
 call matchadd('ColorColumn', '\%81v', 100)  " Color the 81th column
 let mapleader = ","                         " Remap leader
-map <Leader>1 :pclose<cr>                   " Close autocomplete preview
 set pastetoggle=<F12>                       " paste toggle
 colorscheme hybrid
 set ttyfast
@@ -100,7 +99,9 @@ let g:ycm_auto_trigger=0
 let g:ycm_error_symbol = "✗"
 let g:ycm_warning_symbol = "∆"
 let g:ycm_collect_identifiers_from_tags_files = 1
-let g:ycm_autoclose_preview_window_after_completion = 1
+let g:ycm_autoclose_preview_window_after_completion = 0
+let g:ycm_autoclose_preview_window_after_insertion = 1
+let g:ycm_max_diagnostics_to_display = 1
 nnoremap <Leader>jd :YcmCompleter GoTo <cr>
 function! g:UltiSnips_Complete()
     call UltiSnips#ExpandSnippet()
