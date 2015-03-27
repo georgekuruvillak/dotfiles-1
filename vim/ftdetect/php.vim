@@ -9,3 +9,7 @@ endfunction
 nmap ]md :call PHPMDFileReport()<CR>
 imap ]md :call PHPMDFileReport()<CR><Esc>
 vmap ]md :call PHPMDFileReport()<CR><Esc>
+
+" Zend Framework 2 Inline Javascript View Helper
+autocmd BufWritePre,BufRead *.phtml :call SyntaxRange#Include('<?php $this->inlineScript()->captureStart();?>', '<?php $this->inlineScript()->captureStart();?>', 'javascript')
+autocmd BufWritePre,BufRead *.phtml :call SyntaxRange#Include('<?php', '?>', 'php')
