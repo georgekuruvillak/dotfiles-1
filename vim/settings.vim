@@ -146,6 +146,11 @@ noremap <Leader>u :call PhpInsertUse()<CR>
 inoremap <Leader>e <C-O>:call PhpExpandClass()<CR>
 noremap <Leader>e :call PhpExpandClass()<CR>
 
+" OCaml
+let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
+execute "set rtp+=" . g:opamshare . "/merlin/vim"
+let g:syntastic_ocaml_checkers = ['merlin']
+
 " Automatic Ctags Generation
 function! GenerateCtags()
         Dispatch! ctags -R -f tags.tmp && awk 'length($0) < 400' tags.tmp > tags && find . -regex ".*\.\(php\|c\|js\|cpp\|h\)" > ./cscope.files && cscope -ub -i cscope.files && vim +Notify\ "Horray"\ "Ctags\ updated" +qall
