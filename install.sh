@@ -19,7 +19,6 @@ ln -s $HOME/.dotfiles/vim/.vimrc $HOME/.vimrc
 ln -s $HOME/.dotfiles/zsh/.zshrc $HOME/.zshrc
 ln -s $HOME/.dotfiles/scripts/* /usr/local/bin
 ln -s $HOME/.dotfiles/git/.gitignore_global $HOME/.gitignore_global
-ln -s $HOME/.dotfiles/ack/.ackrc $HOME/.ackrc
 ln -s $HOME/.dotfiles/gdb/.gdbinit $HOME/.gdbinit
 ln -s $HOME/.dotfiles/ctags/.ctags $HOME/.ctags
 mkdir -p $HOME/.vim/ftdetect
