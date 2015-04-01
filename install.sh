@@ -10,6 +10,9 @@ fi
 # GIT
 git config --global core.excludesfile ~/.gitignore_global
 git config --global branch.autosetuprebase always
+git config --global alias.pre "pull --rebase"
+git config --global alias.st status
+git config --global alias.cf '!vim -p `git diff --name-only`'
 
 # Dotfiles
 rm -Rf $HOME/.dotfiles
