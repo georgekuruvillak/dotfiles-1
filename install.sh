@@ -1,10 +1,8 @@
 #!/usr/bin/env bash
 
-if [ "$1" != "--force" ]; then
-    if [ -e "${HOME}/.dotfiles" ]; then
-        echo "~> A .dotfiles folder already found in ${HOME}. To overwrite it execute this command with the --force option"
-        exit
-    fi
+if [ -e "${HOME}/.dotfiles" ]; then
+    echo "~> .dotfiles folder already found in ${HOME}."
+    exit
 fi
 
 # GIT
@@ -27,9 +25,25 @@ ln -s $HOME/.dotfiles/ctags/.ctags $HOME/.ctags
 mkdir -p $HOME/.vim/ftdetect
 ln -s $HOME/.dotfiles/vim/ftdetect/* $HOME/.vim/ftdetect
 
-# Gnome Terminal Colorscheme
-git clone git://github.com/pricco/gnome-terminal-colors-monokai.git /tmp/gnome-terminal-colors-monokai 
-cd /tmp/gnome-terminal-colors-monokai && ./install.sh
+# Gnome Terminal
+$HOME/.dotfiles/gnome-terminal/base16-google.dark.sh
 
 # ZSH
 touch $HOME/.zshrc_local
+
+cat<<EOF
+                        _
+                       | \
+                       | |
+                       | |
+  |\                   | |
+ /, ~\                / /
+X     \`-.....-------./ /
+ ~-. ~  ~              |
+    \             /    |
+     \  /_     ___\   /
+     | /\ ~~~~~   \ |
+     | | \        || |
+     | |\ \       || )
+    (_/ (_/      ((_/
+EOF
