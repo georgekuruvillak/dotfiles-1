@@ -47,6 +47,7 @@ Plugin 'fntlnz/notify.vim'
 Plugin 'davidhalter/jedi'
 Plugin 'majutsushi/tagbar'
 Plugin 'groenewege/vim-less'
+Plugin 'maksimr/vim-jsbeautify'
 
 " Check if vundle bundles should be installed {{{
 if shouldInstallPlugins == 1
