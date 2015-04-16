@@ -92,6 +92,7 @@ let g:snips_author = "Lorenzo Fontana  <fontanalorenzo@me.com>"
 
 " NERDTree
 map <Leader>n :NERDTreeToggle<CR>
+let NERDTreeShowHidden = 1
 
 " {{{ YCM
 let g:ycm_confirm_extra_conf = 0
