@@ -25,6 +25,9 @@ ln -s $HOME/.dotfiles/ctags/.ctags $HOME/.ctags
 mkdir -p $HOME/.vim/ftdetect
 ln -s $HOME/.dotfiles/vim/ftdetect/* $HOME/.vim/ftdetect
 
+# Fonts rendering
+sudo cp $HOME/.dotfiles/fonts/local.conf /etc/fonts/local.conf
+
 # Gnome Terminal
 $HOME/.dotfiles/gnome-terminal/base16-google.dark.sh
 
