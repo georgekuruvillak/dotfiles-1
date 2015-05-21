@@ -154,7 +154,7 @@ let g:syntastic_ocaml_checkers = ['merlin']
 
 " Automatic Ctags Generation
 function! GenerateCtags()
-        silent Dispatch! ctags -R -f tags.tmp; awk 'length($0) < 400' tags.tmp > tags; find . -regex ".*\.\(php\|c\|js\|cpp\|h\)" > ./cscope.files; cscope -ub -i cscope.files; vim +Notify\ "Horray"\ "Ctags\ updated" +qall
+        silent Dispatch! ctags -R -f tags.tmp; awk 'length($0) < 400' tags.tmp > tags; find . -regex ".*\.\(php\|c\|js\|cpp\|h\|go\)" > ./cscope.files; cscope -ub -i cscope.files; vim +Notify\ "Horray"\ "Ctags\ updated" +qall
         silent cscope reset
 endfunction
 
