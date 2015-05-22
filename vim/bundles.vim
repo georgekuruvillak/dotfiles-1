@@ -48,6 +48,7 @@ Plugin 'davidhalter/jedi'
 Plugin 'majutsushi/tagbar'
 Plugin 'groenewege/vim-less'
 Plugin 'maksimr/vim-jsbeautify'
+Plugin 'vim-scripts/php_localvarcheck.vim'
 
 " Check if vundle bundles should be installed {{{
 if shouldInstallPlugins == 1
