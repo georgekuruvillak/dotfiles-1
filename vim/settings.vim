@@ -52,7 +52,7 @@ xmap + ]
 
 " ctrl-p Configuration
 let g:ctrlp_custom_ignore = {
-            \ 'dir': '\v[\/](report|bin|cache|vendor|docs)$',
+            \ 'dir': '\v[\/](report|bin|cache|vendor|docs|build)$',
             \ }
 
 set splitbelow
