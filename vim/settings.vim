@@ -2,20 +2,21 @@
 
 filetype plugin indent on
 syntax on
-set autoindent                              " Enable autoindent
-set smartindent                             " Smart autoindentation when starting a new line
-set shiftwidth=4                            " Number of spaces to use fo auto-indent 
-set tabstop=4                               " 4 spaces for tab
-set expandtab                               " Expand tab
-set nu                                      " Show line numbers
-set cursorline                              " Enable Cursor line
-set modeline                                " Enable Modeline
-set backspace+=start,eol,indent             " Fix backspace
-set t_Co=256                                " 256 Colors
-call matchadd('ColorColumn', '\%81v', 100)  " Color the 81th column
-let mapleader = ","                         " Remap leader
-set pastetoggle=<F12>                       " paste toggle
-colorscheme hybrid
+set autoindent                                  " Enable autoindent
+set smartindent                                 " Smart autoindentation when starting a new line
+set shiftwidth=4                                " Number of spaces to use fo auto-indent 
+set tabstop=4                                   " 4 spaces for tab
+set expandtab                                   " Expand tab
+set nu                                          " Show line numbers
+set cursorline                                  " Enable Cursor line
+set modeline                                    " Enable Modeline
+set backspace+=start,eol,indent                 " Fix backspace
+set t_Co=256                                    " 256 Colors
+call matchadd('ColorColumn', '\%81v', 100)      " Color the 81th column
+let mapleader = ","                             " Remap leader
+set pastetoggle=<F12>                           " paste toggle
+colorscheme github                              " colorscheme
+hi CursorLine term=bold cterm=bold guibg=Grey40 " Remove Cursor underline
 set ttyfast
 set lazyredraw
 
@@ -133,13 +134,15 @@ exec "set listchars=tab:\uBB\uBB,trail:\uB7,nbsp:~"
 set list
 
 " Syntastic
-let g:syntastic_php_checkers = ["php", "phpcs", "phpmd"]
-let g:syntastic_javascript_checkers = ["jshint", "flow"]
 let g:syntastic_error_symbol = '✗'
 let g:syntastic_style_error_symbol = '✠'
 let g:syntastic_warning_symbol = '∆'
 let g:syntastic_style_warning_symbol = '≈'
 let g:syntastic_cursor_column = 0
+
+let g:syntastic_javascript_checkers = ["jshint", "flow"]
+let g:syntastic_php_checkers = ["php", "phpcs", "phpmd"]
+let g:syntastic_php_phpcs_args="--standard=PSR2 -n --report=csv"
 
 " Vim php namespace
 inoremap <Leader>u <C-O>:call PhpInsertUse()<CR>
