@@ -15,7 +15,7 @@ set t_Co=256                                    " 256 Colors
 call matchadd('ColorColumn', '\%81v', 100)      " Color the 81th column
 let mapleader = ","                             " Remap leader
 set pastetoggle=<F12>                           " paste toggle
-colorscheme github                              " colorscheme
+colorscheme hybrid-light                        " colorscheme
 hi CursorLine term=bold cterm=bold guibg=Grey40 " Remove Cursor underline
 set ttyfast
 set lazyredraw
