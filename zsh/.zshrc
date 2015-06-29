@@ -31,3 +31,6 @@ source $HOME/.zshrc_local
 # Aliases
 alias xclip='xclip -selection c'
 alias tmux="tmux -2"
+
+# History ignore space
+setopt HIST_IGNORE_SPACE
