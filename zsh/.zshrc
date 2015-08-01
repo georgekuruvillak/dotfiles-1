@@ -2,7 +2,7 @@ export ZSH=$HOME/.oh-my-zsh
 
 ZSH_THEME="robbyrussell"
 
-plugins=(git svn composer pip docker python)
+plugins=(git svn composer pip docker python docker-compose)
 
 source $ZSH/oh-my-zsh.sh
 
