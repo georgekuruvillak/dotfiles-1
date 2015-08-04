@@ -23,8 +23,8 @@ ln -s $HOME/.dotfiles/scripts/* /usr/local/bin
 ln -s $HOME/.dotfiles/git/.gitignore_global $HOME/.gitignore_global
 ln -s $HOME/.dotfiles/gdb/.gdbinit $HOME/.gdbinit
 ln -s $HOME/.dotfiles/ctags/.ctags $HOME/.ctags
-mkdir -p $HOME/.vim/ftdetect
-ln -s $HOME/.dotfiles/vim/ftdetect/* $HOME/.vim/ftdetect
+mkdir -p $HOME/.vim/after/ftplugin
+ln -s $HOME/.dotfiles/vim/ftplugin/* $HOME/.vim/after/ftplugin
 
 # Fonts rendering
 sudo cp $HOME/.dotfiles/fonts/local.conf /etc/fonts/local.conf
