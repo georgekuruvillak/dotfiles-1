@@ -1,7 +1,7 @@
-" Neomake settings
+" Neomake
 let g:neomake_php_phpcs_args_standard="PSR2"
 
-" YCM Settings
+" YCM
 autocmd! User YouCompleteMe call youcompleteme#Enable()
 let g:ycm_confirm_extra_conf = 0
 let g:ycm_auto_trigger=0
