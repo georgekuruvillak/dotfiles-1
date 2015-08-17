@@ -22,7 +22,7 @@ ln -sf $HOME/.dotfiles/git/.gitignore_global $HOME/.gitignore_global
 ln -sf $HOME/.dotfiles/gdb/.gdbinit $HOME/.gdbinit
 ln -sf $HOME/.dotfiles/ctags/.ctags $HOME/.ctags
 ln -sf $HOME/.dotfiles/nvim/.nvimrc $HOME/.nvimrc
-ln -sf $HOME/.dotfiles/nvim/autoload/* $HOME/.nvim/autoload
+mkdir -p $HOME/.nvim/autoload
 ln -sf $HOME/.dotfiles/nvim/autoload/* $HOME/.nvim/autoload
 mkdir -p $HOME/.nvim/ftplugin
 ln -sf $HOME/.dotfiles/nvim/ftplugin/* $HOME/.nvim/ftplugin
