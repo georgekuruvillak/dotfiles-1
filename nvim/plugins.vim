@@ -18,9 +18,11 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'benekastah/neomake', { 'on': 'Neomake' }
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM'), 'for': ['c', 'cpp', 'php']}
+Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM'), 'for': ['c', 'cpp', 'php', 'go']}
 Plug 'shawncplus/phpcomplete.vim', { 'for': 'php' }
 Plug 'chriskempson/tomorrow-theme', { 'rtp': 'vim' }
+Plug 'fatih/vim-go', { 'for': 'go' }
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
 call plug#end()
 
 if shouldInstallPluginManager == 1

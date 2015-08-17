@@ -22,3 +22,6 @@ map ]n :Neomake<cr>
 
 " Generate ctags
 map ]gt :call ctags#GenerateCtags()<cr>
+
+" FZF (ctrlp.vim like mapping)
+map <C-p> :FZF<cr>
