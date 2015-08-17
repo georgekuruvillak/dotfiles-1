@@ -26,7 +26,7 @@ export LANG=en_US.UTF-8
 export PATH="$PATH:$HOME/.composer/vendor/bin:/usr/local/go:$GOPATH/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/sbin:/usr/local/bin"
 
 # .zshrc_local
-s[ -f ~/.zshrc_local ] && source ~/.zshrc_local
+[ -f ~/.zshrc_local ] && source ~/.zshrc_local
 
 # Aliases
 alias xclip='xclip -selection c'
