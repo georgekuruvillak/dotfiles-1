@@ -1,3 +1,5 @@
+" Plugins specific configurations
+
 " Neomake
 let g:neomake_php_phpcs_args_standard="PSR2"
 

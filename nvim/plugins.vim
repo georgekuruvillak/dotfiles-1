@@ -19,7 +19,8 @@ call plug#begin('~/.vim/plugged')
 Plug 'benekastah/neomake', { 'on': 'Neomake' }
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM'), 'for': ['c', 'cpp', 'php']}
-
+Plug 'shawncplus/phpcomplete.vim', { 'for': 'php' }
+Plug 'chriskempson/tomorrow-theme', { 'rtp': 'vim' }
 call plug#end()
 
 if shouldInstallPluginManager == 1
