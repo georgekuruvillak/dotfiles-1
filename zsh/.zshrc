@@ -16,7 +16,7 @@ export ANSIBLE_HOSTS=$HOME/.ansible_hosts
 export SVN_EDITOR=vim
 
 # Editor
-export EDITOR=vim
+export EDITOR=nvim
 
 # Locale
 export LC_ALL=en_US.UTF-8  
