@@ -18,7 +18,6 @@ rm -Rf $HOME/.dotfiles
 git clone https://github.com/fntlnz/dotfiles $HOME/.dotfiles
 ln -sf $HOME/.dotfiles/tmux/.tmux.conf $HOME/.tmux.conf
 ln -sf $HOME/.dotfiles/zsh/.zshrc $HOME/.zshrc
-ln -sf $HOME/.dotfiles/scripts/* /usr/local/bin
 ln -sf $HOME/.dotfiles/git/.gitignore_global $HOME/.gitignore_global
 ln -sf $HOME/.dotfiles/gdb/.gdbinit $HOME/.gdbinit
 ln -sf $HOME/.dotfiles/ctags/.ctags $HOME/.ctags
