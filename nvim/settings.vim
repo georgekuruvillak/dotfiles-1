@@ -8,3 +8,6 @@ set shiftwidth=4
 set expandtab
 set autoindent
 set smarttab
+
+" Relative line number
+set rnu
