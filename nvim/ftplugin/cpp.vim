@@ -6,3 +6,4 @@ setlocal expandtab
 setlocal textwidth=80
 setlocal wrap
 setlocal cindent
+setlocal cino=N-s

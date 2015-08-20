@@ -25,6 +25,7 @@ Plug 'chriskempson/tomorrow-theme', { 'rtp': 'vim' }
 Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
 Plug 'junegunn/fzf.vim'
+Plug 'terryma/vim-multiple-cursors'
 
 call plug#end()
 
