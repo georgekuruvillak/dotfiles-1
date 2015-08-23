@@ -21,7 +21,7 @@ nnoremap <Leader>jd :YcmCompleter GoTo <cr>
 map ]n :Neomake<cr>
 
 " Generate ctags
-map ]gt :call ctags#GenerateCtags()<cr>
+map ]gt :call atags#generate()<cr>
 
 " FZF
 map <Leader>f :FZF<cr>
