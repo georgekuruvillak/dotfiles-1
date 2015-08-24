@@ -1,5 +1,6 @@
 # Vim
 .vimrc
+.nvimrc
 tags
 tags.tmp
 *.swp
