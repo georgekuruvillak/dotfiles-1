@@ -11,3 +11,6 @@ set smarttab
 
 " Relative line number
 set rnu
+
+" Load project specific .nvimrc files
+set exrc
