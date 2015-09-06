@@ -14,3 +14,7 @@ set rnu
 
 " Load project specific .nvimrc files
 set exrc
+
+" Show tabs and spaces
+set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
+set list
