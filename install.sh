@@ -27,11 +27,5 @@ ln -sf $HOME/.dotfiles/nvim/autoload/* $HOME/.nvim/autoload
 mkdir -p $HOME/.nvim/ftplugin
 ln -sf $HOME/.dotfiles/nvim/ftplugin/* $HOME/.nvim/ftplugin
 
-# Fonts rendering
-sudo cp $HOME/.dotfiles/fonts/local.conf /etc/fonts/local.conf
-
-# Gnome Terminal
-$HOME/.dotfiles/gnome-terminal/base16-google.dark.sh
-
 # ZSH
 touch $HOME/.zshrc_local
