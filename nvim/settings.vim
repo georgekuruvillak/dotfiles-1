@@ -16,6 +16,6 @@ set rnu
 set exrc
 
 " Show tabs and spaces
-set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
+set listchars=tab:>-,trail:~,extends:>,precedes:<
 set list
 au FileType nerdtree set nolist
