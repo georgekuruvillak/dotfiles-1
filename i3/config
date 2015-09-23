@@ -165,3 +165,7 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 1 +5% &&
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 1 -5% && killall -SIGUSR1 i3status
 # Mute
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 1 toggle && killall -SIGUSR1 i3status
+
+# Keyboard backlight
+bindsym XF86KbdBrightnessDown exec $HOME/.dotfiles/bin/kbacklight down
+bindsym XF86KbdBrightnessUp exec $HOME/.dotfiles/bin/kbacklight up
