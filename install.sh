@@ -11,7 +11,6 @@ git config --global branch.autosetuprebase always
 git config --global alias.pre "pull --rebase"
 git config --global alias.st status
 git config --global alias.cf '!nvim -p `git diff --name-only`'
-git config --global alias.since  "\!f() { git log --pretty=format: --name-only --since=\"HEAD~\$1 days ago\" | sort | uniq ; }; f"
 
 # Dotfiles
 rm -Rf $HOME/.dotfiles
