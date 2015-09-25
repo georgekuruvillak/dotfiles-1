@@ -173,3 +173,9 @@ bindsym XF86KbdBrightnessUp exec $HOME/.dotfiles/bin/kbacklight up
 # Display backlight
 bindsym $mod+F5 exec xbacklight -5
 bindsym $mod+F6 exec xbacklight +5
+
+# Start conky
+exec --no-startup-id conky
+
+# Set background image
+exec --no-startup-id feh -B white --bg-center ~/Pictures/background.png
