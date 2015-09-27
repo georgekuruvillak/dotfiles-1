@@ -1,6 +1,9 @@
 #!/bin/sh
 lock() {
-    i3lock
+    BGBLUR=/tmp/bgblur.png
+    scrot $BGBLUR
+    convert $BGBLUR  -channel RGBA -blur 0x8 $BGBLUR
+    i3lock -i $BGBLUR
 }
 
 case "$1" in
