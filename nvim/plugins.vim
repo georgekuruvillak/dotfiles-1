@@ -19,7 +19,8 @@ call plug#begin('~/.vim/plugged')
 Plug 'benekastah/neomake', { 'on': 'Neomake' }
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'scrooloose/nerdcommenter'
-Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM'), 'for': ['c', 'cpp', 'php', 'go']}
+Plug 'Shougo/deoplete.nvim'
+Plug 'justmao945/vim-clang'
 Plug 'shawncplus/phpcomplete.vim', { 'for': 'php' }
 Plug 'flazz/vim-colorschemes'
 Plug 'fatih/vim-go', { 'for': 'go' }

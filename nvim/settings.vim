@@ -9,6 +9,7 @@ set expandtab
 set autoindent
 set smarttab
 set modeline
+set exrc
 
 " Relative line number
 set rnu
@@ -23,3 +24,6 @@ au FileType nerdtree set nolist
 
 " PHP Sync method
 let php_sync_method=-1
+
+" Highlight C useless trailing spaces in red
+let c_space_errors = 1

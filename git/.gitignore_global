@@ -23,3 +23,6 @@ cscope.files
 # Anything else
 .ackrc
 .agignore
+
+# OSX
+.DS_Store
