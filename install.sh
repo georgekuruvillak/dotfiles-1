@@ -25,7 +25,6 @@ mkdir -p $HOME/.nvim/autoload
 ln -sf $HOME/.dotfiles/nvim/autoload/* $HOME/.nvim/autoload
 mkdir -p $HOME/.nvim/ftplugin
 ln -sf $HOME/.dotfiles/nvim/ftplugin/* $HOME/.nvim/ftplugin
-ln -sf $HOME/.dotfiles/.conkyrc $HOME/.conkyrc
 
 # ZSH
 touch $HOME/.zshrc_local
