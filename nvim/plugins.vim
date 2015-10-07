@@ -22,6 +22,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'Shougo/deoplete.nvim'
 Plug 'justmao945/vim-clang'
 Plug 'shawncplus/phpcomplete.vim', { 'for': 'php' }
+Plug 'hhvm/vim-hack'
 Plug 'flazz/vim-colorschemes'
 Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
