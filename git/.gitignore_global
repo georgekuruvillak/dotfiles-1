@@ -9,6 +9,8 @@ tags.tmp
 ncscope.out
 cscope.out
 cscope.files
+.clang
+.exrc
 
 # IntelliJ
 .idea/
