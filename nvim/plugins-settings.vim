@@ -12,3 +12,7 @@ let NERDTreeShowHidden=1
 
 " Deoplete
 let g:deoplete#enable_at_startup = 1
+
+" Clang
+let g:clang_c_completeopt = 'menuone,preview'
+let g:clang_cpp_completeopt = 'menuone,preview'

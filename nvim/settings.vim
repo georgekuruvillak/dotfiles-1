@@ -1,6 +1,6 @@
 " Generic settings
 
-colorscheme molokai
+colorscheme default
 
 " Initial indentation settings
 set tabstop=4
