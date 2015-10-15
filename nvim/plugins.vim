@@ -32,6 +32,8 @@ Plug 'octol/vim-cpp-enhanced-highlight', { 'for': ['c', 'cpp']}
 Plug 'fntlnz/atags.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'mattn/emmet-vim'
+Plug 'Shougo/neosnippet'
+Plug 'honza/vim-snippets'
 
 call plug#end()
 

@@ -16,3 +16,10 @@ let g:deoplete#enable_at_startup = 1
 " Clang
 let g:clang_c_completeopt = 'menuone,preview'
 let g:clang_cpp_completeopt = 'menuone,preview'
+
+" Neosnippet
+if has('conceal')
+  set conceallevel=2 concealcursor=niv
+endif
+let g:neosnippet#enable_snipmate_compatibility = 1
+let g:neosnippet#snippets_directory='~/.vim/plugged/vim-snippets/snippets'
