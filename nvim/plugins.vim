@@ -3,7 +3,7 @@ let shouldInstallPluginManager = 0
 " post installation hooks{{{
 function! BuildYCM(info)
     if a:info.status == 'installed' || a:info.force
-        !./install.sh --clang-completer
+        !./install.py --clang-completer
     endif
 endfunction
 " }}}
@@ -19,8 +19,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'benekastah/neomake', { 'on': 'Neomake' }
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'scrooloose/nerdcommenter'
-Plug 'Shougo/deoplete.nvim'
-Plug 'justmao945/vim-clang'
+Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') }
 Plug 'shawncplus/phpcomplete.vim', { 'for': 'php' }
 Plug 'hhvm/vim-hack'
 Plug 'flazz/vim-colorschemes'
@@ -32,8 +31,6 @@ Plug 'octol/vim-cpp-enhanced-highlight', { 'for': ['c', 'cpp']}
 Plug 'fntlnz/atags.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'mattn/emmet-vim'
-Plug 'Shougo/neosnippet'
-Plug 'honza/vim-snippets'
 
 call plug#end()
 

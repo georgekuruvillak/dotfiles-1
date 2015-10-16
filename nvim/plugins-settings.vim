@@ -10,16 +10,11 @@ let g:multi_cursor_exit_from_insert_mode=0
 " NERDTree
 let NERDTreeShowHidden=1
 
-" Deoplete
-let g:deoplete#enable_at_startup = 1
+" YCM
+autocmd! User YouCompleteMe call youcompleteme#Enable()
+let g:ycm_confirm_extra_conf=0
+let g:ycm_collect_identifiers_from_tags_files=1
+let g:ycm_autoclose_preview_window_after_completion=0
+let g:ycm_autoclose_preview_window_after_insertion=1
+let g:ycm_max_diagnostics_to_display=1
 
-" Clang
-let g:clang_c_completeopt = 'menuone,preview'
-let g:clang_cpp_completeopt = 'menuone,preview'
-
-" Neosnippet
-if has('conceal')
-  set conceallevel=2 concealcursor=niv
-endif
-let g:neosnippet#enable_snipmate_compatibility = 1
-let g:neosnippet#snippets_directory='~/.vim/plugged/vim-snippets/snippets'
