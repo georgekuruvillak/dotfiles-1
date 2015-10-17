@@ -22,7 +22,6 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') }
 Plug 'shawncplus/phpcomplete.vim', { 'for': 'php' }
 Plug 'hhvm/vim-hack'
-Plug 'flazz/vim-colorschemes'
 Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
 Plug 'junegunn/fzf.vim'
