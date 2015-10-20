@@ -18,3 +18,5 @@ let g:ycm_autoclose_preview_window_after_completion=0
 let g:ycm_autoclose_preview_window_after_insertion=1
 let g:ycm_max_diagnostics_to_display=1
 
+
+let g:UltiSnipsExpandTrigger = "<C-j>"
