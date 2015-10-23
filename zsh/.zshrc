@@ -28,6 +28,10 @@ export PATH="$PATH:$HOME/.composer/vendor/bin:/usr/local/go:$GOPATH/bin:/usr/sbi
 # .zshrc_local
 [ -f ~/.zshrc_local ] && source ~/.zshrc_local
 
+# Aliases
+alias xclip='xclip -selection c'
+alias tmux="tmux -2"
+
 # History ignore space
 setopt HIST_IGNORE_SPACE
 
