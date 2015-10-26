@@ -34,6 +34,8 @@ double_buffer yes
 
 TEXT
 ${color2}Uptime:$color $uptime
+${color2}Battery:$color ${battery_percent}% ${battery_bar}
+$hr
 ${color2}Frequency (in MHz):$color $freq
 ${color2}Frequency (in GHz):$color $freq_g
 ${color2}RAM Usage:$color $mem/$memmax - $memperc% ${membar 4}
@@ -44,6 +46,7 @@ $hr
 ${color2}File systems:
  /     $color${fs_used /}/${fs_size /} ${fs_bar 6 /}
  ${color2}/home $color${fs_used /home}/${fs_size /home} ${fs_bar 6 /home}
+$hr
 ${color2}Networking:
 Up:$color ${upspeed eth0} ${color2} - Down:$color ${downspeed eth0}
 $hr
