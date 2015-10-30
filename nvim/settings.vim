@@ -1,6 +1,7 @@
 " Generic settings
 
-colorscheme default
+colorscheme gruvbox
+set background=light
 
 " Initial indentation settings
 set tabstop=4

@@ -27,3 +27,7 @@ map ]gt :call atags#generate()<cr>
 map <Leader>f :FZF<cr>
 map <Leader>t :Tags<cr>
 map <Leader>b :Buffers<cr>
+
+" Exit highlight mode
+map <ESC><ESC> :nohl<cr>
+
