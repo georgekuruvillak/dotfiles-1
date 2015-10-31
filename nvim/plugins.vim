@@ -33,6 +33,7 @@ Plug 'mattn/emmet-vim'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'morhetz/gruvbox'
+Plug 'bling/vim-airline'
 
 call plug#end()
 

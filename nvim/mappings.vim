@@ -31,3 +31,10 @@ map <Leader>b :Buffers<cr>
 " Exit highlight mode
 map <ESC><ESC> :nohl<cr>
 
+" Buffers and tabs
+map ]b :bn<cr>
+map [b :bp<cr>
+map bd :bd<cr>
+
+map ]t :tabnext<cr>
+map [t :tabprevious<cr>
