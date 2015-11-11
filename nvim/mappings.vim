@@ -34,7 +34,13 @@ map <ESC><ESC> :nohl<cr>
 " Buffers and tabs
 map ]b :bn<cr>
 map [b :bp<cr>
+map gb :bn<cr>
 map bd :bd<cr>
 
 map ]t :tabnext<cr>
 map [t :tabprevious<cr>
+
+" Annotate
+map ]a :Gblame<cr>
+
+map <C><RightMouse> :pta <cword><cr>

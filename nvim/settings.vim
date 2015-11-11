@@ -1,7 +1,7 @@
 " Generic settings
 
 colorscheme gruvbox
-set background=light
+set background=dark
 
 " Initial indentation settings
 set tabstop=4
@@ -25,3 +25,7 @@ let php_sync_method=-1
 
 " Highlight C useless trailing spaces in red
 let c_space_errors = 1
+
+" XML
+let g:xml_syntax_folding=1
+au FileType xml setlocal foldmethod=syntax

@@ -8,9 +8,9 @@ function! BuildYCM(info)
 endfunction
 " }}}
 
-if !filereadable($HOME . "/.nvim/autoload/plug.vim")
+if !filereadable($HOME . "/.config/nvim/autoload/plug.vim")
 echo "~≥ Installing vim-plug \n"
-silent !curl -fLo $HOME/.nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+silent !curl -fLo $HOME/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 let shouldInstallPluginManager = 1
 endif
 
@@ -29,7 +29,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'octol/vim-cpp-enhanced-highlight', { 'for': ['c', 'cpp']}
 Plug 'fntlnz/atags.vim'
 Plug 'tpope/vim-fugitive'
-Plug 'mattn/emmet-vim'
+Plug 'mattn/emmet-vim', { 'for': ['html'] }
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'morhetz/gruvbox'
