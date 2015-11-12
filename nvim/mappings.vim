@@ -43,4 +43,8 @@ map [t :tabprevious<cr>
 " Annotate
 map ]a :Gblame<cr>
 
+" Lnext/Lprev
+map ]l :lnext<cr>
+map [l :lprev<cr>
+
 map <C><RightMouse> :pta <cword><cr>
