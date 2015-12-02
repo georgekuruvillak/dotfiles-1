@@ -134,8 +134,28 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command i3status
+    colors {
+        # Whole color settings
+        background #000000
+        statusline #ffffff
+        separator  #666666
+
+        # Type             border  background font
+        focused_workspace  #008fff #007fff #ffffff
+        active_workspace   #333333 #5f676a #ffffff
+        inactive_workspace #333333 #222222 #888888
+        urgent_workspace   #aa0000 #990000 #ffffff
+    }
+    # i3bar position
+    position top
+    # Using custom i3status.conf
+    status_command i3status
 }
+
+# Colors
+client.focused #007fbf #007fbf #ffffff
+client.unfocused #666666 #666666 #ffffff
+client.urgent #aa0000 #990000 #ffffff
 
 # Shutdown, Reboot, etc..
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
@@ -154,7 +174,7 @@ mode "$mode_system" {
 bindsym $mod+Pause mode "$mode_system"
 
 # Screenshot
-bindsym --release $mod+Print exec scrot -s '/tmp/%Y-%m-%d_$wx$h_scrot.png'
+bindsym --release $mod+Print exec "scrot -s '/tmp/%Y-%m-%d_$wx$h_scrot.png'; notify-send "
 
 # Pulse Audio controls
 # TODO: create a script that can change 1 (my analogic stereo output) with the 
@@ -174,8 +194,6 @@ bindsym XF86KbdBrightnessUp exec $HOME/.dotfiles/bin/kbacklight up
 bindsym $mod+F5 exec xbacklight -5
 bindsym $mod+F6 exec xbacklight +5
 
-# Start conky
-exec --no-startup-id conky
-
 # Set background image
 exec --no-startup-id feh -B white --bg-center ~/Pictures/background.png
+
