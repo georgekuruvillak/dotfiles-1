@@ -32,7 +32,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'mattn/emmet-vim', { 'for': ['html'] }
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
-Plug 'morhetz/gruvbox'
+Plug 'flazz/vim-colorschemes'
 Plug 'bling/vim-airline'
 
 call plug#end()
