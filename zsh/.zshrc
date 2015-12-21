@@ -9,9 +9,6 @@ source $ZSH/oh-my-zsh.sh
 # GO
 export GOPATH=$HOME/go
 
-# ANSIBLE
-export ANSIBLE_HOSTS=$HOME/.ansible_hosts
-
 # SVN
 export SVN_EDITOR=vim
 
