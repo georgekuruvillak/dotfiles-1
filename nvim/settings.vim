@@ -1,7 +1,6 @@
 " Generic settings
 
-colorscheme Tomorrow
-set background=light
+colorscheme Tomorrow-Night-Bright
 
 " Initial indentation settings
 set tabstop=4
