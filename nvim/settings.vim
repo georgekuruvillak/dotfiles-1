@@ -10,6 +10,7 @@ set autoindent
 set smarttab
 set modeline
 set exrc
+set mouse=a
 
 " Relative line number
 set rnu
