@@ -11,7 +11,8 @@ set smarttab
 set modeline
 set exrc
 set mouse=a
-
+set undofile
+set undodir=/tmp/.vimundo/
 " Relative line number
 set rnu
 
