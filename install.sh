@@ -16,16 +16,16 @@ git config --global alias.cf '!nvim -p `git diff --name-only`'
 rm -Rf $HOME/.dotfiles
 mkdir -p $HOME/.config/nvim
 git clone https://github.com/fntlnz/dotfiles $HOME/.dotfiles
+
 ln -sf $HOME/.dotfiles/tmux/.tmux.conf $HOME/.tmux.conf
 ln -sf $HOME/.dotfiles/zsh/.zshrc $HOME/.zshrc
 ln -sf $HOME/.dotfiles/git/.gitignore_global $HOME/.gitignore_global
 ln -sf $HOME/.dotfiles/gdb/.gdbinit $HOME/.gdbinit
 ln -sf $HOME/.dotfiles/ctags/.ctags $HOME/.ctags
+
 ln -sf $HOME/.dotfiles/nvim/init.vim $HOME/.config/nvim/init.vim
-mkdir -p $HOME/.nvim/autoload
-ln -sf $HOME/.dotfiles/nvim/autoload/* $HOME/.nvim/autoload
-mkdir -p $HOME/.nvim/ftplugin
-ln -sf $HOME/.dotfiles/nvim/ftplugin/* $HOME/.nvim/ftplugin
+ln -sf $HOME/.dotfiles/nvim/ftplugin $HOME/.config/nvim/ftplugin
+
 ln -sf $HOME/.dotfiles/dunst $HOME/.config/dunst
 
 # ZSH
