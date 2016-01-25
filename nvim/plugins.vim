@@ -35,6 +35,7 @@ Plug 'honza/vim-snippets'
 Plug 'flazz/vim-colorschemes'
 Plug 'bling/vim-airline'
 Plug 'arnaud-lb/vim-php-namespace', { 'for': 'php' }
+Plug 'editorconfig/editorconfig-vim'
 
 call plug#end()
 

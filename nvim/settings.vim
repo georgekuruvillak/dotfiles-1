@@ -10,10 +10,7 @@ set autoindent
 set smarttab
 set modeline
 set exrc
-set mouse=a
-set undofile
-set undodir=/tmp/.vimundo/
-" Relative line number
+set hidden
 set rnu
 
 " Show tabs and spaces
