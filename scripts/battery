@@ -1,0 +1,52 @@
+#!/usr/bin/env php
+<?php
+
+/**
+ * i3blocks Battery status
+ * This script perform a battery status check and prints
+ * the percentage along with the proper icon.
+ * If the AC is online a plug icon is displayed
+ *
+ * Copyright (C) 2016 Lorenzo Fontana <fontanalorenz@gmail.com>
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ */
+function getBatteryIcon($charge)
+{
+    $icons = [
+        0 => '  ',
+        20 => '  ',
+        50 => '  ',
+        75 => '  ',
+        100 => '  ',
+    ];
+
+    return array_reduce(array_keys($icons), function($carry, $value) use ($icons, $charge) {
+        if ($value <= $charge) {
+            return $icons[$value];
+        }
+        return $carry;
+    });
+}
+
+$now = file_get_contents("/sys/class/power_supply/BAT0/energy_now");
+$full = file_get_contents("/sys/class/power_supply/BAT0/energy_full");
+$acOnline = (bool)trim(file_get_contents("/sys/class/power_supply/AC0/online"));
+
+$charge = number_format($now / $full * 100, 2);
+
+$lowCharge = $charge < 20;
+
+$powerSourceIcon = $acOnline ? ' ' : getBatteryIcon($charge);
+
+echo sprintf("%s %s", $powerSourceIcon, $charge) . PHP_EOL;
+
+if ($lowCharge) {
+    exit(33);
+}

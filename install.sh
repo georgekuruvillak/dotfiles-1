@@ -22,6 +22,8 @@ ln -sf $HOME/.dotfiles/zsh/.zshrc $HOME/.zshrc
 ln -sf $HOME/.dotfiles/git/.gitignore_global $HOME/.gitignore_global
 ln -sf $HOME/.dotfiles/gdb/.gdbinit $HOME/.gdbinit
 ln -sf $HOME/.dotfiles/ctags/.ctags $HOME/.ctags
+ln -sf $HOME/.dotfiles/i3/.i3blocks.conf $HOME/.i3blocks.conf
+ln -sf $HOME/.dotfiles/i3/config $HOME/.i3/config
 
 ln -sf $HOME/.dotfiles/nvim/init.vim $HOME/.config/nvim/init.vim
 ln -sf $HOME/.dotfiles/nvim/ftplugin $HOME/.config/nvim/ftplugin

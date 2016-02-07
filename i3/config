@@ -1,5 +1,5 @@
 set $mod Mod4
-font pango:monospace 8
+font pango:monospace, FontAwesome  10
 
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -149,7 +149,7 @@ bar {
     # i3bar position
     position top
     # Using custom i3status.conf
-    status_command i3status
+    status_command i3blocks
 }
 
 # Colors
@@ -195,7 +195,7 @@ bindsym $mod+F5 exec xbacklight -5
 bindsym $mod+F6 exec xbacklight +5
 
 # Set background image
-exec --no-startup-id feh -B white --bg-center ~/Pictures/background.png
+exec --no-startup-id feh -B white --bg-center ~/Pictures/background.jpg
 
 #### RULES FOR SPECIFIC APPLICATIONS ####
 
@@ -214,3 +214,6 @@ for_window [class="Pavucontrol"] floating enable, border normal
 # Tip: To find out what these values might be run:
 #       xprop | grep -i 'role'#
 for_window [window_role="gnome-terminal-profile-editor"] floating enable, border normal
+
+# Terminal background
+exec --no-startup-id xcompmgr -n
