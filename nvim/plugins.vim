@@ -36,6 +36,7 @@ Plug 'flazz/vim-colorschemes'
 Plug 'bling/vim-airline'
 Plug 'arnaud-lb/vim-php-namespace', { 'for': 'php' }
 Plug 'editorconfig/editorconfig-vim'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 
 call plug#end()
 
