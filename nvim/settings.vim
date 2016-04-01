@@ -1,6 +1,6 @@
 " Generic settings
 
-colorscheme Monokai
+colorscheme Tomorrow-Night-Bright
 
 " Initial indentation settings
 set tabstop=4
