@@ -8,6 +8,7 @@ function! BuildYCM(info)
 endfunction
 " }}}
 
+
 if !filereadable($HOME . "/.config/nvim/autoload/plug.vim")
 echo "~≥ Installing vim-plug \n"
 silent !curl -fLo $HOME/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -37,6 +38,7 @@ Plug 'bling/vim-airline'
 Plug 'arnaud-lb/vim-php-namespace', { 'for': 'php' }
 Plug 'editorconfig/editorconfig-vim'
 Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'shime/vim-livedown', { 'for': 'markdown' }
 
 call plug#end()
 
