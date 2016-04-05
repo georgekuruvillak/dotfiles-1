@@ -28,3 +28,6 @@ cscope.files
 
 # OSX
 .DS_Store
+
+# dvs scripts
+*.dvs
