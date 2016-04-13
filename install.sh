@@ -11,6 +11,9 @@ git config --global branch.autosetuprebase always
 git config --global alias.pre "pull --rebase"
 git config --global alias.st status
 git config --global alias.cf '!nvim -p `git diff --name-only`'
+git config --global alias.lod "log --decorate"
+git config --global alias.lodo "log --decorate --oneline"
+git config --global alias.lof "log --color --pretty=format:'%C(yellow)%h%C(reset) %s%C(bold red)%d%C(reset) %C(green)%ad%C(reset) %C(blue)[%an]%C(reset)' --relative-date --decorate"
 
 # Dotfiles
 rm -Rf $HOME/.dotfiles
