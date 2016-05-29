@@ -56,7 +56,7 @@ $charge = number_format($now / $full * 100, 2);
 
 $lowCharge = $charge < 20;
 
-$powerSourceIcon = $acOnline ? ' ' : getBatteryIcon($charge);
+$powerSourceIcon = $acOnline ? ' ' : getBatteryIcon($charge);
 
 echo sprintf("%s %s", $powerSourceIcon, $charge) . PHP_EOL;
 
