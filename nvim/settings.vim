@@ -1,6 +1,6 @@
 " Generic settings
 
-colorscheme molokai
+colorscheme dracula
 
 " Initial indentation settings
 set tabstop=2

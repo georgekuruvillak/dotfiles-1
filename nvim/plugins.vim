@@ -32,7 +32,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'mattn/emmet-vim', { 'for': ['html'] }
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
-Plug 'flazz/vim-colorschemes'
+Plug 'dracula/vim'
 Plug 'bling/vim-airline'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'Xuyuanp/nerdtree-git-plugin'
