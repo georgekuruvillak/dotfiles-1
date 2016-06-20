@@ -37,6 +37,7 @@ Plug 'bling/vim-airline'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'shime/vim-livedown', { 'for': 'markdown' }
+Plug 'hashivim/vim-terraform'
 
 call plug#end()
 

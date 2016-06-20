@@ -48,3 +48,4 @@ map ]l :lnext<cr>
 map [l :lprev<cr>
 
 map <C><RightMouse> :pta <cword><cr>
+
