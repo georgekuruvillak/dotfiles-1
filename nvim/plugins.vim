@@ -21,7 +21,6 @@ Plug 'benekastah/neomake', { 'on': 'Neomake' }
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'scrooloose/nerdcommenter'
 Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') }
-Plug 'hhvm/vim-hack'
 Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
 Plug 'junegunn/fzf.vim'
@@ -32,12 +31,14 @@ Plug 'tpope/vim-fugitive'
 Plug 'mattn/emmet-vim', { 'for': ['html'] }
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
-Plug 'dracula/vim'
 Plug 'bling/vim-airline'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'shime/vim-livedown', { 'for': 'markdown' }
 Plug 'hashivim/vim-terraform'
+Plug 'flazz/vim-colorschemes'
+Plug 'elzr/vim-json'
+Plug 'pangloss/vim-javascript'
 
 call plug#end()
 

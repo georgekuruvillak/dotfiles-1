@@ -1,6 +1,6 @@
 " Generic settings
 
-colorscheme dracula
+colorscheme Tomorrow-Night-Eighties
 
 " Initial indentation settings
 set tabstop=2
@@ -27,3 +27,4 @@ let c_space_errors = 1
 " XML
 let g:xml_syntax_folding=1
 au FileType xml setlocal foldmethod=syntax
+
