@@ -2,7 +2,7 @@ export ZSH=$HOME/.oh-my-zsh
 
 ZSH_THEME="robbyrussell"
 
-plugins=(git pip docker python docker-compose vi-mode golang aws)
+plugins=(git pip docker python docker-compose golang aws)
 
 source $ZSH/oh-my-zsh.sh
 

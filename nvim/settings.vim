@@ -12,6 +12,7 @@ set modeline
 set exrc
 set hidden
 set rnu
+set showmatch
 
 " Show tabs and spaces
 set listchars=tab:>-,trail:~,extends:>,precedes:<
