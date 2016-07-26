@@ -1,7 +1,5 @@
 ## Dotfiles
 
-![](img/screenshot.png)
-
 ### Installation
 
 ```
