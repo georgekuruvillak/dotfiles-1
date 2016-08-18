@@ -30,6 +30,9 @@ ln -sf $HOME/.dotfiles/ctags/.ctags $HOME/.ctags
 ln -sf $HOME/.dotfiles/nvim/init.vim $HOME/.config/nvim/init.vim
 ln -sf $HOME/.dotfiles/nvim/ftplugin $HOME/.config/nvim/ftplugin
 
-
-# ZSH
-touch $HOME/.zshrc_local
+uname_str=`uname`
+if [[ "$unamestr" == 'Linux' ]]; then
+    ln -sf $HOME/.dotfiles/i3/.i3blocks.conf $HOME/.i3blocks.conf
+    ln -sf $HOME/.dotfiles/i3/config $HOME/.i3/config
+    ln -sf $HOME/.dotfiles/dunst $HOME/.config/dunst
+fi
