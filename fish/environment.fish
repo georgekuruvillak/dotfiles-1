@@ -1,0 +1,13 @@
+alias tmux="tmux -2"
+set -xg GOPATH $HOME/go
+set -xg EDITOR nvim
+set -xg LC_ALL en_US.UTF-8
+set -xg LANG en_US.UTF-8
+set -xg FZF_TMUX 0
+set -xg PATH /usr/local/bin $PATH /usr/local/go $GOPATH/bin /usr/sbin /usr/bin /sbin /bin
+
+function fish_greeting
+  set_color $fish_color_param
+  echo "Friendship is magic"
+end
+
