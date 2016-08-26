@@ -29,3 +29,10 @@ let c_space_errors = 1
 let g:xml_syntax_folding=1
 au FileType xml setlocal foldmethod=syntax
 
+" Automatic Neomake
+au BufEnter,BufWritePost,InsertLeave * :Neomake
+
+" Hi current line
+set cursorline
+hi CursorLine ctermbg=8 ctermfg=15 "8 = dark gray, 15 = white
+hi Cursor ctermbg=15 ctermfg=8
