@@ -14,9 +14,9 @@ import tkinter.font as font
 from subprocess import call, check_output, CalledProcessError
 import re
 import os
+from pprint import pprint 
 
 DESKTOP_SYMBOL = "\uf108"
-
 UP_ARROW = "\uf062"
 DOWN_ARROW = "\uf063"
 UNBLANKED_SYMBOL = "\uf06e"
@@ -368,11 +368,8 @@ class MonitorManager():
         duplicateButton = e.widget
         optionMenu = duplicateButton.statusOptionMenu
         output = optionMenu.output
-        if output.sameAs != None:
-            output.sameAs = None
-            self.setMenuToOutput(optionMenu, output)
-        else:
-            self.setMenuToDuplicate(optionMenu)
+        output.sameAs = None
+        self.setMenuToOutput(optionMenu, output)
         self.softRefreshList()
 
     def getDuplicableOutputsFor(self, output):
@@ -397,12 +394,8 @@ class MonitorManager():
 
         for widget in self.statusOptionMenus:
             widget.config(text=widget.output.status())
-            if widget.output.sameAs != None:
-                self.setMenuToDuplicate(widget)
-                self.setInfo(widget, "Select output to duplicate")
-            else:
-                self.setMenuToOutput(widget, widget.output)
-                self.setInfo(widget, "Select output mode")
+            self.setMenuToOutput(widget, widget.output)
+            self.setInfo(widget, "Select output mode")
 
         for widget in self.blankedButtons: 
             widget.config(text=BLANKED_SYMBOL if widget.output.blanked else UNBLANKED_SYMBOL)
@@ -452,10 +445,8 @@ class MonitorManager():
         statusOptionMenu.var = var
         statusOptionMenu.config(relief=FLAT)
         self.statusOptionMenus.append(statusOptionMenu)
-        if output.sameAs != None:
-            self.setMenuToDuplicate(statusOptionMenu)
-        else:
-            self.setMenuToOutput(statusOptionMenu, output)
+
+        self.setMenuToOutput(statusOptionMenu, output)
 
         blankedButton = Button(self.frame, font=FONTAWESOME_FONT,  **style)
         self.blankedButtons.append(blankedButton)
@@ -491,21 +482,6 @@ class MonitorManager():
             var.set(Output.modestr(modes[output.preferredModeIndex]))
         elif len(modes) > 0:
             var.set(Output.modestr(modes[0]))
-
-    def setMenuToDuplicate(self, optionMenu):
-        menu = optionMenu["menu"]
-        var = optionMenu.var
-        output = optionMenu.output
-        menu.delete(0, END)
-        duplicables = self.getDuplicableOutputsFor(output)
-        for otherOutput in duplicables:
-                label = otherOutput.name
-                menu.add_command(label=label, command=setLabelAndSameAsFunc(var,label,otherOutput))
-        if len(duplicables) > 0:
-            var.set(menu.entrycget(0, "label"))
-            output.sameAs = menu.entrycget(0, "label")
-        else:
-            var.set("None")
 
     def handleFocusOut(self, event):
         self.root.destroy()
