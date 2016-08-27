@@ -11,3 +11,6 @@ function fish_greeting
   echo "Friendship is magic"
 end
 
+function textrec -d "Opens a netcat server on port 2000 so that you can send text to this computer"
+  nc -l 2000
+end
