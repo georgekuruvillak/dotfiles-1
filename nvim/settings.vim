@@ -34,5 +34,5 @@ au BufEnter,BufWritePost,InsertLeave * :Neomake
 
 " Hi current line
 set cursorline
-hi CursorLine ctermbg=8 ctermfg=15 "8 = dark gray, 15 = white
+hi CursorLine ctermbg=0  "8 = dark gray, 15 = white
 hi Cursor ctermbg=15 ctermfg=8

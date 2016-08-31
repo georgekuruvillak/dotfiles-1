@@ -79,8 +79,8 @@ bindsym $mod+a focus parent
 # switch to workspace
 bindsym $mod+1 workspace 1: term
 bindsym $mod+2 workspace 2: chrome
-bindsym $mod+3 workspace 3: slack
-bindsym $mod+4 workspace 4: telegram
+bindsym $mod+3 workspace 3: chat
+bindsym $mod+4 workspace 4
 bindsym $mod+5 workspace 5
 bindsym $mod+6 workspace 6
 bindsym $mod+7 workspace 7
@@ -92,7 +92,7 @@ bindsym $mod+0 workspace 10
 bindsym $mod+Shift+1 move container to workspace 1: term
 bindsym $mod+Shift+2 move container to workspace 2: chrome
 bindsym $mod+Shift+3 move container to workspace 3: slack
-bindsym $mod+Shift+4 move container to workspace 4: telegram
+bindsym $mod+Shift+4 move container to workspace 4
 bindsym $mod+Shift+5 move container to workspace 5
 bindsym $mod+Shift+6 move container to workspace 6
 bindsym $mod+Shift+7 move container to workspace 7
@@ -208,10 +208,11 @@ exec --no-startup-id feh --bg-fill ~/Pictures/background.gif
 # Tip: To find out what these values might be run:
 #       xprop | grep -i 'class'
 for_window [class="Pavucontrol"] floating enable, border normal
+
 for_window [class="gnome-terminal-server"] move workspace 1: term
 for_window [class="google-chrome"] move workspace 2: chrome
-for_window [class="slack"] move workspace 3: slack
-for_window [class="Telegram"] move workspace 4: telegram
+for_window [class="Slack"] move workspace 3: chat
+for_window [class="Telegram"] move workspace 3: chat
 # by ROLE (WM_WINDOW_ROLE)
 # Note: window_role is Typically useful for effecting child windows
 #       such as instant messaging converstations, email composition
