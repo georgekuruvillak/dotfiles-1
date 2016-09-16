@@ -39,7 +39,7 @@ Plug 'hashivim/vim-terraform', { 'for': 'terraform' }
 Plug 'flazz/vim-colorschemes'
 Plug 'elzr/vim-json', { 'for': 'json' }
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
-Plug 'mxw/vim-jsx'
+Plug 'mxw/vim-jsx', { 'for': ['javascript.jsx', 'javascript']}
 
 call plug#end()
 
