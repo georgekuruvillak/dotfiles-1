@@ -8,6 +8,9 @@ set -xg FZF_DEFAULT_COMMAND 'ag -g ""'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 set -xg PATH /usr/local/bin $PATH /usr/local/go $GOPATH/bin /usr/sbin /usr/bin /sbin /bin
 
+alias xclip='xclip -selection c'
+alias tmux="tmux -2"
+
 function fish_greeting
   set_color $fish_color_param
   echo "Friendship is magic"
