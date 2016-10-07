@@ -36,3 +36,7 @@ au BufEnter,BufWritePost,InsertLeave * :Neomake
 set cursorline
 hi CursorLine ctermbg=0  "8 = dark gray, 15 = white
 hi Cursor ctermbg=15 ctermfg=8
+
+" ex command for toggling hex mode - define mapping if desired
+command -bar Hexmode call ToggleHex()
+
