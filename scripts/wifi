@@ -27,11 +27,10 @@ fi
 
 if [ ! -z $BLOCK_BUTTON ];
 then
-  echo "<sup> </sup>name=${sid} quality=${QUALITY}"
-	gnome-terminal --name "__nmtui" -e "nmtui-connect"
-else
-  echo "<sup> </sup>${squares}"
+  nm-connection-editor
 fi
+
+echo "<sup> </sup>${squares}"
 
 echo ""
 

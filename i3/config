@@ -224,9 +224,12 @@ for_window [class="Telegram"] move workspace 10: chat
 #       xprop | grep -i 'role'#
 for_window [window_role="gnome-terminal-profile-editor"] floating enable, border normal
 
-# nmtui
-bindsym $mod+Shift+w exec --no-startup-id $editor --name "__nmtui" -e "nmtui-connect"
+# Arrange displays for home configuration
+bindsym $mod+Shift+a exec --no-startup-id $HOME/.screenlayout/home.sh
 
 # Dropbox things
 exec --no-startup-id dropbox start
+
+# nm-applet
+exec --no-startup-id nm-applet
 
