@@ -1,9 +1,12 @@
 #!/bin/sh
 lock() {
-    BGBLUR=/tmp/bgblur.png
-    scrot $BGBLUR
-    convert $BGBLUR  -channel RGBA -blur 0x8 $BGBLUR
-    i3lock -i $BGBLUR
+  tmpbg='/tmp/screen.png'
+
+  (( $# )) && { icon=$1; }
+
+  scrot "$tmpbg"
+  convert "$tmpbg" -scale 10% -scale 1000% "$tmpbg"
+  i3lock -t -f -i "$tmpbg"
 }
 
 case "$1" in
