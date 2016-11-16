@@ -26,7 +26,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
 Plug 'junegunn/fzf.vim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'octol/vim-cpp-enhanced-highlight', { 'for': ['c', 'cpp']}
-Plug 'fntlnz/atags.vim'
+"Plug '~/Projects/atags.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'mattn/emmet-vim', { 'for': ['html'] }
 Plug 'SirVer/ultisnips'
@@ -40,6 +40,7 @@ Plug 'flazz/vim-colorschemes'
 Plug 'elzr/vim-json', { 'for': 'json' }
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 Plug 'mxw/vim-jsx', { 'for': ['javascript.jsx', 'javascript']}
+Plug 'gabrielelana/vim-markdown', { 'for': 'markdown' }
 
 call plug#end()
 

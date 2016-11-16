@@ -13,6 +13,7 @@ set exrc
 set hidden
 set rnu
 set showmatch
+hi SpellBad guibg=#ff2929 ctermbg=124
 
 " Show tabs and spaces
 set listchars=tab:>-,trail:~,extends:>,precedes:<

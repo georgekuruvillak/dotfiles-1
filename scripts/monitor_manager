@@ -16,7 +16,7 @@ import re
 import os
 from pprint import pprint 
 
-DESKTOP_SYMBOL = "\uf108"
+DESKTOP_SYMBOL = "\uf26c"
 UP_ARROW = "\uf062"
 DOWN_ARROW = "\uf063"
 UNBLANKED_SYMBOL = "\uf06e"
