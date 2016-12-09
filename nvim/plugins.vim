@@ -26,7 +26,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
 Plug 'junegunn/fzf.vim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'octol/vim-cpp-enhanced-highlight', { 'for': ['c', 'cpp']}
-"Plug '~/Projects/atags.vim'
+Plug 'fntlnz/atags.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'mattn/emmet-vim', { 'for': ['html'] }
 Plug 'SirVer/ultisnips'
@@ -48,4 +48,3 @@ if shouldInstallPluginManager == 1
     echo "~> Installing plugs\n"
     :PlugInstall
 endif
-
