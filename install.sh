@@ -23,6 +23,7 @@ git clone https://github.com/fntlnz/dotfiles $HOME/.dotfiles
 ln -sf $HOME/.dotfiles/tmux/.tmux.conf $HOME/.tmux.conf
 ln -sf $HOME/.dotfiles/git/.gitignore_global $HOME/.gitignore_global
 ln -sf $HOME/.dotfiles/gdb/.gdbinit $HOME/.gdbinit
+ln -sf $HOME/.dotfiles/compton/compton.conf $HOME/.config/compton.conf
 
 
 ln -sf $HOME/.dotfiles/nvim/init.vim $HOME/.config/nvim/init.vim
