@@ -47,5 +47,6 @@ map ]a :Gblame<cr>
 map ]l :lnext<cr>
 map [l :lprev<cr>
 
+" Ctrl+Right click to preview the current tag
 map <C><RightMouse> :pta <cword><cr>
 
