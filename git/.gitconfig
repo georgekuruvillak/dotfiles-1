@@ -1,0 +1,18 @@
+[core]
+	excludesfile = /home/fntlnz/.gitignore_global
+[branch]
+	autosetuprebase = always
+[alias]
+	pre = pull --rebase
+	st = status
+	cf = !nvim -p `git diff --name-only`
+	lod = log --decorate
+	lodo = log --decorate --oneline
+  lof = log --color --pretty=format:'%C(yellow)%h%C(reset) %s%C(bold red)%d%C(reset) %C(green)%ad%C(reset) %C(blue)[%an]%C(reset)' --relative-date --decorate
+  pr = "!f() { git fetch $1 refs/pull/$2/head:pr/$1/$2 && git checkout pr/$1/$2;  } ; f"
+[user]
+	email = lo@linux.com
+	name = Lorenzo Fontana
+	signingkey = 9FBF85ED
+[credential]
+	helper = cache --timeout=360000

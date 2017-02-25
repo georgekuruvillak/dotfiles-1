@@ -41,6 +41,7 @@ Plug 'elzr/vim-json', { 'for': 'json' }
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 Plug 'mxw/vim-jsx', { 'for': ['javascript.jsx', 'javascript']}
 Plug 'gabrielelana/vim-markdown', { 'for': 'markdown' }
+Plug 'xuhdev/vim-latex-live-preview', {'for': 'tex'}
 
 call plug#end()
 

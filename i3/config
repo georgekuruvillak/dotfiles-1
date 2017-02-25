@@ -73,7 +73,7 @@ bindsym ctrl+Shift+3 move workspace to output HDMI-2
 #bindsym $mod+d focus child
 
 set $ws1  "1:  "
-set $ws2  "2: "
+set $ws2  "2: "
 set $ws9 "9: "
 set $ws10 "10: "
 # switch to workspace
@@ -212,7 +212,7 @@ for_window [class="Pavucontrol"] floating enable, border normal
 for_window [class="VirtualBox"] floating enable
 
 for_window [class="gnome-terminal"] move workspace $ws1
-for_window [class="Google-chrome"] move workspace $ws2
+for_window [class="Firefox"] move workspace $ws2
 for_window [class="Evolution"] move workspace $ws9
 for_window [class="Slack"] move workspace $ws10
 for_window [class="Telegram"] move workspace $ws10
@@ -227,13 +227,13 @@ for_window [window_role="gnome-terminal-profile-editor"] floating enable, border
 # Arrange displays for home configuration
 bindsym $mod+Shift+a exec --no-startup-id $HOME/.screenlayout/home.sh
 
-# nm-applet
+# Network manager applet
 exec --no-startup-id nm-applet
 
 # Compton
-exec --no-startup-id compton -cCGb --backend glx --vsync-aggressive  --opengl --glx-no-stencil --glx-no-rebind-pixmap
+#exec --no-startup-id compton -cCGb --backend glx --vsync-aggressive  --opengl --glx-no-stencil --glx-no-rebind-pixmap
 
-# utilities
+# Utilities
 exec parcellite
 exec guake
 
