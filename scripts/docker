@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-
-echo "  docker"
-if [ ! -f "/run/docker.pid" ]
-then
-  exit 33
-fi
-

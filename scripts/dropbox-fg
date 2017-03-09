@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-
-/usr/bin/dropbox start
-while [ $(/usr/bin/dropbox running; echo $?) == "1" ]; do /usr/bin/sleep 1; done
