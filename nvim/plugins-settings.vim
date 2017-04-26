@@ -6,6 +6,12 @@ let g:multi_cursor_exit_from_insert_mode=0
 
 " NERDTree
 let NERDTreeShowHidden=1
+if exists("NERDTreeAddKeyMap")
+  call NERDTreeAddKeyMap({
+          \ 'key': 'yy',
+          \ 'callback': 'NERDTreeYankCurrentNode',
+          \ 'quickhelpText': 'put full path of current node into the default register' })
+endif
 
 " YCM
 autocmd! User YouCompleteMe call youcompleteme#Enable()

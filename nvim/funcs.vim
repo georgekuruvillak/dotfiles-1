@@ -37,3 +37,11 @@ function ToggleHex()
   let &readonly=l:oldreadonly
   let &modifiable=l:oldmodifiable
 endfunction
+
+function! NERDTreeYankCurrentNode()
+  let n = g:NERDTreeFileNode.GetSelected()
+  if n != {}
+    call setreg('"', n.path.str())
+  endif
+endfunction
+

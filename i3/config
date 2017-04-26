@@ -73,7 +73,7 @@ bindsym ctrl+Shift+3 move workspace to output HDMI-2
 #bindsym $mod+d focus child
 
 set $ws1  "1:  "
-set $ws2  "2: "
+set $ws2  "2: "
 set $ws9 "9: "
 set $ws10 "10: "
 # switch to workspace
@@ -155,7 +155,7 @@ bar {
     i3bar_command i3bar -t
     strip_workspace_numbers yes
 
-    height 30
+    height 35
     tray_padding 0
 }
 
@@ -183,8 +183,11 @@ mode "$mode_system" {
 }
 bindsym $mod+End mode "$mode_system"
 
-# Screenshot
+# Screenshot to file
 bindsym --release $mod+Print exec "scrot -s '/tmp/%Y-%m-%d_$wx$h_scrot.png'; notify-send "
+
+# Screenshot to clipboard
+bindsym --release $mod+Shift+Print exec "import png:- | xclip -selection c -t image/png"
 
 # Pulse Audio controls
 # TODO: create a script that can change 1 (my analogic stereo output) with the 
@@ -212,7 +215,7 @@ for_window [class="Pavucontrol"] floating enable, border normal
 for_window [class="VirtualBox"] floating enable
 
 for_window [class="gnome-terminal"] move workspace $ws1
-for_window [class="Firefox"] move workspace $ws2
+for_window [class="Google-chrome"] move workspace $ws2
 for_window [class="Evolution"] move workspace $ws9
 for_window [class="Slack"] move workspace $ws10
 for_window [class="Telegram"] move workspace $ws10
@@ -227,11 +230,11 @@ for_window [window_role="gnome-terminal-profile-editor"] floating enable, border
 # Arrange displays for home configuration
 bindsym $mod+Shift+a exec --no-startup-id $HOME/.screenlayout/home.sh
 
+# Xresources
+exec ~/.xprofile
+
 # Network manager applet
 exec --no-startup-id nm-applet
-
-# Compton
-#exec --no-startup-id compton -cCGb --backend glx --vsync-aggressive  --opengl --glx-no-stencil --glx-no-rebind-pixmap
 
 # Utilities
 exec parcellite
