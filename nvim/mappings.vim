@@ -50,3 +50,6 @@ map [l :lprev<cr>
 " Ctrl+Right click to preview the current tag
 map <C><RightMouse> :pta <cword><cr>
 
+" Term esc
+:tnoremap <Esc> <C-\><C-n>
+ 
