@@ -1,7 +1,7 @@
 set $mod Mod4
 set $editor gnome-terminal
 
-font pango:monospace, FontAwesome  10
+font pango:Noto Sans, FontAwesome  11
 
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -147,7 +147,7 @@ bar {
         focused_workspace  #008fff #007fff #ffffff
         active_workspace   #333333 #5f676a #ffffff
         inactive_workspace #333333 #222222 #888888
-        urgent_workspace   #aa0000 #990000 #ffffff
+        urgent_workspace   #F24B4B #F24B4B #ffffff
     }
     # i3bar position
     position top
@@ -155,20 +155,22 @@ bar {
     i3bar_command i3bar -t
     strip_workspace_numbers yes
 
-    height 35
+    height 37
     tray_padding 0
+    tray_output primary
+    separator_symbol "/"
 }
 
 smart_borders on
 smart_gaps on
 
 # Colors
-client.focused #007fbf #007fbf #ffffff
-client.unfocused #666666 #666666 #ffffff
-client.urgent #aa0000 #990000 #ffffff
+client.focused #222d32 #222d32 #ffffff
+client.unfocused #5E6669 #5E6669 #ffffff
+client.urgent #F24B4B #F24B4B #ffffff
 
 # Shutdown, Reboot, etc..
-set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
+set $mode_system System (l) lock \t (e) logout \t (s) suspend \t (h) hibernate \t (r) reboot \t (Shift+s) shutdown
 mode "$mode_system" {
     bindsym l exec --no-startup-id $HOME/.dotfiles/bin/i3exit lock, mode "default"
     bindsym e exec --no-startup-id $HOME/.dotfiles/bin/i3exit logout, mode "default"
@@ -228,15 +230,14 @@ for_window [class="Telegram"] move workspace $ws10
 for_window [window_role="gnome-terminal-profile-editor"] floating enable, border normal
 
 # Arrange displays for home configuration
-bindsym $mod+Shift+a exec --no-startup-id $HOME/.screenlayout/home.sh
+bindsym $mod+Shift+a exec --no-startup-id $HOME/.dotfiles/screenlayout/home.sh
+bindsym $mod+Shift+m exec --no-startup-id $HOME/.dotfiles/screenlayout/around.sh
 
 # Xresources
 exec ~/.xprofile
 
-# Network manager applet
-exec --no-startup-id nm-applet
-
 # Utilities
-exec parcellite
-exec guake
+exec --no-startup-id guake
 
+# Xfce4 panel
+exec --no-startup-id xfce4-panel --disable-wm-check
