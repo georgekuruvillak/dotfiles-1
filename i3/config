@@ -233,11 +233,18 @@ for_window [window_role="gnome-terminal-profile-editor"] floating enable, border
 bindsym $mod+Shift+a exec --no-startup-id $HOME/.dotfiles/screenlayout/home.sh
 bindsym $mod+Shift+m exec --no-startup-id $HOME/.dotfiles/screenlayout/around.sh
 
+# Switch workspace
+bindsym $mod+Tab workspace next
+bindsym $mod+Shift+Tab workspace prev
+
 # Xresources
 exec ~/.xprofile
 
 # Utilities
 exec --no-startup-id guake
+exec --no-startup-id parcellite
+exec --no-startup-id volumeicon
+exec --no-startup-id nm-applet
 
 # Xfce4 panel
 exec --no-startup-id xfce4-panel --disable-wm-check
