@@ -11,6 +11,8 @@ omap + ]
 xmap è [
 xmap + ]
 
+imap jk <Esc>
+
 " NERDTree
 map <Leader>n :NERDTreeToggle<cr>
 
