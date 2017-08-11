@@ -1,0 +1,6 @@
+remove all references to $HOME/.dotfiles (this may require stowing more things to .config)
+finish the pkgbuild (find a folder where to place the dotfiles)
+decide how to install plugins, use AUR?
+restore ycm settings (ultisnips?)
+move all user init things to user systemd services (and enable them by default: like: systemctl --user status ssh-agent)
+write down all the installed dependencies, remember about acpi

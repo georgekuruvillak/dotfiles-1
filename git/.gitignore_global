@@ -1,6 +1,4 @@
 # Vim
-.vimrc
-.nvimrc
 tags
 tags.tmp
 *.swp
@@ -12,23 +10,8 @@ cscope.files
 .clang
 .exrc
 
-# IntelliJ
-.idea/
-*.iml
-*.iws
- 
-#Eclipse
-.cproject
-.settings/
-.project
-
 # Anything else
 .ackrc
 .agignore
-
-# OSX
-.DS_Store
-
-# dvs scripts
-*.dvs
+.gdb_history
 
