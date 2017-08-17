@@ -18,3 +18,5 @@
   helper = cache --timeout=360000
 [gpg]
   program = gpg2
+[commit]
+	gpgsign = true
