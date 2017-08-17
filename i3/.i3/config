@@ -1,5 +1,5 @@
 set $mod Mod4
-set $editor gnome-terminal
+set $editor xfce4-terminal
 
 font pango:Noto Sans, FontAwesome  12
 
