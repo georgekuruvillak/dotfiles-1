@@ -246,7 +246,6 @@ bindsym $mod+Shift+Tab workspace prev
 exec ~/.xprofile
 
 # Utilities
-exec --no-startup-id guake
 exec --no-startup-id parcellite
 exec --no-startup-id volumeicon
 exec --no-startup-id nm-applet
