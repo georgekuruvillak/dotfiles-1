@@ -67,14 +67,15 @@ bindsym ctrl+Shift+2 move workspace to output HDMI-2
 # focus the child container
 #bindsym $mod+d focus child
 
-set $ws1  "1:  "
-set $ws2  "2: "
-set $ws9 "9: "
-set $ws10 "10: "
+set $ws1 "1: 1 "
+set $ws2 "2: 2 "
+set $ws3 "3: 3 "
+set $ws9 "9: 9 "
+set $ws10 "10: 10 "
 # switch to workspace
 bindsym $mod+1 workspace $ws1
 bindsym $mod+2 workspace $ws2
-bindsym $mod+3 workspace 3
+bindsym $mod+3 workspace $ws3
 bindsym $mod+4 workspace 4
 bindsym $mod+5 workspace 5
 bindsym $mod+6 workspace 6
@@ -86,7 +87,7 @@ bindsym $mod+0 workspace $ws10
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $ws1
 bindsym $mod+Shift+2 move container to workspace $ws2
-bindsym $mod+Shift+3 move container to workspace 3
+bindsym $mod+Shift+3 move container to workspace $ws3
 bindsym $mod+Shift+4 move container to workspace 4
 bindsym $mod+Shift+5 move container to workspace 5
 bindsym $mod+Shift+6 move container to workspace 6
@@ -181,7 +182,7 @@ mode "$mode_system" {
 bindsym $mod+End mode "$mode_system"
 
 # Screenshot to file
-bindsym --release $mod+Print exec "scrot -s '/tmp/%Y-%m-%d_$wx$h_scrot.png'; notify-send "
+bindsym --release $mod+Print exec "scrot -s '/tmp/%Y-%m-%d_$wx$h_scrot.png'; notify-send"
 
 # Screenshot to clipboard
 bindsym --release $mod+Shift+Print exec "import png:- | xclip -selection c -t image/png"
@@ -213,6 +214,7 @@ for_window [class="VirtualBox"] floating enable
 
 for_window [class="gnome-terminal"] move workspace $ws1
 for_window [class="Firefox"] move workspace $ws2
+for_window [class="Code"] move workspace $ws3
 for_window [class="Thunderbird"] move workspace $ws9
 for_window [class="Slack"] move workspace $ws10
 # by ROLE (WM_WINDOW_ROLE)
@@ -221,7 +223,6 @@ for_window [class="Slack"] move workspace $ws10
 #       windows, etc.
 # Tip: To find out what these values might be run:
 #       xprop | grep -i 'role'#
-for_window [window_role="gnome-terminal-profile-editor"] floating enable, border normal
 for_window [title="Write:.*" class="Thunderbird"] floating enable
 for_window [title="Write:.*" class="Thunderbird"] floating enable
 for_window [title="New Task:.*" class="Thunderbird"] floating enable
@@ -234,6 +235,9 @@ bindsym $mod+minus scratchpad show
 bindsym $mod+Shift+a exec --no-startup-id $HOME/.screenlayout/home.sh
 bindsym $mod+Shift+m exec --no-startup-id $HOME/.screenlayout/around.sh
 
+# Emoji keyboard
+bindsym $mod+Shift+j exec --no-startup-id emoji-keyboard -s
+
 # Switch workspace
 bindsym $mod+Tab workspace next
 bindsym $mod+Shift+Tab workspace prev
@@ -242,8 +246,6 @@ bindsym $mod+Shift+Tab workspace prev
 exec ~/.xprofile
 
 # Utilities
-exec --no-startup-id guake
 exec --no-startup-id parcellite
 exec --no-startup-id volumeicon
 exec --no-startup-id nm-applet
-
