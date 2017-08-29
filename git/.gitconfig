@@ -11,6 +11,8 @@
   lodo = log --decorate --oneline
   lof = log --color --pretty=format:'%C(yellow)%h%C(reset) %s%C(bold red)%d%C(reset) %C(green)%ad%C(reset) %C(blue)[%an]%C(reset)' --relative-date --decorate
   pr = "!f() { git fetch $1 refs/pull/$2/head:pr/$1/$2 && git checkout pr/$1/$2;  } ; f"
+  d = difftool
+  diffstats = "!f() { git diff --dirstat=files $1 $2; } ; f"
 [user]
   email = lo@linux.com
   name = Lorenzo Fontana
@@ -20,4 +22,8 @@
 [gpg]
   program = gpg2
 [commit]
-	gpgsign = true
+  gpgsign = true
+[diff]
+  tool = vimdiff
+[difftool]
+	prompt = false
