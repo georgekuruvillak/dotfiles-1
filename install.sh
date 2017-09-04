@@ -19,4 +19,5 @@ $stow i3
 $stow pam
 $stow systemd
 $stow screenlayout
+$stow zsh
 popd
