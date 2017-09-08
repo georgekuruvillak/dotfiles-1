@@ -1,16 +1,17 @@
 [core]
   excludesfile = ~/.gitignore_global
-	editor = vim
+  editor = vim
 [branch]
   autosetuprebase = always
 [alias]
   pre = pull --rebase
   st = status
-  cf = !vim -p `git diff --name-only`
+  review = "!f() { code `git diff --name-only $1` ; } ; f"
   lod = log --decorate
   lodo = log --decorate --oneline
   lof = log --color --pretty=format:'%C(yellow)%h%C(reset) %s%C(bold red)%d%C(reset) %C(green)%ad%C(reset) %C(blue)[%an]%C(reset)' --relative-date --decorate
   pr = "!f() { git fetch $1 refs/pull/$2/head:pr/$1/$2 && git checkout pr/$1/$2;  } ; f"
+  pr-review = "!f() { git pr $1 $2; git review master; } ; f"
   d = difftool
   diffstats = "!f() { git diff --dirstat=files $1 $2; } ; f"
 [user]
@@ -26,4 +27,5 @@
 [diff]
   tool = vimdiff
 [difftool]
-	prompt = false
+  prompt = false
+

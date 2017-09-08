@@ -20,4 +20,5 @@ $stow pam
 $stow systemd
 $stow screenlayout
 $stow zsh
+$stow vscode
 popd

@@ -229,6 +229,9 @@ for_window [class="Thunderbird" instance="Calendar"] floating enable
 for_window [class="Code"] move workspace $ws3
 for_window [class="Galculator"] floating enable
 for_window [title="^Library" class="Firefox"] floating enable
+
+# Scratchpad
+bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
 
 # Arrange displays for home configuration
