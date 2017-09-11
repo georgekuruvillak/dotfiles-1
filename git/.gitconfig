@@ -6,7 +6,7 @@
 [alias]
   pre = pull --rebase
   st = status
-  review = "!f() { code `git diff --name-only $1` ; } ; f"
+  review = "!f() { code `git diff --name-only $1` . ; } ; f"
   lod = log --decorate
   lodo = log --decorate --oneline
   lof = log --color --pretty=format:'%C(yellow)%h%C(reset) %s%C(bold red)%d%C(reset) %C(green)%ad%C(reset) %C(blue)[%an]%C(reset)' --relative-date --decorate

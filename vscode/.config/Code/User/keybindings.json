@@ -3,5 +3,9 @@
     {
         "key": "ctrl+alt+o",
         "command": "workbench.action.terminal.toggleTerminal"
+    },
+    {
+        "key": "ctrl+alt+b",
+        "command": "gitlens.diffWithBranch"
     }
 ]
