@@ -3,7 +3,7 @@
     "editor.multiCursorModifier": "ctrlCmd",
     "java.home": "/usr/lib/jvm/java-8-openjdk",
     "editor.renderWhitespace": "all",
-    "window.zoomLevel": 2,
+    "window.zoomLevel": 0,
     "editor.formatOnSave": true,
     "vim.disableAnnoyingNeovimMessage": true,
     "editor.lineNumbers": "relative",
