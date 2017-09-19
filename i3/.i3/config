@@ -3,13 +3,6 @@ set $editor xfce4-terminal
 
 font pango:Noto Sans, FontAwesome  12
 
-# Before i3 v4.8, we used to recommend this one as the default:
-# font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
-# The font above is very space-efficient, that is, it looks good, sharp and
-# clear in small sizes. However, its unicode glyph coverage is limited, the old
-# X core fonts rendering does not support right-to-left and this being a bitmap
-# font, it doesn’t scale on retina/hidpi displays.
-
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
@@ -69,13 +62,12 @@ bindsym ctrl+Shift+2 move workspace to output HDMI-2
 
 set $ws1 "1: 1 "
 set $ws2 "2: 2 "
-set $ws3 "3: 3 "
 set $ws9 "9: 9 "
 set $ws10 "10: 10 "
 # switch to workspace
 bindsym $mod+1 workspace $ws1
 bindsym $mod+2 workspace $ws2
-bindsym $mod+3 workspace $ws3
+bindsym $mod+3 workspace 3
 bindsym $mod+4 workspace 4
 bindsym $mod+5 workspace 5
 bindsym $mod+6 workspace 6
@@ -87,7 +79,7 @@ bindsym $mod+0 workspace $ws10
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $ws1
 bindsym $mod+Shift+2 move container to workspace $ws2
-bindsym $mod+Shift+3 move container to workspace $ws3
+bindsym $mod+Shift+3 move container to workspace 3
 bindsym $mod+Shift+4 move container to workspace 4
 bindsym $mod+Shift+5 move container to workspace 5
 bindsym $mod+Shift+6 move container to workspace 6
@@ -160,13 +152,10 @@ bar {
     separator_symbol "/"
 }
 
-#smart_borders on
-#ksmart_gaps on
-
 # Colors
-client.focused #222d32 #222d32 #ffffff
+client.focused   #222d32 #222d32 #ffffff
 client.unfocused #5E6669 #5E6669 #ffffff
-client.urgent #F24B4B #F24B4B #ffffff
+client.urgent    #F24B4B #F24B4B #ffffff
 
 # Shutdown, Reboot, etc..
 set $mode_system System (l) lock \t (e) logout \t (s) suspend \t (h) hibernate \t (r) reboot \t (Shift+s) shutdown
@@ -229,7 +218,6 @@ for_window [title="Write:.*" class="Thunderbird"] floating enable
 for_window [title="Write:.*" class="Thunderbird"] floating enable
 for_window [title="New Task:.*" class="Thunderbird"] floating enable
 for_window [class="Thunderbird" instance="Calendar"] floating enable
-for_window [class="Code"] move workspace $ws3
 for_window [class="Galculator"] floating enable
 for_window [title="^Library" class="Firefox"] floating enable
 
