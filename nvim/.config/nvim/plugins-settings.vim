@@ -20,8 +20,9 @@ let g:ycm_collect_identifiers_from_tags_files=1
 let g:ycm_autoclose_preview_window_after_completion=0
 let g:ycm_autoclose_preview_window_after_insertion=1
 let g:ycm_max_diagnostics_to_display=1
-
+let g:ycm_global_ycm_extra_conf = '~/.local/share/nvim/site/plugged/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
 let g:UltiSnipsExpandTrigger = "<C-j>"
+let g:ycm_server_python_interpreter="/usr/bin/python"
 
 " vim-go
 let g:go_highlight_functions = 1
