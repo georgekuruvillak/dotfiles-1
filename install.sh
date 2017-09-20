@@ -10,7 +10,7 @@ stow=$(which stow)
 $git clone https://github.com/fntlnz/dotfiles $install_path
 
 pushd $install_path
-$stow vim
+$stow nvim
 $stow tmux
 $stow git
 $stow gdb
