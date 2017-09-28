@@ -37,4 +37,4 @@ $code --install-extension vector-of-bool.cmake-tools
 $code --install-extension vscodevim.vim
 $code --install-extension zxh404.vscode-proto3
 $code --install-extension EditorConfig.EditorConfig
-
+$code --install-extension kalitaalexey.vscode-rust
