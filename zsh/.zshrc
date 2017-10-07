@@ -1,4 +1,4 @@
-export ZSH=/home/fntlnz/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 # oh-my-zsh setup
 ZSH_THEME="robbyrussell"
@@ -18,4 +18,9 @@ export PATH=$PATH:$HOME/go/bin
 # Aliases
 alias clipc='xclip -in -selection clipboard'
 alias keesync='rclone sync ~/.keepass dropbox:/keepass'
+
+# Azure CLI
+function az() { 
+    docker run -u $(id -u):$(id -g) -v $HOME/.azure:/.azure -it azuresdk/azure-cli-python az $@
+}
 
