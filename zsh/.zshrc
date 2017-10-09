@@ -2,7 +2,7 @@ export ZSH=~/.oh-my-zsh
 
 # oh-my-zsh setup
 ZSH_THEME="robbyrussell"
-plugins=(git)
+plugins=(git go)
 source $ZSH/oh-my-zsh.sh
 
 # FZF (this is created by fzf itsef)
@@ -21,6 +21,6 @@ alias keesync='rclone sync ~/.keepass dropbox:/keepass'
 
 # Azure CLI
 function az() { 
-    docker run -u $(id -u):$(id -g) -v $HOME/.azure:/.azure -it azuresdk/azure-cli-python az $@
+    docker run --rm -u $(id -u):$(id -g) -v $HOME/.azure:/.azure -it azuresdk/azure-cli-python az $@
 }
 
