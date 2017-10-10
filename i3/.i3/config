@@ -222,6 +222,7 @@ for_window [class="Thunderbird" instance="Calendar"] floating enable
 for_window [class="Galculator"] floating enable
 for_window [class="keepassxc"] floating enable
 for_window [title="^Library" class="Firefox"] floating enable
+for_window [class="Spotify"] floating enable
 
 # Scratchpad
 bindsym $mod+Shift+minus move scratchpad

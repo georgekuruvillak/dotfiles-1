@@ -29,6 +29,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'octol/vim-cpp-enhanced-highlight', { 'for': ['c', 'cpp']}
 Plug 'fntlnz/atags.vim'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
 Plug 'mattn/emmet-vim', { 'for': ['html'] }
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
