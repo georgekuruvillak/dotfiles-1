@@ -13,31 +13,15 @@ if [ ! -d "$install_path" ]; then
 fi
 
 pushd $install_path
-$stow i3
 $stow nvim
-$stow dunst
 $stow tmux
 $stow git
 $stow gdb
-$stow pam
-$stow systemd
 $stow zsh
+$stow i3
 $stow screenlayout
-$stow vscode
+$stow dunst
 $stow gnupg
 popd
 
-# Code setup
-$code --install-extension donjayamanne.python
-$code --install-extension eamodio.gitlens
-$code --install-extension lukehoban.Go
-$code --install-extension ms-vscode.cpptools
-$code --install-extension onsi.vscode-ginkgo
-$code --install-extension redhat.java
-$code --install-extension twxs.cmake
-$code --install-extension vector-of-bool.cmake-tools
-$code --install-extension vscodevim.vim
-$code --install-extension zxh404.vscode-proto3
-$code --install-extension EditorConfig.EditorConfig
-$code --install-extension kalitaalexey.vscode-rust
 
