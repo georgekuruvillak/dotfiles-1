@@ -1,9 +1,10 @@
 " Generic settings
 
 set background=dark
-colorscheme Tomorrow-Night-Bright
+colorscheme dracula
 
 " Initial indentation settings
+set clipboard=unnamed
 set tabstop=2
 set shiftwidth=2
 set expandtab

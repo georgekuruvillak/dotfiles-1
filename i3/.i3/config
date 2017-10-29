@@ -225,8 +225,8 @@ for_window [title="^Library" class="Firefox"] floating enable
 for_window [class="Spotify"] floating enable
 
 # Scratchpad
-bindsym $mod+Shift+minus move scratchpad
-bindsym $mod+minus scratchpad show
+bindsym $mod+Shift+t move scratchpad
+bindsym $mod+t scratchpad show
 
 # Arrange displays for home configuration
 bindsym $mod+Shift+a exec --no-startup-id $HOME/.screenlayout/home.sh
@@ -242,4 +242,3 @@ exec ~/.xprofile
 # Utilities
 exec --no-startup-id volumeicon
 exec --no-startup-id nm-applet --sm-disable
-exec --no-startup-id light-locker

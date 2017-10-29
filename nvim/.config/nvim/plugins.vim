@@ -9,9 +9,9 @@ endfunction
 " }}}
 
 
-if !filereadable($HOME . "/.local/share/nvim/site/plug.vim")
+if !filereadable($HOME . "/.local/share/nvim/site/autoload/plug.vim")
 echo "~≥ Installing vim-plug \n"
-silent !curl -fLo $HOME/.local/share/nvim/site/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+silent !curl -fLo $HOME/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 let shouldInstallPluginManager = 1
 endif
 
