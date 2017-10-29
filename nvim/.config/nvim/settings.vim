@@ -20,7 +20,7 @@ hi SpellBad guibg=#ff2929 ctermbg=124
 " Show tabs and spaces
 set listchars=tab:>-,trail:~,extends:>,precedes:<
 set list
-au FileType nerdtree set nolist
+hi NonText ctermfg=243 guifg=grey ctermbg=none
 
 " Highlight C useless trailing spaces in red
 let c_space_errors = 1

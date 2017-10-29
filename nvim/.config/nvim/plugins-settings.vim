@@ -12,6 +12,7 @@ if exists("NERDTreeAddKeyMap")
           \ 'callback': 'NERDTreeYankCurrentNode',
           \ 'quickhelpText': 'put full path of current node into the default register' })
 endif
+au FileType nerdtree set nolist
 
 " YCM
 autocmd! User YouCompleteMe call youcompleteme#Enable()
@@ -20,7 +21,7 @@ let g:ycm_collect_identifiers_from_tags_files=1
 let g:ycm_autoclose_preview_window_after_completion=0
 let g:ycm_autoclose_preview_window_after_insertion=1
 let g:ycm_max_diagnostics_to_display=1
-"let g:ycm_global_ycm_extra_conf = '~/.local/share/nvim/site/plugged/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
+let g:ycm_global_ycm_extra_conf = '~/.local/share/nvim/site/plugged/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
 let g:UltiSnipsExpandTrigger = "<C-j>"
 let g:ycm_server_python_interpreter="/usr/bin/python"
 
@@ -34,6 +35,8 @@ let g:go_fmt_command = "goimports"
 
 " vim-airline
 let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
+let g:airline_skip_empty_sections = 1
 
 " NERDTree git
 let g:NERDTreeIndicatorMapCustom = {
