@@ -6,7 +6,6 @@ install_path=$HOME/.dotfiles
 
 git=$(which git)
 stow=$(which stow)
-code=$(which code)
 
 if [ ! -d "$install_path" ]; then
   $git clone https://github.com/fntlnz/dotfiles $install_path
