@@ -1,12 +1,12 @@
 // Place your settings in this file to overwrite the default settings
 {
     "editor.multiCursorModifier": "ctrlCmd",
-    "java.home": "/usr/lib/jvm/java-8-openjdk",
+    "java.home": "/usr/lib/jvm/java-9-openjdk",
     "editor.renderWhitespace": "all",
-    "window.zoomLevel": 2,
+    "window.zoomLevel": 0,
     "editor.formatOnSave": true,
     "vim.disableAnnoyingNeovimMessage": true,
-    "editor.lineNumbers": "relative",
+    //"editor.lineNumbers": "relative",
     "extensions.ignoreRecommendations": false,
     "workbench.startupEditor": "newUntitledFile",
     "files.useExperimentalFileWatcher": true,
@@ -38,5 +38,9 @@
         }
     ],
     "workbench.colorTheme": "Dracula",
-    "docker.showExplorer": false
+    "docker.showExplorer": false,
+    "terminal.integrated.fontFamily": "Iosevka Term",
+    "gitlens.gitExplorer.enabled": false,
+    "workbench.activityBar.visible": false,
+    "rust.mode": null
 }

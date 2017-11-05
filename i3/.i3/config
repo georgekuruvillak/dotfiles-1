@@ -54,8 +54,8 @@ bindsym $mod+space focus mode_toggle
 bindsym $mod+a focus parent
 
 # Move window to another display
-bindsym ctrl+Shift+1 move workspace to output HDMI-1
-bindsym ctrl+Shift+2 move workspace to output HDMI-2
+bindsym ctrl+Shift+1 move workspace to output HDMI1
+bindsym ctrl+Shift+2 move workspace to output HDMI2
 
 # focus the child container
 #bindsym $mod+d focus child
