@@ -11,5 +11,10 @@
     {
         "key": "ctrl+shift+g",
         "command": "go.test.coverage"
+    },
+    {
+        "key": ", n",
+        "when": "!editorTextFocus",
+        "command": "workbench.action.toggleSidebarVisibility"
     }
 ]
