@@ -3,9 +3,8 @@
     "editor.multiCursorModifier": "ctrlCmd",
     "java.home": "/usr/lib/jvm/java-9-openjdk",
     "editor.renderWhitespace": "all",
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 1,
     "editor.formatOnSave": true,
-    "editor.lineNumbers": "relative",
     "extensions.ignoreRecommendations": false,
     "workbench.startupEditor": "newUntitledFile",
     "files.useExperimentalFileWatcher": true,
@@ -16,80 +15,10 @@
     ],
     "files.insertFinalNewline": true,
     "go.useLanguageServer": false,
-    "vim.easymotion": true,
-    "vim.leader": ",",
-    "vim.enableNeovim": true,
-    "vim.useSystemClipboard": true,
-    "vim.otherModesKeyBindings": [
-        {
-            "before": [
-                "leader",
-                "b",
-                "c"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "gitlens.diffWithBranch"
-                }
-            ]
-        },
-        {
-            "before": [
-                "leader",
-                "c",
-                "c"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "editor.action.commentLine"
-                }
-            ]
-        },
-        {
-            "before": [
-                "leader",
-                "n"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.toggleSidebarVisibility"
-                }
-            ]
-        },
-        {
-            "before": [
-                "Z",
-                "Z"
-            ],
-            "commands": [
-                {
-                    "command": "workbench.action.files.save"
-                },
-                {
-                    "command": "workbench.action.closeActiveEditor"
-                }
-            ]
-        },
-        {
-            "before": [
-                "Z",
-                "Q"
-            ],
-            "commands": [
-                {
-                    "command": "workbench.action.closeActiveEditor"
-                }
-            ]
-        }
-    ],
     "workbench.colorTheme": "Default Light+",
-    "terminal.integrated.fontFamily": "Iosevka Term",
     "docker.showExplorer": false,
     "gitlens.gitExplorer.enabled": false,
-    "workbench.activityBar.visible": false,
-    "vim.disableAnnoyingNeovimMessage": true,
-    "explorer.openEditors.visible": 0
+    "workbench.activityBar.visible": true,
+    "editor.fontSize": 13,
+    "editor.fontFamily": "Iosevka Term"
 }

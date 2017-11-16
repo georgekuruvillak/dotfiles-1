@@ -10,7 +10,6 @@ source $ZSH/oh-my-zsh.sh
 
 # Env
 export EDITOR=nvim
-export LC_ALL=""
 export GOPATH=$HOME/go
 export CDPATH=$CDPATH:$HOME/Projects:$GOPATH/src/github.com
 export CDPATH=$CDPATH:$HOME/Projects:$GOPATH/src
@@ -20,9 +19,16 @@ export PATH=$PATH:$HOME/go/bin
 # Aliases
 alias clipc='xclip -in -selection clipboard'
 alias keesync='rclone sync ~/.keepassxc dropbox:/keepass'
+alias vim='nvim'
+alias n='nvim'
+
+# ------------
+# Containers!
+# ------------
 
 # Azure CLI
-function az() { 
+function az() {
     docker run --rm -u $(id -u):$(id -g) -v $HOME/.azure:/.azure -it azuresdk/azure-cli-python az $@
 }
+
 

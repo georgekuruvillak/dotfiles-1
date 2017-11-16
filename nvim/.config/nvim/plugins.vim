@@ -38,7 +38,6 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'shime/vim-livedown', { 'for': 'markdown' }
 Plug 'hashivim/vim-terraform', { 'for': 'terraform' }
-Plug 'dracula/vim'
 Plug 'elzr/vim-json', { 'for': 'json' }
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 Plug 'mxw/vim-jsx', { 'for': ['javascript.jsx', 'javascript']}

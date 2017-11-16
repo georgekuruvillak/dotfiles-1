@@ -18,8 +18,6 @@ $stow tmux
 $stow git
 $stow gdb
 $stow zsh
-$stow i3
-$stow screenlayout
 $stow dunst
 $stow gnupg
 $stow vscode
@@ -36,4 +34,3 @@ $code --install-extension  twxs.cmake
 $code --install-extension  vector-of-bool.cmake-tools
 $code --install-extension  vscodevim.vim
 $code --install-extension  zxh404.vscode-proto3
-$code --install-extension  dracula-theme.theme-dracula

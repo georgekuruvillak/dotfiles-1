@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-
-ssid=$(iwgetid -r)
-echo "🌈 $ssid 🌈"
-
