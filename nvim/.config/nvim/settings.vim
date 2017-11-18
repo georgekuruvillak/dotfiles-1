@@ -1,7 +1,8 @@
 " Generic settings
 
-set background=light
-colorscheme default
+syntax enable
+set background=dark
+colorscheme jellybeans
 
 " Initial indentation settings
 set clipboard=unnamed
@@ -15,6 +16,7 @@ set exrc
 set hidden
 set rnu
 set showmatch
+set guicursor=""
 hi SpellBad guibg=#ff2929 ctermbg=124
 
 " Show tabs and spaces

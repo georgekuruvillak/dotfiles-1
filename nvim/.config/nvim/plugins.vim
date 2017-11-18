@@ -44,6 +44,7 @@ Plug 'mxw/vim-jsx', { 'for': ['javascript.jsx', 'javascript']}
 Plug 'xuhdev/vim-latex-live-preview', {'for': 'tex'}
 Plug 'rust-lang/rust.vim'
 Plug 'racer-rust/vim-racer'
+Plug 'nanotech/jellybeans.vim'
 
 call plug#end()
 
