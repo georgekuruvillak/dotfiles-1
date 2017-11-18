@@ -15,10 +15,10 @@
     ],
     "files.insertFinalNewline": true,
     "go.useLanguageServer": false,
-    "workbench.colorTheme": "Default Light+",
     "docker.showExplorer": false,
     "gitlens.gitExplorer.enabled": false,
     "workbench.activityBar.visible": true,
     "gitlens.codeLens.enabled": false,
-    "editor.fontFamily": "Iosevka Term"
+    "editor.fontFamily": "Iosevka Term",
+    "workbench.colorTheme": "Dracula"
 }
