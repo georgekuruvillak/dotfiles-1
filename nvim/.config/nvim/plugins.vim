@@ -39,12 +39,10 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'shime/vim-livedown', { 'for': 'markdown' }
 Plug 'hashivim/vim-terraform', { 'for': 'terraform' }
 Plug 'elzr/vim-json', { 'for': 'json' }
-Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
-Plug 'mxw/vim-jsx', { 'for': ['javascript.jsx', 'javascript']}
 Plug 'xuhdev/vim-latex-live-preview', {'for': 'tex'}
-Plug 'rust-lang/rust.vim'
-Plug 'racer-rust/vim-racer'
-Plug 'nanotech/jellybeans.vim'
+Plug 'rust-lang/rust.vim', {'for': 'rust'}
+Plug 'racer-rust/vim-racer', {'for': 'rust'}
+Plug 'dracula/vim'
 
 call plug#end()
 

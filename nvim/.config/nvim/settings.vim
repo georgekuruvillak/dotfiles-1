@@ -2,7 +2,8 @@
 
 syntax enable
 set background=dark
-colorscheme jellybeans
+set termguicolors
+colorscheme dracula
 
 " Initial indentation settings
 set clipboard=unnamed
