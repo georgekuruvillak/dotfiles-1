@@ -1,2 +1,3 @@
 *.pyc
 gdb/.gdbinit
+nvim/.config/nvim/.netrwhist

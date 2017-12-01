@@ -2,8 +2,11 @@
 
 syntax enable
 set background=dark
-set termguicolors
 colorscheme dracula
+if !exists('$TMUX')
+  set termguicolors
+endif
+
 
 " Initial indentation settings
 set clipboard=unnamed
