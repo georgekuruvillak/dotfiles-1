@@ -6,14 +6,14 @@ install_path=$HOME/.dotfiles
 
 git=$(which git)
 stow=$(which stow)
+curl=$(which curl)
 
 if [ ! -d "$install_path" ]; then
   $git clone https://github.com/fntlnz/dotfiles $install_path
 fi
 
-curl -L -o gdb/.gdbinit https://git.io/.gdbinit
-
 pushd $install_path
+$curl -L -o gdb/.gdbinit https://git.io/.gdbinit
 $stow nvim
 $stow tmux
 $stow git
