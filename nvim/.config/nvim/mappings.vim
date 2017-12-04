@@ -3,14 +3,6 @@
 " Remap leader
 let mapleader = ","
 
-" Map è + to square brackets
-nmap è [
-nmap + ]
-omap é [
-omap + ]
-xmap è [
-xmap + ]
-
 imap jk <Esc>
 
 " NERDTree
@@ -48,9 +40,6 @@ map ]a :Gblame<cr>
 " Lnext/Lprev
 map ]l :lnext<cr>
 map [l :lprev<cr>
-
-" Ctrl+Right click to preview the current tag
-map <C><RightMouse> :pta <cword><cr>
 
 " Term esc
 :tnoremap <Esc> <C-\><C-n>
