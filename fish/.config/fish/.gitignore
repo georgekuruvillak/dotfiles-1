@@ -1,7 +1,6 @@
 *
 !.gitignore
 !fishfile
-!fishd.dalek
 !functions/az.fish
 !functions/clipc.fish
 !functions/vim.fish
