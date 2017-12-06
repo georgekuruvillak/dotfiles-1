@@ -1,0 +1,10 @@
+*
+!.gitignore
+!fishfile
+!fishd.dalek
+!functions/az.fish
+!functions/clipc.fish
+!functions/vim.fish
+!functions/n.fish
+!functions/keesync.fish
+!functions/fish_prompt.fish
