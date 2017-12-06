@@ -18,10 +18,10 @@ $stow nvim
 $stow tmux
 $stow git
 $stow gdb
-$stow zsh
 $stow gnupg
 $stow i3
 $stow dunst
 $stow pam
 $stow systemd
+$stow fish
 popd
