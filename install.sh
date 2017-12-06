@@ -26,3 +26,6 @@ $stow pam
 $stow systemd
 $stow fish
 popd
+
+fish -c fisher
+nvim +PlugInstall
