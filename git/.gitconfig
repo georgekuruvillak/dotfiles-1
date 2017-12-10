@@ -8,6 +8,7 @@
   st = status
   lod = log --decorate
   lodo = log --decorate --oneline
+  review = "!f() { code `git diff --name-only $1` . ; } ; f"
   lof = log --color --pretty=format:'%C(yellow)%h%C(reset) %s%C(bold red)%d%C(reset) %C(green)%ad%C(reset) %C(blue)[%an]%C(reset)' --relative-date --decorate
   pr = "!f() { git fetch $1 refs/pull/$2/head:pr/$1/$2 && git checkout pr/$1/$2;  } ; f"
   d = difftool

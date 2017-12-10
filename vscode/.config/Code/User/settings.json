@@ -1,0 +1,34 @@
+{
+    "editor.multiCursorModifier": "ctrlCmd",
+    "java.home": "/usr/lib/jvm/java-9-openjdk",
+    "editor.renderWhitespace": "all",
+    "window.zoomLevel": 0,
+    "editor.formatOnSave": true,
+    "extensions.ignoreRecommendations": false,
+    "workbench.startupEditor": "newUntitledFile",
+    "files.useExperimentalFileWatcher": true,
+    "editor.stablePeek": true,
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "files.insertFinalNewline": true,
+    "go.useLanguageServer": false,
+    "workbench.colorTheme": "Dracula Soft",
+    "docker.showExplorer": false,
+    "gitlens.gitExplorer.enabled": false,
+    "workbench.activityBar.visible": true,
+    "gitlens.codeLens.enabled": false,
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressUpdateNotice": false,
+        "suppressWelcomeNotice": true
+    },
+    "editor.fontFamily": "Iosevka Term",
+    "C_Cpp.clang_format_style": "Google"
+}

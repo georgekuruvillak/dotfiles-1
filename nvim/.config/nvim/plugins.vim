@@ -44,6 +44,7 @@ Plug 'rust-lang/rust.vim', {'for': 'rust'}
 Plug 'racer-rust/vim-racer', {'for': 'rust'}
 Plug 'dracula/vim'
 Plug 'rhysd/vim-clang-format'
+Plug '~/Projects/gianarb/vim-ifql'
 
 call plug#end()
 
