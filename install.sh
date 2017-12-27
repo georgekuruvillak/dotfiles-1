@@ -17,6 +17,7 @@ pushd $install_path
 $curl -L -o gdb/.gdbinit https://git.io/.gdbinit
 $curl -L -o fish/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
 $stow nvim
+$stow zsh
 $stow tmux
 $stow git
 $stow gdb
