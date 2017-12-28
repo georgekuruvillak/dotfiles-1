@@ -61,7 +61,7 @@ bindsym ctrl+Shift+2 move workspace to output HDMI-2
 #bindsym $mod+d focus child
 
 set $ws1 "1: 1 "
-set $ws2 "2: 2 "
+set $ws2 "2: 2 "
 set $ws9 "9: 9 "
 set $ws10 "10: 10 "
 # switch to workspace
@@ -190,7 +190,7 @@ for_window [class="Pavucontrol"] floating enable, border normal
 for_window [class="VirtualBox"] floating enable
 
 for_window [class="gnome-terminal"] move workspace $ws1
-for_window [class="Firefox"] move workspace $ws2
+for_window [class="Chromium"] move workspace $ws2
 for_window [class="Thunderbird"] move workspace $ws9
 for_window [class="Slack"] move workspace $ws10
 # by ROLE (WM_WINDOW_ROLE)
@@ -204,9 +204,9 @@ for_window [title="Write:.*" class="Thunderbird"] floating enable
 for_window [title="New Task:.*" class="Thunderbird"] floating enable
 for_window [class="Thunderbird" instance="Calendar"] floating enable
 for_window [class="Thunderbird" instance="Calendar"] floating enable
-for_window [class="Galculator"] floating enable
+for_window [class="Calculator"] floating enable
 for_window [class="keepassxc"] floating enable
-for_window [title="^Library" class="Firefox"] floating enable
+for_window [title="^Library" class="Chromium"] floating enable
 for_window [class="Spotify"] floating enable
 
 # Scratchpad
