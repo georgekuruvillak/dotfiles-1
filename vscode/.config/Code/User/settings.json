@@ -14,7 +14,7 @@
     ],
     "files.insertFinalNewline": true,
     "go.useLanguageServer": false,
-    "workbench.colorTheme": "Dracula Soft",
+    "workbench.colorTheme": "Default Light+",
     "docker.showExplorer": false,
     "gitlens.gitExplorer.enabled": false,
     "workbench.activityBar.visible": true,

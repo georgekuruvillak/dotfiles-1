@@ -22,6 +22,8 @@ alias keesync='rclone sync ~/.keepassxc dropbox:/keepass'
 alias vim='nvim'
 alias n='nvim'
 
+source $HOME/.local.zsh
+
 # ------------
 # Containers!
 # ------------
@@ -30,5 +32,4 @@ alias n='nvim'
 function az() {
     docker run --rm -u $(id -u):$(id -g) -v $HOME/.azure:/.azure -it azuresdk/azure-cli-python az $@
 }
-
 

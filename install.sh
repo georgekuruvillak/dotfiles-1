@@ -27,17 +27,6 @@ $stow dunst
 $stow pam
 $stow systemd
 $stow fish
-$stow vscode
 popd
 
 fish -c fisher
-
-$code --install-extension eamodio.gitlens
-$code --install-extension lukehoban.Go
-$code --install-extension ms-vscode.cpptools
-$code --install-extension onsi.vscode-ginkgo
-$code --install-extension redhat.java
-$code --install-extension twxs.cmake
-$code --install-extension vector-of-bool.cmake-tools
-$code --install-extension zxh404.vscode-proto3
-$code --install-extension dracula-theme.theme-dracula

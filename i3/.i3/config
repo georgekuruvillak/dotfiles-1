@@ -227,3 +227,4 @@ exec ~/.xprofile
 # Utilities
 exec --no-startup-id volumeicon
 exec --no-startup-id nm-applet --sm-disable
+exec --no-startup-id blueman-applet

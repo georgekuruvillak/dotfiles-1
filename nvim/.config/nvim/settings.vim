@@ -1,8 +1,10 @@
 " Generic settings
 
 syntax enable
-set background=dark
-colorscheme dracula
+let g:seoul256_background = 256
+let g:seoul256_srgb = 1
+set background=light
+colo seoul256-light
 if !exists('$TMUX')
   set termguicolors
 endif
@@ -24,7 +26,7 @@ set guicursor=""
 hi SpellBad guibg=#ff2929 ctermbg=124
 
 " Show tabs and spaces
-set listchars=tab:>-,trail:~,extends:>,precedes:<
+set listchars=tab:..,trail:_,extends:>,precedes:<,nbsp:~
 set list
 
 " Highlight C useless trailing spaces in red

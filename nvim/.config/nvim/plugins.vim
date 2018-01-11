@@ -25,6 +25,7 @@ Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
 Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
 Plug 'junegunn/fzf.vim'
+Plug 'junegunn/seoul256.vim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'octol/vim-cpp-enhanced-highlight', { 'for': ['c', 'cpp']}
 Plug 'fntlnz/atags.vim'
@@ -42,7 +43,6 @@ Plug 'elzr/vim-json', { 'for': 'json' }
 Plug 'xuhdev/vim-latex-live-preview', {'for': 'tex'}
 Plug 'rust-lang/rust.vim', {'for': 'rust'}
 Plug 'racer-rust/vim-racer', {'for': 'rust'}
-Plug 'dracula/vim'
 Plug 'rhysd/vim-clang-format'
 Plug '~/Projects/gianarb/vim-ifql'
 
