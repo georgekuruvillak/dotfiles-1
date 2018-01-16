@@ -14,7 +14,6 @@
     ],
     "files.insertFinalNewline": true,
     "go.useLanguageServer": false,
-    "workbench.colorTheme": "Default Light+",
     "docker.showExplorer": false,
     "gitlens.gitExplorer.enabled": false,
     "workbench.activityBar.visible": true,
@@ -32,5 +31,6 @@
     "editor.fontFamily": "Iosevka Term",
     "C_Cpp.clang_format_style": "Google",
     "explorer.confirmDelete": false,
-    "explorer.confirmDragAndDrop": false
+    "explorer.confirmDragAndDrop": false,
+    "workbench.colorTheme": "Dracula"
 }

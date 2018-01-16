@@ -1,10 +1,8 @@
 " Generic settings
 
 syntax enable
-let g:seoul256_background = 256
-let g:seoul256_srgb = 1
-set background=light
-colo seoul256-light
+set background=dark
+colorscheme dracula
 if !exists('$TMUX')
   set termguicolors
 endif

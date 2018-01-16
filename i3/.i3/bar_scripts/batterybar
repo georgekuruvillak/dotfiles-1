@@ -99,4 +99,4 @@ esac
 if [[ "$BLOCK_BUTTON" -eq 1 ]]; then 
     echo "$status <span foreground=\"$color\">$percentage%$remaining_formatted</span>"
 fi
-    echo "<span foreground=\"$color\">$squares $discharge</span>"
+    echo "<span foreground=\"$color\">$squares$discharge</span>"
