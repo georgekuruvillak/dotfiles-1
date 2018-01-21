@@ -14,6 +14,14 @@ if [ ! -d "$install_path" ]; then
 fi
 
 pushd $install_path
+
+if [ ! -d i3/.i3/i3blocks-contrib ]; then
+  $git clone https://github.com/vivien/i3blocks-contrib.git i3/.i3/i3blocks-contrib
+  pushd i3/.i3/i3blocks-contrib/bandwidth2
+  make
+  popd
+fi
+
 $curl -L -o gdb/.gdbinit https://git.io/.gdbinit
 $stow nvim
 $stow zsh
