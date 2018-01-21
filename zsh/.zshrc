@@ -24,12 +24,3 @@ alias n='nvim'
 
 source $HOME/.local.zsh
 
-# ------------
-# Containers!
-# ------------
-
-# Azure CLI
-function az() {
-    docker run --rm -u $(id -u):$(id -g) -v $HOME/.azure:/.azure -it azuresdk/azure-cli-python az $@
-}
-
