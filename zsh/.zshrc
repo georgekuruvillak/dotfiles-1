@@ -24,3 +24,6 @@ alias n='nvim'
 
 source $HOME/.local.zsh
 
+sslverify() {
+  openssl s_client -connect $1
+}

@@ -1,0 +1,8 @@
+[Unit]
+Description=Do the water reminder every 2 hours
+
+[Timer]
+OnActiveSec=2h
+
+[Install]
+WantedBy=timers.target
