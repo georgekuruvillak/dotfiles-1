@@ -60,3 +60,8 @@ let g:atags_build_commands_list = ["ctags -o tags -R --c++-kinds=+p --fields=+ia
 
 " clang-format
 autocmd FileType c,cpp,javascript,typescript,java ClangFormatAutoEnable
+
+
+hi DiffAdd gui=NONE guifg=green guibg=black
+
+

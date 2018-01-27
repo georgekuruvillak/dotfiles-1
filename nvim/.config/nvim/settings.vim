@@ -2,11 +2,9 @@
 
 syntax enable
 set background=dark
-colorscheme dracula
-if !exists('$TMUX')
-  set termguicolors
-endif
-
+colorscheme base16-phd
+let base16colorspace=256
+set termguicolors
 
 " Initial indentation settings
 set clipboard=unnamed
@@ -20,7 +18,7 @@ set exrc
 set hidden
 set rnu
 set showmatch
-set guicursor=""
+
 hi SpellBad guibg=#ff2929 ctermbg=124
 
 " Show tabs and spaces

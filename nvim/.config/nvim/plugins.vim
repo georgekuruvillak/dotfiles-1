@@ -3,7 +3,7 @@ let shouldInstallPluginManager = 0
 " post installation hooks{{{
 function! BuildYCM(info)
     if a:info.status == 'installed' || a:info.force
-        !./install.py --clang-completer
+        !./install.py --clang-completer --cs-completer --go-completer --rust-completer --js-completer
     endif
 endfunction
 " }}}
@@ -25,7 +25,6 @@ Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
 Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
 Plug 'junegunn/fzf.vim'
-Plug 'dracula/vim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'octol/vim-cpp-enhanced-highlight', { 'for': ['c', 'cpp']}
 Plug 'fntlnz/atags.vim'
@@ -44,6 +43,7 @@ Plug 'xuhdev/vim-latex-live-preview', {'for': 'tex'}
 Plug 'rust-lang/rust.vim', {'for': 'rust'}
 Plug 'racer-rust/vim-racer', {'for': 'rust'}
 Plug 'rhysd/vim-clang-format'
+Plug 'chriskempson/base16-vim'
 
 call plug#end()
 
