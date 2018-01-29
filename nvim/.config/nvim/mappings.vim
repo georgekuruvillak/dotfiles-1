@@ -43,3 +43,11 @@ map [l :lprev<cr>
 
 " Term esc
 :tnoremap <Esc> <C-\><C-n>
+
+" Move lines around
+nnoremap ]s :m .+1<CR>==
+nnoremap [s :m .-2<CR>==
+inoremap ]s <Esc>:m .+1<CR>==gi
+inoremap [s <Esc>:m .-2<CR>==gi
+vnoremap ]s :m '>+1<CR>gv=gv
+vnoremap [sk :m '<-2<CR>gv=gv

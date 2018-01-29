@@ -3,7 +3,6 @@
 syntax enable
 set background=dark
 colorscheme base16-phd
-let base16colorspace=256
 set termguicolors
 
 " Initial indentation settings

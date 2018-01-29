@@ -230,6 +230,6 @@ exec --no-startup-id blueman-applet
 exec --no-startup-id feh --bg-scale ~/.config/background/background.jpg
 
 gaps inner 2
-gaps outer 15
+gaps outer 3
 for_window [class="^.*"] border pixel 0
 smart_borders on

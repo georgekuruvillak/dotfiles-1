@@ -27,3 +27,7 @@ source $HOME/.local.zsh
 sslverify() {
   openssl s_client -connect $1
 }
+
+sslciphers() {
+  nmap --script ssl-enum-ciphers -p 443 $1
+}
