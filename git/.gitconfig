@@ -14,7 +14,7 @@
   d = difftool
   diffstats = "!f() { git diff --dirstat=files $1 $2; } ; f"
 [user]
-  email = fontanalorenz@gmail.com
+  email = lo@linux.com
   name = Lorenzo Fontana
   signingkey = 74C3DC15
 [credential]
