@@ -1,5 +1,5 @@
 [options]
-font = Input Mono Compressed Light 15
+font = Input Mono Compressed Light 14
 scrollback_lines = 1000000
 allow_bold = false
 
