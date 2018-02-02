@@ -1,10 +1,11 @@
 " Generic settings
 
-syntax enable
+syntax on
 set background=dark
-colorscheme base16-phd
 set termguicolors
+autocmd ColorScheme * call onedark#set_highlight("Normal", {})
 
+colorscheme onedark
 " Initial indentation settings
 set clipboard=unnamed
 set tabstop=2

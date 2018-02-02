@@ -43,7 +43,7 @@ Plug 'xuhdev/vim-latex-live-preview', {'for': 'tex'}
 Plug 'rust-lang/rust.vim', {'for': 'rust'}
 Plug 'racer-rust/vim-racer', {'for': 'rust'}
 Plug 'rhysd/vim-clang-format'
-Plug 'chriskempson/base16-vim'
+Plug 'joshdick/onedark.vim'
 
 call plug#end()
 
