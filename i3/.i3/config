@@ -1,5 +1,5 @@
 set $mod Mod4
-set $editor termite -d $(xcwd)
+set $editor alacritty
 
 font pango:Noto Sans, FontAwesome  12
 
@@ -127,7 +127,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
     # i3bar position
-    position bottom
+    position top
     status_command i3blocks
     i3bar_command i3bar
     strip_workspace_numbers yes

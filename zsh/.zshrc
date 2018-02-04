@@ -21,7 +21,6 @@ alias clipc='xclip -in -selection clipboard'
 alias keesync='rclone sync ~/.keepassxc dropbox:/keepass'
 alias vim='nvim'
 alias n='nvim'
-export TERM=xterm
 source $HOME/.local.zsh
 
 sslverify() {

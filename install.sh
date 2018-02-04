@@ -33,5 +33,5 @@ $stow dunst
 $stow pam
 $stow systemd
 $stow background
-$stow termite
+$stow alacritty
 popd

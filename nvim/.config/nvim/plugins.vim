@@ -36,14 +36,13 @@ Plug 'honza/vim-snippets'
 Plug 'bling/vim-airline'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'shime/vim-livedown', { 'for': 'markdown' }
-Plug 'hashivim/vim-terraform', { 'for': 'terraform' }
 Plug 'elzr/vim-json', { 'for': 'json' }
 Plug 'xuhdev/vim-latex-live-preview', {'for': 'tex'}
 Plug 'rust-lang/rust.vim', {'for': 'rust'}
 Plug 'racer-rust/vim-racer', {'for': 'rust'}
 Plug 'rhysd/vim-clang-format'
 Plug 'joshdick/onedark.vim'
+Plug 'Yggdroot/indentLine'
 
 call plug#end()
 
