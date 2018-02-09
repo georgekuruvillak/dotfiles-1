@@ -1,5 +1,5 @@
 set $mod Mod4
-set $editor alacritty
+set $editor alacritty -e tmux
 
 font pango:Noto Sans, FontAwesome  12
 
@@ -94,8 +94,16 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
-# Sync filesystems to prevent data loss 
-bindsym $mod+Shift+s exec "i3-nagbar -t warning -m 'You pressed the sync shortcut. Do you really want to sync filesystems? This will freeze for a bit' -b 'Yes,sync' 'sync && notify-send -a shortcuz  Sync complete'"
+set $mode_maintenance Maintenance (t) kill TMUX \t (s) sync filesystems
+mode "$mode_maintenance" {
+    bindsym t exec --no-startup-id tmux kill-server, mode "default"
+    bindsym s exec --no-startup-id bash -c "sync && notify-send Sync complete", mode "default"
+
+    # back to normal: Enter or Escape
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+m mode "$mode_maintenance"
 
 # resize window
 mode "resize" {
@@ -186,11 +194,8 @@ bindsym XF86MonBrightnessUp exec xbacklight +5
 # Tip: To find out what these values might be run:
 #       xprop | grep -i 'class'
 for_window [class="Pavucontrol"] floating enable, border normal
-for_window [class="VirtualBox"] floating enable
 
-for_window [class="gnome-terminal"] move workspace $ws1
 for_window [class="Chromium"] move workspace $ws2
-for_window [class="Thunderbird"] move workspace $ws9
 for_window [class="Slack"] move workspace $ws10
 # by ROLE (WM_WINDOW_ROLE)
 # Note: window_role is Typically useful for effecting child windows
@@ -198,12 +203,6 @@ for_window [class="Slack"] move workspace $ws10
 #       windows, etc.
 # Tip: To find out what these values might be run:
 #       xprop | grep -i 'role'#
-for_window [title="Write:.*" class="Thunderbird"] floating enable
-for_window [title="Write:.*" class="Thunderbird"] floating enable
-for_window [title="New Task:.*" class="Thunderbird"] floating enable
-for_window [class="Thunderbird" instance="Calendar"] floating enable
-for_window [class="Thunderbird" instance="Calendar"] floating enable
-for_window [class="Calculator"] floating enable
 for_window [class="keepassxc"] floating enable
 for_window [title="^Library" class="Chromium"] floating enable
 for_window [class="Spotify"] floating enable

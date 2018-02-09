@@ -51,3 +51,8 @@ inoremap ]s <Esc>:m .+1<CR>==gi
 inoremap [s <Esc>:m .-2<CR>==gi
 vnoremap ]s :m '>+1<CR>gv=gv
 vnoremap [sk :m '<-2<CR>gv=gv
+
+
+" Review the current branch to master
+map ]r :DiffRev master<cr>
+

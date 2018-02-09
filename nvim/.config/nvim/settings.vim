@@ -2,6 +2,7 @@
 
 syntax on
 set background=dark
+set t_Co=256
 set termguicolors
 autocmd ColorScheme * call onedark#set_highlight("Normal", {})
 
@@ -18,6 +19,7 @@ set exrc
 set hidden
 set rnu
 set showmatch
+set so=999
 
 hi SpellBad guibg=#ff2929 ctermbg=124
 

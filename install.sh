@@ -34,4 +34,6 @@ $stow pam
 $stow systemd
 $stow background
 $stow alacritty
+$stow user-dirs
 popd
+
