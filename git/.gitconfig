@@ -13,6 +13,7 @@
   pr = "!f() { git fetch $1 refs/pull/$2/head:pr/$1/$2 && git checkout pr/$1/$2;  } ; f"
   d = difftool
   diffstats = "!f() { git diff --dirstat=files $1 $2; } ; f"
+  diffnosym = "!f() { git diff --color $1 $2 | sed -r 's/^([^-+ ]*)[-+ ]/\\1/' | less -r; } ; f"
 [user]
   email = lo@linux.com
   name = Lorenzo Fontana
