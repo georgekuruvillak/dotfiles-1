@@ -30,3 +30,10 @@ sslverify() {
 sslciphers() {
   nmap --script ssl-enum-ciphers -p 443 $1
 }
+
+symaddr() {
+  local elf=$1
+  local symbol=$2
+  local addr=$(objdump -tT $elf | awk -v s=$symbol '$NF==s && $4 == ".text" {print $1}')
+  echo 0x$addr
+}
