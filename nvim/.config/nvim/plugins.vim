@@ -43,6 +43,7 @@ Plug 'racer-rust/vim-racer', {'for': 'rust'}
 Plug 'rhysd/vim-clang-format'
 Plug 'joshdick/onedark.vim'
 Plug 'Yggdroot/indentLine'
+Plug 'dhruvasagar/vim-table-mode'
 
 call plug#end()
 
