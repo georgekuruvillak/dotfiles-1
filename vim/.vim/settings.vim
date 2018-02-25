@@ -4,9 +4,7 @@ syntax on
 set background=dark
 set t_Co=256
 set termguicolors
-autocmd ColorScheme * call onedark#set_highlight("Normal", {})
-
-colorscheme onedark
+colorscheme iceberg
 " Initial indentation settings
 set clipboard=unnamed
 set tabstop=2

@@ -1,5 +1,5 @@
 set $mod Mod4
-set $editor alacritty -e tmux
+set $editor kitty
 
 font pango:Noto Sans, FontAwesome  9
 
@@ -228,7 +228,7 @@ exec --no-startup-id nm-applet --sm-disable
 exec --no-startup-id blueman-applet
 exec --no-startup-id feh --bg-scale ~/.config/background/background.jpg
 
+# gaps
 gaps inner 2
 gaps outer 3
-for_window [class="^.*"] border pixel 0
 smart_borders on

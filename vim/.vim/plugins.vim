@@ -3,19 +3,19 @@ let shouldInstallPluginManager = 0
 " post installation hooks{{{
 function! BuildYCM(info)
     if a:info.status == 'installed' || a:info.force
-        !./install.py --clang-completer --cs-completer --go-completer --rust-completer --js-completer
+        !./install.py --system-libclang --clang-completer --go-completer --rust-completer --js-completer --java-completer
     endif
 endfunction
 " }}}
 
 
-if !filereadable($HOME . "/.local/share/nvim/site/autoload/plug.vim")
+if !filereadable($HOME . "/.vim/autoload/plug.vim")
 echo "~≥ Installing vim-plug \n"
-silent !curl -fLo $HOME/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+silent !curl -fLo $HOME/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 let shouldInstallPluginManager = 1
 endif
 
-call plug#begin('~/.local/share/nvim/site/plugged')
+call plug#begin('~/.local/share/vim/site/plugged')
 
 Plug 'benekastah/neomake', { 'on': 'Neomake' }
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
@@ -39,11 +39,11 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'elzr/vim-json', { 'for': 'json' }
 Plug 'xuhdev/vim-latex-live-preview', {'for': 'tex'}
 Plug 'rust-lang/rust.vim', {'for': 'rust'}
-Plug 'racer-rust/vim-racer', {'for': 'rust'}
+"Plug 'racer-rust/vim-racer', {'for': 'rust'}
 Plug 'rhysd/vim-clang-format'
-Plug 'joshdick/onedark.vim'
 Plug 'Yggdroot/indentLine'
 Plug 'dhruvasagar/vim-table-mode'
+Plug 'cocopon/iceberg.vim'
 
 call plug#end()
 

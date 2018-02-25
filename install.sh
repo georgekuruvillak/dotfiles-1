@@ -22,7 +22,7 @@ if [ ! -d i3/.i3/i3blocks-contrib ]; then
 fi
 
 $curl -L -o gdb/.gdbinit https://git.io/.gdbinit
-$stow nvim
+$stow vim
 $stow zsh
 $stow tmux
 $stow git
@@ -33,7 +33,7 @@ $stow dunst
 $stow pam
 $stow systemd
 $stow background
-$stow alacritty
+$stow kitty
 $stow user-dirs
 popd
 

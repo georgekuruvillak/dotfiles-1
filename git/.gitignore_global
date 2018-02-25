@@ -9,6 +9,7 @@ cscope.out
 cscope.files
 .clang
 .exrc
+.netrwhist
 
 # Anything else
 .ackrc
