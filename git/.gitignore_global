@@ -15,5 +15,4 @@ cscope.files
 .ackrc
 .agignore
 .gdb_history
-.nvimrc
-.vscode/
+
