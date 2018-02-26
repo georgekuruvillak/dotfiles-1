@@ -1,10 +1,11 @@
 " Generic settings
 
 syntax on
-set background=dark
-set t_Co=256
-set termguicolors
+
 colorscheme iceberg
+set t_Co=256
+set t_ut=
+set termguicolors
 " Initial indentation settings
 set clipboard=unnamed
 set tabstop=2
@@ -17,6 +18,7 @@ set exrc
 set hidden
 set rnu
 set showmatch
+set cursorline
 set so=999
 
 hi SpellBad guibg=#ff2929 ctermbg=124
