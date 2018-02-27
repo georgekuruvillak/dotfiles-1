@@ -67,3 +67,18 @@ function! s:get_diff_files(rev)
 endfunction
 
 command! -nargs=1 DiffRev call s:get_diff_files(<q-args>)
+
+" Zoom / Restore window.
+function! s:ZoomToggle() abort
+    if exists('t:zoomed') && t:zoomed
+        execute t:zoom_winrestcmd
+        let t:zoomed = 0
+    else
+        let t:zoom_winrestcmd = winrestcmd()
+        resize
+        vertical resize
+        let t:zoomed = 1
+    endif
+endfunction
+command! ZoomToggle call s:ZoomToggle()
+map ]z :ZoomToggle<CR>

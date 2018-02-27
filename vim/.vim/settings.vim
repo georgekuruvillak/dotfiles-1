@@ -20,6 +20,8 @@ set rnu
 set showmatch
 set cursorline
 set so=999
+filetype plugin on
+filetype plugin indent on
 
 hi SpellBad guibg=#ff2929 ctermbg=124
 

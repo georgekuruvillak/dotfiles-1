@@ -24,6 +24,7 @@ let g:ycm_max_diagnostics_to_display=1
 let g:ycm_global_ycm_extra_conf = '~/.local/share/vim/site/plugged/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
 let g:UltiSnipsExpandTrigger = "<C-j>"
 let g:ycm_server_python_interpreter="/usr/bin/python"
+let g:ycm_rust_src_path = '~/Projects/rust-lang/rust/src'
 
 " vim-go
 let g:go_highlight_functions = 1
@@ -32,6 +33,7 @@ let g:go_highlight_structs = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 let g:go_fmt_command = "goimports"
+autocmd FileType go setlocal omnifunc=
 
 " vim-airline
 let g:airline#extensions#tabline#enabled = 1
@@ -63,5 +65,4 @@ autocmd FileType c,cpp,javascript,typescript,java ClangFormatAutoEnable
 
 
 hi DiffAdd gui=NONE guifg=green guibg=black
-
 

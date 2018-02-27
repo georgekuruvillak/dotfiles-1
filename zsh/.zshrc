@@ -18,7 +18,7 @@ export PATH=$PATH:$HOME/go/bin
 
 # Aliases
 alias clipc='xclip -in -selection clipboard'
-alias keesync='rclone sync ~/.keepassxc dropbox:/keepass'
+alias keesync='rclone sync ~/.keepass dropbox:/keepass'
 alias n='vim'
 alias v='vim'
 source $HOME/.local.zsh
