@@ -21,15 +21,12 @@ if [ ! -d i3/.i3/i3blocks-contrib ]; then
   popd
 fi
 
-$curl -L -o gdb/.gdbinit https://git.io/.gdbinit
 $stow vim
 $stow zsh
 $stow tmux
 $stow git
 $stow gdb
 $stow gnupg
-$stow i3
-$stow dunst
 $stow pam
 $stow systemd
 $stow background

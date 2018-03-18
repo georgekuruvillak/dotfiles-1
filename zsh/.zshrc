@@ -2,7 +2,7 @@ export ZSH=~/.oh-my-zsh
 
 # oh-my-zsh setup
 ZSH_THEME="robbyrussell"
-plugins=(git go)
+plugins=(git go kubectl colored-man-pages)
 source $ZSH/oh-my-zsh.sh
 
 # FZF (this is created by fzf itsef)

@@ -195,7 +195,7 @@ bindsym XF86MonBrightnessUp exec xbacklight +5
 #       xprop | grep -i 'class'
 for_window [class="Pavucontrol"] floating enable, border normal
 
-for_window [class="Firefox"] move workspace $ws2
+for_window [class="Nightly"] move workspace $ws2
 for_window [class="Slack"] move workspace $ws10
 # by ROLE (WM_WINDOW_ROLE)
 # Note: window_role is Typically useful for effecting child windows

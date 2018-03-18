@@ -1,9 +1,0 @@
-[Unit]
-Description=Just remind me to drink water
-
-[Service]
-Type=oneshot
-ExecStart=/usr/bin/notify-send -a "Dehydratation alert" -u low "Did you get your water? 💧"
-
-[Install]
-WantedBy=timers.target

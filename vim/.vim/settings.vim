@@ -1,8 +1,8 @@
 " Generic settings
 
-syntax on
+syntax off
 
-colorscheme iceberg
+colorscheme default
 set t_Co=256
 set t_ut=
 set termguicolors
@@ -16,7 +16,9 @@ set smarttab
 set modeline
 set exrc
 set hidden
-set rnu
+"set rnu -> this breaks omnifunc and make the completion popup flickering
+set nu
+set nocompatible
 set showmatch
 set cursorline
 set so=999
@@ -42,3 +44,14 @@ au BufEnter,BufWritePost,InsertLeave * :Neomake
 " ex command for toggling hex mode - define mapping if desired
 command -bar Hexmode call ToggleHex()
 
+" Personal colors over the default theme
+hi Pmenu            ctermbg=gray guibg=gray ctermfg=black guifg=black
+hi PmenuSel         ctermbg=gray guibg=gray ctermfg=red guifg=red
+hi Visual           guifg=#000000 guibg=#FD971F
+hi CursorLine       term=bold cterm=bold guibg=black
+hi Cursor           guibg=#A6E22E
+
+au InsertEnter * highlight  CursorLine guibg=#323D3E
+au InsertEnter * highlight  Cursor guibg=#00AAFF
+au InsertLeave * highlight  CursorLine guibg=#3E3D32
+au InsertLeave * highlight  Cursor guibg=#A6E22E
