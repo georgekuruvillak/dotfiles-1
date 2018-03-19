@@ -45,7 +45,6 @@ Plug 'Yggdroot/indentLine'
 Plug 'dhruvasagar/vim-table-mode'
 Plug 'cocopon/iceberg.vim'
 Plug 'airblade/vim-gitgutter'
-Plug 'thiagoalessio/rainbow_levels.vim'
 
 call plug#end()
 

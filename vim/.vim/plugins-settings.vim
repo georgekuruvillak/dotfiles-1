@@ -65,13 +65,3 @@ autocmd FileType c,cpp,javascript,typescript,java ClangFormatAutoEnable
 
 hi DiffAdd gui=NONE guifg=green guibg=black
 
-au FileType javascript,go,c,cpp,xml,yaml,html :RainbowLevelsOn
-let g:rainbow_levels = [
-  \{'ctermfg': 2, 'guifg': '#859900'},
-  \{'ctermfg': 6, 'guifg': '#2aa198'},
-  \{'ctermfg': 4, 'guifg': '#268bd2'},
-  \{'ctermfg': 5, 'guifg': '#6c71c4'},
-  \{'ctermfg': 1, 'guifg': '#dc322f'},
-  \{'ctermfg': 3, 'guifg': '#b58900'},
-  \{'ctermfg': 8, 'guifg': '#839496'},
-  \{'ctermfg': 7, 'guifg': '#586e75'}]
