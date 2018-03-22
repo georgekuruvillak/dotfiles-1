@@ -32,5 +32,8 @@ $stow systemd
 $stow background
 $stow kitty
 $stow user-dirs
+$stow i3
+$stow dunst
+$stow screenlayout
 popd
 

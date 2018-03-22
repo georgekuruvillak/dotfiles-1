@@ -2,7 +2,7 @@
 
 case "$1" in
     lock)
-        physlock -d -m -s
+        light-locker-command -l
         ;;
     logout)
         i3-msg exit

@@ -223,7 +223,7 @@ bindsym $mod+Shift+Tab workspace prev
 exec ~/.xprofile
 
 # Utilities
-exec --no-startup-id volumeicon
+exec --no-startup-id light-locker
 exec --no-startup-id nm-applet --sm-disable
 exec --no-startup-id feh --bg-scale ~/.config/background/background.jpg
 
