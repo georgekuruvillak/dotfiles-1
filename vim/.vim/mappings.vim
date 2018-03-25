@@ -22,9 +22,6 @@ map <Leader>f :FZF<cr>
 map <Leader>t :Tags<cr>
 map <Leader>b :Buffers<cr>
 
-" Exit highlight mode
-map <ESC><ESC> :nohl<cr>
-
 " Buffers and tabs
 map ]b :bn<cr>
 map [b :bp<cr>
