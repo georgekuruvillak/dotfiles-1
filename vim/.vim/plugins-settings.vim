@@ -65,3 +65,5 @@ autocmd FileType c,cpp,javascript,typescript,java ClangFormatAutoEnable
 
 hi DiffAdd gui=NONE guifg=green guibg=black
 
+" vim json
+"let g:vim_json_syntax_conceal = 0

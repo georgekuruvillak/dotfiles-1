@@ -25,5 +25,5 @@ echo "#FFFF00"
 exit
 fi
 
-echo "🔊 ${volume}"
+echo "🎺 ${volume}"
 

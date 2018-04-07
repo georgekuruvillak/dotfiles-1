@@ -60,9 +60,9 @@ bindsym ctrl+Shift+2 move workspace to output DP-1-3
 # focus the child container
 #bindsym $mod+d focus child
 
-set $ws1 "1: 1 "
-set $ws2 "2: 2 "
-set $ws10 "10: 10 "
+set $ws1 "1: 1 🐧"
+set $ws2 "2: 2 🦊"
+set $ws10 "10: 10 🤷"
 # switch to workspace
 bindsym $mod+1 workspace $ws1
 bindsym $mod+2 workspace $ws2
@@ -145,9 +145,9 @@ bar {
 }
 
 # Colors
-client.focused   #222d32 #222d32 #ffffff
-client.unfocused #5E6669 #5E6669 #ffffff
-client.urgent    #F24B4B #F24B4B #ffffff
+#client.focused   #222d32 #222d32 #ffffff
+#client.unfocused #5E6669 #5E6669 #ffffff
+#client.urgent    #F24B4B #F24B4B #ffffff
 
 # Shutdown, Reboot, etc..
 set $mode_system System (l) lock \t (e) logout \t (s) suspend \t (h) hibernate \t (r) reboot \t (Shift+s) shutdown
@@ -195,7 +195,7 @@ bindsym XF86MonBrightnessUp exec xbacklight +5
 #       xprop | grep -i 'class'
 for_window [class="Pavucontrol"] floating enable, border normal
 
-for_window [class="Chromium"] move workspace $ws2
+for_window [class="Firefox"] move workspace $ws2
 for_window [class="Slack"] move workspace $ws10
 # by ROLE (WM_WINDOW_ROLE)
 # Note: window_role is Typically useful for effecting child windows
@@ -204,7 +204,6 @@ for_window [class="Slack"] move workspace $ws10
 # Tip: To find out what these values might be run:
 #       xprop | grep -i 'role'#
 for_window [class="keepassxc"] floating enable
-for_window [title="^Library" class="Chromium"] floating enable
 for_window [class="Spotify"] floating enable
 
 # Scratchpad

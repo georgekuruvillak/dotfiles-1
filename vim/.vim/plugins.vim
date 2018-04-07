@@ -45,6 +45,7 @@ Plug 'Yggdroot/indentLine'
 Plug 'dhruvasagar/vim-table-mode'
 Plug 'cocopon/iceberg.vim'
 Plug 'airblade/vim-gitgutter'
+Plug 'majutsushi/tagbar'
 
 call plug#end()
 

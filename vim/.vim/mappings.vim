@@ -44,3 +44,5 @@ map [l :lprev<cr>
 " Review the current branch to master
 map ]r :DiffRev master<cr>
 
+" Open tagbar
+nmap <F8> :TagbarToggle<CR>
