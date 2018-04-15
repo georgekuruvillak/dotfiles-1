@@ -1,7 +1,8 @@
 " Generic settings
 
 syntax on
-colorscheme iceberg
+"colorscheme iceberg
+colorscheme darkblue
 set t_Co=256
 set t_ut=
 set termguicolors
@@ -15,11 +16,9 @@ set smarttab
 set modeline
 set exrc
 set hidden
-"set rnu -> this breaks omnifunc and make the completion popup flickering
-set nu
+set rnu
 set nocompatible
 set showmatch
-set cursorline
 set so=999
 filetype plugin on
 filetype plugin indent on
@@ -43,3 +42,7 @@ au BufEnter,BufWritePost,InsertLeave * :Neomake
 " ex command for toggling hex mode - define mapping if desired
 command -bar Hexmode call ToggleHex()
 
+
+" Colors
+hi Visual  guifg=LightBlue guibg=Black gui=none
+hi SpecialKey ctermfg=66 guifg=#649A9A

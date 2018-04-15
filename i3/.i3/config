@@ -1,7 +1,7 @@
 set $mod Mod4
 set $editor kitty
 
-font pango:Noto Sans, FontAwesome  10
+font pango:Noto Sans, FontAwesome  9
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -195,7 +195,7 @@ bindsym XF86MonBrightnessUp exec xbacklight +5
 #       xprop | grep -i 'class'
 for_window [class="Pavucontrol"] floating enable, border normal
 
-for_window [class="Firefox"] move workspace $ws2
+for_window [class="Chromium"] move workspace $ws2
 for_window [class="Slack"] move workspace $ws10
 # by ROLE (WM_WINDOW_ROLE)
 # Note: window_role is Typically useful for effecting child windows
