@@ -24,7 +24,6 @@ let g:ycm_max_diagnostics_to_display=1
 let g:ycm_global_ycm_extra_conf = '~/.local/share/vim/site/plugged/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
 let g:UltiSnipsExpandTrigger = "<C-j>"
 let g:ycm_server_python_interpreter="/usr/bin/python"
-let g:ycm_rust_src_path = '~/Projects/rust-lang/rust/src'
 
 " vim-go
 let g:go_highlight_functions = 1
@@ -51,6 +50,7 @@ let g:NERDTreeIndicatorMapCustom = {
     \ "Clean"     : "✔︎",
     \ "Unknown"   : "?"
     \ }
+let g:NERDTreeHighlightCursorline=0
 
 " vim-javascript
 let g:javascript_plugin_jsdoc = 1
@@ -64,6 +64,11 @@ autocmd FileType c,cpp,javascript,typescript,java ClangFormatAutoEnable
 
 
 hi DiffAdd gui=NONE guifg=green guibg=black
+hi DiffDelete gui=NONE guifg=red guibg=black
+hi DiffChange gui=NONE guifg=#FF7619 guibg=black
 
 " vim json
 "let g:vim_json_syntax_conceal = 0
+
+" Rust format on save
+let g:rustfmt_autosave = 1

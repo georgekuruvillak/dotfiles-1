@@ -1,8 +1,7 @@
 " Generic settings
 
 syntax on
-"colorscheme iceberg
-colorscheme darkblue
+colorscheme dracula
 set t_Co=256
 set t_ut=
 set termguicolors
@@ -26,7 +25,7 @@ filetype plugin indent on
 hi SpellBad guibg=#ff2929 ctermbg=124
 
 " Show tabs and spaces
-set listchars=tab:..,trail:_,extends:>,precedes:<,nbsp:~
+set listchars=tab:\|\ ,trail:_,extends:>,precedes:<,nbsp:~
 set list
 
 " Highlight C useless trailing spaces in red
@@ -42,7 +41,5 @@ au BufEnter,BufWritePost,InsertLeave * :Neomake
 " ex command for toggling hex mode - define mapping if desired
 command -bar Hexmode call ToggleHex()
 
-
 " Colors
-hi Visual  guifg=LightBlue guibg=Black gui=none
-hi SpecialKey ctermfg=66 guifg=#649A9A
+hi SpecialKey guifg=#E8E2E3 gui=italic

@@ -38,12 +38,12 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'elzr/vim-json', { 'for': 'json' }
 Plug 'xuhdev/vim-latex-live-preview', {'for': 'tex'}
-Plug 'rust-lang/rust.vim', {'for': 'rust'}
-"Plug 'racer-rust/vim-racer', {'for': 'rust'}
+Plug 'rust-lang/rust.vim'
+"Plug 'racer-rust/vim-racer'
 Plug 'rhysd/vim-clang-format'
 Plug 'Yggdroot/indentLine'
 Plug 'dhruvasagar/vim-table-mode'
-Plug 'cocopon/iceberg.vim'
+Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'airblade/vim-gitgutter'
 Plug 'majutsushi/tagbar'
 
