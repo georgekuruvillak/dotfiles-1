@@ -9,7 +9,7 @@ source $ZSH/oh-my-zsh.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Env
-export EDITOR=vim
+export EDITOR=nvim
 export GOPATH=$HOME/go
 export CDPATH=$CDPATH:$HOME/Projects:$GOPATH/src/github.com
 export CDPATH=$CDPATH:$HOME/Projects:$GOPATH/src
@@ -19,8 +19,7 @@ export PATH=$PATH:$HOME/go/bin
 # Aliases
 alias clipc='xclip -in -selection clipboard'
 alias keesync='rclone sync ~/.keepass dropbox:/keepass'
-alias n='vim'
-alias v='vim'
+alias n='nvim'
 source $HOME/.local.zsh
 
 sslverify() {

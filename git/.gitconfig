@@ -1,6 +1,6 @@
 [core]
   excludesfile = ~/.gitignore_global
-  editor = vim
+  editor = nvim
 [branch]
   autosetuprebase = always
 [alias]
@@ -8,7 +8,7 @@
   st = status
   lod = log --decorate
   lodo = log --decorate --oneline
-  review = "!f() { vim  `git diff --name-only $1` . ; } ; f"
+  review = "!f() { nvim  `git diff --name-only $1` . ; } ; f"
   lof = log --color --pretty=format:'%C(yellow)%h%C(reset) %s%C(bold red)%d%C(reset) %C(green)%ad%C(reset) %C(blue)[%an]%C(reset)' --relative-date --decorate
   pr = "!f() { git fetch $1 refs/pull/$2/head:pr/$1/$2 && git checkout pr/$1/$2;  } ; f"
   d = difftool
@@ -25,12 +25,12 @@
 [commit]
   gpgsign = true
 [merge]
-  tool = vimdiff
+  tool = nvimdiff
 [mergetool]
   prompt = true
-[mergetool "vimdiff"]
-  cmd = vim -d $LOCAL $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
+[mergetool "nvimdiff"]
+  cmd = nvim -d $LOCAL $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
 [difftool]
   prompt = false
 [diff]
-tool = vimdiff
+tool = nvimdiff

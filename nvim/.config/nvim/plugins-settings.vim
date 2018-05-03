@@ -35,6 +35,8 @@ let g:go_fmt_command = "goimports"
 
 " vim-airline
 let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#whitespace#enabled = 1
+let g:airline#extensions#ycm#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:airline_skip_empty_sections = 1
 
@@ -72,3 +74,16 @@ hi DiffChange gui=NONE guifg=#FF7619 guibg=black
 
 " Rust format on save
 let g:rustfmt_autosave = 1
+
+" Use deoplete.
+let g:deoplete#enable_at_startup = 1
+
+" langserver
+let g:LanguageClient_serverCommands = {
+    \ 'go': ['go-langserver'],
+    \ }
+
+nnoremap <silent> K :call LanguageClient_textDocument_hover()<CR>
+nnoremap <silent> gd :call LanguageClient_textDocument_definition()<CR>
+nnoremap <silent> <F2> :call LanguageClient_textDocument_rename()<CR>
+let g:LanguageClient_autoStart = 1
