@@ -8,7 +8,7 @@ set smarttab
 set modeline
 set exrc
 set hidden
-set rnu
+set nu
 set nocompatible
 set showmatch
 set so=999
@@ -56,31 +56,31 @@ hi label        guifg=black ctermfg=254
 hi operator     guifg=black ctermfg=254
 hi delimiter    guifg=darkgray ctermfg=darkgray gui=NONE cterm=NONE
 
-hi ErrorMsg     guifg=black guifg=black ctermfg=254
+hi ErrorMsg     guifg=black guifg=254 ctermfg=254
 hi WarningMsg   guifg=black  ctermfg=254 gui=bold cterm=bold
 hi ModeMsg      guifg=black gui=NONE ctermfg=254
 hi MoreMsg      guifg=black gui=NONE ctermfg=254
-hi Error        guifg=black  guifg=black gui=underline ctermfg=254
+hi Error        guifg=black  guifg=254 gui=underline ctermfg=254
 
-hi Todo         guifg=black  guifg=black ctermfg=254 ctermfg=254
-hi Cursor       guifg=black  guifg=black  ctermfg=254 ctermfg=254
-hi Search       guifg=black  guifg=black ctermfg=black ctermfg=black cterm=NONE
+hi Todo         guifg=black  ctermfg=254 ctermfg=254
+hi Cursor       guifg=black  ctermfg=254 ctermfg=254
+hi Search       guifg=black  ctermfg=black ctermfg=black cterm=NONE
 hi IncSearch    guifg=green  guifg=green ctermfg=green ctermfg=green cterm=NONE
 hi LineNr       guifg=black  ctermfg=254
 hi title        guifg=black gui=bold cterm=bold
 
 hi StatusLine    cterm=none gui=none    guifg=white ctermfg=white guibg=black ctermbg=black
 hi StatusLineNC  cterm=none gui=none    guifg=fg    ctermfg=fg    guibg=#cccbca ctermbg=white
-hi VertSplit     gui=none   guifg=black guifg=black ctermfg=254 ctermfg=254
+hi VertSplit     gui=none   guifg=black ctermfg=254 ctermfg=254
 
-hi Visual        term=reverse  ctermfg=254 ctermfg=254 guifg=black  guifg=black
+hi Visual        term=reverse  ctermfg=254 ctermfg=254 guifg=black
 
-hi DiffChange    guibg=130 ctermbg=130 guifg=black guifg=black ctermfg=254 ctermfg=254
-hi DiffText      guibg=89 ctermbg=89 guifg=black guifg=black  ctermfg=254 ctermfg=254
-hi DiffAdd       guibg=22 ctermbg=22 guifg=black  guifg=black  ctermfg=254  ctermfg=254
-hi DiffDelete    guibg=88 ctermbg=88 guifg=black guifg=black ctermfg=254  ctermfg=254
+hi DiffChange    guibg=130 ctermbg=130 guifg=black ctermfg=254 ctermfg=254
+hi DiffText      guibg=89 ctermbg=89 guifg=black ctermfg=254 ctermfg=254
+hi DiffAdd       guibg=22 ctermbg=22 guifg=black ctermfg=254  ctermfg=254
+hi DiffDelete    guibg=88 ctermbg=88 guifg=black ctermfg=254  ctermfg=254
 
-hi Folded        guifg=black  guifg=black  ctermfg=254  ctermfg=254
+hi Folded        guifg=black  ctermfg=254
 hi FoldColumn    guifg=black  guifg=black ctermfg=254  ctermfg=254
 hi cIf0          guifg=black ctermfg=254
 
