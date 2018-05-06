@@ -45,4 +45,4 @@ map [l :lprev<cr>
 map ]r :DiffRev master<cr>
 
 " Open tagbar
-nmap <F8> :TagbarToggle<CR>
+nmap <Leader>t :TagbarToggle<CR>

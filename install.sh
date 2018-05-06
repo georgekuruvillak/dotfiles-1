@@ -21,7 +21,7 @@ if [ ! -d i3/.i3/i3blocks-contrib ]; then
   popd
 fi
 
-$stow vim
+$stow nvim
 $stow zsh
 $stow tmux
 $stow git

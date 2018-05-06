@@ -5,7 +5,7 @@ let g:multi_cursor_exit_from_visual_mode=0
 let g:multi_cursor_exit_from_insert_mode=0
 
 " NERDTree
-let NERDTreeShowHidden=1
+let g:NERDTreeShowHidden=1
 if exists("NERDTreeAddKeyMap")
   call NERDTreeAddKeyMap({
           \ 'key': 'yy',
@@ -65,25 +65,4 @@ let g:atags_build_commands_list = ["ctags -o tags -R --c++-kinds=+p --fields=+ia
 autocmd FileType c,cpp,javascript,typescript,java ClangFormatAutoEnable
 
 
-hi DiffAdd gui=NONE guifg=green guibg=black
-hi DiffDelete gui=NONE guifg=red guibg=black
-hi DiffChange gui=NONE guifg=#FF7619 guibg=black
-
-" vim json
-"let g:vim_json_syntax_conceal = 0
-
-" Rust format on save
-let g:rustfmt_autosave = 1
-
-" Use deoplete.
-let g:deoplete#enable_at_startup = 1
-
-" langserver
-let g:LanguageClient_serverCommands = {
-    \ 'go': ['go-langserver'],
-    \ }
-
-nnoremap <silent> K :call LanguageClient_textDocument_hover()<CR>
-nnoremap <silent> gd :call LanguageClient_textDocument_definition()<CR>
-nnoremap <silent> <F2> :call LanguageClient_textDocument_rename()<CR>
-let g:LanguageClient_autoStart = 1
+let g:tagbar_autofocus = 1

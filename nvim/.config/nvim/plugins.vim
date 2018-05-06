@@ -34,7 +34,7 @@ Plug 'bling/vim-airline'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'elzr/vim-json', { 'for': 'json' }
-Plug 'rust-lang/rust.vim'
+"Plug 'rust-lang/rust.vim'
 "Plug 'racer-rust/vim-racer'
 Plug 'rhysd/vim-clang-format'
 Plug 'Yggdroot/indentLine'
