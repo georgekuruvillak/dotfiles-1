@@ -10,8 +10,6 @@ cscope.files
 .clang
 .exrc
 .netrwhist
-
-# Anything else
 .ackrc
 .agignore
 .gdb_history

@@ -62,7 +62,7 @@ hi ModeMsg      guifg=black gui=NONE ctermfg=254
 hi MoreMsg      guifg=black gui=NONE ctermfg=254
 hi Error        guifg=black  guifg=254 gui=underline ctermfg=254
 
-hi Todo         guifg=black  ctermfg=254 ctermfg=254
+hi Todo         guifg=black  ctermfg=black ctermfg=black
 hi Cursor       guifg=black  ctermfg=254 ctermfg=254
 hi Search       guifg=black  ctermfg=black ctermfg=black cterm=NONE
 hi IncSearch    guifg=green  guifg=green ctermfg=green ctermfg=green cterm=NONE

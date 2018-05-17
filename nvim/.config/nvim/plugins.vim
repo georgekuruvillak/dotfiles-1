@@ -3,7 +3,7 @@ let shouldInstallPluginManager = 0
 " post installation hooks{{{
 function! BuildYCM(info)
     if a:info.status == 'installed' || a:info.force
-        !./install.py --clang-completer
+        !./install.py --system-libclang --clang-completer --go-completer --rust-completer --js-completer --java-completer
     endif
 endfunction
 " }}}

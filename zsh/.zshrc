@@ -14,6 +14,7 @@ export GOPATH=$HOME/go
 export CDPATH=$CDPATH:$HOME/Projects:$GOPATH/src/github.com
 export CDPATH=$CDPATH:$HOME/Projects:$GOPATH/src
 export PATH=$PATH:$HOME/go/bin
+export PATH=$PATH:$HOME/.cargo/bin
 
 
 # Aliases
@@ -36,3 +37,8 @@ symaddr() {
   local addr=$(objdump -tT $elf | awk -v s=$symbol '$NF==s && $4 == ".text" {print $1}')
   echo 0x$addr
 }
+
+minienv() {
+    eval $(minikube docker-env)
+}
+
