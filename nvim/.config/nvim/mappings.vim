@@ -39,10 +39,11 @@ map ]l :lnext<cr>
 map [l :lprev<cr>
 
 " Term esc
-:tnoremap <Esc> <C-\><C-n>
+tnoremap <Esc> <C-\><C-n>
 
 " Review the current branch to master
 map ]r :DiffRev master<cr>
 
 " Open tagbar
-nmap <Leader>t :TagbarToggle<CR>
+nmap <Leader>t :TagbarToggle<cr>
+
