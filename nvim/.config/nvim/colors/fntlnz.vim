@@ -8,55 +8,55 @@ endif
 
 let colors_name = "fntlnz"
 
-hi Normal       guifg=black ctermfg=254 guibg=#F4F3F1
-hi NonText      guifg=black ctermfg=254
-hi comment      guifg=darkgray  ctermfg=darkgray gui=italic
-hi constant     guifg=black  ctermfg=254
-hi string       guifg=darkgray ctermfg=darkgray
-hi identifier   guifg=black  ctermfg=254
-hi statement    guifg=black  ctermfg=254 gui=bold cterm=bold
-hi define       gui=bold cterm=bold
-hi preproc      guifg=black  ctermfg=254
-hi type         guifg=black ctermfg=254 gui=bold cterm=bold
-hi special      guifg=black ctermfg=254 ctermfg=254
-hi Underlined   guifg=black  ctermfg=254 gui=underline cterm=underline
-hi label        guifg=black ctermfg=254
-hi operator     guifg=black ctermfg=254
-hi delimiter    guifg=darkgray ctermfg=darkgray gui=NONE cterm=NONE
+hi Normal       ctermfg=254
+hi NonText      ctermfg=254
+hi comment      ctermfg=darkgray
+hi constant     ctermfg=254
+hi string       ctermfg=darkgray
+hi identifier   ctermfg=254
+hi statement    ctermfg=254 cterm=bold
+hi define       cterm=bold
+hi preproc      ctermfg=254
+hi type         ctermfg=254 cterm=bold
+hi special      ctermfg=254 ctermfg=254
+hi Underlined   ctermfg=254 cterm=underline
+hi label        ctermfg=254
+hi operator     ctermfg=254
+hi delimiter    ctermfg=darkgray cterm=NONE
 
-hi SpellBad     guibg=#ff2929 ctermbg=124
-hi ErrorMsg     guifg=black guifg=254 ctermfg=254
-hi WarningMsg   guifg=black  ctermfg=254 gui=bold cterm=bold
-hi ModeMsg      guifg=black gui=NONE ctermfg=254
-hi MoreMsg      guifg=black gui=NONE ctermfg=254
-hi Error        guifg=black  guifg=254 gui=underline ctermfg=254
+hi SpellBad     ctermbg=124
+hi ErrorMsg     ctermfg=254
+hi WarningMsg   ctermfg=254 cterm=bold
+hi ModeMsg      ctermfg=254
+hi MoreMsg      ctermfg=254
+hi Error        ctermfg=254
 
-hi Todo         guifg=black  ctermfg=black ctermfg=black
-hi Cursor       guifg=black  ctermfg=254 ctermfg=254
-hi Search       guifg=black  ctermfg=black ctermfg=black cterm=NONE
-hi IncSearch    guifg=green  guifg=green ctermfg=green ctermfg=green cterm=NONE
-hi LineNr       guifg=black  ctermfg=254
-hi title        guifg=black gui=bold cterm=bold
+hi Todo         ctermfg=black ctermfg=black
+hi Cursor       ctermfg=254 ctermfg=254
+hi Search       ctermfg=black ctermfg=black cterm=NONE
+hi IncSearch    ctermfg=green ctermfg=green cterm=NONE
+hi LineNr       ctermfg=254
+hi title        cterm=bold
 
-hi StatusLine    cterm=none gui=none    guifg=white ctermfg=white guibg=black ctermbg=black
-hi StatusLineNC  cterm=none gui=none    guifg=fg    ctermfg=fg    guibg=#cccbca ctermbg=white
-hi VertSplit     gui=none   guifg=black ctermfg=254 ctermfg=254
+hi StatusLine    cterm=none ctermfg=white ctermbg=black
+hi StatusLineNC  cterm=none ctermfg=fg    ctermbg=white
+hi VertSplit     ctermfg=254 ctermfg=254
 
-hi Visual        term=reverse  ctermfg=254 ctermfg=254 guifg=black
+hi Visual        term=reverse  ctermfg=254 ctermfg=254
 
-hi DiffChange    guibg=130 ctermbg=130 guifg=black ctermfg=254 ctermfg=254
-hi DiffText      guibg=89 ctermbg=89 guifg=black ctermfg=254 ctermfg=254
-hi DiffAdd       guibg=22 ctermbg=22 guifg=black ctermfg=254  ctermfg=254
-hi DiffDelete    guibg=88 ctermbg=88 guifg=black ctermfg=254  ctermfg=254
+hi DiffChange    ctermbg=130 ctermfg=254 ctermfg=254
+hi DiffText      ctermbg=89 ctermfg=254 ctermfg=254
+hi DiffAdd       ctermbg=22 ctermfg=254  ctermfg=254
+hi DiffDelete    ctermbg=88 ctermfg=254  ctermfg=254
 
-hi Folded        guifg=black  ctermfg=254
-hi FoldColumn    guifg=black  guifg=black ctermfg=254  ctermfg=254
-hi cIf0          guifg=black ctermfg=254
+hi Folded        ctermfg=254
+hi FoldColumn    ctermfg=254  ctermfg=254
+hi cIf0          ctermfg=254
 
-hi Pmenu ctermbg=234 guifg=#1a1a1a ctermfg=white
-hi VertSplit cterm=none gui=none
+hi Pmenu ctermbg=234 ctermfg=white
+hi VertSplit cterm=none
 
-highlight ExtraWhitespace ctermbg=red guibg=red
+highlight ExtraWhitespace ctermbg=red
 match ExtraWhitespace /\s\+$/
 autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
