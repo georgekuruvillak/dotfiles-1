@@ -9,8 +9,8 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec $editor
 
-# start nautilus
-bindsym $mod+n exec nautilus
+# start pcmanfm
+bindsym $mod+n exec pcmanfm
 
 # kill focused window
 bindsym $mod+Shift+q kill

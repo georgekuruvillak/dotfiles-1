@@ -1,5 +1,6 @@
 " Generic settings
-colorscheme fntlnz
+colorscheme one
+set background=dark
 set clipboard=unnamed
 set tabstop=2
 set shiftwidth=2
