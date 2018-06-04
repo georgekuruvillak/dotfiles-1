@@ -1,7 +1,8 @@
 " Generic settings
 colorscheme one
-set background=dark
 set clipboard=unnamed
+set termguicolors
+set background=dark
 set tabstop=2
 set shiftwidth=2
 set expandtab
