@@ -1,7 +1,7 @@
 set $mod Mod4
 set $editor kitty
 
-font pango:Noto Sans, FontAwesome  11
+font pango:Noto Sans, FontAwesome 11
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -135,7 +135,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
     # i3bar position
-    position top
+    position bottom
     status_command i3blocks
     i3bar_command i3bar
     strip_workspace_numbers yes
