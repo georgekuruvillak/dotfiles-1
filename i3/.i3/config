@@ -211,8 +211,9 @@ bindsym $mod+Shift+t move scratchpad
 bindsym $mod+t scratchpad show
 
 # Arrange displays for home configuration
-bindsym $mod+Shift+a exec --no-startup-id $HOME/.screenlayout/home.sh
-bindsym $mod+Shift+m exec --no-startup-id $HOME/.screenlayout/around.sh
+bindsym $mod+Shift+a exec --no-startup-id $HOME/.screenlayout/common.sh home
+bindsym $mod+Shift+b exec --no-startup-id $HOME/.screenlayout/common.sh home2
+bindsym $mod+Shift+m exec --no-startup-id $HOME/.screenlayout/common.sh around
 
 # Switch workspace
 bindsym $mod+Tab workspace next
