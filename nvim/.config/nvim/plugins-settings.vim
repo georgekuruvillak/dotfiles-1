@@ -69,3 +69,8 @@ let g:tagbar_autofocus = 1
 
 " Vim one colors
 call one#highlight('Normal', 'abb2bf', '000000', 'none')
+
+" Lightline
+let g:lightline = {
+      \ 'colorscheme': 'landscape',
+      \ }

@@ -31,6 +31,7 @@ Plug 'tpope/vim-rhubarb'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 "Plug 'bling/vim-airline'
+Plug 'itchyny/lightline.vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'elzr/vim-json', { 'for': 'json' }
