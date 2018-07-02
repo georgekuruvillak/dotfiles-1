@@ -1,4 +1,8 @@
-export ZSH=~/.oh-my-zsh
+export ZSH=/usr/share/oh-my-zsh
+
+if [[ -z "$ZSH_CACHE_DIR" ]]; then
+  ZSH_CACHE_DIR="$HOME/.cache/oh-my-zsh"
+fi
 
 # oh-my-zsh setup
 ZSH_THEME="robbyrussell"
@@ -23,11 +27,11 @@ alias keesync='rclone sync ~/.keepass dropbox:/keepass'
 alias n='nvim'
 source $HOME/.local.zsh
 
-sslverify() {
+ssl::verify() {
   openssl s_client -connect $1
 }
 
-sslciphers() {
+ssl::ciphers() {
   nmap --script ssl-enum-ciphers -p 443 $1
 }
 
@@ -38,7 +42,15 @@ symaddr() {
   echo 0x$addr
 }
 
-minienv() {
-    eval $(minikube docker-env)
+minienv::start() {
+  minikube start --memory 6000 --cpus 4 --dns-domain=gallifrey.local
+}
+
+minienv::eval() {
+  eval $(minikube docker-env)
+}
+
+kubeconfig::link() {
+  ln -sf $HOME/.kube/$1.conf $HOME/.kube/current
 }
 
