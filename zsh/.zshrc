@@ -19,6 +19,7 @@ export CDPATH=$CDPATH:$HOME/Projects:$GOPATH/src/github.com
 export CDPATH=$CDPATH:$HOME/Projects:$GOPATH/src
 export PATH=$PATH:$HOME/go/bin
 export PATH=$PATH:$HOME/.cargo/bin
+export KUBECONFIG=$HOME/.kube/current
 
 
 # Aliases
@@ -52,5 +53,8 @@ minienv::eval() {
 
 kubeconfig::link() {
   ln -sf $HOME/.kube/$1.conf $HOME/.kube/current
+  if [ -n "$TMUX" ]; then
+    tmux source-file ~/.tmux.conf
+  fi
 }
 
