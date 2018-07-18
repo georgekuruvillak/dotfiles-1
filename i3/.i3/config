@@ -226,3 +226,4 @@ exec ~/.xprofile
 exec --no-startup-id nm-applet --sm-disable
 exec --no-startup-id feh --bg-scale ~/.config/background/background.jpg
 
+exec --no-startup-id xcompmgr -c -l0 -t0 -r0 -o.00 
