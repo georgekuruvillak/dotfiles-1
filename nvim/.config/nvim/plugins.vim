@@ -30,17 +30,13 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
-"Plug 'bling/vim-airline'
 Plug 'itchyny/lightline.vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'elzr/vim-json', { 'for': 'json' }
-"Plug 'rust-lang/rust.vim'
-"Plug 'racer-rust/vim-racer'
+Plug 'rust-lang/rust.vim', { 'for': 'rust' }
+Plug 'racer-rust/vim-racer', { 'for': 'rust' }
 Plug 'rhysd/vim-clang-format'
-Plug 'Yggdroot/indentLine'
-Plug 'dhruvasagar/vim-table-mode'
-Plug 'airblade/vim-gitgutter'
 Plug 'majutsushi/tagbar'
 Plug 'rakr/vim-one'
 
