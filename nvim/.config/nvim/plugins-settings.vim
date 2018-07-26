@@ -4,16 +4,6 @@
 let g:multi_cursor_exit_from_visual_mode=0
 let g:multi_cursor_exit_from_insert_mode=0
 
-" NERDTree
-let g:NERDTreeShowHidden=1
-if exists("NERDTreeAddKeyMap")
-  call NERDTreeAddKeyMap({
-          \ 'key': 'yy',
-          \ 'callback': 'NERDTreeYankCurrentNode',
-          \ 'quickhelpText': 'put full path of current node into the default register' })
-endif
-au FileType nerdtree set nolist
-
 " YCM
 autocmd! User YouCompleteMe call youcompleteme#Enable()
 let g:ycm_confirm_extra_conf=0
@@ -40,30 +30,11 @@ let g:airline#extensions#ycm#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:airline_skip_empty_sections = 1
 
-" NERDTree git
-let g:NERDTreeIndicatorMapCustom = {
-    \ "Modified"  : "✹",
-    \ "Staged"    : "✚",
-    \ "Untracked" : "✭",
-    \ "Renamed"   : "➜",
-    \ "Unmerged"  : "═",
-    \ "Deleted"   : "✖",
-    \ "Dirty"     : "✗",
-    \ "Clean"     : "✔︎",
-    \ "Unknown"   : "?"
-    \ }
-let g:NERDTreeHighlightCursorline=0
-
-" vim-javascript
-let g:javascript_plugin_jsdoc = 1
-
-
 " atags default command
 let g:atags_build_commands_list = ["ctags -o tags -R --c++-kinds=+p --fields=+iaS --sort=yes /usr/include `pwd`"]
 
 " clang-format
 autocmd FileType c,cpp,javascript,typescript,java ClangFormatAutoEnable
-
 
 let g:tagbar_autofocus = 1
 

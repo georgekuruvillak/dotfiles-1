@@ -38,13 +38,6 @@ function ToggleHex()
   let &modifiable=l:oldmodifiable
 endfunction
 
-function! NERDTreeYankCurrentNode()
-  let n = g:NERDTreeFileNode.GetSelected()
-  if n != {}
-    call setreg('"', n.path.str())
-  endif
-endfunction
-
 let s:git_status_dictionary = {
             \ "A": "Added",
             \ "B": "Broken",
@@ -57,7 +50,7 @@ let s:git_status_dictionary = {
             \ "X": "Unknown"
             \ }
 
-function! s:get_diff_files(rev)
+function! s:GetDiffFiles(rev)
   let list = map(split(system(
               \ 'git diff --name-status '.a:rev), '\n'),
               \ '{"filename":matchstr(v:val, "\\S\\+$"),"text":s:git_status_dictionary[matchstr(v:val, "^\\w")]}'
@@ -66,7 +59,7 @@ function! s:get_diff_files(rev)
   copen
 endfunction
 
-command! -nargs=1 DiffRev call s:get_diff_files(<q-args>)
+command! -nargs=1 DiffRev call s:GetDiffFiles(<q-args>)
 
 " Zoom / Restore window.
 function! s:ZoomToggle() abort
@@ -82,3 +75,43 @@ function! s:ZoomToggle() abort
 endfunction
 command! ZoomToggle call s:ZoomToggle()
 map ]z :ZoomToggle<CR>
+
+
+" Go Test
+if !exists("g:go_gotests_bin")
+  let g:go_gotests_bin = "gotests"
+endif
+
+" Append output of gotests to corresponding _test.go file
+function! s:GoTableTests(bang, ...)
+  let func = search('^func ', "bcnW")
+  if func == 0
+    echo "no func found previous to cursor"
+    return
+  end
+  let line = getline(func)
+  let fname = split(split(line, " ")[1], "(")[0]
+  " Check if binary exists
+  let bin_path = go#path#CheckBinPath(g:go_gotests_bin)
+  if empty(bin_path)
+    return
+  endif
+  let file = expand('%')
+  " Shouldn't happen as this function shouldn't be registered
+  if empty(file)
+    call go#util#EchoError("write go file to disk first")
+    return
+  endif
+  " Ensure changes are written to disk for tool to read updated version
+  if &modified
+    call go#util#EchoError("unsaved changes in buffer")
+    return
+  endif
+  " Run gotests
+  let out = system(bin_path . ' -w -only ^' . shellescape(fname) . '$ ' . shellescape(file))
+  if v:shell_error
+    call go#util#EchoError("gotests error: " . out)
+  endif
+endfunction
+
+command! -nargs=* GoTableTests call s:GoTableTests(0)

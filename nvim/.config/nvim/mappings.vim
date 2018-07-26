@@ -5,9 +5,6 @@ let mapleader = ","
 
 imap jk <Esc>
 
-" NERDTree
-map <Leader>n :NERDTreeToggle<cr>
-
 " YCM Go to definition
 nnoremap <Leader>jd :YcmCompleter GoTo <cr>
 
