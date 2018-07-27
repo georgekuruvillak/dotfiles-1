@@ -4,16 +4,14 @@ set -xeuo pipefail
 
 install_path=$HOME/.dotfiles
 
-git=$(which git)
-stow=$(which stow)
-curl=$(which curl)
-
+git=$(command -v git)
+stow=$(command -v stow)
 
 if [ ! -d "$install_path" ]; then
-  $git clone https://github.com/fntlnz/dotfiles $install_path
+  $git clone https://github.com/fntlnz/dotfiles "$install_path"
 fi
 
-pushd $install_path
+pushd "$install_path"
 
 if [ ! -d i3/.config/i3/i3blocks-contrib ]; then
   $git clone https://github.com/vivien/i3blocks-contrib.git i3/.config/i3/i3blocks-contrib

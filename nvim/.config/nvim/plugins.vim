@@ -38,6 +38,7 @@ Plug 'racer-rust/vim-racer', { 'for': 'rust' }
 Plug 'rhysd/vim-clang-format'
 Plug 'majutsushi/tagbar'
 Plug 'rakr/vim-one'
+Plug 'airblade/vim-gitgutter'
 
 
 call plug#end()
