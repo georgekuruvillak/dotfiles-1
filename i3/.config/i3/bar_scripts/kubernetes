@@ -6,5 +6,9 @@ if [[ $?=="0" ]]; then
     KNAMESPACE=$(kubectl config view -ojsonpath="{.Contexts[?(@.Name==\"$CC\")]..namespace}")
     echo "☸ $KCONTEXT/$KNAMESPACE ☸"
     echo "☸ $KCONTEXT/$KNAMESPACE ☸"
-    echo \#4040FF # color
+    if [ "$KCONTEXT" == "minikube" ]; then
+      echo \#4040FF
+      exit
+    fi
+    echo \#FF00FF
 fi

@@ -59,7 +59,7 @@ label=🔔
 command=$HOME/.config/i3bar_scripts/$BLOCK_NAME status-interactive
 
 [kubernetes]
-command=$HOME/.config/i3bar_scripts/kubernetes
+command=$HOME/.config/i3/bar_scripts/kubernetes
 interval=5
 
 [mediaplayer]
