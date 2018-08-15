@@ -39,7 +39,8 @@ Plug 'rhysd/vim-clang-format'
 Plug 'majutsushi/tagbar'
 Plug 'rakr/vim-one'
 Plug 'airblade/vim-gitgutter'
-
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'Xuyuanp/nerdtree-git-plugin'
 
 call plug#end()
 

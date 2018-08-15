@@ -14,3 +14,5 @@ cscope.files
 .agignore
 .gdb_history
 .netrc
+debug
+debug.test

@@ -45,3 +45,27 @@ call one#highlight('Normal', 'abb2bf', '000000', 'none')
 let g:lightline = {
       \ 'colorscheme': 'landscape',
       \ }
+
+" NERDTree
+let g:NERDTreeShowHidden=1
+if exists("NERDTreeAddKeyMap")
+  call NERDTreeAddKeyMap({
+          \ 'key': 'yy',
+          \ 'callback': 'NERDTreeYankCurrentNode',
+          \ 'quickhelpText': 'put full path of current node into the default register' })
+endif
+au FileType nerdtree set nolist
+
+" NERDTree git
+let g:NERDTreeIndicatorMapCustom = {
+    \ "Modified"  : "✹",
+    \ "Staged"    : "✚",
+    \ "Untracked" : "✭",
+    \ "Renamed"   : "➜",
+    \ "Unmerged"  : "═",
+    \ "Deleted"   : "✖",
+    \ "Dirty"     : "✗",
+    \ "Clean"     : "✔︎",
+    \ "Unknown"   : "?"
+    \ }
+let g:NERDTreeHighlightCursorline=0
