@@ -1,4 +1,4 @@
-command=$HOME/.config/i3bar_scripts/$BLOCK_NAME
+command=$HOME/.config/i3/bar_scripts/$BLOCK_NAME
 
 [bandwidth]
 label=Bandwidth:
@@ -21,7 +21,7 @@ markup=pango
 
 [volume]
 interval=1
-command=DEVICE=Master $HOME/.config/i3bar_scripts/$BLOCK_NAME
+command=DEVICE=Master $HOME/.config/i3/bar_scripts/$BLOCK_NAME
 signal=1
 
 [iface]
@@ -49,14 +49,18 @@ interval=1
 
 
 [temperature]
-command=$HOME/.config/i3bar_scripts/$BLOCK_NAME -w 40 -c 60
+command=$HOME/.config/i3/bar_scripts/$BLOCK_NAME -w 40 -c 60
 label=🔥
 interval=10
 
 [dunst-manager]
 interval=once
 label=🔔
-command=$HOME/.config/i3bar_scripts/$BLOCK_NAME status-interactive
+command=$HOME/.config/i3/bar_scripts/$BLOCK_NAME status-interactive
+
+[night-mode]
+interval=once
+command=$HOME/.config/i3/bar_scripts/$BLOCK_NAME
 
 [kubernetes]
 command=$HOME/.config/i3/bar_scripts/kubernetes

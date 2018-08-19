@@ -2,19 +2,16 @@
     "languageserver": {
       "go": {
         "command": "go-langserver",
-        "args": [""],
         "filetypes": ["go"],
         "initializationOptions": {},
         "settings": {}
       },
       "c": {
-        "command": "ccls",
-        "args": [""],
+        "command": "clangd",
         "filetypes": ["c", "cpp", "cc"],
-        "initializationOptions": {
-          "cacheDirectory": "/tmp/ccls"
-        },
+        "initializationOptions": {},
         "settings": {}
       }
-  }
+  },
+  "coc.source.ultisnips.enable": true
 }
