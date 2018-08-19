@@ -4,25 +4,6 @@
 let g:multi_cursor_exit_from_visual_mode=0
 let g:multi_cursor_exit_from_insert_mode=0
 
-" YCM
-autocmd! User YouCompleteMe call youcompleteme#Enable()
-let g:ycm_confirm_extra_conf=0
-let g:ycm_collect_identifiers_from_tags_files=1
-let g:ycm_autoclose_preview_window_after_completion=0
-let g:ycm_autoclose_preview_window_after_insertion=1
-let g:ycm_max_diagnostics_to_display=1
-let g:ycm_global_ycm_extra_conf = '~/.local/share/nvim/site/plugged/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
-let g:UltiSnipsExpandTrigger = "<C-j>"
-let g:ycm_server_python_interpreter="/usr/bin/python"
-
-" vim-go
-let g:go_highlight_functions = 1
-let g:go_highlight_methods = 1
-let g:go_highlight_structs = 1
-let g:go_highlight_operators = 1
-let g:go_highlight_build_constraints = 1
-let g:go_fmt_command = "goimports"
-
 " vim-airline
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#whitespace#enabled = 1
@@ -43,7 +24,14 @@ call one#highlight('Normal', 'abb2bf', '000000', 'none')
 
 " Lightline
 let g:lightline = {
-      \ 'colorscheme': 'landscape',
+      \ 'colorscheme': 'wombat',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'cocstatus', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component_function': {
+      \   'cocstatus': 'coc#status'
+      \ },
       \ }
 
 " NERDTree
@@ -69,3 +57,4 @@ let g:NERDTreeIndicatorMapCustom = {
     \ "Unknown"   : "?"
     \ }
 let g:NERDTreeHighlightCursorline=0
+

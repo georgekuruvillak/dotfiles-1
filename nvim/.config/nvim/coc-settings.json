@@ -1,0 +1,20 @@
+{
+    "languageserver": {
+      "go": {
+        "command": "go-langserver",
+        "args": [""],
+        "filetypes": ["go"],
+        "initializationOptions": {},
+        "settings": {}
+      },
+      "c": {
+        "command": "ccls",
+        "args": [""],
+        "filetypes": ["c", "cpp", "cc"],
+        "initializationOptions": {
+          "cacheDirectory": "/tmp/ccls"
+        },
+        "settings": {}
+      }
+  }
+}
