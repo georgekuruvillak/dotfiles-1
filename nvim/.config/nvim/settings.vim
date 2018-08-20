@@ -32,6 +32,9 @@ au FileType xml setlocal foldmethod=syntax
 " Automatic Neomake
 au BufEnter,BufWritePost,InsertLeave * :Neomake
 
+" Automatic Format
+au BufWritePost * :Format
+
 " ex command for toggling hex mode - define mapping if desired
 command -bar Hexmode call ToggleHex()
 

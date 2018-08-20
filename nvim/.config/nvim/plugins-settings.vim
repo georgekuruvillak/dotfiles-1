@@ -4,13 +4,6 @@
 let g:multi_cursor_exit_from_visual_mode=0
 let g:multi_cursor_exit_from_insert_mode=0
 
-" vim-airline
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#whitespace#enabled = 1
-let g:airline#extensions#ycm#enabled = 1
-let g:airline_powerline_fonts = 1
-let g:airline_skip_empty_sections = 1
-
 " atags default command
 let g:atags_build_commands_list = ["ctags -o tags -R --c++-kinds=+p --fields=+iaS --sort=yes /usr/include `pwd`"]
 

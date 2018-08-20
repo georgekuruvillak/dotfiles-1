@@ -1,14 +1,5 @@
 let shouldInstallPluginManager = 0
 
-" post installation hooks{{{
-function! BuildYCM(info)
-    if a:info.status == 'installed' || a:info.force
-        !./install.py --system-libclang --clang-completer --go-completer --rust-completer --js-completer --java-completer
-    endif
-endfunction
-" }}}
-
-
 if !filereadable($HOME . "/.local/share/nvim/site/autoload/plug.vim")
 echo "~≥ Installing vim-plug \n"
 silent !curl -fLo $HOME/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -19,8 +10,6 @@ call plug#begin('~/.local/share/nvim/site/plugged')
 
 Plug 'benekastah/neomake', { 'on': 'Neomake' }
 Plug 'scrooloose/nerdcommenter'
-"Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM')}
-"Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
 Plug 'junegunn/fzf.vim'
 Plug 'octol/vim-cpp-enhanced-highlight', { 'for': ['c', 'cpp']}
@@ -37,6 +26,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
+"Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'Shougo/denite.nvim'
 
 call plug#end()
