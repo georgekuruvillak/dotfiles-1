@@ -12,9 +12,9 @@
         "initializationOptions": {},
         "settings": {},
         "args": [
-          "--gocodecompletion",
-          "--freeosmemory",
-          "false"
+          "-gocodecompletion",
+          "-freeosmemory=false",
+          "-func-snippet-enabled=false"
         ]
       }
   },

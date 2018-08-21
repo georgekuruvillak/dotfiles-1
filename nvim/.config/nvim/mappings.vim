@@ -61,9 +61,6 @@ function! s:show_documentation()
   endif
 endfunction
 
-" Show signature help while editing
-autocmd CursorHoldI,CursorMovedI * silent! call CocAction('showSignatureHelp')
-
 " Remap for rename current word
 nmap <leader>rn <Plug>(coc-rename)
 
@@ -84,3 +81,6 @@ nnoremap <silent> <space>s  :<C-u>Denite coc-service<cr>
 
 nmap <silent> [d <Plug>(coc-diagnostic-prev)
 nmap <silent> ]d <Plug>(coc-diagnostic-next)
+
+inoremap <silent><expr> <c-space> coc#refresh()
+
