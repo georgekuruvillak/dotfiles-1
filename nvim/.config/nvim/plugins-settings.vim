@@ -8,7 +8,8 @@ let g:multi_cursor_exit_from_insert_mode=0
 let g:atags_build_commands_list = ["ctags -o tags -R --c++-kinds=+p --fields=+iaS --sort=yes /usr/include `pwd`"]
 
 " clang-format
-autocmd FileType c,cpp,javascript,typescript,java ClangFormatAutoEnable
+" TODO(fntlnz): Verify that vim coc does not already cover this
+"autocmd FileType c,cpp,javascript,typescript,java ClangFormatAutoEnable
 
 let g:tagbar_autofocus = 1
 

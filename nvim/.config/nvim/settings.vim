@@ -5,6 +5,7 @@ set termguicolors
 set background=dark
 set tabstop=2
 set shiftwidth=2
+set cmdheight=2
 set expandtab
 set autoindent
 set smarttab

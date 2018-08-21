@@ -8,5 +8,3 @@ source $HOME/.config/nvim/funcs.vim
 source $HOME/.config/nvim/settings.vim
 " Plugin specific configurations
 source $HOME/.config/nvim/plugins-settings.vim
-" Status line
-source $HOME/.config/nvim/status-line.vim

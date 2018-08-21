@@ -81,3 +81,6 @@ nnoremap <silent> <space>a  :<C-u>Denite coc-diagnostic<cr>
 nnoremap <silent> <space>c  :<C-u>Denite coc-command<cr>
 " Show available services
 nnoremap <silent> <space>s  :<C-u>Denite coc-service<cr>
+
+nmap <silent> [d <Plug>(coc-diagnostic-prev)
+nmap <silent> ]d <Plug>(coc-diagnostic-next)

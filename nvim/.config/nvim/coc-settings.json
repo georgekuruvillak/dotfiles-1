@@ -1,17 +1,25 @@
 {
     "languageserver": {
-      "go": {
-        "command": "go-langserver",
-        "filetypes": ["go"],
-        "initializationOptions": {},
-        "settings": {}
-      },
       "c": {
         "command": "clangd",
         "filetypes": ["c", "cpp", "cc"],
         "initializationOptions": {},
         "settings": {}
+      },
+      "go": {
+        "command": "go-langserver",
+        "filetypes": ["go"],
+        "initializationOptions": {},
+        "settings": {},
+        "args": [
+          "--gocodecompletion",
+          "--freeosmemory",
+          "false"
+        ]
       }
   },
-  "coc.source.ultisnips.enable": true
+  "coc.source.gocode.enable": false,
+  "coc.preferences.autoTrigger": "always",
+  "coc.source.ultisnips.enable": true,
+  "coc.preferences.triggerAfterInsertEnter": true
 }
