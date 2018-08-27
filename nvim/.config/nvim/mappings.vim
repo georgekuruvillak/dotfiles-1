@@ -82,3 +82,6 @@ nmap <silent> ]d <Plug>(coc-diagnostic-next)
 inoremap <silent><expr> <c-space> coc#refresh()
 
 command! -nargs=0 Format :call CocAction('format')
+
+" copy current file name and line number to register
+nmap <silent>cp :let @+ = printf('%s:%s', expand("%"), line("."))<cr>
