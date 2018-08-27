@@ -20,6 +20,6 @@
   },
   "coc.source.gocode.enable": false,
   "coc.preferences.autoTrigger": "always",
-  "coc.source.ultisnips.enable": true,
-  "coc.preferences.triggerAfterInsertEnter": true
+  "coc.preferences.triggerAfterInsertEnter": true,
+  "coc.source.ultisnips.enable": true
 }

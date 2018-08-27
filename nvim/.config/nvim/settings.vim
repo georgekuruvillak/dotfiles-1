@@ -30,11 +30,11 @@ let c_space_errors = 1
 let g:xml_syntax_folding=1
 au FileType xml setlocal foldmethod=syntax
 
-" Automatic Neomake
-au BufEnter,BufWritePost,InsertLeave * :Neomake
+" "Automatic Neomake
+"au BufEnter,BufWritePost,InsertLeave * :Neomake
 
-" Automatic Format
-au BufWritePost * :Format
+"" Automatic Format
+"au BufWritePost * :Format
 
 " ex command for toggling hex mode - define mapping if desired
 command -bar Hexmode call ToggleHex()

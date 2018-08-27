@@ -8,7 +8,7 @@ endif
 
 call plug#begin('~/.local/share/nvim/site/plugged')
 
-Plug 'benekastah/neomake', { 'on': 'Neomake' }
+"Plug 'benekastah/neomake', { 'on': 'Neomake' }
 Plug 'scrooloose/nerdcommenter'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
 Plug 'junegunn/fzf.vim'
@@ -28,6 +28,8 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
 Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'Shougo/denite.nvim'
+Plug 'leafgarland/typescript-vim'
+Plug 'ianks/vim-tsx'
 
 call plug#end()
 

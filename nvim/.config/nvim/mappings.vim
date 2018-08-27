@@ -64,9 +64,6 @@ endfunction
 " Remap for rename current word
 nmap <leader>rn <Plug>(coc-rename)
 
-" Use `:Format` for format current file
-command! -nargs=0 Format :call CocAction('format')
-
 " Shortcuts for denite interface
 " Show symbols of current buffer
 nnoremap <silent> <space>o  :<C-u>Denite coc-symbols<cr>
@@ -84,3 +81,4 @@ nmap <silent> ]d <Plug>(coc-diagnostic-next)
 
 inoremap <silent><expr> <c-space> coc#refresh()
 
+command! -nargs=0 Format :call CocAction('format')
