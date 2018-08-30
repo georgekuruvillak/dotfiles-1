@@ -44,7 +44,7 @@ symaddr() {
 }
 
 minienv::start() {
-  minikube start --memory 6000 --cpus 4 --dns-domain=gallifrey.local
+  minikube start --memory 6000 --disk-size 80g --cpus 4 --dns-domain=gallifrey.local
 }
 
 minienv::eval() {

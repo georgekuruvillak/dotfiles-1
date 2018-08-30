@@ -46,6 +46,7 @@ nmap <Leader>t :TagbarToggle<cr>
 
 " coc mappings
 nmap gd <Plug>(coc-definition)
+let g:go_def_mapping_enabled = 0 " disable the same mapping for vim-go
 nmap gy <Plug>(coc-type-definition)
 nmap gi <Plug>(coc-implementation)
 nmap gr <Plug>(coc-references)
@@ -85,3 +86,6 @@ command! -nargs=0 Format :call CocAction('format')
 
 " copy current file name and line number to register
 nmap <silent>cp :let @+ = printf('%s:%s', expand("%"), line("."))<cr>
+
+" signature while editing
+autocmd CursorHold,CursorMoved,CursorHoldI,CursorMovedI * call CocAction('showSignatureHelp')
