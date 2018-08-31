@@ -13,14 +13,14 @@
         "settings": {},
         "args": [
           "-gocodecompletion",
-          "-freeosmemory=true",
+          "-freeosmemory=false",
           "-func-snippet-enabled=false",
           "format-tool=goimports"
         ]
       }
   },
   "coc.source.gocode.enable": false,
-  "coc.preferences.autoTrigger": "always",
+  "coc.preferences.autoTrigger": "trigger",
   "coc.preferences.triggerAfterInsertEnter": false,
   "coc.source.ultisnips.enable": true
 }
