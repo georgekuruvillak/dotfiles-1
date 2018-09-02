@@ -87,5 +87,6 @@ command! -nargs=0 Format :call CocAction('format')
 " copy current file name and line number to register
 nmap <silent>cp :let @+ = printf('%s:%s', expand("%"), line("."))<cr>
 
-" signature while editing
-autocmd CursorHold,CursorMoved,CursorHoldI,CursorMovedI * call CocAction('showSignatureHelp')
+" signature while editing (disabled, go-langserver uses too much memory with
+" this enabled)
+"autocmd CursorHold,CursorMoved,CursorHoldI,CursorMovedI * call CocAction('showSignatureHelp')

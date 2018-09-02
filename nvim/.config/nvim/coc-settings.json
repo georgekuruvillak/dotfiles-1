@@ -15,7 +15,8 @@
           "-gocodecompletion",
           "-freeosmemory=false",
           "-func-snippet-enabled=false",
-          "format-tool=goimports"
+          "-format-tool=goimports",
+          "-diagnostics=true"
         ]
       }
   },
