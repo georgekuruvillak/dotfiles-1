@@ -1,16 +1,19 @@
 {
     "languageserver": {
+      "sh": {
+        "command": "bash-language-server",
+        "args": [
+          "start"
+        ],
+        "filetypes": ["sh"]
+      },
       "c": {
         "command": "clangd",
-        "filetypes": ["c", "cpp", "cc"],
-        "initializationOptions": {},
-        "settings": {}
+        "filetypes": ["c", "cpp", "cc"]
       },
       "go": {
         "command": "go-langserver",
         "filetypes": ["go"],
-        "initializationOptions": {},
-        "settings": {},
         "args": [
           "-gocodecompletion",
           "-freeosmemory=false",

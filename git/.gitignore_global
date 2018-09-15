@@ -2,7 +2,6 @@
 tags
 tags.tmp
 *.swp
-*.ycm_extra_conf.py*
 .ctags
 ncscope.out
 cscope.out
@@ -18,3 +17,6 @@ debug
 debug.test
 .gradle/
 .settings/
+# clangd lsp
+compile_commands.json
+compile_flags.txt

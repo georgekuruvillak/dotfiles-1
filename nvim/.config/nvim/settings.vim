@@ -12,7 +12,7 @@ set smarttab
 set modeline
 set exrc
 set hidden
-set nu
+set rnu
 set nocompatible
 set showmatch
 set so=999
