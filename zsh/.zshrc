@@ -24,7 +24,6 @@ export KUBECONFIG=$HOME/.kube/current
 
 # Aliases
 alias clipc='xclip -in -selection clipboard'
-alias keesync='rclone sync ~/.keepass dropbox:/keepass'
 alias n='nvim'
 source $HOME/.local.zsh
 
