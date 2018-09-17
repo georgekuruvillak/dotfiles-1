@@ -73,6 +73,7 @@ function! s:GoTestDelve(bang, ...)
   let pkgname = go#package#FromPath(file)
   let bfname = 'b ' . fname
   let debugcmd = bin_path . ' test  --init <(echo ' . shellescape(bfname) . ') ' . shellescape(pkgname) . ' -- -test.run ' . shellescape(regfname)
+  split(:sp)
   call termopen(debugcmd)
 endfunction
 
