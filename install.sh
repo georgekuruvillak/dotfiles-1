@@ -26,8 +26,8 @@ $stow tmux
 $stow git
 $stow gdb
 $stow gnupg
-$stow pam
-$stow systemd
+#$stow pam
+#$stow systemd
 $stow background
 $stow kitty
 $stow user-dirs

@@ -21,6 +21,11 @@ export PATH=$PATH:$HOME/go/bin
 export PATH=$PATH:$HOME/.cargo/bin
 export KUBECONFIG=$HOME/.kube/current
 
+if [ -n "$DESKTOP_SESSION" ];then
+    eval $(gnome-keyring-daemon --start)
+    export SSH_AUTH_SOCK
+fi
+
 
 # Aliases
 alias clipc='xclip -in -selection clipboard'
