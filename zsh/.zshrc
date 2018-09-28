@@ -6,7 +6,7 @@ fi
 
 # oh-my-zsh setup
 ZSH_THEME="robbyrussell"
-plugins=(git go kubectl colored-man-pages nvm)
+plugins=(git go colored-man-pages nvm)
 source $ZSH/oh-my-zsh.sh
 
 # FZF (this is created by fzf itsef)

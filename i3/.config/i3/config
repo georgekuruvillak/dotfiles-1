@@ -222,8 +222,8 @@ bindsym $mod+Shift+Tab workspace prev
 exec --no-startup-id nm-applet --sm-disable
 exec --no-startup-id feh --bg-scale ~/.config/background/background.jpg
 
-# disable xscreensaver
-exec --no-startup-id xset s off
+# disable xscreensaver blanking and dpms
+exec --no-startup-id xset s off -dpms
 
 # compositor
-exec --no-startup-id xcompmgr -c -l0 -t0 -r0 -o.00 
+# exec --no-startup-id xcompmgr -c -l0 -t0 -r0 -o.00
