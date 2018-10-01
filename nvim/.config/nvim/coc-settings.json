@@ -11,6 +11,10 @@
         "command": "clangd",
         "filetypes": ["c", "cpp", "cc"]
       },
+      "rust": {
+        "command": "rls",
+        "filetypes": ["rust"]
+      },
       "go": {
         "command": "go-langserver",
         "filetypes": ["go"],
