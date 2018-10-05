@@ -17,6 +17,7 @@ get_plugin autosort.py https://raw.githubusercontent.com/de-vri-es/weechat-autos
 get_plugin wee_slack.py https://raw.githubusercontent.com/wee-slack/wee-slack/master/wee_slack.py "pip install websocket-client"
 get_plugin notify_send.py https://raw.githubusercontent.com/s3rvac/weechat-notify-send/master/notify_send.py ""
 get_plugin edit.py https://raw.githubusercontent.com/keith/edit-weechat/master/edit.py ""
+get_plugin weemoji.py https://raw.githubusercontent.com/kattrali/weemoji/master/weemoji.py ""
 popd
 popd
 

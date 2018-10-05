@@ -1,5 +1,5 @@
 set $mod Mod4
-set $editor kitty
+set $editor kitty -c ~/.config/kitty/kitty.conf -c ~/.config/kitty/themes-contrib/colors/base16-phd.conf
 
 font pango:Noto Sans, FontAwesome 9
 

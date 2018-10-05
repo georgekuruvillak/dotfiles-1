@@ -8,9 +8,6 @@ imap jk <Esc>
 " NERDTree
 map <Leader>n :NERDTreeToggle<cr>
 
-" Neomake cheker run
-"map ]n :Neomake<cr>
-
 " Generate ctags
 map ]gt :call atags#generate()<cr>
 

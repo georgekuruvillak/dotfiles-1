@@ -1,6 +1,6 @@
 " My personal colorscheme
 " You're welcome to use it :]
-set background=dark
+set background=light
 hi clear
 if exists("syntax_on")
   syntax reset

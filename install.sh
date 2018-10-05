@@ -20,13 +20,16 @@ if [ ! -d i3/.config/i3/i3blocks-contrib ]; then
   popd
 fi
 
+if [ ! -d kitty/.config/kitty/themes-contrib ]; then
+  $git clone https://github.com/kdrag0n/base16-kitty.git kitty/.config/kitty/themes-contrib
+fi
+
 $stow nvim
 $stow zsh
 $stow tmux
 $stow git
 $stow gdb
 $stow gnupg
-#$stow pam
 #$stow systemd
 $stow background
 $stow kitty
