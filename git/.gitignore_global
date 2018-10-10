@@ -17,6 +17,4 @@ debug
 debug.test
 .gradle/
 .settings/
-# clangd lsp
-compile_commands.json
-compile_flags.txt
+.cquery

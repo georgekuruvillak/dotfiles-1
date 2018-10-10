@@ -1,7 +1,7 @@
 " Generic settings
 set background=dark
 let base16colorspace=256
-colorscheme base16-phd
+colorscheme base16-solarized-light
 set clipboard=unnamed
 set termguicolors
 set tabstop=2

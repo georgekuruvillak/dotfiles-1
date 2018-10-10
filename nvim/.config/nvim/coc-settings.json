@@ -8,8 +8,11 @@
         "filetypes": ["sh"]
       },
       "c": {
-        "command": "clangd",
-        "filetypes": ["c", "cpp", "cc"]
+        "command": "cquery",
+        "filetypes": ["c", "cpp", "cc"],
+        "initializationOptions": {
+          "cacheDirectory": "/usr/local/cquery-cache"
+        }
       },
       "rust": {
         "command": "rls",
