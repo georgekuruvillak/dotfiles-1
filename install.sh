@@ -37,5 +37,7 @@ $stow user-dirs
 $stow i3
 $stow dunst
 $stow screenlayout
+$stow xorg
+$stow compton
 popd
 

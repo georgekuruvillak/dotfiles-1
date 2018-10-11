@@ -1,7 +1,9 @@
 set $mod Mod4
-set $editor kitty -c ~/.config/kitty/kitty.conf -c ~/.config/kitty/themes-contrib/colors/base16-solarized-light-256.conf
+set $editor kitty -c ~/.config/kitty/kitty.conf
 
 font pango:Noto Sans, FontAwesome 9
+
+set $transparent #00000000
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -136,11 +138,14 @@ bar {
     # i3bar position
     position top
     status_command i3blocks
-    i3bar_command i3bar
+    i3bar_command i3bar -t
     strip_workspace_numbers yes
     tray_padding 0
     tray_output primary
     separator_symbol "/"
+    colors {
+        background         $transparent
+    }
 }
 
 # Colors
@@ -226,4 +231,4 @@ exec --no-startup-id feh --bg-scale ~/.config/background/background.jpg
 exec --no-startup-id xset s off -dpms
 
 # compositor
-# exec --no-startup-id xcompmgr -c -l0 -t0 -r0 -o.00
+exec --no-startup-id compton -b
