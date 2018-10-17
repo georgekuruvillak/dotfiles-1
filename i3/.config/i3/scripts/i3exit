@@ -1,6 +1,6 @@
 #!/bin/sh
 lock() {
-  physlock 
+  physlock -d -m -s
 }
 
 case "$1" in
