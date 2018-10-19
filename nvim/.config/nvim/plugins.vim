@@ -27,6 +27,7 @@ Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'Shougo/denite.nvim'
 Plug 'leafgarland/typescript-vim'
 Plug 'ianks/vim-tsx'
+Plug 'rakr/vim-one'
 
 call plug#end()
 

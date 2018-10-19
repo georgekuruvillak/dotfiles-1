@@ -1,7 +1,8 @@
 " Generic settings
+colorscheme one
 set background=dark
-colorscheme default
 set clipboard=unnamed
+set termguicolors
 set tabstop=2
 set shiftwidth=2
 set cmdheight=2
@@ -36,29 +37,29 @@ au BufWritePost * :Format
 command -bar Hexmode call ToggleHex()
 
 
-" Statusline
-set laststatus=2
-set statusline=
-set statusline+=%-10.3n\                         " buffer number
-set statusline+=%F\                              " filename
-set statusline+=%h%m%r%w                         " status flags
-set statusline+=%y                               " file type
-set statusline+=%=                               " right align remainder
-set statusline+=0x%-8B                           " character value
-set statusline+=%-14(%l,%c%V%)                   " line, character
-set statusline+=%<%P                             " file position
-set statusline+=[%{strlen(&fenc)?&fenc:'none'},  " file encoding
-set statusline+=%{&ff}]                          " file format
+"" Statusline
+"set laststatus=2
+"set statusline=
+"set statusline+=%-10.3n\                         " buffer number
+"set statusline+=%F\                              " filename
+"set statusline+=%h%m%r%w                         " status flags
+"set statusline+=%y                               " file type
+"set statusline+=%=                               " right align remainder
+"set statusline+=0x%-8B                           " character value
+"set statusline+=%-14(%l,%c%V%)                   " line, character
+"set statusline+=%<%P                             " file position
+"set statusline+=[%{strlen(&fenc)?&fenc:'none'},  " file encoding
+"set statusline+=%{&ff}]                          " file format
 
 
-" Color personalizations over default
-hi DiffChange    ctermbg=130 ctermfg=254
-hi DiffText      ctermbg=89 ctermfg=254
-hi DiffAdd       ctermbg=22 ctermfg=254
-hi DiffDelete    ctermbg=88 ctermfg=254
-hi MatchParen    ctermbg=none ctermfg=2
-hi Pmenu         ctermbg=235 ctermfg=white
-hi PmenuSel      ctermbg=233 ctermfg=white cterm=bold
-hi VertSplit     cterm=none
-hi Search        ctermbg=3 ctermfg=black
+"" Color personalizations over default
+"hi DiffChange    ctermbg=130 ctermfg=254
+"hi DiffText      ctermbg=89 ctermfg=254
+"hi DiffAdd       ctermbg=22 ctermfg=254
+"hi DiffDelete    ctermbg=88 ctermfg=254
+"hi MatchParen    ctermbg=none ctermfg=2
+"hi Pmenu         ctermbg=235 ctermfg=white
+"hi PmenuSel      ctermbg=233 ctermfg=white cterm=bold
+"hi VertSplit     cterm=none
+"hi Search        ctermbg=3 ctermfg=black
 
