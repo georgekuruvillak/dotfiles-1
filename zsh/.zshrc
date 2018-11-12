@@ -23,8 +23,7 @@ export PATH=$PATH:$HOME/.cargo/bin
 export KUBECONFIG=$HOME/.kube/current
 
 if [ -n "$DESKTOP_SESSION" ];then
-    eval $(gnome-keyring-daemon --start)
-    export SSH_AUTH_SOCK
+  export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/ssh-agent.socket
 fi
 
 

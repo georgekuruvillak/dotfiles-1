@@ -229,7 +229,7 @@ bindsym $mod+Shift+Tab workspace prev
 
 # Utilities
 exec --no-startup-id nm-applet --sm-disable
-exec --no-startup-id feh --bg-scale ~/.config/background/background.jpg
+exec --no-startup-id feh --bg-scale ~/.config/background/background.png
 
 # disable xscreensaver blanking and dpms
 exec --no-startup-id xset s off -dpms
