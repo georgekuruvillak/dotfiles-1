@@ -1,5 +1,5 @@
 " Generic settings
-colorscheme one
+colorscheme dracula
 set background=dark
 set clipboard=unnamed
 set termguicolors

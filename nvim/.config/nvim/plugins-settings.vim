@@ -33,5 +33,3 @@ let g:NERDTreeIndicatorMapCustom = {
     \ }
 let g:NERDTreeHighlightCursorline=0
 
-" Vim one colors
-call one#highlight('Normal', 'abb2bf', '000000', 'none')
