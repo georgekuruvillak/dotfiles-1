@@ -19,15 +19,12 @@ Plug 'tpope/vim-rhubarb'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'editorconfig/editorconfig-vim'
-Plug 'majutsushi/tagbar'
 Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
 Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'Shougo/denite.nvim'
-Plug 'leafgarland/typescript-vim'
-Plug 'ianks/vim-tsx'
 
 call plug#end()
 
