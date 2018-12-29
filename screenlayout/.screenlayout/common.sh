@@ -7,5 +7,5 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 $DIR/$config.sh
 
-feh --bg-scale $HOME/.config/background/background.png
+feh --bg-fill  $HOME/.config/background/background.jpg
 
