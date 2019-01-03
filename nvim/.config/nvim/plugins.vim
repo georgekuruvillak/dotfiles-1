@@ -13,14 +13,15 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
 Plug 'junegunn/fzf.vim'
 Plug 'octol/vim-cpp-enhanced-highlight', { 'for': ['c', 'cpp']}
 Plug 'fntlnz/atags.vim'
-Plug 'dracula/vim', { 'as': 'dracula' }
+"Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'robertmeta/nofrils'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'airblade/vim-gitgutter'
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'scrooloose/nerdtree', { 'on':  ['NERDTreeToggle', 'NERDTreeFind'] }
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
 Plug 'fatih/vim-go', { 'for': 'go' }

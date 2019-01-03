@@ -7,6 +7,7 @@ imap jk <Esc>
 
 " NERDTree
 map <Leader>n :NERDTreeToggle<cr>
+map <Leader>c :NERDTreeFind<cr>
 
 " Generate ctags
 map ]gt :call atags#generate()<cr>

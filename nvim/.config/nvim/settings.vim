@@ -1,6 +1,6 @@
 " Generic settings
-colorscheme dracula
-set background=dark
+colorscheme nofrils-acme
+set background=light
 set clipboard=unnamed
 set termguicolors
 set tabstop=2
@@ -20,7 +20,7 @@ filetype plugin on
 filetype plugin indent on
 
 " Show tabs and spaces
-set listchars=tab:\¦\ ,trail:_,extends:>,precedes:<,nbsp:~
+set listchars=tab:\•\ ,extends:›,precedes:‹,nbsp:·,trail:·
 set list
 
 " Highlight C useless trailing spaces in red

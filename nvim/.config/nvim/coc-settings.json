@@ -26,12 +26,11 @@
           "-freeosmemory=false",
           "-func-snippet-enabled=false",
           "-format-tool=goimports",
+          "-lint-tool=golint",
           "-diagnostics=true"
         ]
       }
   },
-  "coc.source.gocode.enable": false,
   "coc.preferences.autoTrigger": "trigger",
-  "coc.preferences.triggerAfterInsertEnter": false,
-  "coc.source.ultisnips.enable": true
+  "coc.preferences.triggerAfterInsertEnter": false
 }
