@@ -202,8 +202,9 @@ for_window [class="Slack"] move workspace $ws10
 #       windows, etc.
 # Tip: To find out what these values might be run:
 #       xprop | grep -i 'role'#
-for_window [class="keepassxc"] floating enable
+for_window [class="Enpass"] floating enable
 for_window [class="Spotify"] floating enable
+for_window [class="Zoom"] floating enable
 
 # Scratchpad
 bindsym $mod+Shift+t move scratchpad

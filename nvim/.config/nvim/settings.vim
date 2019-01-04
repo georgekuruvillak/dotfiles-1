@@ -15,9 +15,9 @@ set hidden
 set rnu
 set nocompatible
 set showmatch
-set so=999
-filetype plugin on
-filetype plugin indent on
+"set so=999
+"filetype plugin on
+"filetype plugin indent on
 
 " Show tabs and spaces
 set listchars=tab:\•\ ,extends:›,precedes:‹,nbsp:·,trail:·
@@ -31,7 +31,7 @@ let g:xml_syntax_folding=1
 au FileType xml setlocal foldmethod=syntax
 
 " Automatic Format
-au BufWritePost * :Format
+"au BufWritePost * :Format
 
 " ex command for toggling hex mode - define mapping if desired
 command -bar Hexmode call ToggleHex()
