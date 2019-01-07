@@ -19,16 +19,12 @@
         "filetypes": ["rust"]
       },
       "go": {
-        "command": "go-langserver",
-        "filetypes": ["go"],
-        "args": [
-          "-gocodecompletion",
-          "-freeosmemory=false",
-          "-func-snippet-enabled=false",
-          "-format-tool=goimports",
-          "-lint-tool=golint",
-          "-diagnostics=true"
-        ]
+        "command": "bingo",
+        "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
+        "initializationOptions": {
+          "formatStyle": "goimports"
+        },
+        "filetypes": ["go"]
       }
   },
   "coc.preferences.autoTrigger": "trigger",

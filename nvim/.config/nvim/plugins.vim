@@ -13,8 +13,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
 Plug 'junegunn/fzf.vim'
 Plug 'octol/vim-cpp-enhanced-highlight', { 'for': ['c', 'cpp']}
 Plug 'fntlnz/atags.vim'
-"Plug 'dracula/vim', { 'as': 'dracula' }
-Plug 'robertmeta/nofrils'
+Plug 'plan9-for-vimspace/acme-colors'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 Plug 'SirVer/ultisnips'

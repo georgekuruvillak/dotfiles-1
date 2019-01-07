@@ -1,6 +1,5 @@
 " Generic settings
-colorscheme nofrils-acme
-set background=light
+colorscheme acme
 set clipboard=unnamed
 set termguicolors
 set tabstop=2
