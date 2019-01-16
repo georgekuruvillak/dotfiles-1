@@ -13,7 +13,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
 Plug 'junegunn/fzf.vim'
 Plug 'octol/vim-cpp-enhanced-highlight', { 'for': ['c', 'cpp']}
 Plug 'fntlnz/atags.vim'
-Plug 'plan9-for-vimspace/acme-colors'
+Plug 'rakr/vim-one'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 Plug 'SirVer/ultisnips'
@@ -25,6 +25,8 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
 Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'Shougo/denite.nvim'
+Plug 'godlygeek/tabular', { 'for': ['md']}
+Plug 'plasticboy/vim-markdown', { 'for': ['c', 'md']}
 
 call plug#end()
 
