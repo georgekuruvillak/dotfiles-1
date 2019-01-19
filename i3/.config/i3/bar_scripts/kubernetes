@@ -4,6 +4,9 @@ KCONTEXT=$(kubectl config current-context 2>/dev/null)
 if [[ $?=="0" ]]; then
     CC=$(kubectl config view -ojsonpath='{..current-context}')
     KNAMESPACE=$(kubectl config view -ojsonpath="{.Contexts[?(@.Name==\"$CC\")]..namespace}")
+    if [ ! -n "${KCONTEXT}${KNAMESPACE}" ]; then
+      exit
+    fi
     echo "☸ $KCONTEXT/$KNAMESPACE ☸"
     echo "☸ $KCONTEXT/$KNAMESPACE ☸"
     if [ "$KCONTEXT" == "local-up-cluster" ]; then

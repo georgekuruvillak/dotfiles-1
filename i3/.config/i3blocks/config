@@ -13,12 +13,6 @@ interval=persist
 markup=pango
 instance=nvme0n1
 
-[arch-update]
-command=$HOME/.config/i3/i3blocks-contrib/arch-update/arch-update.py
-label=📡
-interval=3600
-markup=pango
-
 [volume]
 interval=1
 command=DEVICE=Master $HOME/.config/i3/bar_scripts/$BLOCK_NAME
@@ -38,29 +32,10 @@ command=$HOME/.config/i3/i3blocks-contrib/battery2/battery2
 command=echo "📅 $(date '+%d %b %y')"
 interval=30
 
-
-[time]
-command=echo "⏰ IT  $(TZ=Europe/Rome date '+%T')"
-interval=1
-
-[time]
-command=echo "⏰ SF  $(TZ=America/Los_Angeles date '+%T')"
-interval=1
-
-
-[temperature]
-command=$HOME/.config/i3/bar_scripts/$BLOCK_NAME -w 40 -c 60
-label=🔥
-interval=10
-
 [dunst-manager]
 interval=once
 label=🔔
 command=$HOME/.config/i3/bar_scripts/$BLOCK_NAME status-interactive
-
-[night-mode]
-interval=once
-command=$HOME/.config/i3/bar_scripts/$BLOCK_NAME
 
 [kubernetes]
 command=$HOME/.config/i3/bar_scripts/kubernetes
@@ -72,3 +47,10 @@ interval=5
 signal=10
 instance=spotify
 
+[time]
+command=echo "⏰ IT  $(TZ=Europe/Rome date '+%T')"
+interval=1
+
+[time]
+command=echo "⏰ SF  $(TZ=America/Los_Angeles date '+%T')"
+interval=1

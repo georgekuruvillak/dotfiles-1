@@ -65,3 +65,6 @@ set statusline+=%{&ff}]                          " file format
 "hi VertSplit     cterm=none
 "hi Search        ctermbg=3 ctermfg=black
 
+if exists('g:GtkGuiLoaded')
+  call rpcnotify(1, 'Gui', 'Font', 'Iosevka Term SS08 12')
+endif
