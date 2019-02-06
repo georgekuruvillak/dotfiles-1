@@ -23,11 +23,6 @@ export PATH=$PATH:$HOME/.cargo/bin
 export KUBECONFIG=$HOME/.kube/current
 export CC=clang
 
-if [ -n "$DESKTOP_SESSION" ];then
-  export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/ssh-agent.socket
-fi
-
-
 # Aliases
 alias clipc='xclip -in -selection clipboard'
 alias n='nvim'
