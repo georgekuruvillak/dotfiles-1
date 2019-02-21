@@ -37,3 +37,5 @@ $code --install-extension rust-lang.rust
 $code --install-extension devondcarew.bazel-code
 $code --install-extension timonwong.shellcheck
 $code --install-extension equinusocio.vsc-material-theme
+$code --install-extension yzhang.markdown-all-in-one
+$code --install-extension joaompinto.asciidoctor-vscode
