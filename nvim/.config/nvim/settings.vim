@@ -2,6 +2,7 @@
 syntax on
 colorscheme dracula
 set wildoptions=pum
+set background=dark
 set clipboard=unnamed
 set shortmess+=c
 set termguicolors
