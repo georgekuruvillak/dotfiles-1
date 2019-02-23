@@ -25,7 +25,7 @@
     "gitlens.advanced.telemetry.enabled": false,
     "telemetry.enableTelemetry": false,
     "telemetry.enableCrashReporter": false,
-    "window.zoomLevel": 0,
+    "window.zoomLevel": -1,
     "go.enableCodeLens": {
         "references": false,
         "runtest": true
@@ -35,7 +35,7 @@
     ],
     "workbench.sideBar.location": "right",
     "window.menuBarVisibility": "hidden",
-    "workbench.colorTheme": "Material Theme Darker High Contrast",
+    "workbench.colorTheme": "Default Light+",
     "go.languageServerExperimentalFeatures": {
         "format": true,
         "autoComplete": true
