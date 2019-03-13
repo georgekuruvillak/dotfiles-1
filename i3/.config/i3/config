@@ -1,7 +1,7 @@
 set $mod Mod4
 set $editor kitty -c ~/.config/kitty/kitty.conf
 
-font pango:Noto Sans, FontAwesome 9
+font pango:Roboto, FontAwesome 9
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -53,8 +53,8 @@ bindsym $mod+space focus mode_toggle
 bindsym $mod+a focus parent
 
 # Move window to another display
-bindsym ctrl+Shift+1 move workspace to output DP-1-3
-bindsym ctrl+Shift+2 move workspace to output DP-1-1
+bindsym ctrl+Shift+1 move workspace to output DP-1-1
+bindsym ctrl+Shift+2 move workspace to output DP-1-3
 
 # focus the child container
 #bindsym $mod+d focus child
@@ -177,8 +177,8 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% &&
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle && killall -SIGUSR1 i3status
 
 # Display backlight
-bindsym XF86MonBrightnessDown exec xbacklight -5
-bindsym XF86MonBrightnessUp exec xbacklight +5
+bindsym XF86MonBrightnessDown exec light -U 5
+bindsym XF86MonBrightnessUp exec light -A 5
 
 #### RULES FOR SPECIFIC APPLICATIONS ####
 
@@ -223,4 +223,4 @@ exec --no-startup-id feh --bg-fill  $HOME/.config/background/background.jpg
 exec --no-startup-id xset s off -dpms
 
 # compositor
-exec --no-startup-id compton -b
+# exec --no-startup-id compton -b

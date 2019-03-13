@@ -1,8 +1,7 @@
 " Generic settings
-colorscheme one
+syntax on
+colorscheme dracula
 set background=dark
-call one#highlight('Normal', 'abb2bf', '000000', 'none')
-let g:one_allow_italics = 1
 set clipboard=unnamed
 set termguicolors
 set tabstop=2
