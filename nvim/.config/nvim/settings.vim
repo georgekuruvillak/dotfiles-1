@@ -1,8 +1,9 @@
 " Generic settings
 syntax on
 colorscheme dracula
-set background=dark
+set wildoptions=pum
 set clipboard=unnamed
+set shortmess+=c
 set termguicolors
 set tabstop=2
 set shiftwidth=2
@@ -51,18 +52,6 @@ set statusline+=%-14(%l,%c%V%)                   " line, character
 set statusline+=%<%P                             " file position
 set statusline+=[%{strlen(&fenc)?&fenc:'none'},  " file encoding
 set statusline+=%{&ff}]                          " file format
-
-
-" Color personalizations over default
-"hi DiffChange    ctermbg=130 ctermfg=254
-"hi DiffText      ctermbg=89 ctermfg=254
-"hi DiffAdd       ctermbg=22 ctermfg=254
-"hi DiffDelete    ctermbg=88 ctermfg=254
-"hi MatchParen    ctermbg=none ctermfg=2
-"hi Pmenu         ctermbg=235 ctermfg=white
-"hi PmenuSel      ctermbg=233 ctermfg=white cterm=bold
-"hi VertSplit     cterm=none
-"hi Search        ctermbg=3 ctermfg=black
 
 if exists('g:GtkGuiLoaded')
   call rpcnotify(1, 'Gui', 'Font', 'Iosevka Term SS08 12')
