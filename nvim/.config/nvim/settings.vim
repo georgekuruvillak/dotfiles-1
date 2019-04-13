@@ -5,7 +5,10 @@ set wildoptions=pum
 set background=dark
 set clipboard=unnamed
 set shortmess+=c
-set termguicolors
+if (has("termguicolors"))
+ set termguicolors
+endif
+syntax enable
 set tabstop=2
 set shiftwidth=2
 set cmdheight=2
@@ -18,6 +21,8 @@ set hidden
 set rnu
 set nocompatible
 set showmatch
+set pumblend=24
+set wildoptions=pum
 "set so=999
 "filetype plugin on
 "filetype plugin indent on

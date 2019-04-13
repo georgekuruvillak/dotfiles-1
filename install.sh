@@ -39,3 +39,5 @@ $code --install-extension timonwong.shellcheck
 $code --install-extension equinusocio.vsc-material-theme
 $code --install-extension yzhang.markdown-all-in-one
 $code --install-extension joaompinto.asciidoctor-vscode
+$code --install-extension slevesque.vscode-hexdump
+$code --install-extension alefragnani.bookmarks

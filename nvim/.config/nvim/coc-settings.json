@@ -7,26 +7,19 @@
         ],
         "filetypes": ["sh"]
       },
-      "c": {
-        "command": "cquery",
-        "filetypes": ["c", "cpp", "cc"],
-        "initializationOptions": {
-          "cacheDirectory": "/usr/local/cquery-cache"
-        }
+      "clangd": {
+        "command": "clangd",
+        "rootPatterns": ["compile_flags.txt", "compile_commands.json", ".vim/", ".git/", ".hg/"],
+        "filetypes": ["c", "cpp", "objc", "objcpp"]
       },
       "rust": {
         "command": "rls",
         "filetypes": ["rust"]
       },
       "go": {
-        "command": "bingo",
+        "command": "gopls",
         "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
-        "initializationOptions": {
-          "formatStyle": "goimports"
-        },
         "filetypes": ["go"]
       }
-  },
-  "coc.preferences.autoTrigger": "trigger",
-  "coc.preferences.triggerAfterInsertEnter": false
+  }
 }
