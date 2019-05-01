@@ -59,3 +59,7 @@ kubeconfig::link() {
 }
 
 export ETCDCTL_API=3
+
+# tabtab source for electron-forge package
+# uninstall by removing these lines or running `tabtab uninstall electron-forge`
+[[ -f /home/fntlnz/Projects/gb-studio/node_modules/tabtab/.completions/electron-forge.zsh ]] && . /home/fntlnz/Projects/gb-studio/node_modules/tabtab/.completions/electron-forge.zsh

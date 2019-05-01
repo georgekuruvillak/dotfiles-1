@@ -18,3 +18,4 @@ debug.test
 .settings/
 .cquery
 .vscode/
+compile_commands.json

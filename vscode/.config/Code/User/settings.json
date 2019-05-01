@@ -25,7 +25,7 @@
     "gitlens.advanced.telemetry.enabled": false,
     "telemetry.enableTelemetry": false,
     "telemetry.enableCrashReporter": false,
-    "window.zoomLevel": 2,
+    "window.zoomLevel": 0,
     "go.enableCodeLens": {
         "references": false,
         "runtest": true
