@@ -21,8 +21,8 @@ set hidden
 set rnu
 set nocompatible
 set showmatch
-set pumblend=24
-set wildoptions=pum
+"set pumblend=24
+"set wildoptions=pum
 "set so=999
 "filetype plugin on
 "filetype plugin indent on

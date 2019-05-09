@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-
-count=$(sudo /usr/bin/runc list -q | wc -l)
-echo "🐳  ${count} containers"
-

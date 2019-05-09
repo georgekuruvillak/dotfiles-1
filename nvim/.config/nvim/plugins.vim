@@ -15,6 +15,7 @@ Plug 'octol/vim-cpp-enhanced-highlight', { 'for': ['c', 'cpp']}
 Plug 'fntlnz/atags.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
+"Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'airblade/vim-gitgutter'

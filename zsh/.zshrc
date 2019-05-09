@@ -1,4 +1,5 @@
-export ZSH=/usr/share/oh-my-zsh
+#export ZSH=/usr/share/oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 if [[ -z "$ZSH_CACHE_DIR" ]]; then
   ZSH_CACHE_DIR="$HOME/.cache/oh-my-zsh"
@@ -6,8 +7,9 @@ fi
 
 # oh-my-zsh setup
 ZSH_THEME="robbyrussell"
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-plugins=(git go colored-man-pages nvm zsh-autosuggestions)
+#source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+#plugins=(git go colored-man-pages nvm zsh-autosuggestions)
+plugins=(git go colored-man-pages nvm)
 source $ZSH/oh-my-zsh.sh
 
 # FZF (this is created by fzf itsef)
@@ -24,8 +26,9 @@ export KUBECONFIG=$HOME/.kube/current
 export CC=clang
 
 # Aliases
-alias clipc='xclip -in -selection clipboard'
+alias clipc='pbcopy'
 alias n='nvim'
+alias tmux='tmux -u'
 source $HOME/.local.zsh
 
 ssl::verify() {
@@ -43,19 +46,8 @@ symaddr() {
   echo 0x$addr
 }
 
-minienv::start() {
-  minikube start --memory 6000 --disk-size 80g --cpus 4 --dns-domain=gallifrey.local
-}
-
-minienv::eval() {
-  eval $(minikube docker-env)
-}
-
 kubeconfig::link() {
   ln -sf $HOME/.kube/$1.conf $HOME/.kube/current
-  if [ -n "$TMUX" ]; then
-    tmux source-file ~/.tmux.conf
-  fi
 }
 
 export ETCDCTL_API=3
@@ -63,3 +55,7 @@ export ETCDCTL_API=3
 # tabtab source for electron-forge package
 # uninstall by removing these lines or running `tabtab uninstall electron-forge`
 [[ -f /home/fntlnz/Projects/gb-studio/node_modules/tabtab/.completions/electron-forge.zsh ]] && . /home/fntlnz/Projects/gb-studio/node_modules/tabtab/.completions/electron-forge.zsh
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+export WORKPATH=$HOME/Projects

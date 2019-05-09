@@ -1,0 +1,8 @@
+# Stow ignore list
+#
+# The builtin stow ignore list ignores .gitignore.
+# However, for this package it is desirable to symlink install .gitignore.
+# This empty package-local ignore list ensures .gitignore is not ignored.
+
+.DS_Store
+.gitignore

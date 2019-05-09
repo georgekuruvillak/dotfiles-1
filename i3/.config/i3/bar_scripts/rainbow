@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-
-set -euo pipefail
-ssid=$(iwgetid -r)
-ethstatus=$(cat /sys/class/net/enp5s0/operstate)
-echo "🌈 wifi: $ssid 🦄  eth: $ethstatus"
