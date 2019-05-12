@@ -1,12 +1,5 @@
 {
     "languageserver": {
-      "sh": {
-        "command": "bash-language-server",
-        "args": [
-          "start"
-        ],
-        "filetypes": ["sh"]
-      },
       "cquery": {
         "command": "cquery",
         "args": ["--log-file=/tmp/cq.log"],
