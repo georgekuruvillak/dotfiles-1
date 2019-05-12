@@ -8,7 +8,7 @@ fi
 # oh-my-zsh setup
 ZSH_THEME="robbyrussell"
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-plugis=(git go colored-man-pages zsh-autosuggestions)
+plugis=(git go colored-man-pages zsh-autosuggestions tmux)
 source $ZSH/oh-my-zsh.sh
 
 # FZF (this is created by fzf itsef)
@@ -46,7 +46,7 @@ symaddr() {
 }
 
 kubeconfig::link() {
-  ln -sf $HOME/.kube/$1.conf $HOME/.kube/current
+  ln -sf $HOME/.kube/$1 $HOME/.kube/current
 }
 
 export ETCDCTL_API=3
