@@ -4,14 +4,15 @@ set -xeuo pipefail
 
 install_path=$HOME/.dotfiles
 
+git=$(command -v git)
+stow=$(command -v stow)
+curl=$(command -v curl)
+
 if [ ! -d "$install_path" ]; then
-  git clone https://github.com/fntlnz/dotfiles "$install_path"
+  $git clone https://github.com/fntlnz/dotfiles "$install_path"
 fi
 
 source $install_path/scripts/func.sh
-
-stow=$(check stow)
-curl=$(check curl)
 
 check_os
 

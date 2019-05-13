@@ -7,7 +7,6 @@ function check {
         exit 1
     fi
 }
-export -f check
 
 # }}}
 
