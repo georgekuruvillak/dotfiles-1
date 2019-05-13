@@ -17,7 +17,6 @@ fi
 check_os
 
 pushd "$install_path"
-
 $stow home
 $stow nvim
 $stow zsh

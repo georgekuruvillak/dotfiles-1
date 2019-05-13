@@ -26,6 +26,7 @@ export PATH=$PATH:$HOME/go/bin
 export PATH=$PATH:$HOME/.cargo/bin
 export KUBECONFIG=$HOME/.kube/current
 export CC=clang
+export GPG_TTY=$(tty)
 
 # Locale
 export LANG=en_US.UTF-8
