@@ -13,6 +13,10 @@ source $ZSH/oh-my-zsh.sh
 # FZF (this is created by fzf itsef)
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# load local zsh settings if present
+[ -f ~/.local.zsh ] && source ~/.local.zsh
+
+
 # Env
 export EDITOR=nvim
 export GOPATH=$HOME/go
@@ -27,7 +31,6 @@ export CC=clang
 export LANG=en_US.UTF-8
 
 # Aliases
-alias clipc='pbcopy'
 alias n='nvim'
 alias tmux='tmux -u'
 
