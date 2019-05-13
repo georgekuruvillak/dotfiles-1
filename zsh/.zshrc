@@ -7,8 +7,7 @@ fi
 
 # oh-my-zsh setup
 ZSH_THEME="robbyrussell"
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-plugis=(git go colored-man-pages zsh-autosuggestions tmux)
+plugis=(git go colored-man-pages tmux)
 source $ZSH/oh-my-zsh.sh
 
 # FZF (this is created by fzf itsef)
@@ -24,11 +23,13 @@ export PATH=$PATH:$HOME/.cargo/bin
 export KUBECONFIG=$HOME/.kube/current
 export CC=clang
 
+# Locale
+export LANG=en_US.UTF-8
+
 # Aliases
 alias clipc='pbcopy'
 alias n='nvim'
 alias tmux='tmux -u'
-source $HOME/.local.zsh
 
 ssl::verify() {
   openssl s_client -connect $1
