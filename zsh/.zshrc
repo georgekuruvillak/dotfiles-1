@@ -1,4 +1,3 @@
-#export ZSH=/usr/share/oh-my-zsh
 export ZSH=~/.oh-my-zsh
 
 if [[ -z "$ZSH_CACHE_DIR" ]]; then
@@ -28,6 +27,12 @@ export KUBECONFIG=$HOME/.kube/current
 export CC=clang
 export GPG_TTY=$(tty)
 
+export HYPERVISOR=""
+
+if [ ! "$(uname)" = "Darwin" ]; then
+  export HYPERVISOR=$(dmesg --notime | grep -i hypervisor | cut -d ':' -f2 | tr -d " \t\n\r")
+fi
+
 # Locale
 export LANG=en_US.UTF-8
 
@@ -56,10 +61,11 @@ kubeconfig::link() {
 
 export ETCDCTL_API=3
 
-# tabtab source for electron-forge package
-# uninstall by removing these lines or running `tabtab uninstall electron-forge`
-[[ -f /home/fntlnz/Projects/gb-studio/node_modules/tabtab/.completions/electron-forge.zsh ]] && . /home/fntlnz/Projects/gb-studio/node_modules/tabtab/.completions/electron-forge.zsh
-
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-
 export WORKPATH=$HOME/Projects
+
+
+if [ ! -z "$TMUX" ]; then
+  if [ "$HYPERVISOR" = "KVM" ]; then
+    tmux source-file ~/.config/tmux/vm.conf
+  fi
+fi
