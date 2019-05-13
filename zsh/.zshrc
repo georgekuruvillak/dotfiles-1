@@ -28,9 +28,10 @@ export CC=clang
 export GPG_TTY=$(tty)
 
 export HYPERVISOR=""
-
+alias clipc='pbcopy'
 if [ ! "$(uname)" = "Darwin" ]; then
   export HYPERVISOR=$(dmesg --notime | grep -i hypervisor | cut -d ':' -f2 | tr -d " \t\n\r")
+  alias clipc='xclip -in -selection clipboard'
 fi
 
 # Locale
