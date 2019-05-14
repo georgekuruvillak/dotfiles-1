@@ -23,6 +23,7 @@ $stow zsh
 $stow tmux
 $stow git
 $stow gdb
+$stow ssh
 $stow gnupg
 setup_gnupg
 setup_pinentry
