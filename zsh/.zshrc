@@ -26,6 +26,7 @@ export PATH=$PATH:$HOME/.cargo/bin
 export KUBECONFIG=$HOME/.kube/current
 export CC=clang
 export GPG_TTY=$(tty)
+export GIT_TERMINAL_PROMPT=1
 
 export HYPERVISOR=""
 alias clipc='pbcopy'
