@@ -3,11 +3,7 @@
     "clangd": {
       "command": "clangd",
       "rootPatterns": ["compile_flags.txt", "compile_commands.json", ".vim/", ".git/", ".hg/"],
-      "filetypes": ["c", "cpp", "objc", "objcpp"],
-      "args": [
-        "-compile-commands-dir",
-        "/home/vagrant/Projects/falcosecurity/falco/build"
-      ]
+      "filetypes": ["c", "cpp", "objc", "objcpp"]
     },
     "rust": {
       "command": "rls",
