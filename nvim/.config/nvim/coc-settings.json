@@ -3,7 +3,11 @@
     "clangd": {
       "command": "clangd",
       "rootPatterns": ["compile_flags.txt", "compile_commands.json", ".vim/", ".git/", ".hg/"],
-      "filetypes": ["c", "cpp", "objc", "objcpp"]
+      "filetypes": ["c", "cpp", "objc", "objcpp"],
+      "args": [
+        "-compile-commands-dir",
+        "/home/vagrant/Projects/falcosecurity/falco/build"
+      ]
     },
     "rust": {
       "command": "rls",
@@ -13,6 +17,10 @@
       "command": "gopls",
       "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
       "filetypes": ["go"]
+    },
+    "lua": {
+      "command": "lua-lsp",
+      "filetypes": ["lua"]
     }
   }
 }
