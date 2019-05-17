@@ -23,7 +23,7 @@ Plug 'scrooloose/nerdtree', { 'on':  ['NERDTreeToggle', 'NERDTreeFind'] }
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
 Plug 'fatih/vim-go', { 'for': ['go'] }
-Plug 'godlygeek/tabular', { 'for': ['md'] }
+Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown', { 'for': ['c', 'md'] }
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'terryma/vim-multiple-cursors'
