@@ -1,9 +1,5 @@
 export ZSH=~/.oh-my-zsh
 
-if [[ -z "$ZSH_CACHE_DIR" ]]; then
-  ZSH_CACHE_DIR="$HOME/.cache/oh-my-zsh"
-fi
-
 # oh-my-zsh setup
 ZSH_THEME="robbyrussell"
 plugis=(git go colored-man-pages tmux)
