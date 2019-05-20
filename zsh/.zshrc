@@ -68,3 +68,8 @@ if [ ! -z "$TMUX" ]; then
     tmux source-file ~/.config/tmux/vm.conf
   fi
 fi
+
+if [ "$(uname)" = "Darwin" ]; then
+	export VSCODE_CONFIG_DIR="$HOME/Library/Application Support/Code - Insiders/User"
+	export VSCODE_EXTENSIONS_DIR="$HOME/.vscode-insiders/extensions"
+fi
