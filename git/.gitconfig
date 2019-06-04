@@ -35,7 +35,5 @@
   prompt = false
 [diff]
 tool = nvimdiff
-[url "git@github.com:"]
-	insteadOf = https://github.com/
 [color]
 	ui = auto

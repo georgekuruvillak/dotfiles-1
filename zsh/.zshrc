@@ -25,13 +25,6 @@ export CXX=clang++
 export GPG_TTY=$(tty)
 export GIT_TERMINAL_PROMPT=1
 
-export HYPERVISOR=""
-alias clipc='pbcopy'
-if [ ! "$(uname)" = "Darwin" ]; then
-  export HYPERVISOR=$(dmesg --notime | grep -i hypervisor | cut -d ':' -f2 | tr -d " \t\n\r")
-  alias clipc='xclip -in -selection clipboard'
-fi
-
 # Locale
 export LANG=en_US.UTF-8
 
@@ -63,13 +56,13 @@ export ETCDCTL_API=3
 export WORKPATH=$HOME/Projects
 
 
-if [ ! -z "$TMUX" ]; then
-  if [ "$HYPERVISOR" = "KVM" ]; then
-    tmux source-file ~/.config/tmux/vm.conf
-  fi
-fi
-
+alias clipc='pbcopy'
 if [ "$(uname)" = "Darwin" ]; then
 	export VSCODE_CONFIG_DIR="$HOME/Library/Application Support/Code - Insiders/User"
 	export VSCODE_EXTENSIONS_DIR="$HOME/.vscode-insiders/extensions"
+else
+  if [ ! -z "$TMUX" ]; then
+    tmux source-file ~/.config/tmux/vm.conf
+  fi
+  alias clipc='xclip -in -selection clipboard'
 fi

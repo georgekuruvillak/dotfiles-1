@@ -19,3 +19,4 @@ debug.test
 .cquery
 compile_commands.json
 .DS_Store
+.vscode/
