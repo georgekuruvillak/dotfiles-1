@@ -31,7 +31,7 @@
         "-v"
     ],
     "workbench.sideBar.location": "right",
-    "workbench.colorTheme": "Material Theme Lighter High Contrast",
+    "workbench.colorTheme": "Default Light+",
     "go.languageServerExperimentalFeatures": {
         "format": true,
         "autoComplete": true
