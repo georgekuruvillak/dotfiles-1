@@ -1,0 +1,58 @@
+{
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.renderWhitespace": "all",
+    "editor.formatOnSave": true,
+    "extensions.ignoreRecommendations": true,
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.stablePeek": true,
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "files.insertFinalNewline": true,
+    "workbench.activityBar.visible": true,
+    "gitlens.codeLens.enabled": false,
+    "gitlens.advanced.messages": {
+        "suppressShowKeyBindingsNotice": true,
+        "suppressWelcomeNotice": true
+    },
+    "C_Cpp.clang_format_style": "Google",
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "gitlens.advanced.telemetry.enabled": false,
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+    "window.zoomLevel": 2,
+    "go.enableCodeLens": {
+        "references": false,
+        "runtest": true
+    },
+    "go.testFlags": [
+        "-v"
+    ],
+    "workbench.sideBar.location": "right",
+    "workbench.colorTheme": "Material Theme Lighter High Contrast",
+    "go.languageServerExperimentalFeatures": {
+        "format": true,
+        "autoComplete": true
+    },
+    "go.useLanguageServer": true,
+    "go.delveConfig": {
+        "dlvLoadConfig": {
+            "followPointers": true,
+            "maxVariableRecurse": 1,
+            "maxStringLen": 1000,
+            "maxArrayValues": 64,
+            "maxStructFields": -1
+        }
+    },
+    "java.configuration.checkProjectSettingsExclusions": false,
+    "remote.SSH.defaultExtensions": [
+        "ms-vscode.Go",
+        "ms-vscode.cpptools",
+        "twxs.cmake",
+        "ms-python.python",
+        "vector-of-bool.cmake-tools"
+    ],
+    "cmake.configureOnOpen": true,
+}
