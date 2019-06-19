@@ -20,8 +20,6 @@ export CDPATH=$CDPATH:$HOME/Projects:$GOPATH/src
 export PATH=$PATH:$HOME/go/bin
 export PATH=$PATH:$HOME/.cargo/bin
 export KUBECONFIG=$HOME/.kube/current
-export CC=clang
-export CXX=clang++
 export GPG_TTY=$(tty)
 export GIT_TERMINAL_PROMPT=1
 
