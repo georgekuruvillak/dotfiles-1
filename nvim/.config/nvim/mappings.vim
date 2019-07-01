@@ -43,11 +43,11 @@ map ]r :DiffRev master<cr>
 nmap <Leader>t :TagbarToggle<cr>
 
 " coc mappings
-nmap gd <Plug>(coc-definition)
+nmap <silent> gd <Plug>(coc-definition)
 let g:go_def_mapping_enabled = 0 " disable the same mapping for vim-go
-nmap gy <Plug>(coc-type-definition)
-nmap gi <Plug>(coc-implementation)
-nmap gr <Plug>(coc-references)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
 
 " Use K for show documentation in preview window
 nnoremap <silent> K :call <SID>show_documentation()<CR>
