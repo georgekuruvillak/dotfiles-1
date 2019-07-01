@@ -16,13 +16,13 @@
         "suppressShowKeyBindingsNotice": true,
         "suppressWelcomeNotice": true
     },
-    "C_Cpp.clang_format_style": "Google",
+    "C_Cpp.clang_format_style": "file",
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
     "gitlens.advanced.telemetry.enabled": false,
     "telemetry.enableTelemetry": false,
     "telemetry.enableCrashReporter": false,
-    "window.zoomLevel": 2,
+    "window.zoomLevel": 1,
     "go.enableCodeLens": {
         "references": false,
         "runtest": true
@@ -46,7 +46,6 @@
             "maxStructFields": -1
         }
     },
-    "java.configuration.checkProjectSettingsExclusions": false,
     "remote.SSH.defaultExtensions": [
         "ms-vscode.Go",
         "ms-vscode.cpptools",
@@ -55,4 +54,6 @@
         "vector-of-bool.cmake-tools"
     ],
     "cmake.configureOnOpen": true,
+    "C_Cpp.updateChannel": "Insiders",
+    "C_Cpp.clang_format_fallbackStyle": "GNU",
 }

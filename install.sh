@@ -50,4 +50,6 @@ if [[ "$os" = "darwin" ]]; then
   $code --install-extension alefragnani.bookmarks
   $code --install-extension vstirbu.vscode-mermaid-preview
   $code --install-extension ms-vscode-remote.vscode-remote-extensionpack
+  $code --install-extension plorefice.devicetree
+  $code --install_extension matepek.vscode-catch2-test-adapter
 fi
