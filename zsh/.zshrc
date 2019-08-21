@@ -7,7 +7,7 @@ fi
 # oh-my-zsh setup
 ZSH_THEME="robbyrussell"
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-plugins=(git go colored-man-pages nvm zsh-autosuggestions)
+plugins=(git go colored-man-pages nvm)
 source $ZSH/oh-my-zsh.sh
 
 # FZF (this is created by fzf itsef)
