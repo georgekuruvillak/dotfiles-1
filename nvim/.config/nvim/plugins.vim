@@ -20,7 +20,7 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/nerdtree', { 'on':  ['NERDTreeToggle', 'NERDTreeFind'] }
 Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
+Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
 Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'godlygeek/tabular', { 'for': ['md']}
 Plug 'plasticboy/vim-markdown', { 'for': ['c', 'md']}
