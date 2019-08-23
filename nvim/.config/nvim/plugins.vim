@@ -15,17 +15,19 @@ Plug 'octol/vim-cpp-enhanced-highlight', { 'for': ['c', 'cpp']}
 Plug 'fntlnz/atags.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
+Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/nerdtree', { 'on':  ['NERDTreeToggle', 'NERDTreeFind'] }
 Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
-Plug 'fatih/vim-go', { 'for': 'go' }
-Plug 'godlygeek/tabular', { 'for': ['md']}
-Plug 'plasticboy/vim-markdown', { 'for': ['c', 'md']}
+Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
+Plug 'fatih/vim-go', { 'for': ['go'] }
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown', { 'for': ['c', 'md'] }
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'terryma/vim-multiple-cursors'
+
 
 call plug#end()
 

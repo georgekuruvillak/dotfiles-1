@@ -31,6 +31,7 @@ fi
 # Aliases
 alias clipc='xclip -in -selection clipboard'
 alias n='nvim'
+alias code='code-insiders'
 source $HOME/.local.zsh
 
 ssl::verify() {
