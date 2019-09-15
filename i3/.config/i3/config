@@ -201,6 +201,8 @@ for_window [class="Slack"] move workspace $ws10
 for_window [class="Enpass"] floating enable
 for_window [class="Spotify"] floating enable
 for_window [class="Zoom"] floating enable
+for_window [class="zoom"] floating enable
+for_window [class="java-lang-Thread"] floating enable
 
 # Scratchpad
 bindsym $mod+Shift+t move scratchpad

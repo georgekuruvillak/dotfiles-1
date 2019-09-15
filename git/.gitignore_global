@@ -17,4 +17,7 @@ debug.test
 .gradle/
 .settings/
 compile_commands.json
-.ccls-cache/
+.vscode/
+.clangd/
+.nvimrc
+.clang_complete

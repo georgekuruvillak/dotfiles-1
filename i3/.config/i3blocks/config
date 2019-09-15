@@ -41,6 +41,9 @@ command=$HOME/.config/i3/bar_scripts/$BLOCK_NAME status-interactive
 command=$HOME/.config/i3/bar_scripts/kubernetes
 interval=5
 
+[night-mode]
+interval=once
+
 [mediaplayer]
 command=$HOME/.config/i3/i3blocks-contrib/mediaplayer/mediaplayer
 interval=5
