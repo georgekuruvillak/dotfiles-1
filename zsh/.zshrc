@@ -29,6 +29,7 @@ export LANG=en_US.UTF-8
 # Aliases
 alias n='nvim'
 alias tmux='tmux -u'
+alias code='code-insiders'
 
 ssl::verify() {
   openssl s_client -connect $1

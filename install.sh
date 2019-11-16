@@ -6,7 +6,6 @@ install_path=$HOME/.dotfiles
 
 git=$(command -v git)
 stow=$(command -v stow)
-curl=$(command -v curl)
 
 if [ ! -d "$install_path" ]; then
   $git clone https://github.com/fntlnz/dotfiles "$install_path"
@@ -27,7 +26,7 @@ $stow ssh
 $stow gnupg
 setup_gnupg
 setup_pinentry
-$stow alacritty
+$stow kitty
 popd
 
 if [[ "$os" = "darwin" ]]; then
@@ -52,4 +51,5 @@ if [[ "$os" = "darwin" ]]; then
   $code --install-extension ms-vscode-remote.vscode-remote-extensionpack
   $code --install-extension plorefice.devicetree
   $code --install_extension matepek.vscode-catch2-test-adapter
+  $code --install_extension github.vscode-pull-request-github
 fi
