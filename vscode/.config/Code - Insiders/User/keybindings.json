@@ -20,5 +20,9 @@
         "key": "alt+b",
         "command": "-gitlens.toggleFileBlame",
         "when": "editorTextFocus && config.gitlens.keymap == 'alternate' && gitlens:activeFileStatus =~ /blameable/"
+    },
+    {
+        "key": "ctrl+o",
+        "command": "workbench.action.navigateBack",
     }
 ]

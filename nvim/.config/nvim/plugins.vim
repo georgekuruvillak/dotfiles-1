@@ -24,10 +24,10 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
 Plug 'fatih/vim-go', { 'for': ['go'] }
 Plug 'godlygeek/tabular'
-Plug 'plasticboy/vim-markdown', { 'for': ['c', 'md'] }
-Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'plasticboy/vim-markdown', { 'for': ['md', 'markdown'] }
+Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
 Plug 'terryma/vim-multiple-cursors'
-
+Plug 'rhysd/vim-grammarous', { 'for': ['md', 'markdown'] }
 call plug#end()
 
 if shouldInstallPluginManager == 1
