@@ -21,13 +21,12 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/nerdtree', { 'on':  ['NERDTreeToggle', 'NERDTreeFind'] }
 Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
+Plug 'neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
 Plug 'fatih/vim-go', { 'for': ['go'] }
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown', { 'for': ['c', 'md'] }
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'terryma/vim-multiple-cursors'
-
 
 call plug#end()
 

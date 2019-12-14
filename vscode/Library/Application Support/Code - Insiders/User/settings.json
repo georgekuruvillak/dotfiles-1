@@ -22,7 +22,7 @@
     "gitlens.advanced.telemetry.enabled": false,
     "telemetry.enableTelemetry": false,
     "telemetry.enableCrashReporter": false,
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 0,
     "go.enableCodeLens": {
         "references": false,
         "runtest": true
@@ -111,4 +111,5 @@
         }
     ],
     "python.insidersChannel": "weekly",
+    "remote.SSH.useLocalServer": true,
 }

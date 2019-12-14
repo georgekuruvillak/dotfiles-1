@@ -76,3 +76,10 @@ endfunction
 command! ZoomToggle call s:ZoomToggle()
 map ]z :ZoomToggle<CR>
 
+" save current dir session
+function! s:CommitSession()
+  !mkdir -p ~/.local/share/nvim/sessions/
+  let sessionid = system("bash -c 'pwd | sha256sum | cut -d \" \"  -f1'")
+  mksession '~/.local/share/nvim/sessions/' . sessionid . '.vim'
+endfunction
+command! CommitSession call s:CommitSession()

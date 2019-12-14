@@ -52,4 +52,9 @@ if [[ "$os" = "darwin" ]]; then
   $code --install-extension plorefice.devicetree
   $code --install_extension matepek.vscode-catch2-test-adapter
   $code --install_extension github.vscode-pull-request-github
+
+  # system settings
+  defaults write com.google.Chrome NSRequiresAquaSystemAppearance -bool YES
 fi
+
+
