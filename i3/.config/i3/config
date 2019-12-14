@@ -15,7 +15,9 @@ bindsym $mod+n exec nautilus
 # kill focused window
 bindsym $mod+Shift+q kill
 
-bindsym $mod+d exec rofi -show drun
+bindsym $mod+d exec QT_AUTO_SCREEN_SCALE_FACTOR=0 rofi -show drun
+
+bindsym $mod+c exec rofi -show ssh
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -60,7 +62,7 @@ bindsym ctrl+Shift+2 move workspace to output DP-1-3
 #bindsym $mod+d focus child
 
 set $ws1 "1: 1 🐧"
-set $ws2 "2: 2 🦊"
+set $ws2 "2: 2 🌐"
 set $ws10 "10: 10 🤷"
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -202,7 +204,6 @@ for_window [class="Enpass"] floating enable
 for_window [class="Spotify"] floating enable
 for_window [class="Zoom"] floating enable
 for_window [class="zoom"] floating enable
-for_window [class="java-lang-Thread"] floating enable
 
 # Scratchpad
 bindsym $mod+Shift+t move scratchpad
@@ -212,6 +213,9 @@ bindsym $mod+t scratchpad show
 bindsym $mod+Shift+a exec --no-startup-id $HOME/.screenlayout/common.sh home
 bindsym $mod+Shift+b exec --no-startup-id $HOME/.screenlayout/common.sh home2
 bindsym $mod+Shift+m exec --no-startup-id $HOME/.screenlayout/common.sh around
+
+# Enpass
+bindsym $mod+p exec --no-startup-id "/opt/enpass/Enpass showassistant"
 
 # Switch workspace
 bindsym $mod+Tab workspace next
@@ -225,4 +229,4 @@ exec --no-startup-id feh --bg-fill  $HOME/.config/background/background.jpg
 exec --no-startup-id xset s off -dpms
 
 # compositor
-exec --no-startup-id compton -b
+# exec --no-startup-id picom -b

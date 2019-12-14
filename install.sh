@@ -35,7 +35,8 @@ $stow i3
 $stow dunst
 $stow screenlayout
 $stow xorg
-$stow compton
+#$stow picom
+$stow vscode
 popd
 
 $code --install-extension eamodio.gitlens
@@ -56,4 +57,3 @@ $code --install-extension plorefice.devicetree
 $code --install_extension matepek.vscode-catch2-test-adapter
 $code --install_extension github.vscode-pull-request-github
 $code --install_extension redhat.vscode-yaml
-

@@ -37,19 +37,6 @@ interval=once
 label=🔔
 command=$HOME/.config/i3/bar_scripts/$BLOCK_NAME status-interactive
 
-[kubernetes]
-command=$HOME/.config/i3/bar_scripts/kubernetes
-interval=5
-
-[night-mode]
-interval=once
-
-[mediaplayer]
-command=$HOME/.config/i3/i3blocks-contrib/mediaplayer/mediaplayer
-interval=5
-signal=10
-instance=spotify
-
 [time]
 command=echo "⏰ IT  $(TZ=Europe/Rome date '+%T')"
 interval=1
