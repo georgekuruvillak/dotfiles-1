@@ -1,11 +1,13 @@
 " Generic settings
 syntax on
-colorscheme dracula
+colorscheme challenger_deep
 set background=dark
 set clipboard=unnamed
 set shortmess+=c
-if (has("termguicolors"))
- set termguicolors
+if (empty($TMUX))
+  if (has("termguicolors"))
+    set termguicolors
+  endif
 endif
 syntax enable
 set tabstop=2
