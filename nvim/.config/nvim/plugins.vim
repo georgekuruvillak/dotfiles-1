@@ -25,7 +25,7 @@ Plug 'neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
 Plug 'fatih/vim-go', { 'for': ['go'] }
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown', { 'for': ['md', 'markdown'] }
-Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
+Plug 'rakr/vim-one'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'rhysd/vim-grammarous', { 'for': ['md', 'markdown'] }
 call plug#end()

@@ -28,7 +28,6 @@ if [ -n "$DESKTOP_SESSION" ];then
   export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/ssh-agent.socket
 fi
 
-
 # Aliases
 alias clipc='xclip -in -selection clipboard'
 alias n='nvim'
@@ -50,19 +49,8 @@ symaddr() {
   echo 0x$addr
 }
 
-minienv::start() {
-  minikube start --memory 6000 --disk-size 80g --cpus 4 --dns-domain=gallifrey.local
-}
-
-minienv::eval() {
-  eval $(minikube docker-env)
-}
-
 kubeconfig::link() {
   ln -sf $HOME/.kube/$1.conf $HOME/.kube/current
-  if [ -n "$TMUX" ]; then
-    tmux source-file ~/.tmux.conf
-  fi
 }
 
 export ETCDCTL_API=3

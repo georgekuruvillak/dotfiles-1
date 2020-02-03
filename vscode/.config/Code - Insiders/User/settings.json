@@ -22,7 +22,7 @@
     "gitlens.advanced.telemetry.enabled": false,
     "telemetry.enableTelemetry": false,
     "telemetry.enableCrashReporter": false,
-    "window.zoomLevel": 2,
+    "window.zoomLevel": 1,
     "go.enableCodeLens": {
         "references": false,
         "runtest": true
@@ -120,5 +120,9 @@
     "gitlens.views.compare.location": "gitlens",
     "gitlens.views.search.location": "gitlens",
     "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "git.autofetch": true,
+    "python.jediEnabled": false,
+    "window.menuBarVisibility": "toggle",
+    "diffEditor.ignoreTrimWhitespace": false,
 }

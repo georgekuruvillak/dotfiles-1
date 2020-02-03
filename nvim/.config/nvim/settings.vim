@@ -1,14 +1,21 @@
 " Generic settings
 syntax on
-colorscheme challenger_deep
-set background=dark
-set clipboard=unnamed
-set shortmess+=c
+
 if (empty($TMUX))
+  if (has("nvim"))
+  let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+  endif
   if (has("termguicolors"))
     set termguicolors
   endif
+  set t_8b=^[[48;2;%lu;%lu;%lum
+  set t_8f=^[[38;2;%lu;%lu;%lum
 endif
+set background=light
+colorscheme one
+
+set clipboard=unnamed
+set shortmess+=c
 syntax enable
 set tabstop=2
 set shiftwidth=2

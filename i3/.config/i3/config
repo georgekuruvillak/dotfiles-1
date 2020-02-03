@@ -202,8 +202,6 @@ for_window [class="Slack"] move workspace $ws10
 #       xprop | grep -i 'role'#
 for_window [class="Enpass"] floating enable
 for_window [class="Spotify"] floating enable
-for_window [class="Zoom"] floating enable
-for_window [class="zoom"] floating enable
 
 # Scratchpad
 bindsym $mod+Shift+t move scratchpad
